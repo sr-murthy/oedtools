@@ -4,7 +4,7 @@
 
 `oedtools` is a command-line OED file validation and query toolkit for the <a href="https://github.com/Simplitium/OED" target="_blank">Simplitium OED</a> (re)insurance exposure data format.
 
-**Note**: the OED version that this repository and package are pinned to 1.0.3.
+**Note**: the OED version that this repository and package are pinned to is 1.0.3.
 
 The main features currently include
 
@@ -209,7 +209,7 @@ Here are four queries that illustrate the possibilities of `oed columns info`.
             }
         ]
 
-    **Note**: the schema type (specified using option `-t`) isn't required if the columns you're looking are unique.
+    **Note**: the schema type (specified using option `-t`) isn't required if the columns you're looking for are unique.
 
 2. Display the headers only of all columns in the `loc` file schema with the header substring `6all` and with the `int` or `float` (Python) data type.
 
@@ -296,7 +296,7 @@ Here are three examples.
 
     **Note 1**: sample size can be specified using the `-n` option, which has the default value of `10`.
 
-    **Note 2**: Column sampling is based on the values profile that describes properties of OED data entities, not on columns defined in the schemas. This means that sampling a column whose values fall in the same subcategory in the values profile as that of another column will produce similar results, e.g. sampling `LocPeril` will produce similar results to sampling `AccPeril` or `ReinsPeril`, because all three are associated with the subcategory of `peril codes` in the values profile.
+    **Note 2**: Column sampling is based on the values profile that describes properties of OED data entities, not on columns defined in the schemas. This means that sampling a column whose values fall in the same subcategory in the values profile as that of another column will produce similar results, e.g. sampling `LocPeril` will produce similar results to sampling `AccPeril` or `ReinsPeril`, because all three fall into the category of `peril codes` in the values profile.
 
 2. Sampling reins. info. currency codes.
 

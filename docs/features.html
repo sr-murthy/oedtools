@@ -244,7 +244,7 @@ columns only (header names are case insensitive in the query).</p>
 </pre></div>
 </div>
 <p><strong>Note</strong>: the schema type (specified using option <code class="docutils literal notranslate"><span class="pre">-t</span></code>) isn’t
-required if the columns you’re looking are unique.</p>
+required if the columns you’re looking for are unique.</p>
 </li>
 <li><p>Display the headers only of all columns in the <code class="docutils literal notranslate"><span class="pre">loc</span></code> file schema
 with the header substring <code class="docutils literal notranslate"><span class="pre">6all</span></code> and with the <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>
@@ -338,7 +338,7 @@ optional arguments:
 </pre></div>
 </div>
 <p><strong>Note 1</strong>: sample size can be specified using the <code class="docutils literal notranslate"><span class="pre">-n</span></code> option, which has the default value of <code class="docutils literal notranslate"><span class="pre">10</span></code>.</p>
-<p><strong>Note 2</strong>: Column sampling is based on the values profile that describes properties of OED data entities, not on columns defined in the schemas. This means that sampling a column whose values fall in the same subcategory in the values profile as that of another column will produce similar results, e.g. sampling <code class="docutils literal notranslate"><span class="pre">LocPeril</span></code> will produce similar results to sampling <code class="docutils literal notranslate"><span class="pre">AccPeril</span></code> or <code class="docutils literal notranslate"><span class="pre">ReinsPeril</span></code>, because all three are associated with the subcategory of <cite>peril codes</cite> in the values profile.</p>
+<p><strong>Note 2</strong>: Column sampling is based on the values profile that describes properties of OED data entities, not on columns defined in the schemas. This means that sampling a column whose values fall in the same subcategory in the values profile as that of another column will produce similar results, e.g. sampling <code class="docutils literal notranslate"><span class="pre">LocPeril</span></code> will produce similar results to sampling <code class="docutils literal notranslate"><span class="pre">AccPeril</span></code> or <code class="docutils literal notranslate"><span class="pre">ReinsPeril</span></code>, because all three fall into the subcategory of <cite>peril codes</cite> in the values profile.</p>
 </li>
 <li><p>Sampling reins. info. currency codes.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed columns sample -t &#39;reinsinfo&#39; -m &#39;reinscurrency&#39;
