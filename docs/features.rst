@@ -64,22 +64,43 @@ Header-related errors currently include
 
 Data-related errors currently include
 
--  null values in non-null columns (a non-null column is defined a
-   column which must not contain any null values)
+-  null values in non-null columns (a non-null column is defined as a column which must not contain any null values)
 -  column values with data types inconsistent with the data type defined
    for the column in the given schema, e.g. string values in an integer
    or floating point column
 -  values not in the defined range of a column (this can be either a
-   specified column range, or a range inferred from the column data
-   type)
+   specific column range defined in the values profile, or a range inferred from the column data
+   type defined in the schema)
 
 **Note**: data validation is facilitated via a pre-generated JSON
-“values profile” of the OED data entities and related “value groups”
+`“values profile” <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json>`_ of the OED data entities and related “value groups”
 underlying the columns. This values profile defines (sub)categories of
 data, independently of the schemas, such as deductible and limit types
 and codes, latitudes and longitudes, occupancy codes and construction
 codes, peril codes, currency codes, country codes, etc., and associates
-groups of columns whose values fall in the subcategory.
+groups of columns whose values fall in same category.
+
+-  attachments
+-  construction codes
+-  country codes
+-  coverage types
+-  currencies
+-  deductible codes
+-  deductible types
+-  deductibles
+-  geocoding
+-  limit codes
+-  limit types
+-  limits
+-  location properties
+-  occupancy types
+-  peril codes
+-  reins percentages
+-  reins risk levels
+-  reins types
+-  shares
+-  tivs
+-  years
 
 Headers
 ^^^^^^^
