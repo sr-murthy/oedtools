@@ -47,7 +47,11 @@ Module Documentation
 
 .. automodule:: oedtools.validate
    :members:
+   :exclude-members: OedValidator
    :undoc-members:
+.. autoclass:: OedValidator
+   :members:
+   :exclude-members:
 
 ``oedtools.report``
 -------------------
