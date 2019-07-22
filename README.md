@@ -291,6 +291,7 @@ Here are three examples.
             "BFR;OO1;WEC;XX1",
             "QQ1;WW1;XX1;ZIC"
         ]
+
     **Note 1**: sample size can be specified using the `-n` option, which has the default value of `10`.
 
     **Note 2**: Column sampling is based on the values profile that describes properties of OED data entities, not on columns defined in the schemas. This means that sampling a column whose values fall in the same subcategory in the values profile as that of another column will produce similar results, e.g. sampling `LocPeril` will produce similar results to sampling `AccPeril` or `ReinsPeril`, because all three are associated with the subcategory of `peril codes` in the values profile.
