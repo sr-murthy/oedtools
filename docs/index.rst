@@ -8,6 +8,8 @@ oedtools Documentation
 
 ``oedtools`` is a command-line OED file validation and query toolkit for the `Simplitium OED <https://github.com/Simplitium/OED>`_ (re)insurance exposure data format.
 
+**Note**: the OED version that this repository and package are pinned to is 1.0.3.
+
 The main features currently include
 
 * validation of OED account (``acc``), location (``loc``), reinsurance info. (``reinsinfo``) and reinsurance scope (``reinsscope``) input CSV files
