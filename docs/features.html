@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Features &#8212; oedtools 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module Documentation" href="modules.html" />
+    <link rel="prev" title="Installation and Requirements" href="installation-and-requirements.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="features">
+<h1>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h1>
+<p>The command line interface is invoked via <code class="docutils literal notranslate"><span class="pre">oed</span></code> and provides two main
+command groups.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">validate</span></code> (<code class="docutils literal notranslate"><span class="pre">oed</span> <span class="pre">validate</span></code>) - for validating files (column
+headers + data), or only the headers in files</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">columns</span></code> (<code class="docutils literal notranslate"><span class="pre">oed</span> <span class="pre">columns</span></code>) - for searching for columns with
+required properties, and for sampling column data</p></li>
+</ul>
+<div class="section" id="file-validation">
+<h2>File Validation<a class="headerlink" href="#file-validation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="files-headers-data">
+<h3>Files (headers + data)<a class="headerlink" href="#files-headers-data" title="Permalink to this headline">¶</a></h3>
+<p>File validation is performed via <code class="docutils literal notranslate"><span class="pre">oed</span> <span class="pre">validate</span> <span class="pre">file</span></code>, and includes
+validation of the column headers and data.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">oed</span> <span class="n">validate</span> <span class="n">file</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="o">-</span><span class="n">f</span> <span class="n">INPUT_FILE_PATH</span> <span class="o">-</span><span class="n">t</span> <span class="n">SCHEMA_TYPE</span>
+
+<span class="n">optional</span> <span class="n">arguments</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span>            <span class="n">show</span> <span class="n">this</span> <span class="n">help</span> <span class="n">message</span> <span class="ow">and</span> <span class="n">exit</span>
+  <span class="o">-</span><span class="n">f</span> <span class="n">INPUT_FILE_PATH</span><span class="p">,</span> <span class="o">--</span><span class="nb">input</span><span class="o">-</span><span class="n">file</span><span class="o">-</span><span class="n">path</span> <span class="n">INPUT_FILE_PATH</span>
+                        <span class="n">OED</span> <span class="nb">input</span> <span class="n">file</span> <span class="n">path</span>
+  <span class="o">-</span><span class="n">t</span> <span class="n">SCHEMA_TYPE</span><span class="p">,</span> <span class="o">--</span><span class="n">schema</span><span class="o">-</span><span class="nb">type</span> <span class="n">SCHEMA_TYPE</span>
+                        <span class="n">File</span> <span class="n">schema</span> <span class="nb">type</span> <span class="o">-</span> <span class="s2">&quot;loc&quot;</span><span class="p">,</span> <span class="s2">&quot;acc&quot;</span><span class="p">,</span> <span class="s2">&quot;reinsinfo&quot;</span><span class="p">,</span> <span class="ow">or</span>
+                        <span class="s2">&quot;reinsscope&quot;</span>
+</pre></div>
+</div>
+<p>Headers and data are validated separately, and a combined status report
+is printed to the console, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed validate file -t &#39;loc&#39; -f /path/to/location.csv
+/path/to/location.csv:11:40: Invalid value &quot;WWTC;WEC;BFR;OO1&quot; in &quot;LocPerilsCovered&quot; - check the column or data type range: OED error: E371 Out of range data found in column
+
+/path/to/location.csv:18:493: Invalid value &quot;-25000&quot; in &quot;LocMinDed6All&quot; - check the column or data type range: OED error: E371 Out of range data found in column
+
+/path/to/location.csv:1:870: &quot;SubArea&quot; is not a valid column in any OED schema: OED error: E303 Not a valid column in any OED schema
+
+/path/to/location.csv:1:870: &quot;SubArea&quot; is an invalid column in the OED &quot;loc&quot; schema: OED error: E304 Not a valid column in the given OED schema
+
+/path/to/location.csv:2:928: Invalid data type for value &quot;s&quot; in &quot;CondPriority&quot; - expected type &quot;&lt;class &#39;int&#39;&gt;&quot;, found type &quot;&lt;class &#39;str&#39;&gt;&quot;: OED error: E351 Invalid data type(s) in column
+
+/path/to/location.csv:1:-1: &quot;LocCurrency&quot; is a required column in an OED &quot;loc&quot; file but is missing: OED error: E331 Missing required column in file
+</pre></div>
+</div>
+<p>If there are no errors in the file this is indicated with a short
+message, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed validate file -t &#39;acc&#39; -f /path/to/account.csv
+&quot;/path/to/account.csv&quot; file validation complete: no exceptions or errors
+</pre></div>
+</div>
+<p>Header-related errors currently include</p>
+<ul class="simple">
+<li><p>headers not currently defined in any OED schema</p></li>
+<li><p>headers which are mandatory in the given file schema but not present
+in the file</p></li>
+</ul>
+<p>Data-related errors currently include</p>
+<ul class="simple">
+<li><p>null values in non-null columns (a non-null column is defined a
+column which must not contain any null values)</p></li>
+<li><p>column values with data types inconsistent with the data type defined
+for the column in the given schema, e.g. string values in an integer
+or floating point column</p></li>
+<li><p>values not in the defined range of a column (this can be either a
+specified column range, or a range inferred from the column data
+type)</p></li>
+</ul>
+<p><strong>Note</strong>: data validation is facilitated via a pre-generated JSON
+“values profile” of the OED data entities and related “value groups”
+underlying the columns. This values profile defines (sub)categories of
+data, independently of the schemas, such as deductible and limit types
+and codes, latitudes and longitudes, occupancy codes and construction
+codes, peril codes, currency codes, country codes, etc., and associates
+groups of columns whose values fall in the subcategory.</p>
+</div>
+<div class="section" id="headers">
+<h3>Headers<a class="headerlink" href="#headers" title="Permalink to this headline">¶</a></h3>
+<p>This works in a very similar way to file validation, except that it is
+only for validating the headers in a given file. The headers can be
+provided either by providing a file path, or as a comma-separated string
+in quotation marks, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed validate headers -t &#39;loc&#39; -f /path/to/location.csv
+/path/to/location.csv:1:870: &quot;SubArea&quot; is not a valid column in any OED schema: OED error: E303 Not a valid column in any OED schema
+
+/path/to/location.csv:1:870: &quot;SubArea&quot; is an invalid column in the OED &quot;loc&quot; schema: OED error: E304 Not a valid column in the given OED schema
+
+/path/to/location.csv:1:-1: &quot;LocCurrency&quot; is a required column in an OED &quot;loc&quot; file but is missing: OED error: E331 Missing required column in file
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="searching-for-columns-and-sampling-column-data">
+<h2>Searching for Columns and Sampling Column Data<a class="headerlink" href="#searching-for-columns-and-sampling-column-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="searching-for-columns">
+<h3>Searching for Columns<a class="headerlink" href="#searching-for-columns" title="Permalink to this headline">¶</a></h3>
+<p>Columns can be queried using <code class="docutils literal notranslate"><span class="pre">oed</span> <span class="pre">columns</span> <span class="pre">info</span></code> - results are always
+printed to console as JSON, in ascending alphabetic order by (case
+insensitive) header.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>usage: oed columns info [-h] [-t SCHEMA_TYPES] [-m COLUMN_HEADERS]
+                        [-d DESCRIPTIONS] [-r] [-n] [-e DEFAULTS]
+                        [-p PYTHON_DTYPES] [-s SQL_DTYPES] [-y NUMPY_DTYPES]
+                        [-a]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t SCHEMA_TYPES, --schema-types SCHEMA_TYPES
+                        List of file schema types; must be one of &quot;acc&quot;,
+                        &quot;loc&quot;, &quot;reinsinfo&quot;, &quot;reinsscope&quot; - a comma-separated
+                        string enclosed in quotation marks
+  -m COLUMN_HEADERS, --column-headers COLUMN_HEADERS
+                        List of column headers or header substrings - a comma-
+                        separated string enclosed in quotation marks
+  -d DESCRIPTIONS, --descriptions DESCRIPTIONS
+                        List of column descriptions or description substrings
+                        - a comma-separated string enclosed in quotation marks
+  -r, --required        Is the column a required column in the file?
+  -n, --nonnull         Is the column required not to have any null values?
+  -e DEFAULTS, --defaults DEFAULTS
+                        List of default values - a comma-separated string
+                        enclosed in quotation marks
+  -p PYTHON_DTYPES, --python-dtypes PYTHON_DTYPES
+                        List of Python data types - only &quot;int&quot;, &quot;float&quot;, &quot;str&quot;
+                        are supported; a comma-separated string enclosed in
+                        quotation marks
+  -s SQL_DTYPES, --sql-dtypes SQL_DTYPES
+                        List of SQL data types - a comma-separated string
+                        enclosed in quotation marks
+  -y NUMPY_DTYPES, --numpy-dtypes NUMPY_DTYPES
+                        List of Numpy data types - a comma-separated string
+                        enclosed in quotation marks
+  -a, --headers-only    Only return the column headers
+</pre></div>
+</div>
+<p>Here are four queries that illustrate the possibilities of the
+<code class="docutils literal notranslate"><span class="pre">oed</span> <span class="pre">columns</span> <span class="pre">info</span></code>.</p>
+<ol class="arabic">
+<li><p>Display full column information for the <code class="docutils literal notranslate"><span class="pre">BuildingTIV</span></code> and <code class="docutils literal notranslate"><span class="pre">BITIV</span></code>
+columns only (header names are case insensitive in the query).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed columns info -m &#39;buildingtiv, bitiv&#39;
+[
+    {
+        &quot;blank&quot;: false,
+        &quot;column_range&quot;: [
+            0.0,
+            3.4e+38
+        ],
+        &quot;column_sampling&quot;: &quot;column range&quot;,
+        &quot;column_validation&quot;: &quot;column range&quot;,
+        &quot;default&quot;: null,
+        &quot;desc&quot;: &quot;Business Interruption (BI) Total Insured Value&quot;,
+        &quot;dtype_range&quot;: [
+            -3.4e+38,
+            3.4e+38
+        ],
+        &quot;entity&quot;: &quot;Loc&quot;,
+        &quot;field_name&quot;: &quot;BITIV&quot;,
+        &quot;numpy_dtype&quot;: &quot;float32&quot;,
+        &quot;oed_db_field_name&quot;: null,
+        &quot;oed_db_table&quot;: &quot;Locations&quot;,
+        &quot;py_dtype&quot;: &quot;float&quot;,
+        &quot;required&quot;: &quot;R&quot;,
+        &quot;secmod&quot;: null,
+        &quot;sql_dtype&quot;: &quot;real&quot;
+    },
+    {
+        &quot;blank&quot;: false,
+        &quot;column_range&quot;: [
+            0.0,
+            3.4e+38
+        ],
+        &quot;column_sampling&quot;: &quot;column range&quot;,
+        &quot;column_validation&quot;: &quot;column range&quot;,
+        &quot;default&quot;: null,
+        &quot;desc&quot;: &quot;Building Total Insured Value&quot;,
+        &quot;dtype_range&quot;: [
+            -3.4e+38,
+            3.4e+38
+        ],
+        &quot;entity&quot;: &quot;Loc&quot;,
+        &quot;field_name&quot;: &quot;BuildingTIV&quot;,
+        &quot;numpy_dtype&quot;: &quot;float32&quot;,
+        &quot;oed_db_field_name&quot;: null,
+        &quot;oed_db_table&quot;: &quot;Locations&quot;,
+        &quot;py_dtype&quot;: &quot;float&quot;,
+        &quot;required&quot;: &quot;R&quot;,
+        &quot;secmod&quot;: null,
+        &quot;sql_dtype&quot;: &quot;real&quot;
+    }
+]
+</pre></div>
+</div>
+<p><strong>Note</strong>: the schema type (specified using option <code class="docutils literal notranslate"><span class="pre">-t</span></code>) isn’t
+required if the columns you’re looking are unique.</p>
+</li>
+<li><p>Display the headers only of all columns in the <code class="docutils literal notranslate"><span class="pre">loc</span></code> file schema
+with the header substring <code class="docutils literal notranslate"><span class="pre">6all</span></code> and with the <code class="docutils literal notranslate"><span class="pre">int</span></code> or <code class="docutils literal notranslate"><span class="pre">float</span></code>
+(Python) data type.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed columns info -t &#39;loc&#39; -m &#39;6all&#39; -p &#39;int, float&#39; --headers-only
+[
+    &quot;LocDed6All (Loc)&quot;,
+    &quot;LocDedCode6All (Loc)&quot;,
+    &quot;LocDedType6All (Loc)&quot;,
+    &quot;LocLimit6All (Loc)&quot;,
+    &quot;LocLimitCode6All (Loc)&quot;,
+    &quot;LocLimitType6All (Loc)&quot;,
+    &quot;LocMaxDed6All (Loc)&quot;,
+    &quot;LocMinDed6All (Loc)&quot;
+]
+</pre></div>
+</div>
+<p><strong>Note 1</strong>: as some OED column headers indicate coverage type at the tail end of the header (<code class="docutils literal notranslate"><span class="pre">1building</span></code>, <code class="docutils literal notranslate"><span class="pre">2other</span></code>, <code class="docutils literal notranslate"><span class="pre">3contents</span></code>, <code class="docutils literal notranslate"><span class="pre">4bi</span></code>, <code class="docutils literal notranslate"><span class="pre">5pd</span></code>, <code class="docutils literal notranslate"><span class="pre">6all</span></code>), the header substring option <code class="docutils literal notranslate"><span class="pre">-m</span></code> can be used, as above, to search for columns based on coverage type.</p>
+<p><strong>Note 2</strong>: The schema type is displayed in parentheses for clarity, as some columns like <code class="docutils literal notranslate"><span class="pre">LocNumber</span></code> and <code class="docutils literal notranslate"><span class="pre">AccNumber</span></code> can be present in different file types (<code class="docutils literal notranslate"><span class="pre">LocNumber</span></code> can occur in a <code class="docutils literal notranslate"><span class="pre">loc</span></code> or <code class="docutils literal notranslate"><span class="pre">reinsscope</span></code> file, and <code class="docutils literal notranslate"><span class="pre">AccNumber</span></code> can occur in a <code class="docutils literal notranslate"><span class="pre">loc</span></code> or <code class="docutils literal notranslate"><span class="pre">acc</span></code> or <code class="docutils literal notranslate"><span class="pre">reinsscope</span></code> file).</p>
+</li>
+<li><p>Display the headers only of all required and non-null columns in the
+<code class="docutils literal notranslate"><span class="pre">acc</span></code> file schema.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed columns info -t &#39;acc&#39; --required --nonnull --headers-only
+[
+    &quot;AccCurrency (Acc)&quot;,
+    &quot;AccNumber (Acc)&quot;,
+    &quot;PolNumber (Acc)&quot;,
+    &quot;PolPerilsCovered (Acc)&quot;,
+    &quot;PortNumber (Acc)&quot;
+]
+</pre></div>
+</div>
+</li>
+<li><p>Display the headers only of all columns in all the schemas whose
+descriptions contain the keyword “percent”, i.e. we’re looking here
+for all percentage-valued columns.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed columns info -d &#39;percent&#39; --headers-only
+[
+    &quot;BrickVeneer (Loc)&quot;,
+    &quot;BuildingExteriorOpening (Loc)&quot;,
+    &quot;CededPercent (ReinsScope, ReinsInfo)&quot;,
+    &quot;DeemedPercentPlaced (ReinsInfo)&quot;,
+    &quot;LocParticipation (Loc)&quot;,
+    &quot;PercentComplete (Loc)&quot;,
+    &quot;PercentSprinklered (Loc)&quot;,
+    &quot;PlacedPercent (ReinsInfo)&quot;,
+    &quot;ScaleFactor (Acc)&quot;,
+    &quot;SurgeLeakage (Loc)&quot;,
+    &quot;TreatyShare (ReinsInfo)&quot;
+]
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="sampling-column-data">
+<h3>Sampling Column Data<a class="headerlink" href="#sampling-column-data" title="Permalink to this headline">¶</a></h3>
+<p>Column data can be sampled using <code class="docutils literal notranslate"><span class="pre">oed</span> <span class="pre">columns</span> <span class="pre">sample</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed columns sample --help
+usage: oed columns sample [-h] -t SCHEMA_TYPE -m COLUMN_HEADER
+                          [-n SAMPLE_SIZE]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -t SCHEMA_TYPE, --schema-type SCHEMA_TYPE
+                        List of file schema types; must be one of &quot;acc&quot;,
+                        &quot;loc&quot;, &quot;reinsinfo&quot;, &quot;reinsscope&quot; - a comma-separated
+                        string enclosed in quotation marks
+  -m COLUMN_HEADER, --column-header COLUMN_HEADER
+                        Column header
+  -n SAMPLE_SIZE, --sample-size SAMPLE_SIZE
+                        Sample size
+</pre></div>
+</div>
+<p>Here are three examples.</p>
+<ol class="arabic">
+<li><p>Sampling reins. peril code sequences</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed columns sample -t &#39;loc&#39; -m &#39;locperil&#39;
+[
+    &quot;BBF;QEQ;WSS;ZIC&quot;,
+    &quot;ORF;QEQ;QLS;QQ1&quot;,
+    &quot;AA1;BB1;QEQ;ZST&quot;,
+    &quot;BB1;MNT;QLS;ZIC&quot;,
+    &quot;MTR;QSL;WTC;ZZ1&quot;,
+    &quot;BSK;QSL;WTC;WW2&quot;,
+    &quot;BSK;QEQ;QSL;WW2&quot;,
+    &quot;MNT;QEQ;XX1;ZST&quot;,
+    &quot;BFR;OO1;WEC;XX1&quot;,
+    &quot;QQ1;WW1;XX1;ZIC&quot;
+]
+</pre></div>
+</div>
+<p><strong>Note 1</strong>: sample size can be specified using the <code class="docutils literal notranslate"><span class="pre">-n</span></code> option, which has the default value of <code class="docutils literal notranslate"><span class="pre">10</span></code>.</p>
+<p><strong>Note 2</strong>: Column sampling is based on the values profile that describes properties of OED data entities, not on columns defined in the schemas. This means that sampling a column whose values fall in the same subcategory in the values profile as that of another column will produce similar results, e.g. sampling <code class="docutils literal notranslate"><span class="pre">LocPeril</span></code> will produce similar results to sampling <code class="docutils literal notranslate"><span class="pre">AccPeril</span></code> or <code class="docutils literal notranslate"><span class="pre">ReinsPeril</span></code>, because all three are associated with the subcategory of <cite>peril codes</cite> in the values profile.</p>
+</li>
+<li><p>Sampling reins. info. currency codes.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed columns sample -t &#39;reinsinfo&#39; -m &#39;reinscurrency&#39;
+[
+    &quot;MOP&quot;,
+    &quot;SUR&quot;,
+    &quot;YER&quot;,
+    &quot;HKD&quot;,
+    &quot;ROL&quot;,
+    &quot;JOD&quot;,
+    &quot;RUR&quot;,
+    &quot;GHS&quot;,
+    &quot;MNT&quot;,
+    &quot;BYB&quot;
+]
+</pre></div>
+</div>
+</li>
+<li><p>Sampling loc. occupancy codes.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv2) $ oed columns sample -t &#39;loc&#39; -m &#39;occupancycode&#39;
+[
+    3643,
+    2696,
+    3753,
+    3743,
+    1126,
+    1382,
+    2608,
+    3951,
+    2392,
+    2163
+]
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">oedtools</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation-and-requirements.html">Installation and Requirements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#file-validation">File Validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#searching-for-columns-and-sampling-column-data">Searching for Columns and Sampling Column Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Module Documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation-and-requirements.html" title="previous chapter">Installation and Requirements</a></li>
+      <li>Next: <a href="modules.html" title="next chapter">Module Documentation</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Sandeep Murthy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/features.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

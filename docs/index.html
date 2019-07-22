@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>oedtools docs &#8212; oedtools 0.1.0 documentation</title>
+    <title>oedtools Documentation &#8212; oedtools 0.1.0 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -14,7 +14,7 @@
     <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Module Documentation" href="modules.html" />
+    <link rel="next" title="Installation and Requirements" href="installation-and-requirements.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -31,12 +31,28 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="oedtools-docs">
-<h1>oedtools docs<a class="headerlink" href="#oedtools-docs" title="Permalink to this headline">¶</a></h1>
-<p><cite>oedtools</cite> is a command-line validation toolkit, and a collection of re-usable libraries, for the <a class="reference external" href="https://github.com/Simplitium/OED">Simplitium OED</a> (re)insurance exposure data format.</p>
+  <div class="section" id="oedtools-documentation">
+<h1>oedtools Documentation<a class="headerlink" href="#oedtools-documentation" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">oedtools</span></code> is a command-line validation and query toolkit for the <a class="reference external" href="https://github.com/Simplitium/OED">Simplitium OED</a> (re)insurance exposure data format.</p>
+<p>The main features currently include</p>
+<ul class="simple">
+<li><p>validation of OED account (<code class="docutils literal notranslate"><span class="pre">acc</span></code>), location (<code class="docutils literal notranslate"><span class="pre">loc</span></code>), reinsurance info. (<code class="docutils literal notranslate"><span class="pre">reinsinfo</span></code>) and reinsurance scope (<code class="docutils literal notranslate"><span class="pre">reinsscope</span></code>) input CSV files</p></li>
+<li><p>searching for columns with required properties - headers (column names) containing certain substrings, column descriptions containing keywords, columns with certain data types, default values, required, nonnull etc.</p></li>
+<li><p>sampling any given column for randomly generated data consistent with the column range or data type range or a specific column validation function</p></li>
+</ul>
+<p>Future features include</p>
+<ul class="simple">
+<li><p>searching for information about the OED data entities underlying the column data - location properties such as latitudes and longitudes, occupancy and construction codes, country codes, currency codes, peril codes, types and codes for deductibles and limits, etc.</p></li>
+</ul>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="installation-and-requirements.html">Installation and Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="features.html#file-validation">File Validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="features.html#searching-for-columns-and-sampling-column-data">Searching for Columns and Sampling Column Data</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Module Documentation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules.html#module-oedtools.utils"><code class="docutils literal notranslate"><span class="pre">oedtools.utils</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules.html#module-oedtools.values"><code class="docutils literal notranslate"><span class="pre">oedtools.values</span></code></a></li>
@@ -54,9 +70,9 @@
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+<li><p>:ref:<code class="docutils literal notranslate"><span class="pre">genindex</span></code></p></li>
+<li><p>:ref:<code class="docutils literal notranslate"><span class="pre">modindex</span></code></p></li>
+<li><p>:ref:<code class="docutils literal notranslate"><span class="pre">search</span></code></p></li>
 </ul>
 </div>
 
@@ -79,6 +95,8 @@
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="installation-and-requirements.html">Installation and Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="modules.html">Module Documentation</a></li>
 </ul>
 
@@ -86,7 +104,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="modules.html" title="next chapter">Module Documentation</a></li>
+      <li>Next: <a href="installation-and-requirements.html" title="next chapter">Installation and Requirements</a></li>
   </ul></li>
 </ul>
 </div>
