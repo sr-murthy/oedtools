@@ -28,7 +28,7 @@ def get_version():
     TXT file named ``schema_version.txt`` located in the ``oedtools/schema``
     subfolder.
     """
-    with io.open(os.path.join(SETUP_DIR, 'oedtools', 'schema', 'schema_version.txt')) as f:
+    with io.open(os.path.join(SETUP_DIR, 'oedtools', '__init__.py')) as f:
         return f.readlines()[0].strip()
 
 version = get_version()
