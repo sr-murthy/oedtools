@@ -142,7 +142,7 @@ setup(
         'Intended Audience :: Financial and Insurance Industry',
         'Intended Audience :: Science/Research',
         'License :: Public Domain',
-        'License :: OSI Approved :: GNU General Public License (GPL) v. 3',
+        'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.6',
