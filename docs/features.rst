@@ -165,8 +165,7 @@ insensitive) header.
                            enclosed in quotation marks
      -a, --headers-only    Only return the column headers
 
-Here are four queries that illustrate the possibilities of the
-``oed columns info``.
+Here are four queries that illustrate the possibilities of ``oed columns info``.
 
 1. Display full column information for the ``BuildingTIV`` and ``BITIV``
    columns only (header names are case insensitive in the query).
