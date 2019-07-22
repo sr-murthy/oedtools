@@ -2,7 +2,7 @@
 
 # oedtools
 
-`oedtools` is a command-line validation and query toolkit for the <a href="https://github.com/Simplitium/OED" target="_blank">Simplitium OED</a> (re)insurance exposure data format.
+`oedtools` is a command-line OED file validation and query toolkit for the <a href="https://github.com/Simplitium/OED" target="_blank">Simplitium OED</a> (re)insurance exposure data format.
 
 The main features currently include
 
