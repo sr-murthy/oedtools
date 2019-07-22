@@ -1,6 +1,7 @@
 import glob
 import io
 import os
+import re
 import shutil
 import sys
 
@@ -24,12 +25,10 @@ def get_install_requirements():
 
 def get_version():
     """
-    Package version is determined by the OED master schema version, which is a
-    TXT file named ``schema_version.txt`` located in the ``oedtools/schema``
-    subfolder.
+    Return package version as listed in `__version__` in `init.py`.
     """
-    with io.open(os.path.join(SETUP_DIR, 'oedtools', '__init__.py')) as f:
-        return f.readlines()[0].strip()
+    with io.open(os.path.join(SETUP_DIR, 'oedtools', '__init__.py'), encoding='utf-8') as f:
+        return re.search('__version__ = [\'"]([^\'"]+)[\'"]', f.read()).group(1)
 
 version = get_version()
 requirements = get_install_requirements()
@@ -123,7 +122,7 @@ setup(
     },
     scripts=['oed'],
     license='GPL 3',
-    description='Command-line validation toolkit, and re-usable libraries, for the Simplitium OED (re)insurance exposure data format',
+    description='Command-line OED file validation and query toolkit for the Simplitium OED (re)insurance exposure data format',
     long_description=readme,
     long_description_content_type='text/markdown',
     url='https://github.com/sr-murthy/oedtools',
