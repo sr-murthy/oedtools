@@ -1,0 +1,437 @@
+group,key,id,desc,column_name_regex,validation
+currencies,afghanistan/afghani,AFN,afghanistan - afghani,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ã…land islands/euro,EUR,ã…land islands - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,albania/lek,ALL,albania - lek,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,algeria/algerian dinar,DZD,algeria - algerian dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,american samoa/us dollar,USD,american samoa - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,andorra/euro,EUR,andorra - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,angola/kwanza,AOA,angola - kwanza,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,anguilla/east caribbean dollar,XCD,anguilla - east caribbean dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,antarctica/no universal currency,,antarctica - no universal currency,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,antigua and barbuda/east caribbean dollar,XCD,antigua and barbuda - east caribbean dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,argentina/argentine peso,ARS,argentina - argentine peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,armenia/armenian dram,AMD,armenia - armenian dram,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,aruba/aruban florin,AWG,aruba - aruban florin,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,australia/australian dollar,AUD,australia - australian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,austria/euro,EUR,austria - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,azerbaijan/azerbaijan manat,AZN,azerbaijan - azerbaijan manat,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bahamas (the)/bahamian dollar,BSD,bahamas (the) - bahamian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bahrain/bahraini dinar,BHD,bahrain - bahraini dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bangladesh/taka,BDT,bangladesh - taka,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,barbados/barbados dollar,BBD,barbados - barbados dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,belarus/belarusian ruble,BYN,belarus - belarusian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,belgium/euro,EUR,belgium - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,belize/belize dollar,BZD,belize - belize dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,benin/cfa franc bceao,XOF,benin - cfa franc bceao,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bermuda/bermudian dollar,BMD,bermuda - bermudian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bhutan/indian rupee,INR,bhutan - indian rupee,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bhutan/ngultrum,BTN,bhutan - ngultrum,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bolivia (plurinational state of)/boliviano,BOB,bolivia (plurinational state of) - boliviano,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bolivia (plurinational state of)/mvdol,BOV,bolivia (plurinational state of) - mvdol,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,"bonaire, sint eustatius and saba/us dollar",USD,"bonaire, sint eustatius and saba - us dollar",(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bosnia and herzegovina/convertible mark,BAM,bosnia and herzegovina - convertible mark,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,botswana/pula,BWP,botswana - pula,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bouvet island/norwegian krone,NOK,bouvet island - norwegian krone,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,brazil/brazilian real,BRL,brazil - brazilian real,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,british indian ocean territory (the)/us dollar,USD,british indian ocean territory (the) - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,brunei darussalam/brunei dollar,BND,brunei darussalam - brunei dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bulgaria/bulgarian lev,BGN,bulgaria - bulgarian lev,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,burkina faso/cfa franc bceao,XOF,burkina faso - cfa franc bceao,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,burundi/burundi franc,BIF,burundi - burundi franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cabo verde/cabo verde escudo,CVE,cabo verde - cabo verde escudo,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cambodia/riel,KHR,cambodia - riel,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cameroon/cfa franc beac,XAF,cameroon - cfa franc beac,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,canada/canadian dollar,CAD,canada - canadian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cayman islands (the)/cayman islands dollar,KYD,cayman islands (the) - cayman islands dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,central african republic (the)/cfa franc beac,XAF,central african republic (the) - cfa franc beac,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,chad/cfa franc beac,XAF,chad - cfa franc beac,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,chile/chilean peso,CLP,chile - chilean peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,chile/unidad de fomento,CLF,chile - unidad de fomento,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,china/yuan renminbi,CNY,china - yuan renminbi,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,christmas island/australian dollar,AUD,christmas island - australian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cocos (keeling) islands (the)/australian dollar,AUD,cocos (keeling) islands (the) - australian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,colombia/colombian peso,COP,colombia - colombian peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,colombia/unidad de valor real,COU,colombia - unidad de valor real,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,comoros (the)/comorian franc,KMF,comoros (the) - comorian franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,congo (the democratic republic of the)/congolese franc,CDF,congo (the democratic republic of the) - congolese franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,congo (the)/cfa franc beac,XAF,congo (the) - cfa franc beac,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cook islands (the)/new zealand dollar,NZD,cook islands (the) - new zealand dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,costa rica/costa rican colon,CRC,costa rica - costa rican colon,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cã”te d'ivoire/cfa franc bceao,XOF,cã”te d'ivoire - cfa franc bceao,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,croatia/kuna,HRK,croatia - kuna,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cuba/cuban peso,CUP,cuba - cuban peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cuba/peso convertible,CUC,cuba - peso convertible,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,curaã‡ao/netherlands antillean guilder,ANG,curaã‡ao - netherlands antillean guilder,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cyprus/euro,EUR,cyprus - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,czechia/czech koruna,CZK,czechia - czech koruna,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,denmark/danish krone,DKK,denmark - danish krone,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,djibouti/djibouti franc,DJF,djibouti - djibouti franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,dominica/east caribbean dollar,XCD,dominica - east caribbean dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,dominican republic (the)/dominican peso,DOP,dominican republic (the) - dominican peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ecuador/us dollar,USD,ecuador - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,egypt/egyptian pound,EGP,egypt - egyptian pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,el salvador/el salvador colon,SVC,el salvador - el salvador colon,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,el salvador/us dollar,USD,el salvador - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,equatorial guinea/cfa franc beac,XAF,equatorial guinea - cfa franc beac,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,eritrea/nakfa,ERN,eritrea - nakfa,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,estonia/euro,EUR,estonia - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ethiopia/ethiopian birr,ETB,ethiopia - ethiopian birr,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,european union/euro,EUR,european union - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,falkland islands (the) [malvinas]/falkland islands pound,FKP,falkland islands (the) [malvinas] - falkland islands pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,faroe islands (the)/danish krone,DKK,faroe islands (the) - danish krone,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,fiji/fiji dollar,FJD,fiji - fiji dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,finland/euro,EUR,finland - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,france/euro,EUR,france - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,french guiana/euro,EUR,french guiana - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,french polynesia/cfp franc,XPF,french polynesia - cfp franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,french southern territories (the)/euro,EUR,french southern territories (the) - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,gabon/cfa franc beac,XAF,gabon - cfa franc beac,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,gambia (the)/dalasi,GMD,gambia (the) - dalasi,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,georgia/lari,GEL,georgia - lari,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,germany/euro,EUR,germany - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ghana/ghana cedi,GHS,ghana - ghana cedi,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,gibraltar/gibraltar pound,GIP,gibraltar - gibraltar pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,greece/euro,EUR,greece - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,greenland/danish krone,DKK,greenland - danish krone,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,grenada/east caribbean dollar,XCD,grenada - east caribbean dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guadeloupe/euro,EUR,guadeloupe - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guam/us dollar,USD,guam - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guatemala/quetzal,GTQ,guatemala - quetzal,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guernsey/pound sterling,GBP,guernsey - pound sterling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guinea/guinean franc,GNF,guinea - guinean franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guinea-bissau/cfa franc bceao,XOF,guinea-bissau - cfa franc bceao,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guyana/guyana dollar,GYD,guyana - guyana dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,haiti/gourde,HTG,haiti - gourde,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,haiti/us dollar,USD,haiti - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,heard island and mcdonald islands/australian dollar,AUD,heard island and mcdonald islands - australian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,holy see (the)/euro,EUR,holy see (the) - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,honduras/lempira,HNL,honduras - lempira,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,hong kong/hong kong dollar,HKD,hong kong - hong kong dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,hungary/forint,HUF,hungary - forint,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,iceland/iceland krona,ISK,iceland - iceland krona,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,india/indian rupee,INR,india - indian rupee,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,indonesia/rupiah,IDR,indonesia - rupiah,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,international monetary fund (imf)/sdr (special drawing right),XDR,international monetary fund (imf) - sdr (special drawing right),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,iran (islamic republic of)/iranian rial,IRR,iran (islamic republic of) - iranian rial,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,iraq/iraqi dinar,IQD,iraq - iraqi dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ireland/euro,EUR,ireland - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,isle of man/pound sterling,GBP,isle of man - pound sterling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,israel/new israeli sheqel,ILS,israel - new israeli sheqel,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,italy/euro,EUR,italy - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,jamaica/jamaican dollar,JMD,jamaica - jamaican dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,japan/yen,JPY,japan - yen,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,jersey/pound sterling,GBP,jersey - pound sterling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,jordan/jordanian dinar,JOD,jordan - jordanian dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,kazakhstan/tenge,KZT,kazakhstan - tenge,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,kenya/kenyan shilling,KES,kenya - kenyan shilling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,kiribati/australian dollar,AUD,kiribati - australian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,korea (the democratic peopleâ€™s republic of)/north korean won,KPW,korea (the democratic peopleâ€™s republic of) - north korean won,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,korea (the republic of)/won,KRW,korea (the republic of) - won,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,kuwait/kuwaiti dinar,KWD,kuwait - kuwaiti dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,kyrgyzstan/som,KGS,kyrgyzstan - som,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lao peopleâ€™s democratic republic (the)/lao kip,LAK,lao peopleâ€™s democratic republic (the) - lao kip,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,latvia/euro,EUR,latvia - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lebanon/lebanese pound,LBP,lebanon - lebanese pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lesotho/loti,LSL,lesotho - loti,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lesotho/rand,ZAR,lesotho - rand,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,liberia/liberian dollar,LRD,liberia - liberian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,libya/libyan dinar,LYD,libya - libyan dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,liechtenstein/swiss franc,CHF,liechtenstein - swiss franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lithuania/euro,EUR,lithuania - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,luxembourg/euro,EUR,luxembourg - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,macao/pataca,MOP,macao - pataca,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,macedonia (the former yugoslav republic of)/denar,MKD,macedonia (the former yugoslav republic of) - denar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,madagascar/malagasy ariary,MGA,madagascar - malagasy ariary,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,malawi/malawi kwacha,MWK,malawi - malawi kwacha,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,malaysia/malaysian ringgit,MYR,malaysia - malaysian ringgit,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,maldives/rufiyaa,MVR,maldives - rufiyaa,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mali/cfa franc bceao,XOF,mali - cfa franc bceao,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,malta/euro,EUR,malta - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,marshall islands (the)/us dollar,USD,marshall islands (the) - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,martinique/euro,EUR,martinique - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mauritania/ouguiya,MRO,mauritania - ouguiya,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mauritius/mauritius rupee,MUR,mauritius - mauritius rupee,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mayotte/euro,EUR,mayotte - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,member countries of the african development bank group/adb unit of account,XUA,member countries of the african development bank group - adb unit of account,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mexico/mexican peso,MXN,mexico - mexican peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mexico/mexican unidad de inversion (udi),MXV,mexico - mexican unidad de inversion (udi),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,micronesia (federated states of)/us dollar,USD,micronesia (federated states of) - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,moldova (the republic of)/moldovan leu,MDL,moldova (the republic of) - moldovan leu,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,monaco/euro,EUR,monaco - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mongolia/tugrik,MNT,mongolia - tugrik,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,montenegro/euro,EUR,montenegro - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,montserrat/east caribbean dollar,XCD,montserrat - east caribbean dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,morocco/moroccan dirham,MAD,morocco - moroccan dirham,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mozambique/mozambique metical,MZN,mozambique - mozambique metical,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,myanmar/kyat,MMK,myanmar - kyat,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,namibia/namibia dollar,NAD,namibia - namibia dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,namibia/rand,ZAR,namibia - rand,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,nauru/australian dollar,AUD,nauru - australian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,nepal/nepalese rupee,NPR,nepal - nepalese rupee,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,netherlands (the)/euro,EUR,netherlands (the) - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,new caledonia/cfp franc,XPF,new caledonia - cfp franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,new zealand/new zealand dollar,NZD,new zealand - new zealand dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,nicaragua/cordoba oro,NIO,nicaragua - cordoba oro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,niger (the)/cfa franc bceao,XOF,niger (the) - cfa franc bceao,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,nigeria/naira,NGN,nigeria - naira,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,niue/new zealand dollar,NZD,niue - new zealand dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,norfolk island/australian dollar,AUD,norfolk island - australian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,northern mariana islands (the)/us dollar,USD,northern mariana islands (the) - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,norway/norwegian krone,NOK,norway - norwegian krone,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,oman/rial omani,OMR,oman - rial omani,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,pakistan/pakistan rupee,PKR,pakistan - pakistan rupee,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,palau/us dollar,USD,palau - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,"palestine, state of/no universal currency",,"palestine, state of - no universal currency",(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,panama/balboa,PAB,panama - balboa,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,panama/us dollar,USD,panama - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,papua new guinea/kina,PGK,papua new guinea - kina,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,paraguay/guarani,PYG,paraguay - guarani,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,peru/sol,PEN,peru - sol,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,philippines (the)/philippine piso,PHP,philippines (the) - philippine piso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,pitcairn/new zealand dollar,NZD,pitcairn - new zealand dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,poland/zloty,PLN,poland - zloty,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,portugal/euro,EUR,portugal - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,puerto rico/us dollar,USD,puerto rico - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,qatar/qatari rial,QAR,qatar - qatari rial,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,rã‰union/euro,EUR,rã‰union - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,romania/romanian leu,RON,romania - romanian leu,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,russian federation (the)/russian ruble,RUB,russian federation (the) - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,rwanda/rwanda franc,RWF,rwanda - rwanda franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saint barthã‰lemy/euro,EUR,saint barthã‰lemy - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,"saint helena, ascension and tristan da cunha/saint helena pound",SHP,"saint helena, ascension and tristan da cunha - saint helena pound",(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saint kitts and nevis/east caribbean dollar,XCD,saint kitts and nevis - east caribbean dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saint lucia/east caribbean dollar,XCD,saint lucia - east caribbean dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saint martin (french part)/euro,EUR,saint martin (french part) - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saint pierre and miquelon/euro,EUR,saint pierre and miquelon - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saint vincent and the grenadines/east caribbean dollar,XCD,saint vincent and the grenadines - east caribbean dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,samoa/tala,WST,samoa - tala,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,san marino/euro,EUR,san marino - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,sao tome and principe/dobra,STD,sao tome and principe - dobra,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saudi arabia/saudi riyal,SAR,saudi arabia - saudi riyal,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,senegal/cfa franc bceao,XOF,senegal - cfa franc bceao,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,serbia/serbian dinar,RSD,serbia - serbian dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,seychelles/seychelles rupee,SCR,seychelles - seychelles rupee,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,sierra leone/leone,SLL,sierra leone - leone,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,singapore/singapore dollar,SGD,singapore - singapore dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,sint maarten (dutch part)/netherlands antillean guilder,ANG,sint maarten (dutch part) - netherlands antillean guilder,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,"sistema unitario de compensacion regional de pagos ""sucre""/sucre",XSU,"sistema unitario de compensacion regional de pagos ""sucre"" - sucre",(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,slovakia/euro,EUR,slovakia - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,slovenia/euro,EUR,slovenia - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,solomon islands/solomon islands dollar,SBD,solomon islands - solomon islands dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,somalia/somali shilling,SOS,somalia - somali shilling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,south africa/rand,ZAR,south africa - rand,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,south georgia and the south sandwich islands/no universal currency,,south georgia and the south sandwich islands - no universal currency,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,south sudan/south sudanese pound,SSP,south sudan - south sudanese pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,spain/euro,EUR,spain - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,sri lanka/sri lanka rupee,LKR,sri lanka - sri lanka rupee,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,sudan (the)/sudanese pound,SDG,sudan (the) - sudanese pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,suriname/surinam dollar,SRD,suriname - surinam dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,svalbard and jan mayen/norwegian krone,NOK,svalbard and jan mayen - norwegian krone,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,swaziland/lilangeni,SZL,swaziland - lilangeni,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,sweden/swedish krona,SEK,sweden - swedish krona,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,switzerland/swiss franc,CHF,switzerland - swiss franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,switzerland/wir euro,CHE,switzerland - wir euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,switzerland/wir franc,CHW,switzerland - wir franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,syrian arab republic/syrian pound,SYP,syrian arab republic - syrian pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,taiwan (province of china)/new taiwan dollar,TWD,taiwan (province of china) - new taiwan dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,tajikistan/somoni,TJS,tajikistan - somoni,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,"tanzania, united republic of/tanzanian shilling",TZS,"tanzania, united republic of - tanzanian shilling",(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,thailand/baht,THB,thailand - baht,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,timor-leste/us dollar,USD,timor-leste - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,togo/cfa franc bceao,XOF,togo - cfa franc bceao,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,tokelau/new zealand dollar,NZD,tokelau - new zealand dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,tonga/paâ€™anga,TOP,tonga - paâ€™anga,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,trinidad and tobago/trinidad and tobago dollar,TTD,trinidad and tobago - trinidad and tobago dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,tunisia/tunisian dinar,TND,tunisia - tunisian dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,turkey/turkish lira,TRY,turkey - turkish lira,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,turkmenistan/turkmenistan new manat,TMT,turkmenistan - turkmenistan new manat,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,turks and caicos islands (the)/us dollar,USD,turks and caicos islands (the) - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,tuvalu/australian dollar,AUD,tuvalu - australian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,uganda/uganda shilling,UGX,uganda - uganda shilling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ukraine/hryvnia,UAH,ukraine - hryvnia,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,united arab emirates (the)/uae dirham,AED,united arab emirates (the) - uae dirham,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,united kingdom of great britain and northern ireland (the)/pound sterling,GBP,united kingdom of great britain and northern ireland (the) - pound sterling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,united states minor outlying islands (the)/us dollar,USD,united states minor outlying islands (the) - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,united states of america (the)/us dollar,USD,united states of america (the) - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,united states of america (the)/us dollar (next day),USN,united states of america (the) - us dollar (next day),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,uruguay/peso uruguayo,UYU,uruguay - peso uruguayo,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,uruguay/uruguay peso en unidades indexadas (uruiurui),UYI,uruguay - uruguay peso en unidades indexadas (uruiurui),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,uzbekistan/uzbekistan sum,UZS,uzbekistan - uzbekistan sum,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,vanuatu/vatu,VUV,vanuatu - vatu,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,venezuela (bolivarian republic of)/bolã­var,VEF,venezuela (bolivarian republic of) - bolã­var,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,viet nam/dong,VND,viet nam - dong,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,virgin islands (british)/us dollar,USD,virgin islands (british) - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,virgin islands (u.s.)/us dollar,USD,virgin islands (u.s.) - us dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,wallis and futuna/cfp franc,XPF,wallis and futuna - cfp franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,western sahara/moroccan dirham,MAD,western sahara - moroccan dirham,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,yemen/yemeni rial,YER,yemen - yemeni rial,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zambia/zambian kwacha,ZMW,zambia - zambian kwacha,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zimbabwe/zimbabwe dollar,ZWL,zimbabwe - zimbabwe dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz01_bond markets unit european_eurco/bond markets unit european composite unit (eurco),XBA,zz01_bond markets unit european_eurco - bond markets unit european composite unit (eurco),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz02_bond markets unit european_emu-6/bond markets unit european monetary unit (e.m.u.-6),XBB,zz02_bond markets unit european_emu-6 - bond markets unit european monetary unit (e.m.u.-6),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz03_bond markets unit european_eua-9/bond markets unit european unit of account 9 (e.u.a.-9),XBC,zz03_bond markets unit european_eua-9 - bond markets unit european unit of account 9 (e.u.a.-9),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz04_bond markets unit european_eua-17/bond markets unit european unit of account 17 (e.u.a.-17),XBD,zz04_bond markets unit european_eua-17 - bond markets unit european unit of account 17 (e.u.a.-17),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz06_testing_code/codes specifically reserved for testing purposes,XTS,zz06_testing_code - codes specifically reserved for testing purposes,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz07_no_currency/the codes assigned for transactions where no currency is involved,XXX,zz07_no_currency - the codes assigned for transactions where no currency is involved,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz08_gold/gold,XAU,zz08_gold - gold,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz09_palladium/palladium,XPD,zz09_palladium - palladium,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz10_platinum/platinum,XPT,zz10_platinum - platinum,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz11_silver/silver,XAG,zz11_silver - silver,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,afghanistan/afghani,AFA,afghanistan - afghani,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ãƒâ€¦land islands/markka,FIM,ãƒâ€¦land islands - markka,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,albania/old lek,ALK,albania - old lek,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,andorra/andorran peseta,ADP,andorra - andorran peseta,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,andorra/spanish peseta,ESP,andorra - spanish peseta,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,andorra/french franc,FRF,andorra - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,angola/kwanza,AOK,angola - kwanza,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,angola/new kwanza,AON,angola - new kwanza,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,angola/kwanza reajustado,AOR,angola - kwanza reajustado,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,argentina/austral,ARA,argentina - austral,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,argentina/peso argentino,ARP,argentina - peso argentino,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,argentina/peso,ARY,argentina - peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,armenia/russian ruble,RUR,armenia - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,austria/schilling,ATS,austria - schilling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,azerbaijan/azerbaijan manat,AYM,azerbaijan - azerbaijan manat,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,azerbaijan/azerbaijanian manat,AZM,azerbaijan - azerbaijanian manat,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,azerbaijan/russian ruble,RUR,azerbaijan - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,belarus/belarusian ruble,BYR,belarus - belarusian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,belarus/belarusian ruble,BYB,belarus - belarusian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,belarus/russian ruble,RUR,belarus - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,belgium/convertible franc,BEC,belgium - convertible franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,belgium/belgian franc,BEF,belgium - belgian franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,belgium/financial franc,BEL,belgium - financial franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bolivia/peso boliviano,BOP,bolivia - peso boliviano,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bosnia and herzegovina/dinar,BAD,bosnia and herzegovina - dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,brazil/cruzeiro,BRB,brazil - cruzeiro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,brazil/cruzado,BRC,brazil - cruzado,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,brazil/cruzeiro,BRE,brazil - cruzeiro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,brazil/new cruzado,BRN,brazil - new cruzado,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,brazil/cruzeiro real,BRR,brazil - cruzeiro real,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bulgaria/lev a/52,BGJ,bulgaria - lev a/52,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bulgaria/lev a/62,BGK,bulgaria - lev a/62,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,bulgaria/lev,BGL,bulgaria - lev,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,burmaã‚/kyat,BUK,burmaã‚ - kyat,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,croatia/croatian dinar,HRD,croatia - croatian dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,croatia/croatian kuna,HRK,croatia - croatian kuna,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,cyprus/cyprus pound,CYP,cyprus - cyprus pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,czechoslovakia/krona a/53,CSJ,czechoslovakia - krona a/53,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,czechoslovakia/koruna,CSK,czechoslovakia - koruna,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ecuador/sucre,ECS,ecuador - sucre,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ecuador/unidad de valor constante (uvc),ECV,ecuador - unidad de valor constante (uvc),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,equatorial guinea/ekwele,GQE,equatorial guinea - ekwele,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,estonia/kroon,EEK,estonia - kroon,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,european monetary co-operation fund (emcf)/european currency unit (e.c.u),XEU,european monetary co-operation fund (emcf) - european currency unit (e.c.u),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,finland/markka,FIM,finland - markka,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,france/french franc,FRF,france - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,french  guiana/french franc,FRF,french  guiana - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,french southern territories/french franc,FRF,french southern territories - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,georgia/georgian coupon,GEK,georgia - georgian coupon,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,georgia/russian ruble,RUR,georgia - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,german democratic republic/mark der ddr,DDM,german democratic republic - mark der ddr,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,germany/deutsche mark,DEM,germany - deutsche mark,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ghana/cedi,GHC,ghana - cedi,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ghana/ghana cedi,GHP,ghana - ghana cedi,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,greece/drachma,GRD,greece - drachma,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guadeloupe/french franc,FRF,guadeloupe - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guinea/syli,GNE,guinea - syli,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guinea/syli,GNS,guinea - syli,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guinea-bissau/guinea escudo,GWE,guinea-bissau - guinea escudo,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,guinea-bissau/guinea-bissau peso,GWP,guinea-bissau - guinea-bissau peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,holy see (vatican city state)/italian lira,ITL,holy see (vatican city state) - italian lira,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,iceland/old krona,ISJ,iceland - old krona,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ireland/irish pound,IEP,ireland - irish pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,israel/pound,ILP,israel - pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,israel/old shekel,ILR,israel - old shekel,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,italy/italian lira,ITL,italy - italian lira,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,kazakhstan/russian ruble,RUR,kazakhstan - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,kyrgyzstan/russian ruble,RUR,kyrgyzstan - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lao/pathet lao kip,LAJ,lao - pathet lao kip,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,latvia/latvian lats,LVL,latvia - latvian lats,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,latvia/latvian ruble,LVR,latvia - latvian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lesotho/loti,LSM,lesotho - loti,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lesotho/financial rand,ZAL,lesotho - financial rand,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lithuania/lithuanian litas,LTL,lithuania - lithuanian litas,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,lithuania/talonas,LTT,lithuania - talonas,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,luxembourg/luxembourg convertible franc,LUC,luxembourg - luxembourg convertible franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,luxembourg/luxembourg franc,LUF,luxembourg - luxembourg franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,luxembourg/luxembourg financial franc,LUL,luxembourg - luxembourg financial franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,madagascar/malagasy franc,MGF,madagascar - malagasy franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,malawi/kwacha,MWK,malawi - kwacha,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,maldives/maldive rupee,MVQ,maldives - maldive rupee,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mali/mali franc,MLF,mali - mali franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,malta/maltese lira,MTL,malta - maltese lira,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,malta/maltese pound,MTP,malta - maltese pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,martinique/french franc,FRF,martinique - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mayotte/french franc,FRF,mayotte - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mexico/mexican peso,MXP,mexico - mexican peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,"moldova, republic of/russian ruble",RUR,"moldova, republic of - russian ruble",(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,monaco/french franc,FRF,monaco - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mozambique/mozambique escudo,MZE,mozambique - mozambique escudo,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,mozambique/mozambique metical,MZM,mozambique - mozambique metical,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,netherlands/netherlands guilder,NLG,netherlands - netherlands guilder,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,netherlands antilles/netherlands antillean guilder,ANG,netherlands antilles - netherlands antillean guilder,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,nicaragua/cordoba,NIC,nicaragua - cordoba,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,peru/nuevo sol,PEN,peru - nuevo sol,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,peru/sol,PEH,peru - sol,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,peru/inti,PEI,peru - inti,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,peru/sol,PES,peru - sol,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,poland/zloty,PLZ,poland - zloty,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,portugal/portuguese escudo,PTE,portugal - portuguese escudo,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,rãƒâ€°union/french franc,FRF,rãƒâ€°union - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,romania/leu a/52,ROK,romania - leu a/52,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,romania/new romanian leu,RON,romania - new romanian leu,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,romania/old leu,ROL,romania - old leu,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,russian federation/russian ruble,RUR,russian federation - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saint martin/french franc,FRF,saint martin - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saint pierre and miquelon/french franc,FRF,saint pierre and miquelon - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,saint-barthãƒâ€°lemy/french franc,FRF,saint-barthãƒâ€°lemy - french franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,san marino/italian lira,ITL,san marino - italian lira,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,serbia and montenegro/serbian dinar,CSD,serbia and montenegro - serbian dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,serbia and montenegro/euro,EUR,serbia and montenegro - euro,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,slovakia/slovak koruna,SKK,slovakia - slovak koruna,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,slovenia/tolar,SIT,slovenia - tolar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,south africa/financial rand,ZAL,south africa - financial rand,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,south sudan/sudanese pound,SDG,south sudan - sudanese pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,southern rhodesiaã‚/rhodesian dollar,RHD,southern rhodesiaã‚ - rhodesian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,spain/spanish peseta,ESA,spain - spanish peseta,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,"spain/""a"" account (convertible peseta account)",ESB,"spain - ""a"" account (convertible peseta account)",(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,spain/spanish peseta,ESP,spain - spanish peseta,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,sudan/sudanese dinar,SDD,sudan - sudanese dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,sudan/sudanese pound,SDP,sudan - sudanese pound,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,suriname/surinam guilder,SRG,suriname - surinam guilder,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,switzerland/wir franc (for electronic),CHC,switzerland - wir franc (for electronic),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,tajikistan/russian ruble,RUR,tajikistan - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,tajikistan/tajik ruble,TJR,tajikistan - tajik ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,timor-leste/rupiah,IDR,timor-leste - rupiah,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,timor-leste/timor escudo,TPE,timor-leste - timor escudo,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,turkey/old turkish lira,TRL,turkey - old turkish lira,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,turkey/new turkish lira,TRY,turkey - new turkish lira,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,turkmenistan/russian ruble,RUR,turkmenistan - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,turkmenistan/turkmenistan manat,TMM,turkmenistan - turkmenistan manat,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,uganda/uganda shilling,UGS,uganda - uganda shilling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,uganda/old shilling,UGW,uganda - old shilling,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,ukraine/karbovanet,UAK,ukraine - karbovanet,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,union of soviet socialist republics/rouble,SUR,union of soviet socialist republics - rouble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,united states/us dollar (same day),USS,united states - us dollar (same day),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,uruguay/old uruguay peso,UYN,uruguay - old uruguay peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,uruguay/uruguayan peso,UYP,uruguay - uruguayan peso,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,uzbekistan/russian ruble,RUR,uzbekistan - russian ruble,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,venezuela/bolivar,VEB,venezuela - bolivar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,venezuela/bolivar fuerte,VEF,venezuela - bolivar fuerte,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,venezuela (bolivarian republic of)/bolivar,VEF,venezuela (bolivarian republic of) - bolivar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,vietnam/old dong,VNC,vietnam - old dong,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,"yemen, democratic/yemeni dinar",YDD,"yemen, democratic - yemeni dinar",(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,yugoslavia/new yugoslavian dinar,YUD,yugoslavia - new yugoslavian dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,yugoslavia/new dinar,YUM,yugoslavia - new dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,yugoslavia/yugoslavian dinar,YUN,yugoslavia - yugoslavian dinar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zaire/new zaire,ZRN,zaire - new zaire,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zaire/zaire,ZRZ,zaire - zaire,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zambia/zambian kwacha,ZMK,zambia - zambian kwacha,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zimbabwe/rhodesian dollar,ZWC,zimbabwe - rhodesian dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zimbabwe/zimbabwe dollar (old),ZWD,zimbabwe - zimbabwe dollar (old),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zimbabwe/zimbabwe dollar,ZWD,zimbabwe - zimbabwe dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zimbabwe/zimbabwe dollar (new),ZWN,zimbabwe - zimbabwe dollar (new),(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zimbabwe/zimbabwe dollar,ZWR,zimbabwe - zimbabwe dollar,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz01_gold-franc/gold-franc,XFO,zz01_gold-franc - gold-franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz02_rinet funds code/rinet funds code,XRE,zz02_rinet funds code - rinet funds code,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency
+currencies,zz05_uic-franc/uic-franc,XFU,zz05_uic-franc - uic-franc,(acc|loc|reins)currency$,func:oedtools.is_iso4217_currency

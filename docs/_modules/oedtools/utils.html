@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>oedtools.utils &#8212; oedtools 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for oedtools.utils</h1><div class="highlight"><pre>
+<span></span><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;generate_token_sequence&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;get_method&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;get_value&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;is_real_number&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;is_valid_token_sequence&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;SQL_NUMERIC_DTYPES&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;sql_to_python_dtype&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;within_range&#39;</span>
+<span class="p">]</span>
+
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Package utilities</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">builtins</span>
+<span class="kn">import</span> <span class="nn">importlib</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">string</span>
+
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">Counter</span><span class="p">,</span>
+    <span class="n">OrderedDict</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+
+<span class="n">SQL_NUMERIC_DTYPES</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">({</span>
+    <span class="s1">&#39;bit&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;uint8&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;unsigned bit&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;uint8&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;tinyint&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">7</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int8&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;unsigned tinyint&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">8</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;uint8&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;smallint&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">15</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int16&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;unsigned smallint&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">16</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;uint16&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;int&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">31</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int32&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;unsigned int&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">32</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;uint32&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;bigint&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">63</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int64&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;unsigned bigint&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">64</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;uint64&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;float&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mf">1.79e+308</span><span class="p">,</span> <span class="mf">1.79e+308</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;float64&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;real&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="mi">32</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mf">3.40e+38</span><span class="p">,</span> <span class="mf">3.40e+38</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;float32&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;decimal&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="s1">&#39;variable&#39;</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mf">10e+38</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">10e38</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;float64&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;numeric&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;bits&#39;</span><span class="p">:</span> <span class="s1">&#39;variable&#39;</span><span class="p">,</span> <span class="s1">&#39;signed&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;range&#39;</span><span class="p">:</span> <span class="p">(</span><span class="o">-</span><span class="mf">10e+38</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">10e38</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="s1">&#39;py_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s1">&#39;numpy_dtype&#39;</span><span class="p">:</span> <span class="s1">&#39;float64&#39;</span>
+    <span class="p">}</span>
+<span class="p">})</span>
+
+
+<div class="viewcode-block" id="sql_to_python_dtype"><a class="viewcode-back" href="../../modules.html#oedtools.utils.sql_to_python_dtype">[docs]</a><span class="k">def</span> <span class="nf">sql_to_python_dtype</span><span class="p">(</span><span class="n">sql_dtype</span><span class="p">,</span> <span class="n">as_numpy_dtype</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Converts an SQL datatype string to a Python datatype</span>
+<span class="sd">    string, or optionally a Numpy datatype string.</span>
+
+<span class="sd">    :param sql_dtype: SQL datatype string</span>
+<span class="sd">    :type sql_dtype: str</span>
+
+<span class="sd">    :param as_numpy_dtype: (Optional) Numpy datatype string conversion option</span>
+<span class="sd">    :type as_numpy_dtype: bool</span>
+
+<span class="sd">    :return: A Python or Numpy datatype string</span>
+<span class="sd">    :rtype: str</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_sql_dtype</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sql_dtype</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+
+    <span class="k">if</span> <span class="n">_sql_dtype</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;unsigned bit&#39;</span><span class="p">,</span> <span class="s1">&#39;bit&#39;</span><span class="p">,</span> <span class="s1">&#39;0 or 1&#39;</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="s1">&#39;int&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="s1">&#39;uint8&#39;</span>
+
+    <span class="n">q</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(unsigned )?(tiny|small|big)?int&#39;</span><span class="p">,</span> <span class="n">_sql_dtype</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">q</span> <span class="ow">and</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;tiny&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;int&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="p">(</span><span class="s1">&#39;uint8&#39;</span> <span class="k">if</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;unsigned&#39;</span> <span class="k">else</span> <span class="s1">&#39;int8&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">q</span> <span class="ow">and</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;small&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;int&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="p">(</span><span class="s1">&#39;uint16&#39;</span> <span class="k">if</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;unsigned&#39;</span> <span class="k">else</span> <span class="s1">&#39;int16&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">q</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">1</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="s1">&#39;int&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="p">(</span><span class="s1">&#39;uint32&#39;</span> <span class="k">if</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;unsigned&#39;</span> <span class="k">else</span> <span class="s1">&#39;int32&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">q</span> <span class="ow">and</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;big&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;int&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="p">(</span><span class="s1">&#39;uint64&#39;</span> <span class="k">if</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">q</span><span class="o">.</span><span class="n">groups</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;unsigned&#39;</span> <span class="k">else</span> <span class="s1">&#39;int64&#39;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">_sql_dtype</span> <span class="o">==</span> <span class="s1">&#39;real&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;float&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="s1">&#39;float32&#39;</span>
+
+    <span class="k">if</span> <span class="n">_sql_dtype</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;float&#39;</span><span class="p">,</span> <span class="s1">&#39;decimal&#39;</span><span class="p">,</span> <span class="s1">&#39;numeric&#39;</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="s1">&#39;float&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="s1">&#39;float64&#39;</span>
+
+    <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(n)?(var)?char(\(\d+|max\))?&#39;</span><span class="p">,</span> <span class="n">_sql_dtype</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;str&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="s1">&#39;object&#39;</span>
+
+    <span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;((date(time)?)?|(time(stamp)?)?|(year)?)</span><span class="si">{1}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="n">_sql_dtype</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;str&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="s1">&#39;object&#39;</span>
+
+    <span class="k">return</span> <span class="s1">&#39;str&#39;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">as_numpy_dtype</span> <span class="k">else</span> <span class="s1">&#39;object&#39;</span></div>
+
+
+<div class="viewcode-block" id="generate_token_sequence"><a class="viewcode-back" href="../../modules.html#oedtools.utils.generate_token_sequence">[docs]</a><span class="k">def</span> <span class="nf">generate_token_sequence</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">seq_length</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="n">unique</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Generates a string containing a sequence of tokens, randomly sampled from</span>
+<span class="sd">    a given list or tuple of tokens, of a given length and separated by a given</span>
+<span class="sd">    separator. Uniqueness of tokens in the sequence string holds by default,</span>
+<span class="sd">    but can be turned off by setting ``unique`` to ``False``.</span>
+
+<span class="sd">    :param tokens: The list or tuple of tokens to sample from</span>
+<span class="sd">    :type tokens: list, tuple</span>
+
+<span class="sd">    :param seq_length: The length of the token sequence (and therefore the</span>
+<span class="sd">                       number of tokens in the string) - set to the minimum</span>
+<span class="sd">                       of the size of the token set and the requested length</span>
+<span class="sd">                       of the token sequence (default is ``10``)</span>
+<span class="sd">    :type seq_length: int</span>
+
+<span class="sd">    :param sep: The token separator - usually a single non-text character</span>
+<span class="sd">                (default is ``;``)</span>
+<span class="sd">    :type sep: str</span>
+
+<span class="sd">    :param unique: Whether the tokens in the sequence must be unique (default</span>
+<span class="sd">                   is ``True``)</span>
+<span class="sd">    :type unique: bool</span>
+
+<span class="sd">    :return: The token sequence as a ``sep``-separated string</span>
+<span class="sd">    :rtype: str</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sep</span><span class="p">)</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="nb">sorted</span><span class="p">(</span>
+                    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span>
+                        <span class="n">tokens</span><span class="p">,</span>
+                        <span class="n">size</span><span class="o">=</span><span class="nb">min</span><span class="p">(</span><span class="n">seq_length</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">))</span> <span class="k">if</span> <span class="n">unique</span> <span class="k">else</span> <span class="n">seq_length</span><span class="p">,</span>
+                        <span class="n">replace</span><span class="o">=</span><span class="p">(</span><span class="ow">not</span> <span class="n">unique</span><span class="p">)</span>
+                    <span class="p">)</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+                <span class="p">)</span>
+            <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="is_valid_token_sequence"><a class="viewcode-back" href="../../modules.html#oedtools.utils.is_valid_token_sequence">[docs]</a><span class="k">def</span> <span class="nf">is_valid_token_sequence</span><span class="p">(</span><span class="n">tokens</span><span class="p">,</span> <span class="n">seq</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Checks whether a string consists of a sequence of unique tokens from a</span>
+<span class="sd">    fixed set of tokens, separated by a given separator. It is used to check</span>
+<span class="sd">    the correctness of values in several OED columns such as</span>
+<span class="sd">    ``(Acc|Cond|Loc|Pol|Reins)Peril`` and also</span>
+<span class="sd">    ``(Acc|Cond|Loc|Pol|Reins)PerilsCovered``, which must be ``;``-separated</span>
+<span class="sd">    sequence of OED peril codes, e.g. ``AA1;WTC;WEC``.</span>
+
+<span class="sd">    :param tokens: The iterable of tokens to check the string tokens against</span>
+<span class="sd">    :type tokens: list, tuple, set</span>
+
+<span class="sd">    :param seq: The string to be checked</span>
+<span class="sd">    :type seq: str</span>
+
+<span class="sd">    :param sep: (Optional) The separator to use/expect - default is ``;``</span>
+<span class="sd">    :type sep: str</span>
+
+<span class="sd">    :return: Whether the string is valid</span>
+<span class="sd">    :rtype: bool</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">seq</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">any</span><span class="p">(</span><span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">any</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">):</span>
+        <span class="k">return</span>
+
+    <span class="n">seq_tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">seq</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">sep</span><span class="p">)</span> <span class="k">if</span> <span class="n">t</span><span class="p">]</span>
+    <span class="n">seq_tokens_cntr</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">seq_tokens</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+    <span class="k">return</span> <span class="ow">not</span> <span class="p">(</span>
+        <span class="nb">any</span><span class="p">(</span><span class="n">t</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">tokens</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">seq_tokens</span><span class="p">)</span> <span class="ow">or</span>
+        <span class="nb">any</span><span class="p">(</span><span class="n">v</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">seq_tokens_cntr</span><span class="p">)</span>
+    <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="is_real_number"><a class="viewcode-back" href="../../modules.html#oedtools.utils.is_real_number">[docs]</a><span class="k">def</span> <span class="nf">is_real_number</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Simple method to check whether a literal value is a real number - returns</span>
+<span class="sd">    ``True`` for integers as well.</span>
+
+<span class="sd">    :param num: The literal value, which can be any literal value</span>
+<span class="sd">    :type num: None, bool, int, float, complex, str, bytes, tuple, list, dict, set</span>
+
+<span class="sd">    :return: Whether the value is a real number</span>
+<span class="sd">    :rtype: bool</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+
+    <span class="k">return</span> <span class="kc">True</span></div>
+
+
+<div class="viewcode-block" id="within_range"><a class="viewcode-back" href="../../modules.html#oedtools.utils.within_range">[docs]</a><span class="k">def</span> <span class="nf">within_range</span><span class="p">(</span><span class="n">bounds_or_iter</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Checks whether a given simple literal value (integer, float, string, bytes)</span>
+<span class="sd">    lies within a given finite set of values or a bounded numeric range</span>
+<span class="sd">    (or interval). If ``bounds_or_iter`` is not a ``range`` and </span>
+
+<span class="sd">    :param bounds: A finite set of values or bounded numeric range</span>
+<span class="sd">                   (or interval)</span>
+<span class="sd">    :type bounds: tuple, list, set, range</span>
+
+<span class="sd">    :param val: The value to be checked</span>
+<span class="sd">    :type val: int, float, str, bytes</span>
+
+<span class="sd">    :return: Status of range check</span>
+<span class="sd">    :rtype: bool</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">is_real_number</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="n">val</span> <span class="ow">in</span> <span class="n">bounds_or_iter</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">bounds_or_iter</span><span class="p">,</span> <span class="nb">range</span><span class="p">)</span>
+            <span class="k">else</span> <span class="p">(</span>
+                <span class="n">val</span> <span class="ow">in</span> <span class="n">bounds_or_iter</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+                <span class="k">else</span> <span class="n">val</span> <span class="o">&gt;=</span> <span class="nb">min</span><span class="p">(</span><span class="n">bounds_or_iter</span><span class="p">)</span> <span class="ow">and</span> <span class="n">val</span> <span class="o">&lt;=</span> <span class="nb">max</span><span class="p">(</span><span class="n">bounds_or_iter</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">bounds_or_iter</span>
+
+    <span class="k">return</span></div>
+
+
+<div class="viewcode-block" id="get_value"><a class="viewcode-back" href="../../modules.html#oedtools.utils.get_value">[docs]</a><span class="k">def</span> <span class="nf">get_value</span><span class="p">(</span><span class="n">val</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns the number from a literal value if the value represents either an</span>
+<span class="sd">    integer, real number or complex number. The use case is to extract numbers</span>
+<span class="sd">    from string literals, if those literals are instances of one of three</span>
+<span class="sd">    proper numeric types (``int``, ``float``, ``complex``). All other types</span>
+<span class="sd">    of string are returned unchanged.</span>
+
+<span class="sd">    :param val: The literal value, which can be any literal value</span>
+<span class="sd">    :type val: None, bool, int, float, compex, str, bytes, tuple, list, dict, set</span>
+
+<span class="sd">    :return: The number represented by the literal, if it represents a number,</span>
+<span class="sd">             or the literal</span>
+<span class="sd">    :rtype: None, bool, int, float, compex, str, bytes, tuple, list, dict, set</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">val</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">bool</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">val</span>
+    <span class="k">if</span> <span class="n">is_real_number</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="nb">complex</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">val</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+    <span class="k">except</span> <span class="p">(</span><span class="ne">TypeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">TypeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">return</span> <span class="nb">complex</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
+            <span class="k">except</span> <span class="p">(</span><span class="ne">TypeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">val</span></div>
+
+
+<div class="viewcode-block" id="get_method"><a class="viewcode-back" href="../../modules.html#oedtools.utils.get_method">[docs]</a><span class="k">def</span> <span class="nf">get_method</span><span class="p">(</span><span class="n">pkg_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns a method given the full package path of the method, e.g.</span>
+<span class="sd">    given the string ``oedtools.schema.get_schema`` it will return the</span>
+<span class="sd">    actual method ``get_schema`` from the ``oedtools.schema`` module.</span>
+
+<span class="sd">    :param pkg_path: Full package path of the method</span>
+<span class="sd">    :type pkg_path: str</span>
+
+<span class="sd">    :return: The actual method</span>
+<span class="sd">    :rtype: function</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">path_tokens</span> <span class="o">=</span> <span class="n">pkg_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">importlib</span><span class="o">.</span><span class="n">import_module</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path_tokens</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])),</span> <span class="n">path_tokens</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">oedtools</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">Module Documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Sandeep Murthy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

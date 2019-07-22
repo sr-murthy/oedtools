@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import os
+import sys
+
+oedtools_pkg_path = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))), 'oedtools')
+sys.path.insert(0, oedtools_pkg_path)
+
+from oedtools.cli import OedToolsCmd
+
+if __name__ == '__main__':
+    sys.exit(OedToolsCmd().run())

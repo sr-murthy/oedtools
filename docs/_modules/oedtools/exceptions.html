@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>oedtools.exceptions &#8212; oedtools 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for oedtools.exceptions</h1><div class="highlight"><pre>
+<span></span><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;DataOutOfRangeError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;EmptyFileError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;InvalidDataTypeError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;MissingRequiredColumnError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;NonOedColumnError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;NonOedDataError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;NonOedSchemaError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;NonOedSchemaAndColumnError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;NonOedSchemaColumnError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;NullDataInNonNullColumnError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;get_file_error&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;OedError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;OedException&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;CommandError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ProcessError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ReportingError&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;OedWarning&#39;</span>
+<span class="p">]</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+
+
+<div class="viewcode-block" id="OedException"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.OedException">[docs]</a><span class="k">class</span> <span class="nc">OedException</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="n">etype</span> <span class="o">=</span> <span class="s1">&#39;exception&#39;</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;OED_EXP100&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Base OED exception&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">msg</span> <span class="o">=</span> <span class="n">msg</span> <span class="ow">or</span> <span class="s1">&#39;&lt;no msg.&gt;&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;OED </span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">etype</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">code</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">code_desc</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="OedError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.OedError">[docs]</a><span class="k">class</span> <span class="nc">OedError</span><span class="p">(</span><span class="n">OedException</span><span class="p">):</span>
+    <span class="n">etype</span> <span class="o">=</span> <span class="s1">&#39;error&#39;</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E200&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Base OED error&#39;</span></div>
+
+
+<div class="viewcode-block" id="NonOedSchemaAndColumnError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.NonOedSchemaAndColumnError">[docs]</a><span class="k">class</span> <span class="nc">NonOedSchemaAndColumnError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E301&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Not a valid OED schema and column&#39;</span></div>
+
+
+<div class="viewcode-block" id="NonOedSchemaError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.NonOedSchemaError">[docs]</a><span class="k">class</span> <span class="nc">NonOedSchemaError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E302&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Not a valid OED schema type&#39;</span></div>
+
+
+<div class="viewcode-block" id="NonOedColumnError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.NonOedColumnError">[docs]</a><span class="k">class</span> <span class="nc">NonOedColumnError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E303&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Not a valid column in any OED schema&#39;</span></div>
+
+
+<div class="viewcode-block" id="NonOedSchemaColumnError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.NonOedSchemaColumnError">[docs]</a><span class="k">class</span> <span class="nc">NonOedSchemaColumnError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E304&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Not a valid column in the given OED schema&#39;</span></div>
+
+
+<div class="viewcode-block" id="ProcessError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.ProcessError">[docs]</a><span class="k">class</span> <span class="nc">ProcessError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E211&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;OED process error&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">msg</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CommandError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.CommandError">[docs]</a><span class="k">class</span> <span class="nc">CommandError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E221&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;OED command error&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">msg</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="ReportingError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.ReportingError">[docs]</a><span class="k">class</span> <span class="nc">ReportingError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E231&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;OED reporting error&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__repr__</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">msg</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="EmptyFileError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.EmptyFileError">[docs]</a><span class="k">class</span> <span class="nc">EmptyFileError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E321&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;File has no data&#39;</span></div>
+
+
+<div class="viewcode-block" id="InvalidDataTypeError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.InvalidDataTypeError">[docs]</a><span class="k">class</span> <span class="nc">InvalidDataTypeError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E351&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Invalid data type(s) in column&#39;</span></div>
+
+
+<div class="viewcode-block" id="MissingRequiredColumnError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.MissingRequiredColumnError">[docs]</a><span class="k">class</span> <span class="nc">MissingRequiredColumnError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E331&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Missing required column in file&#39;</span></div>
+
+
+<div class="viewcode-block" id="NonOedDataError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.NonOedDataError">[docs]</a><span class="k">class</span> <span class="nc">NonOedDataError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E341&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Invalid or non-OED data in column&#39;</span></div>
+
+
+<div class="viewcode-block" id="NullDataInNonNullColumnError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.NullDataInNonNullColumnError">[docs]</a><span class="k">class</span> <span class="nc">NullDataInNonNullColumnError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E361&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Null data found in non-null column&#39;</span></div>
+
+
+<div class="viewcode-block" id="DataOutOfRangeError"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.DataOutOfRangeError">[docs]</a><span class="k">class</span> <span class="nc">DataOutOfRangeError</span><span class="p">(</span><span class="n">OedError</span><span class="p">):</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;E371&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Out of range data found in column&#39;</span></div>
+
+
+<div class="viewcode-block" id="OedWarning"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.OedWarning">[docs]</a><span class="k">class</span> <span class="nc">OedWarning</span><span class="p">(</span><span class="n">OedException</span><span class="p">):</span>
+    <span class="n">etype</span> <span class="o">=</span> <span class="s1">&#39;warning&#39;</span>
+    <span class="n">code</span> <span class="o">=</span> <span class="s1">&#39;W261&#39;</span>
+    <span class="n">code_desc</span> <span class="o">=</span> <span class="s1">&#39;Base OED warning&#39;</span></div>
+
+
+<div class="viewcode-block" id="get_file_error"><a class="viewcode-back" href="../../modules.html#oedtools.exceptions.get_file_error">[docs]</a><span class="k">def</span> <span class="nf">get_file_error</span><span class="p">(</span><span class="n">err_shortdesc</span><span class="p">,</span> <span class="n">err_msg</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="n">err_classname</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">Error&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+        <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">s</span><span class="o">.</span><span class="n">capitalize</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">err_shortdesc</span><span class="o">.</span><span class="n">split</span><span class="p">()])</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">[</span><span class="vm">__name__</span><span class="p">],</span> <span class="n">err_classname</span><span class="p">)(</span><span class="n">err_msg</span><span class="p">)</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">oedtools</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">Module Documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Sandeep Murthy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

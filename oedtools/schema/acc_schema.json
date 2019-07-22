@@ -1,0 +1,5302 @@
+{
+    "('acc', 'acccurrency')": {
+        "blank": false,
+        "column_range": [
+            "ADP",
+            "AED",
+            "AFA",
+            "AFN",
+            "ALK",
+            "ALL",
+            "AMD",
+            "ANG",
+            "AOA",
+            "AOK",
+            "AON",
+            "AOR",
+            "ARA",
+            "ARP",
+            "ARS",
+            "ARY",
+            "ATS",
+            "AUD",
+            "AWG",
+            "AYM",
+            "AZM",
+            "AZN",
+            "BAD",
+            "BAM",
+            "BBD",
+            "BDT",
+            "BEC",
+            "BEF",
+            "BEL",
+            "BGJ",
+            "BGK",
+            "BGL",
+            "BGN",
+            "BHD",
+            "BIF",
+            "BMD",
+            "BND",
+            "BOB",
+            "BOP",
+            "BOV",
+            "BRB",
+            "BRC",
+            "BRE",
+            "BRL",
+            "BRN",
+            "BRR",
+            "BSD",
+            "BTN",
+            "BUK",
+            "BWP",
+            "BYB",
+            "BYN",
+            "BYR",
+            "BZD",
+            "CAD",
+            "CDF",
+            "CHC",
+            "CHE",
+            "CHF",
+            "CHW",
+            "CLF",
+            "CLP",
+            "CNY",
+            "COP",
+            "COU",
+            "CRC",
+            "CSD",
+            "CSJ",
+            "CSK",
+            "CUC",
+            "CUP",
+            "CVE",
+            "CYP",
+            "CZK",
+            "DDM",
+            "DEM",
+            "DJF",
+            "DKK",
+            "DOP",
+            "DZD",
+            "ECS",
+            "ECV",
+            "EEK",
+            "EGP",
+            "ERN",
+            "ESA",
+            "ESB",
+            "ESP",
+            "ETB",
+            "EUR",
+            "FIM",
+            "FJD",
+            "FKP",
+            "FRF",
+            "GBP",
+            "GEK",
+            "GEL",
+            "GHC",
+            "GHP",
+            "GHS",
+            "GIP",
+            "GMD",
+            "GNE",
+            "GNF",
+            "GNS",
+            "GQE",
+            "GRD",
+            "GTQ",
+            "GWE",
+            "GWP",
+            "GYD",
+            "HKD",
+            "HNL",
+            "HRD",
+            "HRK",
+            "HTG",
+            "HUF",
+            "IDR",
+            "IEP",
+            "ILP",
+            "ILR",
+            "ILS",
+            "INR",
+            "IQD",
+            "IRR",
+            "ISJ",
+            "ISK",
+            "ITL",
+            "JMD",
+            "JOD",
+            "JPY",
+            "KES",
+            "KGS",
+            "KHR",
+            "KMF",
+            "KPW",
+            "KRW",
+            "KWD",
+            "KYD",
+            "KZT",
+            "LAJ",
+            "LAK",
+            "LBP",
+            "LKR",
+            "LRD",
+            "LSL",
+            "LSM",
+            "LTL",
+            "LTT",
+            "LUC",
+            "LUF",
+            "LUL",
+            "LVL",
+            "LVR",
+            "LYD",
+            "MAD",
+            "MDL",
+            "MGA",
+            "MGF",
+            "MKD",
+            "MLF",
+            "MMK",
+            "MNT",
+            "MOP",
+            "MRO",
+            "MTL",
+            "MTP",
+            "MUR",
+            "MVQ",
+            "MVR",
+            "MWK",
+            "MXN",
+            "MXP",
+            "MXV",
+            "MYR",
+            "MZE",
+            "MZM",
+            "MZN",
+            "NAD",
+            "NGN",
+            "NIC",
+            "NIO",
+            "NLG",
+            "NOK",
+            "NPR",
+            "NZD",
+            "OMR",
+            "PAB",
+            "PEH",
+            "PEI",
+            "PEN",
+            "PES",
+            "PGK",
+            "PHP",
+            "PKR",
+            "PLN",
+            "PLZ",
+            "PTE",
+            "PYG",
+            "QAR",
+            "RHD",
+            "ROK",
+            "ROL",
+            "RON",
+            "RSD",
+            "RUB",
+            "RUR",
+            "RWF",
+            "SAR",
+            "SBD",
+            "SCR",
+            "SDD",
+            "SDG",
+            "SDP",
+            "SEK",
+            "SGD",
+            "SHP",
+            "SIT",
+            "SKK",
+            "SLL",
+            "SOS",
+            "SRD",
+            "SRG",
+            "SSP",
+            "STD",
+            "SUR",
+            "SVC",
+            "SYP",
+            "SZL",
+            "THB",
+            "TJR",
+            "TJS",
+            "TMM",
+            "TMT",
+            "TND",
+            "TOP",
+            "TPE",
+            "TRL",
+            "TRY",
+            "TTD",
+            "TWD",
+            "TZS",
+            "UAH",
+            "UAK",
+            "UGS",
+            "UGW",
+            "UGX",
+            "USD",
+            "USN",
+            "USS",
+            "UYI",
+            "UYN",
+            "UYP",
+            "UYU",
+            "UZS",
+            "VEB",
+            "VEF",
+            "VNC",
+            "VND",
+            "VUV",
+            "WST",
+            "XAF",
+            "XAG",
+            "XAU",
+            "XBA",
+            "XBB",
+            "XBC",
+            "XBD",
+            "XCD",
+            "XDR",
+            "XEU",
+            "XFO",
+            "XFU",
+            "XOF",
+            "XPD",
+            "XPF",
+            "XPT",
+            "XRE",
+            "XSU",
+            "XTS",
+            "XUA",
+            "XXX",
+            "YDD",
+            "YER",
+            "YUD",
+            "YUM",
+            "YUN",
+            "ZAL",
+            "ZAR",
+            "ZMK",
+            "ZMW",
+            "ZRN",
+            "ZRZ",
+            "ZWC",
+            "ZWD",
+            "ZWL",
+            "ZWN",
+            "ZWR"
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": null,
+        "desc": "Account currency",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccCurrency",
+        "numpy_dtype": "object",
+        "oed_db_field_name": "Accounts.Currency; Policies.Currency; Conditions.Currency",
+        "oed_db_table": "Accounts; Policies; Conditions",
+        "py_dtype": "str",
+        "required": "R",
+        "secmod": null,
+        "sql_dtype": "char(3)"
+    },
+    "('acc', 'accded1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccDed1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accded2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account other building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccDed2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accded3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account contents deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccDed3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accded4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account BI deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccDed4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accded5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account PD deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccDed5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accded6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account blanket deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccDed6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accdedcode1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account building deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedCode1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedcode2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account other building deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedCode2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedcode3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account contents deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedCode3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedcode4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account BI deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedCode4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedcode5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account PD deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedCode5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedcode6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account blanket deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedCode6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedtype1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account building deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedType1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedtype2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account other building deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedType2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedtype3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account contents deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedType3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedtype4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account BI deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedType4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedtype5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account PD deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedType5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accdedtype6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account blanket deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccDedType6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accgroup')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Account group, could use to group multiple accounts (e.g. for binders)",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccGroup",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(40)"
+    },
+    "('acc', 'acclimit1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account building limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccLimit1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'acclimit2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account other building limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccLimit2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'acclimit3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account contents limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccLimit3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'acclimit4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account BI limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccLimit4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'acclimit5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account PD limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccLimit5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'acclimit6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account blanket limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccLimit6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'acclimitcode1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account building limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitCode1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimitcode2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account other building limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitCode2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimitcode3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account contents limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitCode3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimitcode4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account BI limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitCode4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimitcode5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account PD limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitCode5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimitcode6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account blanket limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitCode6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimittype1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account building limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitType1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimittype2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account other building limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitType2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimittype3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account contents limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitType3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimittype4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account BI limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitType4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimittype5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account PD limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitType5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'acclimittype6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Account blanket limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "AccLimitType6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'accmaxded1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account maximum building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMaxDed1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accmaxded2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account maximum other building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMaxDed2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accmaxded3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account maximum contents deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMaxDed3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accmaxded4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account maximum BI deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMaxDed4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accmaxded5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account maximum PD deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMaxDed5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accmaxded6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account maximum blanket deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMaxDed6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accminded1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account minimum building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMinDed1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accminded2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account minimum other building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMinDed2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accminded3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account minimum contents deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMinDed3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accminded4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account minimum BI deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMinDed4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accminded5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account minimum PD deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMinDed5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accminded6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Account minimum blanket deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "AccMinDed6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'accname')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Account name",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccName",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "nvarchar(100)"
+    },
+    "('acc', 'accnumber')": {
+        "blank": false,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Account number",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccNumber",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "R",
+        "secmod": null,
+        "sql_dtype": "nvarchar(40)"
+    },
+    "('acc', 'accperil')": {
+        "blank": true,
+        "column_range": [
+            "AA1",
+            "BB1",
+            "BBF",
+            "BFR",
+            "BSK",
+            "MM1",
+            "MNT",
+            "MTR",
+            "OO1",
+            "ORF",
+            "OSF",
+            "QEQ",
+            "QFF",
+            "QLF",
+            "QLS",
+            "QQ1",
+            "QSL",
+            "QTS",
+            "WEC",
+            "WSS",
+            "WTC",
+            "WW1",
+            "WW2",
+            "XHL",
+            "XLT",
+            "XSL",
+            "XTD",
+            "XX1",
+            "XZ1",
+            "ZFZ",
+            "ZIC",
+            "ZSN",
+            "ZST",
+            "ZZ1"
+        ],
+        "column_sampling": "{\"func\": \"oedtools.utils.generate_token_sequence\", \"args\": [\"<use range>\", 4, \";\", true]}",
+        "column_validation": "func:oedtools.utils.is_valid_token_sequence",
+        "default": null,
+        "desc": "Perils for account financial terms",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccPeril",
+        "numpy_dtype": "object",
+        "oed_db_field_name": "PerilCode",
+        "oed_db_table": "AccountFinancials",
+        "py_dtype": "str",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "varchar(250)"
+    },
+    "('acc', 'accstatus')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Account status. Aside from predefined values, you can use other single character values for user specific purposes",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccStatus",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "char(1)"
+    },
+    "('acc', 'accuserdef1')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Account user defined field 1",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccUserDef1",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'accuserdef2')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Account user defined field 2",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccUserDef2",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'accuserdef3')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Account user defined field 3",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccUserDef3",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'accuserdef4')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Account user defined field 4",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccUserDef4",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'accuserdef5')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Account user defined field 5",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "AccUserDef5",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'branchname')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Branch name",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "BranchName",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'cedantname')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Cedant name (defined at account level)",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "CedantName",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Cedants",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(40)"
+    },
+    "('acc', 'condded1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondDed1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condded2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition other building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondDed2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condded3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition contents deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondDed3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condded4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition BI deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondDed4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condded5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition PD deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondDed5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condded6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition blanket deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondDed6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'conddedcode1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition building deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedCode1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedcode2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition other building deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedCode2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedcode3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition contents deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedCode3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedcode4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition BI deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedCode4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedcode5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition PD deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedCode5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedcode6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition blanket deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedCode6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedtype1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition building deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedType1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedtype2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition other building deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedType2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedtype3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition contents deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedType3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedtype4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition BI deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedType4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedtype5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition PD deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedType5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'conddedtype6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition blanket deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondDedType6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimit1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition building limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondLimit1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condlimit2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition other building limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondLimit2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condlimit3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition contents limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondLimit3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condlimit4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition BI limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondLimit4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condlimit5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition PD limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondLimit5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condlimit6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition blanket limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondLimit6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condlimitcode1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition building limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitCode1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimitcode2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition other building limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitCode2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimitcode3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition contents limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitCode3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimitcode4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition BI limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitCode4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimitcode5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition PD limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitCode5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimitcode6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition blanket limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitCode6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimittype1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition building limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitType1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimittype2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition other building limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitType2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimittype3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition contents limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitType3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimittype4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition BI limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitType4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimittype5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition PD limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitType5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condlimittype6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Special condition blanket limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "CondLimitType6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'condmaxded1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition maximum building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMaxDed1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condmaxded2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition maximum other building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMaxDed2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condmaxded3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition maximum contents deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMaxDed3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condmaxded4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition maximum BI deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMaxDed4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condmaxded5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition maximum PD deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMaxDed5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condmaxded6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition maximum blanket deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMaxDed6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condminded1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition minimum building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMinDed1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condminded2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition minimum other building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMinDed2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condminded3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition minimum contents deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMinDed3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condminded4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition minimum BI deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMinDed4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condminded5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition minimum PD deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMinDed5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condminded6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Special condition minimum blanket deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "CondMinDed6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'condname')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Condition name (must be the same if condition repeats on several policy layers). Description that relates to CondNumber.",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "CondName",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Conditions",
+        "py_dtype": "str",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "varchar(40)"
+    },
+    "('acc', 'condnumber')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": {
+            "start": 0,
+            "stop": 4294967296
+        },
+        "default": null,
+        "desc": "Condition number (must be the same if condition repeats on several policy layers)",
+        "dtype_range": {
+            "start": 0,
+            "stop": 4294967296
+        },
+        "entity": "Acc",
+        "field_name": "CondNumber",
+        "numpy_dtype": "uint32",
+        "oed_db_field_name": null,
+        "oed_db_table": "Conditions",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned int"
+    },
+    "('acc', 'condperil')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Perils for condition financial terms",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "CondPeril",
+        "numpy_dtype": "object",
+        "oed_db_field_name": "PerilCode",
+        "oed_db_table": "ConditionFinancials",
+        "py_dtype": "str",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "varchar(250)"
+    },
+    "('acc', 'deductiblebuilding')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Building deductible that can be used, for example, to account for fire policies before applying step functions.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "DeductibleBuilding",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Deductible",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'deductiblebuildingcontent')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Building and content deductible that can be used, for example, to account for fire policies before applying step functions.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "DeductibleBuildingContent",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Deductible",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'deductiblecontent')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Content deductible that can be used, for example, to account for fire policies before applying step functions.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "DeductibleContent",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Deductible",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'endtriggerbuilding')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Ending value of the building damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "EndTriggerBuilding",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "EndTrigger",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'endtriggerbuildingcontent')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Ending value of the building and content damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "EndTriggerBuildingContent",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "EndTrigger",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'endtriggercontent')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Ending value of the content damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "EndTriggerContent",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "EndTrigger",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'expiringaccnumber')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Expiring account number",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "ExpiringAccNumber",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Accounts",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "nvarchar(40)"
+    },
+    "('acc', 'expiringpolnumber')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Expiring policy number",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "ExpiringPolNumber",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'flexiacczzz')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Flexible field that is stored in FlexiAcc table in ModifierName = ZZZ",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "FlexiAccZZZ",
+        "numpy_dtype": "object",
+        "oed_db_field_name": "ModifierName = ZZZ",
+        "oed_db_table": "FlexiAcc",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(40)"
+    },
+    "('acc', 'flexipolzzz')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Flexible field that is stored in FlexiPol table in ModifierName = ZZZ",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "FlexiPolZZZ",
+        "numpy_dtype": "object",
+        "oed_db_field_name": "ModifierName = ZZZ",
+        "oed_db_table": "FlexiPol",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(40)"
+    },
+    "('acc', 'hoursclause')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": {
+            "start": 0,
+            "stop": 4294967296
+        },
+        "default": null,
+        "desc": "For perils with an inherent event duration, the insurance contract may contain an hours clause that limits the time in which claims can be added up and assigned to one event",
+        "dtype_range": {
+            "start": 0,
+            "stop": 4294967296
+        },
+        "entity": "Acc",
+        "field_name": "HoursClause",
+        "numpy_dtype": "uint32",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "int",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "unsigned int"
+    },
+    "('acc', 'islimitatdamage')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Indicates whether the pay-out is limited by the actual ground-up loss.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "IsLimitAtDamage",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": null,
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'layerattachment')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy layer attachment point",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "LayerAttachment",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'layerlimit')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy layer limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "LayerLimit",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'layernumber')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": {
+            "start": 0,
+            "stop": 4294967296
+        },
+        "default": 1,
+        "desc": "Layer number",
+        "dtype_range": {
+            "start": 0,
+            "stop": 4294967296
+        },
+        "entity": "Acc",
+        "field_name": "LayerNumber",
+        "numpy_dtype": "uint32",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "int",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "unsigned int"
+    },
+    "('acc', 'layerparticipation')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            1.0
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 1.0,
+        "desc": "Insurance company share of the policy layer. Values between 0 to 1 (e.g. 12% entered as 0.12)",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "LayerParticipation",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'lob')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Line of business (defined at policy level)",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "LOB",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "LOB",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'minimumtiv')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Minimum replacement value for which pay-outs to the corresponding damage range will be allowed.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "MinimumTIV",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": null,
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'payoutbuilding')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Pay-out that covers building gross losses for this step.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PayOutBuilding",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Payout",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'payoutbuildingcontent')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Pay-out that covers building and content gross losses for this step.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PayOutBuildingContent",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Payout",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'payoutcontent')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Pay-out that covers content gross losses for this step.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PayOutContent",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Payout",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polbrokerage')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Policy brokerage amount",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolBrokerage",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Brokerage",
+        "oed_db_table": "Policies",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polded1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolDed1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polded2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy other building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolDed2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polded3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy contents deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolDed3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polded4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy BI deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolDed4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polded5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy PD deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolDed5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polded6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy blanket deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolDed6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Ded",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'poldedcode1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy building deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedCode1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedcode2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy other building deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedCode2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedcode3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy contents deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedCode3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedcode4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy BI deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedCode4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedcode5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy PD deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedCode5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedcode6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy blanket deductible code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedCode6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedtype1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy building deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedType1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedtype2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy other building deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedType2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedtype3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy contents deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedType3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedtype4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy BI deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedType4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedtype5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy PD deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedType5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'poldedtype6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy blanket deductible type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolDedType6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "DedType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'polexpirydate')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Policy expiry date - DD/MM/YYYY format",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolExpiryDate",
+        "numpy_dtype": "object",
+        "oed_db_field_name": "ExpiryDate",
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "smalldatetime"
+    },
+    "('acc', 'polgrosspremium')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Policy gross premium",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolGrossPremium",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "GrossPremium",
+        "oed_db_table": "Policies",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polinceptiondate')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Policy inception date - DD/MM/YYYY format",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolInceptionDate",
+        "numpy_dtype": "object",
+        "oed_db_field_name": "InceptionDate",
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "smalldatetime"
+    },
+    "('acc', 'pollimit1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy building limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolLimit1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'pollimit2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy other building limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolLimit2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'pollimit3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy contents limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolLimit3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'pollimit4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy BI limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolLimit4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'pollimit5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy PD limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolLimit5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'pollimit6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy blanket limit",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolLimit6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Limit",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'pollimitcode1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy building limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitCode1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimitcode2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy other building limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitCode2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimitcode3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy contents limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitCode3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimitcode4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy BI limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitCode4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimitcode5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy PD limit code",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitCode5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimitcode6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy blanket limit code (annual aggregate only)",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitCode6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitCode",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimittype1building')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy building limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitType1Building",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimittype2other')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy other building limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitType2Other",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimittype3contents')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy contents limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitType3Contents",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimittype4bi')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy BI limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitType4BI",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimittype5pd')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy PD limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitType5PD",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'pollimittype6all')": {
+        "blank": true,
+        "column_range": [
+            0,
+            1,
+            2
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0,
+        "desc": "Policy blanket limit type",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PolLimitType6All",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "LimitType",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'polmaxded1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy maximum building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMaxDed1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polmaxded2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy maximum other building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMaxDed2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polmaxded3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy maximum contents deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMaxDed3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polmaxded4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy maximum BI deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMaxDed4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polmaxded5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy maximum PD deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMaxDed5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polmaxded6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy maximum blanket deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMaxDed6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MaxDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polminded1building')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy minimum building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMinDed1Building",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polminded2other')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy minimum other building deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMinDed2Other",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polminded3contents')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy minimum contents deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMinDed3Contents",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polminded4bi')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy minimum BI deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMinDed4BI",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polminded5pd')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy minimum PD deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMinDed5PD",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polminded6all')": {
+        "blank": true,
+        "column_range": [
+            0.0,
+            3.4e+38
+        ],
+        "column_sampling": "column range",
+        "column_validation": "column range",
+        "default": 0.0,
+        "desc": "Policy minimum blanket deductible",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolMinDed6All",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "MinDed",
+        "oed_db_table": "PolicyFinancials",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polnetpremium')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Policy net premium",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolNetPremium",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "NetPremium",
+        "oed_db_table": "Policies",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'polnumber')": {
+        "blank": false,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Policy layer number",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolNumber",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "R",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'polperil')": {
+        "blank": true,
+        "column_range": [
+            "AA1",
+            "BB1",
+            "BBF",
+            "BFR",
+            "BSK",
+            "MM1",
+            "MNT",
+            "MTR",
+            "OO1",
+            "ORF",
+            "OSF",
+            "QEQ",
+            "QFF",
+            "QLF",
+            "QLS",
+            "QQ1",
+            "QSL",
+            "QTS",
+            "WEC",
+            "WSS",
+            "WTC",
+            "WW1",
+            "WW2",
+            "XHL",
+            "XLT",
+            "XSL",
+            "XTD",
+            "XX1",
+            "XZ1",
+            "ZFZ",
+            "ZIC",
+            "ZSN",
+            "ZST",
+            "ZZ1"
+        ],
+        "column_sampling": "{\"func\": \"oedtools.utils.generate_token_sequence\", \"args\": [\"<use range>\", 4, \";\", true]}",
+        "column_validation": "func:oedtools.utils.is_valid_token_sequence",
+        "default": null,
+        "desc": "Perils for policy financial terms",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolPeril",
+        "numpy_dtype": "object",
+        "oed_db_field_name": "PolicyFinancials = PerilCode; StepFunctions = PerilCode",
+        "oed_db_table": "PolicyFinancials; StepFunctions",
+        "py_dtype": "str",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "varchar(250)"
+    },
+    "('acc', 'polperilscovered')": {
+        "blank": false,
+        "column_range": [
+            "AA1",
+            "BB1",
+            "BBF",
+            "BFR",
+            "BSK",
+            "MM1",
+            "MNT",
+            "MTR",
+            "OO1",
+            "ORF",
+            "OSF",
+            "QEQ",
+            "QFF",
+            "QLF",
+            "QLS",
+            "QQ1",
+            "QSL",
+            "QTS",
+            "WEC",
+            "WSS",
+            "WTC",
+            "WW1",
+            "WW2",
+            "XHL",
+            "XLT",
+            "XSL",
+            "XTD",
+            "XX1",
+            "XZ1",
+            "ZFZ",
+            "ZIC",
+            "ZSN",
+            "ZST",
+            "ZZ1"
+        ],
+        "column_sampling": "{\"func\": \"oedtools.utils.generate_token_sequence\", \"args\": [\"<use range>\", 4, \";\", true]}",
+        "column_validation": "func:oedtools.utils.is_valid_token_sequence",
+        "default": null,
+        "desc": "Policy perils covered",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolPerilsCovered",
+        "numpy_dtype": "object",
+        "oed_db_field_name": "PerilsCovered",
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "R",
+        "secmod": null,
+        "sql_dtype": "varchar(250)"
+    },
+    "('acc', 'polstatus')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Policy layer status. Aside from predefined values, other single character values for user specific purposes can be used.",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolStatus",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "char(1)"
+    },
+    "('acc', 'poltax')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Policy insurance tax amount",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "PolTax",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "Tax",
+        "oed_db_table": "Policies",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'poluserdef1')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Policy user defined field",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolUserDef1",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'poluserdef2')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Policy user defined field",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolUserDef2",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'poluserdef3')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Policy user defined field",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolUserDef3",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'poluserdef4')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Policy user defined field",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolUserDef4",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'poluserdef5')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Policy user defined field",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PolUserDef5",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'portname')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Portfolio name",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PortName",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Portfolios",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(40)"
+    },
+    "('acc', 'portnotes')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Portfolio notes, longer description than allowed in portfolio name",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PortNotes",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Portfolios",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(200)"
+    },
+    "('acc', 'portnumber')": {
+        "blank": false,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Portfolio number",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "PortNumber",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Portfolios",
+        "py_dtype": "str",
+        "required": "R",
+        "secmod": null,
+        "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'producername')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Producer name (defined at policy level)",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "ProducerName",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Producers",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(40)"
+    },
+    "('acc', 'scalefactor')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 1.0,
+        "desc": "Percentage factor used to scale calculated losses. This value, entered as a decimal, should be the same for all steps for a policy contract and must be a value >0 and \u22641. For example, 0.12 for 12%.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "ScaleFactor",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": null,
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'starttriggerbuilding')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Starting value of the building damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "StartTriggerBuilding",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "StartTrigger",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'starttriggerbuildingcontent')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Starting value of the building and content damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "StartTriggerBuildingContent",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "StartTrigger",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'starttriggercontent')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "default": 0.0,
+        "desc": "Starting value of the content damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -3.4e+38,
+            3.4e+38
+        ],
+        "entity": "Acc",
+        "field_name": "StartTriggerContent",
+        "numpy_dtype": "float32",
+        "oed_db_field_name": "StartTrigger",
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "real"
+    },
+    "('acc', 'stepfunctionname')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Step function name",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "StepFunctionName",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "str",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "varchar(30)"
+    },
+    "('acc', 'stepnumber')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": {
+            "start": 0,
+            "stop": 256
+        },
+        "default": null,
+        "desc": "Number between 1 and 7 that is used to sort the step function in the correct order.",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "StepNumber",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": null,
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'steptriggertype')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": {
+            "start": 0,
+            "stop": 256
+        },
+        "default": null,
+        "desc": "Code that represents how, and for which coverages, pay-outs are triggered.",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "StepTriggerType",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": null,
+        "oed_db_table": "StepFunctions",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'underwriter')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": null,
+        "default": null,
+        "desc": "Underwriter name",
+        "dtype_range": null,
+        "entity": "Acc",
+        "field_name": "Underwriter",
+        "numpy_dtype": "object",
+        "oed_db_field_name": null,
+        "oed_db_table": "Policies",
+        "py_dtype": "str",
+        "required": "O",
+        "secmod": null,
+        "sql_dtype": "varchar(40)"
+    }
+}

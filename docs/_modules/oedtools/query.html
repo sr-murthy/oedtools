@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>oedtools.query &#8212; oedtools 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for oedtools.query</h1><div class="highlight"><pre>
+<span></span><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;get_columns&#39;</span>
+<span class="p">]</span>
+
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">.schema</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">get_grouped_master_schema</span><span class="p">,</span>
+    <span class="n">get_schema</span><span class="p">,</span>
+    <span class="n">get_values_profile</span>
+
+<span class="p">)</span>
+
+
+<div class="viewcode-block" id="get_columns"><a class="viewcode-back" href="../../modules.html#oedtools.query.get_columns">[docs]</a><span class="k">def</span> <span class="nf">get_columns</span><span class="p">(</span>
+    <span class="n">schema_types</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">headers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">descriptions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">required</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">nonnull</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">defaults</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">python_dtypes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">sql_dtypes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">numpy_dtypes</span><span class="o">=</span><span class="kc">None</span>
+<span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Queries the master schema for columns by header, and various properties</span>
+<span class="sd">    including whether the column is required, non-null, and by default values,</span>
+<span class="sd">    Python data types, SQL data types and Numpy data types. Multiple property</span>
+<span class="sd">    types are combined into an &quot;AND&quot; query, e.g. specifying the ``required``</span>
+<span class="sd">    and ``nonull`` properties and header substring(s) will produce a list of</span>
+<span class="sd">    column schemas for all columns whose headers contain the given header</span>
+<span class="sd">    substrings and which are required by their respective file schemas.</span>
+
+<span class="sd">    :param schema_types: List or tuple of schema types - chosen from `acc`,</span>
+<span class="sd">                         `loc`, `reinsinfo`, `reinsscope`</span>
+<span class="sd">    :type schema_types: list, tuple</span>
+
+<span class="sd">    :param headers: List or tuple of column headers or (substrings of headers)</span>
+<span class="sd">    :type headers: list, tuple</span>
+
+<span class="sd">    :param descriptions: List or tuple of column descriptons or (substrings of</span>
+<span class="sd">                         descriptions)</span>
+<span class="sd">    :type descriptions: list, tuple</span>
+
+<span class="sd">    :param required: Whether the column(s) are required (mandatory)</span>
+<span class="sd">                     in the relevant file(s)</span>
+<span class="sd">    :type required: bool</span>
+
+<span class="sd">    :param nonnull: Whether the column(s) are non-null (must not contain null</span>
+<span class="sd">                    values) in the relevant file(s)</span>
+<span class="sd">    :type nonull: bool</span>
+
+<span class="sd">    :param defaults: List or tuple of default values</span>
+<span class="sd">    :type defaults: list, tuple</span>
+
+<span class="sd">    :param python_dtypes: List or tuple of Python data types (or substrings of</span>
+<span class="sd">                          data types) - chosen from ``int``, ``float``, ``str``</span>
+<span class="sd">    type python_dtypes: list, tuple</span>
+
+<span class="sd">    :param sql_dtypes: List or tuple of SQL dtype string (or substrings of</span>
+<span class="sd">                       data types) - chosen from ``bigint``, ``bit``, ``char``,</span>
+<span class="sd">                       ``date``, ``datetime``, ``decimal``, ``float``, ``int``,</span>
+<span class="sd">                       ``nchar``, ``numeric``, ``nvarchar(max)``, ``real``,</span>
+<span class="sd">                       ``smallint``, ``time``, ``timestamp``, ``tinyint``,</span>
+<span class="sd">                       ``unsigned bigint``, ``unsigned bit``, ``unsigned int``,</span>
+<span class="sd">                       ``unsigned smallint``, ``unsigned tinyint``,</span>
+<span class="sd">                       ``varchar``, ``varchar(max)``, ``year``</span>
+<span class="sd">    type sql_dtypes: list, tuple</span>
+
+<span class="sd">    :param numpy_dtypes: List or tuple of Numpy data types (or substrings or data</span>
+<span class="sd">                         types) - chosen from ``float32``, ``float64``,</span>
+<span class="sd">                         ``int16``, ``int32``, ``int64``, ``int8``, ``object``,</span>
+<span class="sd">                         ``uint16``, ``uint32``, ``uint64``, ``uint8``</span>
+<span class="sd">    type numpy_dtypes: list, tuple</span>
+
+<span class="sd">    :return: (Possibly empty) sorted list of dicts, one per matching column.</span>
+<span class="sd">             Sorting is by header</span>
+<span class="sd">    :rtype: list</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">master_schema</span> <span class="o">=</span> <span class="n">get_schema</span><span class="p">()</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">master_schema</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">any</span><span class="p">([</span><span class="n">schema_types</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">descriptions</span><span class="p">,</span> <span class="n">required</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">,</span> <span class="n">python_dtypes</span><span class="p">,</span> <span class="n">sql_dtypes</span><span class="p">,</span> <span class="n">numpy_dtypes</span><span class="p">]):</span>
+        <span class="k">return</span> <span class="p">[]</span>
+
+    <span class="k">if</span> <span class="n">schema_types</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="k">for</span> <span class="n">schema_type</span> <span class="ow">in</span> <span class="n">schema_types</span>
+            <span class="k">if</span> <span class="n">schema_type</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">headers</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="k">for</span> <span class="n">header</span> <span class="ow">in</span> <span class="n">headers</span>
+            <span class="k">if</span> <span class="n">header</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;field_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">descriptions</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="k">for</span> <span class="n">desc</span> <span class="ow">in</span> <span class="n">descriptions</span>
+            <span class="k">if</span> <span class="n">desc</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;desc&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">required</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="k">if</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;required&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="p">([</span><span class="s1">&#39;R&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">required</span> <span class="ow">is</span> <span class="kc">True</span> <span class="k">else</span> <span class="p">[</span><span class="s1">&#39;CR&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">])</span>
+        <span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">nonnull</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;blank&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">nonnull</span>
+        <span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">defaults</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="k">if</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;default&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">defaults</span>
+        <span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">python_dtypes</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="k">if</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;py_dtype&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">python_dtypes</span>
+        <span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">sql_dtypes</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="k">for</span> <span class="n">sql_dtype</span> <span class="ow">in</span> <span class="n">sql_dtypes</span>
+            <span class="k">if</span> <span class="n">sql_dtype</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;sql_dtype&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">numpy_dtypes</span><span class="p">:</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">v</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="k">for</span> <span class="n">np_dtype</span> <span class="ow">in</span> <span class="n">numpy_dtypes</span>
+            <span class="k">if</span> <span class="n">np_dtype</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">v</span><span class="p">[</span><span class="s1">&#39;numpy_dtype&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="p">]</span>
+
+    <span class="n">keys</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="nb">set</span><span class="p">([(</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;entity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">r</span><span class="p">[</span><span class="s1">&#39;field_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span><span class="p">]),</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="n">results</span> <span class="o">=</span> <span class="p">[</span><span class="n">master_schema</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">keys</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">results</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">oedtools</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">Module Documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Sandeep Murthy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

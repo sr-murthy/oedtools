@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>oedtools.cli &#8212; oedtools 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for oedtools.cli</h1><div class="highlight"><pre>
+<span></span><span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;ColumnInfoCmd&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ColumnsCmd&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;OedToolsCmd&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;SampleColumnCmd&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ValidateCmd&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ValidateFileCmd&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;ValidateHeadersCmd&#39;</span>
+<span class="p">]</span>
+
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="kn">from</span> <span class="nn">argparse</span> <span class="k">import</span> <span class="n">RawDescriptionHelpFormatter</span>
+<span class="kn">from</span> <span class="nn">ast</span> <span class="k">import</span> <span class="n">literal_eval</span>
+<span class="kn">from</span> <span class="nn">itertools</span> <span class="k">import</span> <span class="n">groupby</span>
+
+<span class="kn">from</span> <span class="nn">argparsetree</span> <span class="k">import</span> <span class="n">BaseCommand</span>
+<span class="kn">from</span> <span class="nn">future.utils</span> <span class="k">import</span> <span class="n">raise_with_traceback</span>
+
+<span class="kn">from</span> <span class="nn">.exceptions</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">CommandError</span><span class="p">,</span>
+    <span class="n">ReportingError</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">.query</span> <span class="k">import</span> <span class="n">get_columns</span>
+<span class="kn">from</span> <span class="nn">.report</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">report_headers</span><span class="p">,</span>
+    <span class="n">report_file</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">.schema</span> <span class="k">import</span> <span class="p">(</span>
+    <span class="n">get_grouped_master_schema</span><span class="p">,</span>
+    <span class="n">sample_column</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span> <span class="nn">.utils</span> <span class="k">import</span> <span class="n">get_value</span>
+
+
+<div class="viewcode-block" id="ColumnInfoCmd"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ColumnInfoCmd">[docs]</a><span class="k">class</span> <span class="nc">ColumnInfoCmd</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+    <span class="n">formatter_class</span> <span class="o">=</span> <span class="n">RawDescriptionHelpFormatter</span>
+
+<div class="viewcode-block" id="ColumnInfoCmd.add_args"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ColumnInfoCmd.add_args">[docs]</a>    <span class="k">def</span> <span class="nf">add_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Command parser setup</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">add_args</span><span class="p">(</span><span class="n">parser</span><span class="p">)</span>
+
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-t&#39;</span><span class="p">,</span> <span class="s1">&#39;--schema-types&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;List of file schema types; must be one of &quot;acc&quot;, &quot;loc&quot;, &quot;reinsinfo&quot;, &quot;reinsscope&quot; - a comma-separated string enclosed in quotation marks&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-m&#39;</span><span class="p">,</span> <span class="s1">&#39;--column-headers&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;List of column headers or header substrings - a comma-separated string enclosed in quotation marks&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-d&#39;</span><span class="p">,</span> <span class="s1">&#39;--descriptions&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;List of column descriptions or description substrings - a comma-separated string enclosed in quotation marks&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-r&#39;</span><span class="p">,</span> <span class="s1">&#39;--required&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Is the column a required column in the file?&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-n&#39;</span><span class="p">,</span> <span class="s1">&#39;--nonnull&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Is the column required not to have any null values?&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-e&#39;</span><span class="p">,</span> <span class="s1">&#39;--defaults&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;List of default values - a comma-separated string enclosed in quotation marks&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-p&#39;</span><span class="p">,</span> <span class="s1">&#39;--python-dtypes&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;List of Python data types - only &quot;int&quot;, &quot;float&quot;, &quot;str&quot; are supported; a comma-separated string enclosed in quotation marks&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-s&#39;</span><span class="p">,</span> <span class="s1">&#39;--sql-dtypes&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;List of SQL data types - a comma-separated string enclosed in quotation marks&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-y&#39;</span><span class="p">,</span> <span class="s1">&#39;--numpy-dtypes&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;List of Numpy data types - a comma-separated string enclosed in quotation marks&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-a&#39;</span><span class="p">,</span> <span class="s1">&#39;--headers-only&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Only return the column headers&#39;</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="ColumnInfoCmd.action"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ColumnInfoCmd.action">[docs]</a>    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Command logic</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">theargs</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+
+        <span class="k">def</span> <span class="nf">double_quote</span><span class="p">(</span><span class="n">st</span><span class="p">):</span>
+            <span class="k">return</span> <span class="s1">&#39;&quot;</span><span class="si">{}</span><span class="s1">&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">st</span><span class="p">)</span>
+
+        <span class="n">schema_types</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;schema_types&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">schema_types</span><span class="p">:</span>
+            <span class="n">schema_types</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">literal_eval</span><span class="p">(</span><span class="n">double_quote</span><span class="p">(</span><span class="n">schema_types</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+
+        <span class="n">headers</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;column_headers&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">headers</span><span class="p">:</span>
+            <span class="n">headers</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">literal_eval</span><span class="p">(</span><span class="n">double_quote</span><span class="p">(</span><span class="n">headers</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+
+        <span class="n">descriptions</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;descriptions&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">descriptions</span><span class="p">:</span>
+            <span class="n">descriptions</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">literal_eval</span><span class="p">(</span><span class="n">double_quote</span><span class="p">(</span><span class="n">descriptions</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+
+        <span class="n">required</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;required&#39;</span><span class="p">]</span>
+
+        <span class="n">nonnull</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;nonnull&#39;</span><span class="p">]</span>
+
+        <span class="n">defaults</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;defaults&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">defaults</span><span class="p">:</span>
+            <span class="n">defaults</span> <span class="o">=</span> <span class="p">[</span><span class="n">get_value</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">literal_eval</span><span class="p">(</span><span class="n">double_quote</span><span class="p">(</span><span class="n">defaults</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+
+        <span class="n">py_dtypes</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;python_dtypes&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">py_dtypes</span><span class="p">:</span>
+            <span class="n">py_dtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">literal_eval</span><span class="p">(</span><span class="n">double_quote</span><span class="p">(</span><span class="n">py_dtypes</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+
+        <span class="n">sql_dtypes</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;sql_dtypes&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">sql_dtypes</span><span class="p">:</span>
+            <span class="n">sql_dtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">literal_eval</span><span class="p">(</span><span class="n">double_quote</span><span class="p">(</span><span class="n">sql_dtypes</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+
+        <span class="n">np_dtypes</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;numpy_dtypes&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">np_dtypes</span><span class="p">:</span>
+            <span class="n">np_dtypes</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">literal_eval</span><span class="p">(</span><span class="n">double_quote</span><span class="p">(</span><span class="n">np_dtypes</span><span class="p">))</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)]</span>
+
+        <span class="n">results</span> <span class="o">=</span> <span class="n">get_columns</span><span class="p">(</span>
+            <span class="n">schema_types</span><span class="o">=</span><span class="n">schema_types</span><span class="p">,</span>
+            <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+            <span class="n">descriptions</span><span class="o">=</span><span class="n">descriptions</span><span class="p">,</span>
+            <span class="n">required</span><span class="o">=</span><span class="n">required</span><span class="p">,</span>
+            <span class="n">nonnull</span><span class="o">=</span><span class="n">nonnull</span><span class="p">,</span>
+            <span class="n">defaults</span><span class="o">=</span><span class="n">defaults</span><span class="p">,</span>
+            <span class="n">python_dtypes</span><span class="o">=</span><span class="n">py_dtypes</span><span class="p">,</span>
+            <span class="n">sql_dtypes</span><span class="o">=</span><span class="n">sql_dtypes</span><span class="p">,</span>
+            <span class="n">numpy_dtypes</span><span class="o">=</span><span class="n">np_dtypes</span>
+        <span class="p">)</span>
+
+        <span class="n">headers_only</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;headers_only&#39;</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">headers_only</span><span class="p">:</span>
+            <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> (</span><span class="si">{}</span><span class="s1">)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">column</span><span class="p">,</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">g</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">group</span><span class="p">]))</span>
+                <span class="k">for</span> <span class="n">column</span><span class="p">,</span> <span class="n">group</span> <span class="ow">in</span> <span class="n">groupby</span><span class="p">(</span>
+                    <span class="p">[(</span><span class="n">r</span><span class="p">[</span><span class="s1">&#39;field_name&#39;</span><span class="p">],</span> <span class="n">r</span><span class="p">[</span><span class="s1">&#39;entity&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span><span class="p">],</span>
+                    <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">t</span><span class="p">:</span> <span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="p">)</span>
+            <span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">results</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="n">k</span><span class="p">:</span> <span class="n">v</span>
+                    <span class="k">if</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;column_range&#39;</span><span class="p">,</span> <span class="s1">&#39;column_validation&#39;</span><span class="p">,</span> <span class="s1">&#39;dtype_range&#39;</span><span class="p">]</span>
+                    <span class="k">else</span> <span class="n">v</span> <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="nb">range</span><span class="p">)</span> <span class="k">else</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+                    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                <span class="p">}</span>
+                <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">results</span>
+            <span class="p">]</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">results</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span></div></div>
+
+
+<div class="viewcode-block" id="SampleColumnCmd"><a class="viewcode-back" href="../../modules.html#oedtools.cli.SampleColumnCmd">[docs]</a><span class="k">class</span> <span class="nc">SampleColumnCmd</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+    <span class="n">formatter_class</span> <span class="o">=</span> <span class="n">RawDescriptionHelpFormatter</span>
+
+<div class="viewcode-block" id="SampleColumnCmd.add_args"><a class="viewcode-back" href="../../modules.html#oedtools.cli.SampleColumnCmd.add_args">[docs]</a>    <span class="k">def</span> <span class="nf">add_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Command parser setup</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">add_args</span><span class="p">(</span><span class="n">parser</span><span class="p">)</span>
+
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-t&#39;</span><span class="p">,</span> <span class="s1">&#39;--schema-type&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;List of file schema types; must be one of &quot;acc&quot;, &quot;loc&quot;, &quot;reinsinfo&quot;, &quot;reinsscope&quot; - a comma-separated string enclosed in quotation marks&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-m&#39;</span><span class="p">,</span> <span class="s1">&#39;--column-header&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Column header&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-n&#39;</span><span class="p">,</span> <span class="s1">&#39;--sample-size&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Sample size&#39;</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="SampleColumnCmd.action"><a class="viewcode-back" href="../../modules.html#oedtools.cli.SampleColumnCmd.action">[docs]</a>    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Command logic</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">theargs</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+
+        <span class="n">schema_type</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;schema_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+        <span class="n">header</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;column_header&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+        <span class="n">size</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;sample_size&#39;</span><span class="p">]</span>
+
+        <span class="n">sample</span> <span class="o">=</span> <span class="n">sample_column</span><span class="p">(</span><span class="n">schema_type</span><span class="p">,</span> <span class="n">header</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">size</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">sample</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">sort_keys</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span></div></div>
+
+
+<div class="viewcode-block" id="ValidateFileCmd"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ValidateFileCmd">[docs]</a><span class="k">class</span> <span class="nc">ValidateFileCmd</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+    <span class="n">formatter_class</span> <span class="o">=</span> <span class="n">RawDescriptionHelpFormatter</span>
+
+<div class="viewcode-block" id="ValidateFileCmd.add_args"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ValidateFileCmd.add_args">[docs]</a>    <span class="k">def</span> <span class="nf">add_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Command parser setup</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">add_args</span><span class="p">(</span><span class="n">parser</span><span class="p">)</span>
+
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-f&#39;</span><span class="p">,</span> <span class="s1">&#39;--input-file-path&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;OED input file path&#39;</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-t&#39;</span><span class="p">,</span> <span class="s1">&#39;--schema-type&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;File schema type - &quot;loc&quot;, &quot;acc&quot;, &quot;reinsinfo&quot;, or &quot;reinsscope&quot;&#39;</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="ValidateFileCmd.action"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ValidateFileCmd.action">[docs]</a>    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Command logic</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">theargs</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+
+        <span class="n">input_fp</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;input_file_path&#39;</span><span class="p">])</span>
+
+        <span class="n">schema_type</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;schema_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">report_file</span><span class="p">(</span><span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;schema_type&#39;</span><span class="p">],</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;input_file_path&#39;</span><span class="p">]):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">ReportingError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="ValidateHeadersCmd"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ValidateHeadersCmd">[docs]</a><span class="k">class</span> <span class="nc">ValidateHeadersCmd</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+    <span class="n">formatter_class</span> <span class="o">=</span> <span class="n">RawDescriptionHelpFormatter</span>
+
+<div class="viewcode-block" id="ValidateHeadersCmd.add_args"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ValidateHeadersCmd.add_args">[docs]</a>    <span class="k">def</span> <span class="nf">add_args</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parser</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Command parser setup</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">add_args</span><span class="p">(</span><span class="n">parser</span><span class="p">)</span>
+
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-f&#39;</span><span class="p">,</span> <span class="s1">&#39;--input-file-path&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;OED input file path&#39;</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-e&#39;</span><span class="p">,</span> <span class="s1">&#39;--column-headers&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;A list of column headers (a single string enclosed in double quotes, headers within string separated by commas)&#39;</span>
+        <span class="p">)</span>
+        <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+            <span class="s1">&#39;-t&#39;</span><span class="p">,</span> <span class="s1">&#39;--schema-type&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">help</span><span class="o">=</span><span class="s1">&#39;File schema type - &quot;loc&quot;, &quot;acc&quot;, &quot;reinsinfo&quot;, or &quot;reinsscope&quot;&#39;</span>
+        <span class="p">)</span></div>
+
+<div class="viewcode-block" id="ValidateHeadersCmd.action"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ValidateHeadersCmd.action">[docs]</a>    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Command logic</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">theargs</span> <span class="o">=</span> <span class="nb">vars</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+        <span class="n">file_or_headers</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">file_or_headers</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">theargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;input_file_path&#39;</span><span class="p">))</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">TypeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">file_or_headers</span> <span class="o">=</span> <span class="n">literal_eval</span><span class="p">(</span><span class="n">theargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;column_headers&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+            <span class="k">except</span> <span class="p">(</span><span class="ne">TypeError</span><span class="p">,</span> <span class="ne">ValueError</span><span class="p">):</span>
+                <span class="k">pass</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">file_or_headers</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CommandError</span><span class="p">(</span>
+                <span class="s1">&#39;Invalid arguments - please check that the input file path is &#39;</span>
+                <span class="s1">&#39;a valid file path, or the headers list was provided as a &#39;</span>
+                <span class="s1">&#39;string enclosed with double quotes&#39;</span>
+            <span class="p">)</span>
+
+        <span class="n">schema_type</span> <span class="o">=</span> <span class="n">theargs</span><span class="p">[</span><span class="s1">&#39;schema_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">report_headers</span><span class="p">(</span><span class="n">schema_type</span><span class="p">,</span> <span class="n">file_or_headers</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+        <span class="k">except</span> <span class="n">ReportingError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">raise_with_traceback</span><span class="p">(</span><span class="n">CommandError</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="ColumnsCmd"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ColumnsCmd">[docs]</a><span class="k">class</span> <span class="nc">ColumnsCmd</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Subcommands</span>
+<span class="sd">    ::</span>
+
+<span class="sd">        * get column information from file schemas</span>
+<span class="sd">        * sample values in a given column in a file schema</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sub_commands</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;info&#39;</span><span class="p">:</span> <span class="n">ColumnInfoCmd</span><span class="p">,</span>
+        <span class="s1">&#39;sample&#39;</span><span class="p">:</span> <span class="n">SampleColumnCmd</span>
+    <span class="p">}</span></div>
+
+
+<div class="viewcode-block" id="ValidateCmd"><a class="viewcode-back" href="../../modules.html#oedtools.cli.ValidateCmd">[docs]</a><span class="k">class</span> <span class="nc">ValidateCmd</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Subcommands</span>
+<span class="sd">    ::</span>
+
+<span class="sd">        * validating headers of OED input files or dict arrays (lists, tuples) of headers</span>
+<span class="sd">        * validating OED input files or dict arrays (lists, tuples) of headers</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sub_commands</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;headers&#39;</span><span class="p">:</span> <span class="n">ValidateHeadersCmd</span><span class="p">,</span>
+        <span class="s1">&#39;file&#39;</span><span class="p">:</span> <span class="n">ValidateFileCmd</span>
+    <span class="p">}</span></div>
+
+<div class="viewcode-block" id="OedToolsCmd"><a class="viewcode-back" href="../../modules.html#oedtools.cli.OedToolsCmd">[docs]</a><span class="k">class</span> <span class="nc">OedToolsCmd</span><span class="p">(</span><span class="n">BaseCommand</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Root command</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sub_commands</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;columns&#39;</span><span class="p">:</span> <span class="n">ColumnsCmd</span><span class="p">,</span>
+        <span class="s1">&#39;validate&#39;</span><span class="p">:</span> <span class="n">ValidateCmd</span>
+    <span class="p">}</span>
+
+<div class="viewcode-block" id="OedToolsCmd.run"><a class="viewcode-back" href="../../modules.html#oedtools.cli.OedToolsCmd.run">[docs]</a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">super</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+            <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span></div></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">oedtools</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">Module Documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Sandeep Murthy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
