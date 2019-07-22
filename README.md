@@ -316,7 +316,7 @@ Here are three examples.
 
 3. Sampling loc. occupancy codes.
 
-        (myvenv2) $ oed columns sample -t 'loc' -m 'occupancycode'
+        (myvenv) $ oed columns sample -t 'loc' -m 'occupancycode'
         [
             3643,
             2696,
