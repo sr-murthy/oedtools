@@ -8,17 +8,35 @@ oedtools Documentation
 
 ``oedtools`` is a command-line file validation and query toolkit for the `Simplitium Open Exposure Data (OED) <https://github.com/Simplitium/OED>`_ (re)insurance exposure data format.
 
-**Note**: the OED version that this repository and package are pinned to is 1.0.3.
+**Note**: the repository and package are based on the current OED
+version 1.0.3 - this is stored in the `schema_version.txt <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt>`_  file.
 
-The main features currently include
+The main user-level features currently include
 
-* validation of OED account (``acc``), location (``loc``), reinsurance info. (``reinsinfo``) and reinsurance scope (``reinsscope``) input CSV files
-* searching for columns with required properties - headers (column names) containing certain substrings, column descriptions containing keywords, columns with certain data types, default values, required, nonnull etc.
-* sampling any given column for randomly generated data consistent with the column range or data type range or a specific column validation function
+-  **OED file validation** - validation of OED account (``acc``),
+   location (``loc``), reinsurance info. (``reinsinfo``) and reinsurance
+   scope (``reinsscope``) input CSV files
+-  **column queries** - searching for columns in the schema based on
+   queryable properties such as headers (column names) or header
+   substrings, column descriptions containing keywords, Python, SQL or
+   Numpy data types, default values, required and/or nonnull properties
+-  **sampling column data** - sampling any given column in the schemas
+   for randomly generated data consistent with the column range or data
+   type range or a specific column validation function
 
-Future features include
+Validation and sampling are based on two types of interrelated but
+independent data structures built in to the package.
 
-* searching for information about the OED data entities underlying the column data - location properties such as latitudes and longitudes, occupancy and construction codes, country codes, currency codes, peril codes, types and codes for deductibles and limits, etc.
+-  **file schemas** - separate JSON files for the `acc <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json>`_ ,
+   `loc <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json>`_ , \ `reinsinfo <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json>`_  and `reinsscope <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json>`_ files defining
+   the properties of each column in each file
+-  a **values profile** - a `JSON profile of data categories (and subcategories) <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json>`_ that can occur in the various columns, including
+   categories and subcategories of values, column headers and specific
+   column ranges associated with the subcategories (if they exist), and
+   column data validation and sampling methods (where available).
+
+The schemas define the column structure of OED files and provide a "column view" of the files, and the values
+profile defines the properties of the data that occur in the columns and provides a "data" view of the files.
 
 .. toctree::
    :maxdepth: 2

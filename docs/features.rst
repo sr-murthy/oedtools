@@ -58,49 +58,51 @@ message, e.g.
 
 Header-related errors currently include
 
--  headers not currently defined in any OED schema
--  headers which are mandatory in the given file schema but not present
-   in the file
+-  **non-OED headers** - headers not currently defined in any OED schema
+-  **required but missing** headers - headers which are mandatory in a
+   given file schema but not present in an actual input file
 
 Data-related errors currently include
 
--  null values in non-null columns (a non-null column is defined as a column which must not contain any null values)
--  column values with data types inconsistent with the data type defined
-   for the column in the given schema, e.g. string values in an integer
-   or floating point column
--  values not in the defined range of a column (this can be either a
-   specific column range defined in the values profile, or a range inferred from the column data
-   type defined in the schema)
+-  **null values in non-null columns** - a non-null column is defined as
+   a column which must not contain any null values
+-  **column values with incompatible data types** - data types of values
+   inconsistent with the data type defined for the column in the given
+   schema, e.g. string values in an integer or floating point column
+-  **out of range values** - values not in the defined range of a column
+   (this can be either a specific column range defined in the values
+   profile, or a range inferred from the column data type defined in the
+   schema)
 
-**Note**: data validation is facilitated via a pre-generated JSON
-`“values profile” <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json>`_ of the OED data entities and related “value groups”
-underlying the columns. This values profile defines (sub)categories of
-data, independently of the schemas, such as deductible and limit types
-and codes, latitudes and longitudes, occupancy codes and construction
-codes, peril codes, currency codes, country codes, etc., and associates
-groups of columns whose values fall in same category.
+**Note**: data validation (and sampling) is facilitated via the `values profile <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json>`_, which defines the categories and subcategories of data values
+that can occur in the various columns, independently of the schemas. The
+values profile defines, where applicable, the ranges of values
+associated with each subcategory and links these ranges to columns in
+the relevant schemas. It also defines, where applicable, methods for
+validation and sampling. Currently, the categories of data covered by
+the values profile include
 
--  attachments
--  construction codes
--  country codes
--  coverage types
--  currencies
--  deductible codes
--  deductible types
--  deductibles
--  geocoding
--  limit codes
--  limit types
--  limits
--  location properties
--  occupancy types
--  peril codes
--  reins percentages
--  reins risk levels
--  reins types
--  shares
--  tivs
--  years
+-  **attachments**
+-  **construction codes**
+-  **country codes**
+-  **coverage types**
+-  **currencies**
+-  **deductible codes**
+-  **deductible types**
+-  **deductibles**
+-  **geocoding**
+-  **limit codes**
+-  **limit types**
+-  **limits**
+-  **location properties**
+-  **occupancy types**
+-  **peril codes**
+-  **reins percentages**
+-  **reins risk levels**
+-  **reins types**
+-  **shares**
+-  **TIVs**
+-  **years**
 
 Headers
 ^^^^^^^
@@ -352,7 +354,7 @@ Here are three examples.
 
    ::
 
-       (myvenv2) $ oed columns sample -t 'loc' -m 'occupancycode'
+       (myvenv) $ oed columns sample -t 'loc' -m 'occupancycode'
        [
            3643,
            2696,

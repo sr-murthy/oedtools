@@ -4,17 +4,21 @@
 
 `oedtools` is a command-line file validation and query toolkit for the <a href="https://github.com/Simplitium/OED" target="_blank">Simplitium Open Exposure Data (OED)</a> (re)insurance exposure data format.
 
-**Note**: the OED version that this repository and package are pinned to is 1.0.3.
+**Note**: the repository and package are based on the current OED version 1.0.3 - this is stored in the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt" target="_blank">`schema_version.txt`</a> file.
 
-The main features currently include
+The main user-level features currently include
 
-* validation of OED account (`acc`), location (`loc`), reinsurance info. (`reinsinfo`) and reinsurance scope (`reinsscope`) input CSV files
-* searching for columns with required properties - headers (column names) containing certain substrings, column descriptions containing keywords, columns with certain data types, default values, required, nonnull etc.
-* sampling any given column for randomly generated data consistent with the column range or data type range or a specific column validation function
+* **OED file validation** - validation of OED account (`acc`), location (`loc`), reinsurance info. (`reinsinfo`) and reinsurance scope (`reinsscope`) input CSV files
+* **column queries** - searching for columns in the schema based on queryable properties such as headers (column names) or header substrings, column descriptions containing keywords, Python, SQL or Numpy data types, default values, required and/or nonnull properties
+* **sampling column data** - sampling any given column in the schemas for randomly generated data consistent with the column range or data type range or a specific column validation function
 
-Future features include
+Validation and sampling are based on two types of interrelated but independent data structures built in to the package.
 
-* searching for information about the OED data entities underlying the column data - location properties such as latitudes and longitudes, occupancy and construction codes, country codes, currency codes, peril codes, TIVs, types and codes for deductibles and limits, etc.
+* **file schemas** - separate JSON files for the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json" target="_blank"> `acc`</a>, <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json" target="_blank">`loc`</a>, <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json" target="_blank">`reinsinfo`</a> and <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json" target="_blank">`reinsscope`</a> files defining the properties of each column in each file
+* a **values profile** - a <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">JSON profile of data categories (and subcategories)</a> that can occur in the various columns, including categories and subcategories of values, column headers and specific column ranges associated with the subcategories (if they exist), and column data validation and sampling methods (where available).
+
+The schemas define the column structure of OED files and provide a "column view" of the files, and the values
+profile defines the properties of the data that occur in the columns and provides a "data" view of the files.
 
 ## Installation and Requirements
 
@@ -69,38 +73,40 @@ If there are no errors in the file this is indicated with a short message, e.g.
 
 Header-related errors currently include
 
-* headers not currently defined in any OED schema
-* headers which are mandatory in the given file schema but not present in the file
+* **non-OED headers** - headers not currently defined in any OED schema
+* **required but missing** headers - headers which are mandatory in a given file schema but not present in an actual input file
 
 Data-related errors currently include
 
-* null values in non-null columns (a non-null column is defined as a column which must not contain any null values)
-* column values with data types inconsistent with the data type defined for the column in the given schema, e.g. string values in an integer or floating point column
-* values not in the defined range of a column (this can be either a specific column range defined in the values profile, or a range inferred from the column data type defined in the schema)
+* **null values in non-null columns** - a non-null column is defined as a column which must not contain any null values
+* **column values with incompatible data types** - data types of values inconsistent with the data type defined for the column in the given schema, e.g. string values in an integer or floating point column
+* **out of range values** - values not in the defined range of a column (this can be either a specific column range defined in the values profile, or a range inferred from the column data type defined in the schema)
 
-**Note**: data validation (and sampling) is facilitated via a pre-generated JSON <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">"values profile"</a> of the OED data entities and related "value groups" underlying the columns. This values profile defines (sub)categories of data, independently of the schemas, such as deductible and limit types and codes, latitudes and longitudes, occupancy codes and construction codes, peril codes, currency codes, country codes, etc., and associates groups of columns whose values fall in the same category. Currently the value groups defined in the values profile include
+**Note**: data validation (and sampling) is facilitated via the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">values profile</a>, which defines the categories and subcategories of data values that can occur in the various columns, independently of the schemas. The values profile defines, where applicable, the ranges of values associated with each subcategory and links these ranges to columns in the relevant schemas. It also defines, where applicable, methods for validation and sampling. Currently, the categories of data covered by the values profile include
 
-* attachments
-* construction codes
-* country codes
-* coverage types
-* currencies
-* deductible codes
-* deductible types
-* deductibles
-* geocoding
-* limit codes
-* limit types
-* limits
-* location properties
-* occupancy types
-* peril codes
-* reins percentages
-* reins risk levels
-* reins types
-* shares
-* tivs
-* years
+* **attachments**
+* **construction codes**
+* **country codes**
+* **coverage types**
+* **currencies**
+* **deductible codes**
+* **deductible types**
+* **deductibles**
+* **geocoding**
+* **limit codes**
+* **limit types**
+* **limits**
+* **location properties**
+* **occupancy types**
+* **peril codes**
+* **reins percentages**
+* **reins risk levels**
+* **reins types**
+* **shares**
+* **TIVs**
+* **years**
+
+This will be extended in future releases to cover all possible values.
 
 #### Headers
 
