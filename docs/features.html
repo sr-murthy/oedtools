@@ -83,49 +83,51 @@ message, e.g.</p>
 </div>
 <p>Header-related errors currently include</p>
 <ul class="simple">
-<li><p>headers not currently defined in any OED schema</p></li>
-<li><p>headers which are mandatory in the given file schema but not present
-in the file</p></li>
+<li><p><strong>non-OED headers</strong> - headers not currently defined in any OED schema</p></li>
+<li><p><strong>required but missing</strong> headers - headers which are mandatory in a
+given file schema but not present in an actual input file</p></li>
 </ul>
 <p>Data-related errors currently include</p>
 <ul class="simple">
-<li><p>null values in non-null columns (a non-null column is defined as a column which must not contain any null values)</p></li>
-<li><p>column values with data types inconsistent with the data type defined
-for the column in the given schema, e.g. string values in an integer
-or floating point column</p></li>
-<li><p>values not in the defined range of a column (this can be either a
-specific column range defined in the values profile, or a range inferred from the column data
-type defined in the schema)</p></li>
+<li><p><strong>null values in non-null columns</strong> - a non-null column is defined as
+a column which must not contain any null values</p></li>
+<li><p><strong>column values with incompatible data types</strong> - data types of values
+inconsistent with the data type defined for the column in the given
+schema, e.g. string values in an integer or floating point column</p></li>
+<li><p><strong>out of range values</strong> - values not in the defined range of a column
+(this can be either a specific column range defined in the values
+profile, or a range inferred from the column data type defined in the
+schema)</p></li>
 </ul>
-<p><strong>Note</strong>: data validation is facilitated via a pre-generated JSON
-<a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json">“values profile”</a> of the OED data entities and related “value groups”
-underlying the columns. This values profile defines (sub)categories of
-data, independently of the schemas, such as deductible and limit types
-and codes, latitudes and longitudes, occupancy codes and construction
-codes, peril codes, currency codes, country codes, etc., and associates
-groups of columns whose values fall in same category.</p>
+<p><strong>Note</strong>: data validation (and sampling) is facilitated via the <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json">values profile</a>, which defines the categories and subcategories of data values
+that can occur in the various columns, independently of the schemas. The
+values profile defines, where applicable, the ranges of values
+associated with each subcategory and links these ranges to columns in
+the relevant schemas. It also defines, where applicable, methods for
+validation and sampling. Currently, the categories of data covered by
+the values profile include</p>
 <ul class="simple">
-<li><p>attachments</p></li>
-<li><p>construction codes</p></li>
-<li><p>country codes</p></li>
-<li><p>coverage types</p></li>
-<li><p>currencies</p></li>
-<li><p>deductible codes</p></li>
-<li><p>deductible types</p></li>
-<li><p>deductibles</p></li>
-<li><p>geocoding</p></li>
-<li><p>limit codes</p></li>
-<li><p>limit types</p></li>
-<li><p>limits</p></li>
-<li><p>location properties</p></li>
-<li><p>occupancy types</p></li>
-<li><p>peril codes</p></li>
-<li><p>reins percentages</p></li>
-<li><p>reins risk levels</p></li>
-<li><p>reins types</p></li>
-<li><p>shares</p></li>
-<li><p>tivs</p></li>
-<li><p>years</p></li>
+<li><p><strong>attachments</strong></p></li>
+<li><p><strong>construction codes</strong></p></li>
+<li><p><strong>country codes</strong></p></li>
+<li><p><strong>coverage types</strong></p></li>
+<li><p><strong>currencies</strong></p></li>
+<li><p><strong>deductible codes</strong></p></li>
+<li><p><strong>deductible types</strong></p></li>
+<li><p><strong>deductibles</strong></p></li>
+<li><p><strong>geocoding</strong></p></li>
+<li><p><strong>limit codes</strong></p></li>
+<li><p><strong>limit types</strong></p></li>
+<li><p><strong>limits</strong></p></li>
+<li><p><strong>location properties</strong></p></li>
+<li><p><strong>occupancy types</strong></p></li>
+<li><p><strong>peril codes</strong></p></li>
+<li><p><strong>reins percentages</strong></p></li>
+<li><p><strong>reins risk levels</strong></p></li>
+<li><p><strong>reins types</strong></p></li>
+<li><p><strong>shares</strong></p></li>
+<li><p><strong>TIVs</strong></p></li>
+<li><p><strong>years</strong></p></li>
 </ul>
 </div>
 <div class="section" id="headers">
@@ -358,7 +360,7 @@ optional arguments:
 </div>
 </li>
 <li><p>Sampling loc. occupancy codes.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv2) $ oed columns sample -t &#39;loc&#39; -m &#39;occupancycode&#39;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>(myvenv) $ oed columns sample -t &#39;loc&#39; -m &#39;occupancycode&#39;
 [
     3643,
     2696,

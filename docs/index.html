@@ -34,17 +34,34 @@
   <div class="section" id="oedtools-documentation">
 <h1>oedtools Documentation<a class="headerlink" href="#oedtools-documentation" title="Permalink to this headline">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">oedtools</span></code> is a command-line file validation and query toolkit for the <a class="reference external" href="https://github.com/Simplitium/OED">Simplitium Open Exposure Data (OED)</a> (re)insurance exposure data format.</p>
-<p><strong>Note</strong>: the OED version that this repository and package are pinned to is 1.0.3.</p>
-<p>The main features currently include</p>
+<p><strong>Note</strong>: the repository and package are based on the current OED
+version 1.0.3 - this is stored in the <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt">schema_version.txt</a>  file.</p>
+<p>The main user-level features currently include</p>
 <ul class="simple">
-<li><p>validation of OED account (<code class="docutils literal notranslate"><span class="pre">acc</span></code>), location (<code class="docutils literal notranslate"><span class="pre">loc</span></code>), reinsurance info. (<code class="docutils literal notranslate"><span class="pre">reinsinfo</span></code>) and reinsurance scope (<code class="docutils literal notranslate"><span class="pre">reinsscope</span></code>) input CSV files</p></li>
-<li><p>searching for columns with required properties - headers (column names) containing certain substrings, column descriptions containing keywords, columns with certain data types, default values, required, nonnull etc.</p></li>
-<li><p>sampling any given column for randomly generated data consistent with the column range or data type range or a specific column validation function</p></li>
+<li><p><strong>OED file validation</strong> - validation of OED account (<code class="docutils literal notranslate"><span class="pre">acc</span></code>),
+location (<code class="docutils literal notranslate"><span class="pre">loc</span></code>), reinsurance info. (<code class="docutils literal notranslate"><span class="pre">reinsinfo</span></code>) and reinsurance
+scope (<code class="docutils literal notranslate"><span class="pre">reinsscope</span></code>) input CSV files</p></li>
+<li><p><strong>column queries</strong> - searching for columns in the schema based on
+queryable properties such as headers (column names) or header
+substrings, column descriptions containing keywords, Python, SQL or
+Numpy data types, default values, required and/or nonnull properties</p></li>
+<li><p><strong>sampling column data</strong> - sampling any given column in the schemas
+for randomly generated data consistent with the column range or data
+type range or a specific column validation function</p></li>
 </ul>
-<p>Future features include</p>
+<p>Validation and sampling are based on two types of interrelated but
+independent data structures built in to the package.</p>
 <ul class="simple">
-<li><p>searching for information about the OED data entities underlying the column data - location properties such as latitudes and longitudes, occupancy and construction codes, country codes, currency codes, peril codes, types and codes for deductibles and limits, etc.</p></li>
+<li><p><strong>file schemas</strong> - separate JSON files for the <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json">acc</a> ,
+<a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json">loc</a> , <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json">reinsinfo</a>  and <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json">reinsscope</a> files defining
+the properties of each column in each file</p></li>
+<li><p>a <strong>values profile</strong> - a <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json">JSON profile of data categories (and subcategories)</a> that can occur in the various columns, including
+categories and subcategories of values, column headers and specific
+column ranges associated with the subcategories (if they exist), and
+column data validation and sampling methods (where available).</p></li>
 </ul>
+<p>The schemas define the column structure of OED files and provide a “column view” of the files, and the values
+profile defines the properties of the data that occur in the columns and provides a “data” view of the files.</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
