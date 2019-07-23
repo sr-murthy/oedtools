@@ -1,4 +1,5 @@
-[![PyPI version](https://badge.fury.io/py/oedtools.svg)](https://badge.fury.io/py/oedtools) [![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?branch=master)](https://travis-ci.com/sr-murthy/oedtools)
+[![PyPI version](https://badge.fury.io/py/oedtools.svg)](https://badge.fury.io/py/oedtools)
+[![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?branch=master)](https://travis-ci.com/sr-murthy/oedtools)
 
 # oedtools
 
