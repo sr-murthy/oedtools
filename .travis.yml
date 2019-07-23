@@ -8,5 +8,5 @@ install:
 script:
   - tox
 git:
-  depth: 25
+  depth: false
   quiet: true
