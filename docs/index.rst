@@ -9,7 +9,7 @@ oedtools Documentation
 ``oedtools`` is a command-line file validation and query toolkit for the `Simplitium Open Exposure Data (OED) <https://github.com/Simplitium/OED>`_ (re)insurance exposure data format.
 
 **Note**: the repository and package are based on the current OED
-version 1.0.3 - this is stored in the `schema_version.txt <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt>`_  file.
+version 1.0.3 - this is stored in the `schema version <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt>`_ file.
 
 The main user-level features currently include
 
@@ -27,9 +27,8 @@ The main user-level features currently include
 Validation and sampling are based on two types of interrelated but
 independent data structures built in to the package.
 
--  **file schemas** - separate JSON files for the `acc <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json>`_ ,
-   `loc <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json>`_ , \ `reinsinfo <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json>`_  and `reinsscope <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json>`_ files defining
-   the properties of each column in each file
+-  **file schemas** - separate JSON files for the `acc. <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json>`_ ,
+   `loc. <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json>`_ , \ `reins. info. <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json>`_  and `reins. scope <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json>`_ files defining the properties of each column in each file
 -  a **values profile** - a `JSON profile of data categories (and subcategories) <https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json>`_ that can occur in the various columns, including
    categories and subcategories of values, column headers and specific
    column ranges associated with the subcategories (if they exist), and

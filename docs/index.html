@@ -35,7 +35,7 @@
 <h1>oedtools Documentation<a class="headerlink" href="#oedtools-documentation" title="Permalink to this headline">¶</a></h1>
 <p><code class="docutils literal notranslate"><span class="pre">oedtools</span></code> is a command-line file validation and query toolkit for the <a class="reference external" href="https://github.com/Simplitium/OED">Simplitium Open Exposure Data (OED)</a> (re)insurance exposure data format.</p>
 <p><strong>Note</strong>: the repository and package are based on the current OED
-version 1.0.3 - this is stored in the <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt">schema_version.txt</a>  file.</p>
+version 1.0.3 - this is stored in the <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt">schema version</a> file.</p>
 <p>The main user-level features currently include</p>
 <ul class="simple">
 <li><p><strong>OED file validation</strong> - validation of OED account (<code class="docutils literal notranslate"><span class="pre">acc</span></code>),
@@ -52,9 +52,8 @@ type range or a specific column validation function</p></li>
 <p>Validation and sampling are based on two types of interrelated but
 independent data structures built in to the package.</p>
 <ul class="simple">
-<li><p><strong>file schemas</strong> - separate JSON files for the <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json">acc</a> ,
-<a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json">loc</a> , <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json">reinsinfo</a>  and <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json">reinsscope</a> files defining
-the properties of each column in each file</p></li>
+<li><p><strong>file schemas</strong> - separate JSON files for the <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json">acc.</a> ,
+<a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json">loc.</a> , <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json">reins. info.</a>  and <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json">reins. scope</a> files defining the properties of each column in each file</p></li>
 <li><p>a <strong>values profile</strong> - a <a class="reference external" href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json">JSON profile of data categories (and subcategories)</a> that can occur in the various columns, including
 categories and subcategories of values, column headers and specific
 column ranges associated with the subcategories (if they exist), and

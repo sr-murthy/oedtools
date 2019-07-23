@@ -59,6 +59,8 @@ message, e.g.
 Header-related errors currently include
 
 -  **non-OED headers** - headers not currently defined in any OED schema
+-  **incompatible OED headers** - (OED) headers in a file incompatible
+   with the file schema
 -  **required but missing** headers - headers which are mandatory in a
    given file schema but not present in an actual input file
 
@@ -66,8 +68,8 @@ Data-related errors currently include
 
 -  **null values in non-null columns** - a non-null column is defined as
    a column which must not contain any null values
--  **column values with incompatible data types** - data types of values
-   inconsistent with the data type defined for the column in the given
+-  **column values with incompatible data types** - values with data
+   types inconsistent with the column data type, as defined in the given
    schema, e.g. string values in an integer or floating point column
 -  **out of range values** - values not in the defined range of a column
    (this can be either a specific column range defined in the values
