@@ -305,8 +305,8 @@ class VersionCmd(BaseCommand):
         super(self.__class__, self).add_args(parser)
 
         parser.add_argument(
-            '-s', '--oed-schema', default=None, required=False, action='store_true',
-            help='Get the OED schema version?'
+            '-k', '--package', default=None, required=False, action='store_true',
+            help='Get the package version?'
         )
 
     def action(self, args):
@@ -314,15 +314,15 @@ class VersionCmd(BaseCommand):
         Command logic
         """
         theargs = vars(args)
-        oed_schema = theargs.get('oed_schema')
+        pkg_version = theargs.get('package')
 
-        if not oed_schema:
+        if pkg_version:
             init_fp = os.path.join(os.path.abspath(os.path.dirname(__file__)), '__init__.py')
             with io.open(init_fp, encoding='utf-8') as f:
                 return re.search('__version__ = [\'"]([^\'"]+)[\'"]', f.read()).group(1)
 
-        oed_ver_fp = os.path.join(SCHEMA_DIR, 'schema_version.txt')
-        with io.open(oed_ver_fp, 'r', encoding='utf-8') as f:
+        schema_ver_fp = os.path.join(SCHEMA_DIR, 'schema_version.txt')
+        with io.open(schema_ver_fp, 'r', encoding='utf-8') as f:
             return f.read().strip()
 
 
