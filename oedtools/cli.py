@@ -5,12 +5,14 @@ __all__ = [
     'SampleColumnCmd',
     'ValidateCmd',
     'ValidateFileCmd',
-    'ValidateHeadersCmd'
+    'ValidateHeadersCmd',
+    'VersionCmd'
 ]
 
 import io
 import json
 import os
+import re
 import sys
 
 from argparse import RawDescriptionHelpFormatter
@@ -32,6 +34,7 @@ from .report import (
 from .schema import (
     get_grouped_master_schema,
     sample_column,
+    SCHEMA_DIR,
 )
 from .utils import get_value
 
@@ -292,6 +295,37 @@ class ValidateHeadersCmd(BaseCommand):
             sys.exit(-1)
 
 
+class VersionCmd(BaseCommand):
+    formatter_class = RawDescriptionHelpFormatter
+
+    def add_args(self, parser):
+        """
+        Command parser setup
+        """
+        super(self.__class__, self).add_args(parser)
+
+        parser.add_argument(
+            '-s', '--oed-schema', default=None, required=False, action='store_true',
+            help='Get the OED schema version?'
+        )
+
+    def action(self, args):
+        """
+        Command logic
+        """
+        theargs = vars(args)
+        oed_schema = theargs.get('oed_schema')
+
+        if not oed_schema:
+            init_fp = os.path.join(os.path.abspath(os.path.dirname(__file__)), '__init__.py')
+            with io.open(init_fp, encoding='utf-8') as f:
+                return re.search('__version__ = [\'"]([^\'"]+)[\'"]', f.read()).group(1)
+
+        oed_ver_fp = os.path.join(SCHEMA_DIR, 'schema_version.txt')
+        with io.open(oed_ver_fp, 'r', encoding='utf-8') as f:
+            return f.read().strip()
+
+
 class ColumnsCmd(BaseCommand):
     """
     Subcommands
@@ -325,7 +359,8 @@ class OedToolsCmd(BaseCommand):
     """
     sub_commands = {
         'columns': ColumnsCmd,
-        'validate': ValidateCmd
+        'validate': ValidateCmd,
+        'version': VersionCmd
     }
 
     def run(self, args=None):
