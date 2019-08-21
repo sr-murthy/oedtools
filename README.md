@@ -19,7 +19,7 @@ Validation and sampling are based on two types of interrelated but independent d
 * a **values profile** - a <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">JSON profile of data categories (and subcategories)</a> that can occur in the various columns, including categories and subcategories of values, column headers and specific column ranges associated with the subcategories (if they exist), and column data validation and sampling methods (where available).
 
 The schemas define the column structure of OED files and provide a "column view" of the files, and the values
-profile defines the properties of the data that occur in the columns and provides a "data" view of the files.
+profile defines the properties of the data that occur in the columns and provides a "data view" of the files.
 
 ## Installation and Requirements
 
@@ -35,6 +35,14 @@ The command line interface is invoked via `oed` and provides two main command gr
 
 * `validate` (`oed validate`) - for validating files (column headers + data), or only the headers in files
 * `columns` (`oed columns`) - for searching for columns with required properties, and for sampling column data
+
+There is a utility subcommand named `version` which can be used to get the package version (currently `0.1.4`) or the OED schema version the package is based on (currently `1.0.3`). Usage is
+
+    $ oed version
+    0.1.4
+
+    $ oed version --oed-schema
+    1.0.3
 
 ### Validation
 
@@ -101,9 +109,9 @@ Data-related errors currently include
 * **location properties**
 * **occupancy types**
 * **peril codes**
-* **reins percentages**
-* **reins risk levels**
-* **reins types**
+* **reins. percentages**
+* **reins. risk levels**
+* **reins. types**
 * **shares**
 * **TIVs**
 * **years**
