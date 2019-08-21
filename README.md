@@ -36,10 +36,10 @@ The command line interface is invoked via `oed` and provides two main command gr
 * `validate` (`oed validate`) - for validating files (column headers + data), or only the headers in files
 * `columns` (`oed columns`) - for searching for columns with required properties, and for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the package version (currently `0.1.4`) or the OED schema version the package is based on (currently `1.0.3`). Usage is
+There is a utility subcommand named `version` which can be used to get the package version (currently `0.1.5`) or the OED schema version the package is based on (currently `1.0.3`). Usage is
 
     $ oed version
-    0.1.4
+    0.1.45
 
     $ oed version --oed-schema
     1.0.3
