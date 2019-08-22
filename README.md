@@ -16,7 +16,7 @@ The main user-level features currently include
 Validation and sampling are based on two types of interrelated but independent data structures built in to the package.
 
 * **file schemas** - separate JSON files for the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json" target="_blank"> acc.</a>, <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json" target="_blank">loc.</a>, <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json" target="_blank">reins. info.</a> and <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json" target="_blank">reins. scope</a> files defining the properties of each column in each file
-* a **values profile** - a <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">JSON profile of the data that the files can store, but independent of considerations of the column structure, including categories and subcategories of values, column headers and specific column ranges associated with the subcategories (if they exist), and column data validation and sampling methods (where available).
+* a **values profile** - a <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">JSON profile</a> of the data that the files can store, but independent of considerations of the column structure, including categories and subcategories of values, column headers and specific column ranges associated with the subcategories (if they exist), and column data validation and sampling methods (where available).
 
 The schemas define the column structure of OED files and provide a "column view" of the files, and the values
 profile defines the properties of the data that occur in the columns and provides a "data view" of the files.
@@ -36,13 +36,13 @@ The command line interface is invoked via `oed` and provides two main command gr
 * `validate` (`oed validate`) - for validating files (column headers + data), or only the headers in files
 * `columns` (`oed columns`) - for searching for columns with required properties, and for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.3`) the package uses, or the package version (currently `0.1.7`). Usage is
+There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.3`) the package uses, or the package version (currently `0.1.8`). Usage is
 
     $ oed version
     1.0.3
 
     $ oed version --package
-    0.1.7
+    0.1.8
 
 ### Validation
 
