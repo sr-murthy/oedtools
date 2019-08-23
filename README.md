@@ -44,7 +44,7 @@ There is a utility subcommand named `version` which can be used to get the OED s
     1.0.3
 
     $ oed version --package
-    0.1.8
+    0.1.9
 
 ### Validation
 
