@@ -3,15 +3,17 @@
 
 # oedtools
 
-`oedtools` is a command-line file validation and query toolkit for the <a href="https://github.com/Simplitium/OED" target="_blank">Simplitium Open Exposure Data (OED)</a> (re)insurance exposure data format.
+`oedtools` is a command-line file validation, query and data sampling toolkit for the <a href="https://github.com/Simplitium/OED" target="_blank">Simplitium Open Exposure Data (OED)</a> (re)insurance exposure data format.
 
 **Note**: the repository and package are based on the current OED version 1.0.3 - this is stored in the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt" target="_blank">schema version</a> file.
 
 The main user-level features currently include
 
-* **OED file validation** - validation of OED account (`acc`), location (`loc`), reinsurance info. (`reinsinfo`) and reinsurance scope (`reinsscope`) input CSV files
-* **column queries** - searching for columns in the schema based on queryable properties such as headers (column names) or header substrings, column descriptions containing keywords, Python, SQL or Numpy data types, default values, required and/or nonnull properties
-* **sampling column data** - sampling any given column in the schemas for randomly generated data consistent with the column range or data type range or a specific column validation function
+* **file validation** - command-line validation (headers + data) of OED account (`acc`), location (`loc`), reinsurance info. (`reinsinfo`) and reinsurance scope (`reinsscope`) input CSV files
+* **column queries** - command-line querying of columns based on properties such as headers (column names) or header substrings, column descriptions containing keywords, Python, SQL or Numpy data types, default values, and required and/or nonnull properties
+* **sampling column data** - command-line sampling of column data, consistent with the column range or data type range or a specific column validation function
+
+(The query toolkit will be augmented in future releases with the ability to make command line queries of the values profile, which currently can only be examined directly as a dict.)
 
 Validation and sampling are based on two types of interrelated but independent data structures built in to the package.
 
