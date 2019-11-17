@@ -1,5 +1,6 @@
 [![PyPI version](https://badge.fury.io/py/oedtools.svg)](https://badge.fury.io/py/oedtools)
 [![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?token=5KnvNGapkmzduNDLuQdw&branch=master)](https://travis-ci.com/sr-murthy/oedtools)
+[![LGTM Code Quality Grade: Python](https://img.shields.io/lgtm/grade/python/g/sr-murthy/oedtools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sr-murthy/oedtools/context:python)
 
 # oedtools
 
@@ -29,7 +30,7 @@ Installation is via `pip` (Python 3).
 
     pip install oedtools
 
-The only package requirement is a Python >=3.6 interpreter. It is best to install and use the package in a Python virtual environment.
+The package requires a Python >=3.6 interpreter. It is best to install and use the package in a Python virtual environment.
 
 ## Features
 
@@ -264,7 +265,7 @@ Here are four queries that illustrate the possibilities of `oed columns info`.
         [
             "BrickVeneer (Loc)",
             "BuildingExteriorOpening (Loc)",
-            "CededPercent (ReinsScope, ReinsInfo)",
+            "CededPercent (ReinsInfo, ReinsScope)",
             "DeemedPercentPlaced (ReinsInfo)",
             "LocParticipation (Loc)",
             "PercentComplete (Loc)",
