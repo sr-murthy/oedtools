@@ -50,6 +50,7 @@ country codes,benin,BJ,Benin,^countrycode$,column range,column range
 country codes,bermuda,BM,Bermuda,^countrycode$,column range,column range
 country codes,bhutan,BT,Bhutan,^countrycode$,column range,column range
 country codes,bolivia,BO,Bolivia,^countrycode$,column range,column range
+country codes,bonaire,XB,Bonaire,^countrycode$,column range,column range
 country codes,bosnia & herzegovina,BA,Bosnia and Herzegovina,^countrycode$,column range,column range
 country codes,botswana,BW,Botswana,^countrycode$,column range,column range
 country codes,bouvet island,BV,Bouvet Island,^countrycode$,column range,column range
@@ -203,6 +204,7 @@ country codes,romania,RO,Romania,^countrycode$,column range,column range
 country codes,russia,RU,Russia,^countrycode$,column range,column range
 country codes,rwanda,RW,Rwanda,^countrycode$,column range,column range
 country codes,réunion,RE,Réunion,^countrycode$,column range,column range
+country codes,saba,XS,Saba,^countrycode$,column range,column range
 country codes,"saint helena, ascension & tristan da cunha",SH,"Saint Helena, Ascension and Tristan da Cunha",^countrycode$,column range,column range
 country codes,saint kitts & nevis,KN,Saint Kitts and Nevis,^countrycode$,column range,column range
 country codes,saint lucia,LC,Saint Lucia,^countrycode$,column range,column range
@@ -226,6 +228,7 @@ country codes,south georgia & the south s&wich islands,GS,South Georgia and the 
 country codes,south korea,KR,South Korea,^countrycode$,column range,column range
 country codes,spain,ES,Spain,^countrycode$,column range,column range
 country codes,sri lanka,LK,Sri Lanka,^countrycode$,column range,column range
+country codes,st eustatius,XE,St Eustatius,^countrycode$,column range,column range
 country codes,sudan,SD,Sudan,^countrycode$,column range,column range
 country codes,suriname,SR,Suriname,^countrycode$,column range,column range
 country codes,svalbard & jan mayen,SJ,Svalbard and Jan Mayen,^countrycode$,column range,column range
@@ -262,6 +265,7 @@ country codes,venezuela,VE,Venezuela,^countrycode$,column range,column range
 country codes,viet nam,VN,Viet Nam,^countrycode$,column range,column range
 country codes,wallis & futuna,WF,Wallis and Futuna,^countrycode$,column range,column range
 country codes,western sahara,EH,Western Sahara,^countrycode$,column range,column range
+country codes,worldwide,XW,Worldwide,^countrycode$,column range,column range
 country codes,yemen,YE,Yemen,^countrycode$,column range,column range
 country codes,zambia,ZM,Zambia,^countrycode$,column range,column range
 country codes,zimbabwe,ZW,Zimbabwe,^countrycode$,column range,column range
@@ -732,12 +736,12 @@ limits,sublayer,0e+0:3.40e+38,all sublayer limits,^(acc|cond|loc|pol)limit([1-6]
 location properties,is primary,0:1,Whether the location in LocGroup is the primary building in the group,^isprimary$,column range,column range
 location properties,is tenant,0:1,Whether property is occupied by a tenant or not,^istenant$,column range,column range
 occupancy types,commercial,1100:1149,commercial,^occupancycode$,column range,column range
-occupancy types,industrial,1140:1199,industry,^occupancycode$,column range,column range
+occupancy types,industrial,1150:1199,industry,^occupancycode$,column range,column range
 occupancy types,industrial facility,2000:2799,industrial facility,^occupancycode$,column range,column range
 occupancy types,misc,1350:1399,miscellaneous,^occupancycode$,column range,column range
 occupancy types,offshore,3000:3999,offshore,^occupancycode$,column range,column range
 occupancy types,religion/government/education,1200:1249,religion/government/education,^occupancycode$,column range,column range
-occupancy types,residential,1001:1099,residential,^occupancycode$,column range,column range
+occupancy types,residential,1050:1099,residential,^occupancycode$,column range,column range
 occupancy types,transportation,1250:1299,transportation,^occupancycode$,column range,column range
 occupancy types,unknown,1000,unknown,^occupancycode$,column range,column range
 occupancy types,utilities,1300:1349,utilities,^occupancycode$,column range,column range

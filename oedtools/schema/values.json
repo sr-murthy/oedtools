@@ -463,6 +463,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "bonaire": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Bonaire",
+            "id": "XB",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "bosnia & herzegovina": {
             "columns": [
                 "CountryCode"
@@ -1840,6 +1849,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "saba": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Saba",
+            "id": "XS",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "saint helena, ascension & tristan da cunha": {
             "columns": [
                 "CountryCode"
@@ -2044,6 +2062,15 @@
             ],
             "desc": "Sri Lanka",
             "id": "LK",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "st eustatius": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "St Eustatius",
+            "id": "XE",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -2368,6 +2395,15 @@
             ],
             "desc": "Western Sahara",
             "id": "EH",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "worldwide": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Worldwide",
+            "id": "XW",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -7925,7 +7961,7 @@
                 "OccupancyCode"
             ],
             "desc": "industry",
-            "id": "1140:1199",
+            "id": "1150:1199",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -7970,7 +8006,7 @@
                 "OccupancyCode"
             ],
             "desc": "residential",
-            "id": "1001:1099",
+            "id": "1050:1099",
             "sampling": "column range",
             "validation": "column range"
         },
