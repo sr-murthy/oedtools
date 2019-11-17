@@ -3015,6 +3015,30 @@
         "secmod": null,
         "sql_dtype": "varchar(250)"
     },
+    "('acc', 'condpriority')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": {
+            "start": 0,
+            "stop": 4294967296
+        },
+        "default": null,
+        "desc": "Condition priority: specifies the order in which special conditions apply if multiple conditions apply to one location.",
+        "dtype_range": {
+            "start": 0,
+            "stop": 4294967296
+        },
+        "entity": "Acc",
+        "field_name": "CondPriority",
+        "numpy_dtype": "uint32",
+        "oed_db_field_name": "Priority",
+        "oed_db_table": "LocCond",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned int"
+    },
     "('acc', 'deductiblebuilding')": {
         "blank": true,
         "column_range": null,
@@ -3288,7 +3312,7 @@
         "column_sampling": "column range",
         "column_validation": "column range",
         "default": 0.0,
-        "desc": "Policy layer attachment point",
+        "desc": "Policy layer attachment point (always treated as amount)",
         "dtype_range": [
             -3.4e+38,
             3.4e+38
@@ -3312,7 +3336,7 @@
         "column_sampling": "column range",
         "column_validation": "column range",
         "default": 0.0,
-        "desc": "Policy layer limit",
+        "desc": "Policy layer limit (always treated as amount)",
         "dtype_range": [
             -3.4e+38,
             3.4e+38
@@ -3987,7 +4011,7 @@
         "column_sampling": null,
         "column_validation": null,
         "default": null,
-        "desc": "Policy expiry date - DD/MM/YYYY format",
+        "desc": "Policy expiry date - in ISO 8601 format: YYYY-MM-DD",
         "dtype_range": null,
         "entity": "Acc",
         "field_name": "PolExpiryDate",
@@ -4029,7 +4053,7 @@
         "column_sampling": null,
         "column_validation": null,
         "default": null,
-        "desc": "Policy inception date - DD/MM/YYYY format",
+        "desc": "Policy inception date - in ISO 8601 format: YYYY-MM-DD",
         "dtype_range": null,
         "entity": "Acc",
         "field_name": "PolInceptionDate",
@@ -5242,7 +5266,7 @@
             "stop": 256
         },
         "default": null,
-        "desc": "Number between 1 and 7 that is used to sort the step function in the correct order.",
+        "desc": "Number between 1 and 10 that is used to sort the step function in the correct order.",
         "dtype_range": {
             "start": 0,
             "stop": 256

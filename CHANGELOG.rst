@@ -1,42 +1,48 @@
 oedtools Changelog
 ==================
 
-`0.1.2`
+`0.2.0`_
+-------
+* Upgrade for OED schema version 1.0.4
+
+`0.1.9`_
+-------
+* Bug fixes + Update README
+
+`0.1.8`_
+-------
+* Bug fixes + Update README
+
+`0.1.7`_
+-------
+* Bug fixes + Update README
+
+`0.1.6`_
+-------
+* Bug fixes + Update version command
+
+`0.1.5`_
+-------
+* Bug fixes + Add version command
+
+`0.1.4`_
+-------
+* Bug fixes + Docs + README updates
+
+`0.1.3`_
+-------
+* Bug fixes + Docs + README updates
+
+`0.1.2`_
 --------
 * First release - features supported include file validation (headers + data) for acc., loc., reins. info. and reins. scope files, column search and sampling in any file schema.
 
-`0.1.3`
--------
-* Docs + README updates
 
-`0.1.4`
--------
-* Docs + README updates
-
-`0.1.5`
--------
-* Add version command
-
-`0.1.6`
--------
-* Update version command
-
-`0.1.7`
--------
-* Update README
-
-`0.1.8`
--------
-* Update README
-
-`0.1.9`
--------
-* Update README
-
-.. _`0.1.8`:  https://github.com/OasisLMF/OasisLMF/compare/0.1.9...
-.. _`0.1.8`:  https://github.com/OasisLMF/OasisLMF/compare/0.1.8...
-.. _`0.1.7`:  https://github.com/OasisLMF/OasisLMF/compare/0.1.7...
-.. _`0.1.6`:  https://github.com/OasisLMF/OasisLMF/compare/0.1.6...
-.. _`0.1.5`:  https://github.com/OasisLMF/OasisLMF/compare/0.1.5...
-.. _`0.1.4`:  https://github.com/OasisLMF/OasisLMF/compare/0.1.3...
-.. _`0.1.3`:  https://github.com/OasisLMF/OasisLMF/compare/0.1.2...
+.. _`0.2.0`:  https://github.com/sr-murthy/oedtools/compare/v0.1.9...v0.2.0
+.. _`0.1.9`:  https://github.com/sr-murthy/oedtools/compare/v0.1.8...v0.1.9
+.. _`0.1.8`:  https://github.com/sr-murthy/oedtools/compare/v0.1.7...v0.1.8
+.. _`0.1.7`:  https://github.com/sr-murthy/oedtools/compare/v0.1.6...v0.1.7
+.. _`0.1.6`:  https://github.com/sr-murthy/oedtools/compare/v0.1.5...v0.1.6
+.. _`0.1.5`:  https://github.com/sr-murthy/oedtools/compare/v0.1.4...v0.1.5
+.. _`0.1.4`:  https://github.com/sr-murthy/oedtools/compare/v0.1.3...v0.1.4
+.. _`0.1.3`:  https://github.com/sr-murthy/oedtools/compare/v0.1.2...v0.1.3

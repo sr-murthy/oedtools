@@ -1,11 +1,12 @@
 [![PyPI version](https://badge.fury.io/py/oedtools.svg)](https://badge.fury.io/py/oedtools)
 [![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?token=5KnvNGapkmzduNDLuQdw&branch=master)](https://travis-ci.com/sr-murthy/oedtools)
+[![LGTM Code Quality Grade: Python](https://img.shields.io/lgtm/grade/python/g/sr-murthy/oedtools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sr-murthy/oedtools/context:python)
 
 # oedtools
 
 `oedtools` is a command-line file validation, query and data sampling toolkit for the <a href="https://github.com/Simplitium/OED" target="_blank">Simplitium Open Exposure Data (OED)</a> (re)insurance exposure data format.
 
-**Note**: the repository and package are based on the current OED version 1.0.3 - this is stored in the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt" target="_blank">schema version</a> file.
+**Note**: the repository and package are based on the current OED version 1.0.4 - this is stored in the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt" target="_blank">schema version</a> file.
 
 The main user-level features currently include
 
@@ -29,7 +30,7 @@ Installation is via `pip` (Python 3).
 
     pip install oedtools
 
-The only package requirement is a Python >=3.6 interpreter. It is best to install and use the package in a Python virtual environment.
+The package requires a Python >=3.6 interpreter. It is best to install and use the package in a Python virtual environment.
 
 ## Features
 
@@ -38,13 +39,13 @@ The command line interface is invoked via `oed` and provides two main command gr
 * `validate` (`oed validate`) - for validating files (column headers + data), or only the headers in files
 * `columns` (`oed columns`) - for searching for columns with required properties, and for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.3`) the package uses, or the package version (currently `0.1.9`). Usage is
+There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.3`) the package uses, or the package version (currently `0.2.0`). Usage is
 
     $ oed version
-    1.0.3
+    1.0.4
 
     $ oed version --package
-    0.1.9
+    0.2.0
 
 ### Validation
 
@@ -264,7 +265,7 @@ Here are four queries that illustrate the possibilities of `oed columns info`.
         [
             "BrickVeneer (Loc)",
             "BuildingExteriorOpening (Loc)",
-            "CededPercent (ReinsScope, ReinsInfo)",
+            "CededPercent (ReinsInfo, ReinsScope)",
             "DeemedPercentPlaced (ReinsInfo)",
             "LocParticipation (Loc)",
             "PercentComplete (Loc)",
@@ -347,3 +348,21 @@ Here are three examples.
             2392,
             2163
         ]
+
+## Notes for Contributors
+
+Developer contributions are welcome, in the usual way - fork the repository; create a feature and/or fix branch off `master`; make, test and commit your changes to the branch; create a PR from the base branch against this repository. Linting the code with PEP8 and/or Flake8 would be appreciated (ignoring E501). The test runner is `pytest`. Run all the tests (from the repo. root) with
+
+    $ pytest -v tests
+
+To run a specific test module use
+
+    $ pytest -v tests/<test module name>.py
+
+To run a run specific test class in a test module use
+
+    $ pytest -v tests/<test module name>.py::<test class name>>
+
+To run a run specific test case in a test class in a test module use
+
+    $ pytest -v tests/<test module name>.py::<test class name>>::<test case name>>
