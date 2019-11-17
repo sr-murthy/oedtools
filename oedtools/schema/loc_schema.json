@@ -441,25 +441,19 @@
         "blank": true,
         "column_range": null,
         "column_sampling": null,
-        "column_validation": {
-            "start": 0,
-            "stop": 4294967296
-        },
+        "column_validation": null,
         "default": null,
         "desc": "Unique building identification number",
-        "dtype_range": {
-            "start": 0,
-            "stop": 4294967296
-        },
+        "dtype_range": null,
         "entity": "Loc",
         "field_name": "BuildingID",
-        "numpy_dtype": "uint32",
+        "numpy_dtype": "object",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
-        "py_dtype": "int",
+        "py_dtype": "str",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "unsigned int"
+        "sql_dtype": "varchar(20)"
     },
     "('loc', 'buildingshape')": {
         "blank": true,
@@ -623,7 +617,7 @@
         "column_sampling": null,
         "column_validation": null,
         "default": null,
-        "desc": "Construction project completion date - DD/MM/YYYY format",
+        "desc": "Construction project completion date - in ISO 8601 format: YYYY-MM-DD",
         "dtype_range": null,
         "entity": "Loc",
         "field_name": "CompletionDate",
@@ -653,30 +647,6 @@
         "field_name": "CondNumber",
         "numpy_dtype": "uint32",
         "oed_db_field_name": "CondID from ConditionsCondNumber",
-        "oed_db_table": "LocCond",
-        "py_dtype": "int",
-        "required": "CR",
-        "secmod": null,
-        "sql_dtype": "unsigned int"
-    },
-    "('loc', 'condpriority')": {
-        "blank": true,
-        "column_range": null,
-        "column_sampling": null,
-        "column_validation": {
-            "start": 0,
-            "stop": 4294967296
-        },
-        "default": null,
-        "desc": "Condition priority: specifies the order in which special conditions apply if multiple conditions apply to one location.",
-        "dtype_range": {
-            "start": 0,
-            "stop": 4294967296
-        },
-        "entity": "Loc",
-        "field_name": "CondPriority",
-        "numpy_dtype": "uint32",
-        "oed_db_field_name": "Priority",
         "oed_db_table": "LocCond",
         "py_dtype": "int",
         "required": "CR",
@@ -5011,7 +4981,7 @@
         "column_sampling": null,
         "column_validation": null,
         "default": null,
-        "desc": "Location expiry date - DD/MM/YYYY format",
+        "desc": "Location expiry date - in ISO 8601 format: YYYY-MM-DD",
         "dtype_range": null,
         "entity": "Loc",
         "field_name": "LocExpiryDate",
@@ -5071,7 +5041,7 @@
         "column_sampling": null,
         "column_validation": null,
         "default": null,
-        "desc": "Location inception date - DD/MM/YYYY format",
+        "desc": "Location inception date - in ISO 8601 format: YYYY-MM-DD",
         "dtype_range": null,
         "entity": "Loc",
         "field_name": "LocInceptionDate",
@@ -8608,7 +8578,7 @@
         "column_sampling": "column range",
         "column_validation": "column range",
         "default": null,
-        "desc": "Other Building Insured Value (primarily aimed at specific US policies)",
+        "desc": "Other Building Insured Value (primarily aimed at specific US policies). For motor exposures, use this field for TIV along with appropriate motor construction code.",
         "dtype_range": [
             -3.4e+38,
             3.4e+38
@@ -8700,24 +8670,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1e+39,
+            1e+39
         ],
         "default": 1.0,
         "desc": "Completeness percentage of the construction project at this location. The project completion percentage is by the cost of the project. Values between 0 to 1 (e.g. 12% enterd as 0.12)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1e+39,
+            1e+39
         ],
         "entity": "Loc",
         "field_name": "PercentComplete",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "decimal"
     },
     "('loc', 'percentsprinklered')": {
         "blank": true,

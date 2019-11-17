@@ -347,3 +347,21 @@ Here are three examples.
             2392,
             2163
         ]
+
+## Notes for Contributors
+
+Developer contributions are welcome, in the usual way - fork the repository; create a feature and/or fix branch off `master`; make, test and commit your changes to the branch; create a PR from the base branch against this repository. Linting the code with PEP8 and/or Flake8 would be appreciated (ignoring E501). The test runner is `pytest`. Run all the tests (from the repo. root) with
+
+    $ pytest -v tests
+
+To run a specific test module use
+
+    $ pytest -v tests/<test module name>.py
+
+To run a run specific test class in a test module use
+
+    $ pytest -v tests/<test module name>.py::<test class name>>
+
+To run a run specific test case in a test class in a test module use
+
+    $ pytest -v tests/<test module name>.py::<test class name>>::<test case name>>
