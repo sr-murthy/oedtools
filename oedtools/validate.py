@@ -4,7 +4,6 @@ __all__ = [
 
 import builtins
 import datetime
-import importlib
 import os
 
 from itertools import (
@@ -32,7 +31,6 @@ from .utils import (
     get_method,
     get_value,
     is_real_number,
-    SQL_NUMERIC_DTYPES,
     within_range,
 )
 
@@ -218,8 +216,6 @@ class OedValidator(object):
                 'exceptions': [e]
             }
 
-        schema = getattr(self, '{}_schema'.format(_schema_type))
-
         exp_dtype = col_schema['py_dtype']
 
         if not (isinstance(data, list) or isinstance(data, tuple) or isinstance(data, np.ndarray)):
@@ -367,8 +363,6 @@ class OedValidator(object):
             )
 
         df = df.where(df.notnull(), None)
-
-        schema = getattr(self, '{}_schema'.format(schema_type))
 
         raw_headers = df.columns.tolist()
 

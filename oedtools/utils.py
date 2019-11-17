@@ -13,10 +13,8 @@ __all__ = [
 """
 Package utilities
 """
-import builtins
 import importlib
 import re
-import string
 
 from collections import (
     Counter,

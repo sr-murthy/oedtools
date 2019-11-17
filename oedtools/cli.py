@@ -32,7 +32,6 @@ from .report import (
     report_file,
 )
 from .schema import (
-    get_grouped_master_schema,
     sample_column,
     SCHEMA_DIR,
 )
