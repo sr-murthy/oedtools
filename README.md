@@ -1,4 +1,3 @@
-[![PyPI version](https://badge.fury.io/py/oedtools.svg)](https://badge.fury.io/py/oedtools)
 [![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?token=5KnvNGapkmzduNDLuQdw&branch=master)](https://travis-ci.com/sr-murthy/oedtools)
 [![LGTM Code Quality Grade: Python](https://img.shields.io/lgtm/grade/python/g/sr-murthy/oedtools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sr-murthy/oedtools/context:python)
 
