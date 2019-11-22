@@ -39,13 +39,13 @@ The command line interface is invoked via `oed` and provides two main command gr
 * `validate` (`oed validate`) - for validating files (column headers + data), or only the headers in files
 * `columns` (`oed columns`) - for searching for columns with required properties, and for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.2.0`). Usage is
+There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.2.1`). Usage is
 
     $ oed version
     1.0.4
 
     $ oed version --package
-    0.2.0
+    0.2.1
 
 ### Validation
 
@@ -348,6 +348,32 @@ Here are three examples.
             2392,
             2163
         ]
+
+## Docker version
+
+The package also also be used in an (Ubuntu) Docker container and a Docker file is available for building the image - to build the image run this command (from the base of the repository):
+
+    $ docker build -f ./Dockerfile -t <image name> .
+
+To run the image in a container and enter the container in a Bash shell use this command:
+
+    $ docker run --name <container name> -itd <image name> && docker exec -it <container name> bash
+
+The OED tools package will be available via the `oed` binary.
+
+    root@b7a8467f92d4:/usr/local/data# oed
+    usage: oed [-h] {columns,validate,version} ...
+
+    Root command
+
+    positional arguments:
+      {columns,validate,version}
+        columns             columns
+        validate            validate
+        version             version
+
+    optional arguments:
+      -h, --help            show this help message and exit
 
 ## Notes for Contributors
 

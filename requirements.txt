@@ -66,4 +66,4 @@ wcwidth==0.1.7            # via pytest
 zipp==0.5.1               # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
-# setuptools==41.0.1        # via sphinx
+# setuptools==41.6.0        # via sphinx
