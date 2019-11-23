@@ -1,6 +1,6 @@
 [![LGTM Code Quality Grade: Python](https://img.shields.io/lgtm/grade/python/g/sr-murthy/oedtools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sr-murthy/oedtools/context:python)
 [![PyPI version](https://badge.fury.io/py/oedtools.svg)](https://badge.fury.io/py/oedtools)
-[![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?token=5KnvNGapkmzduNDLuQdw&branch=master)](https://travis-ci.com/sr-murthy/oedtools)
+[![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?branch=master)](https://travis-ci.com/sr-murthy/oedtools)
 
 # oedtools
 
@@ -40,13 +40,13 @@ The command line interface is invoked via `oed` and provides three main command 
 * `query` (`oed query`) - for querying schema columns based on various schema properties
 * `sample` (`oed sample`) - for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.3.1`). Usage is
+There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.3.2`). Usage is
 
     $ oed version
     1.0.4
 
     $ oed version --package
-    0.3.1
+    0.3.2
 
 ### Validation
 
