@@ -27,6 +27,7 @@ __all__ = [
     'REINSSCOPE_OPTIONAL',
     'REINSSCOPE_REQUIRED',
     'REQUIRED',
+    'REQUIRED_TYPES',
     'REQUIRED_NONNULL',
     'sample_column',
     'SCHEMA_TYPES',
@@ -75,6 +76,7 @@ SCHEMA_TYPES_EX_MASTER = list(set(SCHEMA_TYPES).difference(['master']))
 VALUE_GROUPS = sorted(get_values_profile())
 
 ALL = sorted(MASTER_SCHEMA)
+REQUIRED_TYPES = ['R', 'CR', 'O']
 REQUIRED = sorted(k for k, v in MASTER_SCHEMA.items() if v['required'] == 'R')
 OPTIONAL = sorted(set(ALL).difference(REQUIRED))
 NONNULL = sorted(k for k, v in MASTER_SCHEMA.items() if not v['blank'])
