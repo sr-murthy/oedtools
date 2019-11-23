@@ -40,13 +40,13 @@ The command line interface is invoked via `oed` and provides three main command 
 * `query` (`oed query`) - for querying schema columns based on various schema properties
 * `sample` (`oed sample`) - for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.3.0`). Usage is
+There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.3.1`). Usage is
 
     $ oed version
     1.0.4
 
     $ oed version --package
-    0.3.0
+    0.3.1
 
 ### Validation
 
@@ -230,7 +230,7 @@ Here are five queries that illustrate the possibilities of `oed query`.
 
     **Note**: the schema type (specified using option `-t`) isn't required if the columns you're looking for are unique.
 
-2. Display the headers only of all columns in the `loc` file schema with the header substring `6all` and with the `int` or `float` (Python) data type.
+2. Display the headers only of all columns in the loc. file schema with the header substring `6all` and with the `int` or `float` (Python) data type.
 
         (myvenv) $ oed query -t 'loc' -m '6all' -p 'int, float' --headers-only
         [
@@ -248,7 +248,7 @@ Here are five queries that illustrate the possibilities of `oed query`.
 
     **Note 2**: The schema type is displayed in parentheses for clarity, as some columns like `LocNumber` and `AccNumber` can be present in different file types (`LocNumber` can occur in a ``loc`` or ``reinsscope`` file, and `AccNumber` can occur in a `loc` or `acc` or `reinsscope` file).
 
-3. Display the headers only of all required and non-null columns in the `acc` file schema.
+3. Display the headers only of all required and non-null columns in the acc. file schema.
 
         (myvenv) $ oed query -t 'acc' -r 'R' --nonnull --headers-only
         [
@@ -259,7 +259,7 @@ Here are five queries that illustrate the possibilities of `oed query`.
             "PortNumber (Acc)"
         ]
 
-4. Display the headers only of all required or conditionally required columns in the `reinsinfo` file schema.
+4. Display the headers only of all required or conditionally required columns in the reins. info. file schema.
 
         (myvenv) $ oed query -t 'reinsinfo' -r 'R,CR' --headers-only
         [
@@ -327,7 +327,7 @@ Here are three examples.
 
     **Note 1**: sample size can be specified using the `-n` option, which has the default value of `10`.
 
-    **Note 2**: Column sampling is based on the values profile that describes properties of OED data entities, not on columns defined in the schemas. This means that sampling a column whose values fall in the same subcategory in the values profile as that of another column will produce similar results, e.g. sampling `LocPeril` will produce similar results to sampling `AccPeril` or `ReinsPeril`, because all three fall into the category of `peril codes` in the values profile.
+    **Note 2**: Column sampling is based on the values profile - this describes properties of OED data and is organized by groups and subgroups. This means that sampling a column whose values fall in the same group in the values profile as that of another column will produce similar results, e.g. sampling `LocPeril` will produce identical results to sampling `AccPeril` or `ReinsPeril`, because all grouped under `peril codes` in the values profile.
 
 2. Sampling reins. info. currency codes.
 
@@ -374,13 +374,14 @@ To run the image in a container and enter the container in a Bash shell use this
 The OED tools package will be available via the `oed` binary.
 
     root@b7a8467f92d4:/usr/local/data# oed
-    usage: oed [-h] {columns,validate,version} ...
+    usage: oed [-h] {query,sample,validate,version} ...
 
     Root command
 
     positional arguments:
-      {columns,validate,version}
-        columns             columns
+      {query,sample,validate,version}
+        query               query
+        sample              sample
         validate            validate
         version             version
 
