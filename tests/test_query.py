@@ -23,6 +23,7 @@ from .data import (
     MASTER_SCHEMA,
     NUMPY_DTYPES,
     PYTHON_DTYPES,
+    REQUIRED_TYPES,
     SCHEMA_TYPES_EX_MASTER,
     SQL_DTYPES,
     SUPPORTED_SQL_DTYPES,
@@ -36,7 +37,7 @@ class TestQuery(TestCase):
         schema_types=lists(sampled_from(SCHEMA_TYPES_EX_MASTER), max_size=len(SCHEMA_TYPES_EX_MASTER), unique=True),
         headers=lists(sampled_from([header for schema_type, header in ALL]), max_size=len(ALL), unique=True),
         descriptions=lists(sampled_from(VALUE_GROUPS), max_size=len(VALUE_GROUPS), unique=True),
-        required=sampled_from([None, True, False]),
+        required=lists(sampled_from(REQUIRED_TYPES), min_size=1, max_size=len(REQUIRED_TYPES), unique=True),
         nonnull=sampled_from([None, True, False]),
         defaults=lists(sampled_from(DEFAULTS), max_size=len(DEFAULTS), unique=True),
         python_dtypes=lists(sampled_from(PYTHON_DTYPES), max_size=len(PYTHON_DTYPES), unique=True),
@@ -86,8 +87,8 @@ class TestQuery(TestCase):
             if descriptions:
                 exp_results = set(exp_results).intersection([c for c in exp_results for desc in descriptions if desc.lower() in ms[c]['desc'].lower()])
 
-            if required is not None:
-                exp_results = set(exp_results).intersection([c for c in exp_results if ms[c]['required'] in (['R'] if required is True else ['CR', 'O'])])
+            if required:
+                exp_results = set(exp_results).intersection([c for c in exp_results if ms[c]['required'] in required])
 
             if nonnull is not None:
                 exp_results = set(exp_results).intersection([c for c in exp_results if ms[c]['blank'] != nonnull])
