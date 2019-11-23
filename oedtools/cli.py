@@ -1,8 +1,7 @@
 __all__ = [
-    'ColumnInfoCmd',
-    'ColumnsCmd',
+    'QueryCmd',
     'OedToolsCmd',
-    'SampleColumnCmd',
+    'SampleCmd',
     'ValidateCmd',
     'ValidateFileCmd',
     'ValidateHeadersCmd',
@@ -38,7 +37,7 @@ from .schema import (
 from .utils import get_value
 
 
-class ColumnInfoCmd(BaseCommand):
+class QueryCmd(BaseCommand):
     formatter_class = RawDescriptionHelpFormatter
 
     def add_args(self, parser):
@@ -165,7 +164,7 @@ class ColumnInfoCmd(BaseCommand):
         print(json.dumps(results, indent=4, sort_keys=True))
 
 
-class SampleColumnCmd(BaseCommand):
+class SampleCmd(BaseCommand):
     formatter_class = RawDescriptionHelpFormatter
 
     def add_args(self, parser):
@@ -325,20 +324,6 @@ class VersionCmd(BaseCommand):
             return f.read().strip()
 
 
-class ColumnsCmd(BaseCommand):
-    """
-    Subcommands
-    ::
-
-        * get column information from file schemas
-        * sample values in a given column in a file schema
-    """
-    sub_commands = {
-        'info': ColumnInfoCmd,
-        'sample': SampleColumnCmd
-    }
-
-
 class ValidateCmd(BaseCommand):
     """
     Subcommands
@@ -357,7 +342,8 @@ class OedToolsCmd(BaseCommand):
     Root command
     """
     sub_commands = {
-        'columns': ColumnsCmd,
+        'query': QueryCmd,
+        'sample': SampleCmd,
         'validate': ValidateCmd,
         'version': VersionCmd
     }
