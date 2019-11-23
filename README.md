@@ -10,13 +10,13 @@
 
 The main user-level features currently include
 
-* **file validation** - command-line validation (headers + data) of OED account (`acc`), location (`loc`), reinsurance info. (`reinsinfo`) and reinsurance scope (`reinsscope`) input CSV files
-* **schema queries** - command-line querying of columns in the various schemas based on properties such as headers (column names) or header substrings, column descriptions containing keywords, Python, SQL or Numpy data types, default values, and required and/or nonnull properties
+* **validating files** - command-line validation (headers + data) of OED account (`acc`), location (`loc`), reinsurance info. (`reinsinfo`) and reinsurance scope (`reinsscope`) input CSV files
+* **querying schemas** - command-line querying of columns in the various schemas based on properties such as headers (column names) or header substrings, column descriptions containing keywords, Python, SQL or Numpy data types, default values, and required and/or nonnull properties
 * **sampling columns** - command-line sampling of column data, consistent with the column range or data type range or a specific column validation function
 
-(The query toolkit will be augmented in future releases with the ability to make command line queries of the values profile, which currently can only be examined directly as a dict.)
+(The query toolkit will be augmented in future releases with the ability to query the values profile, which currently can only be examined directly as a dict.)
 
-Validation and sampling are based on two types of interrelated but independent data structures built in to the package.
+Validation, querying and sampling are all based on two types of interrelated but independent data structures built in to the package.
 
 * **file schemas** - separate JSON files for the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json" target="_blank"> acc.</a>, <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json" target="_blank">loc.</a>, <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json" target="_blank">reins. info.</a> and <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json" target="_blank">reins. scope</a> files defining the properties of each column in each file
 * a **values profile** - a <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">JSON profile</a> of the data that the files can store, but independent of considerations of the column structure, including categories and subcategories of values, column headers and specific column ranges associated with the subcategories (if they exist), and column data validation and sampling methods (where available).
@@ -133,9 +133,9 @@ This works in a very similar way to file validation, except that it is only for 
 
     /path/to/location.csv:1:-1: "LocCurrency" is a required column in an OED "loc" file but is missing: OED error: E331 Missing required column in file
 
-### Querying Schema Columns
+### Querying
 
-Columns can be queried using `oed query` - results are always printed to console as JSON, in ascending alphabetic order by (case insensitive) header.
+Schema columns can be queried using `oed query` - results are always printed to console as JSON, in ascending alphabetic order by (case insensitive) header.
 
     usage: oed query [-h] [-t SCHEMA_TYPES] [-m COLUMN_HEADERS] [-d DESCRIPTIONS]
                      [-r REQUIRED] [-n] [-e DEFAULTS] [-p PYTHON_DTYPES]
@@ -261,15 +261,15 @@ Here are five queries that illustrate the possibilities of `oed query`.
 
 4. Display the headers only of all required or conditionally required columns in the `reinsinfo` file schema.
 
-    (myvenv) $ oed query -t 'reinsinfo' -r 'R,CR' --headers-only
-    [
-        "InuringPriority (ReinsInfo)",
-        "PlacedPercent (ReinsInfo)",
-        "ReinsCurrency (ReinsInfo)",
-        "ReinsNumber (ReinsInfo)",
-        "ReinsPeril (ReinsInfo)",
-        "ReinsType (ReinsInfo)"
-    ]
+        (myvenv) $ oed query -t 'reinsinfo' -r 'R,CR' --headers-only
+        [
+            "InuringPriority (ReinsInfo)",
+            "PlacedPercent (ReinsInfo)",
+            "ReinsCurrency (ReinsInfo)",
+            "ReinsNumber (ReinsInfo)",
+            "ReinsPeril (ReinsInfo)",
+            "ReinsType (ReinsInfo)"
+        ]
 
 5. Display the headers only of all columns in all the schemas whose descriptions contain the keyword "percent", i.e. we're looking here for all percentage-valued columns.
 
@@ -288,7 +288,7 @@ Here are five queries that illustrate the possibilities of `oed query`.
             "TreatyShare (ReinsInfo)"
         ]
 
-### Sampling Columns
+### Sampling
 
 Columns can be sampled using `oed sample`.
 
@@ -387,7 +387,7 @@ The OED tools package will be available via the `oed` binary.
     optional arguments:
       -h, --help            show this help message and exit
 
-## Notes for Contributors
+## Contributors
 
 Developer contributions are welcome, in the usual way - fork the repository; create a feature and/or fix branch off `master`; make, test and commit your changes to the branch; create a PR from the base branch against this repository. Linting the code with PEP8 and/or Flake8 would be appreciated (ignoring E501). The test runner is `pytest`. Run all the tests (from the repo. root) with
 
