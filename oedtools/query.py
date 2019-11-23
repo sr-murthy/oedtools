@@ -38,12 +38,14 @@ def get_columns(
                          descriptions)
     :type descriptions: list, tuple
 
-    :param required: Whether the column(s) are required (mandatory)
-                     in the relevant file(s)
-    :type required: bool
+    :param required: Whether the column(s) are required (mandatory, R),
+                     conditionally required (CR), or optional (O), in the
+                     respective OED file(s) - a list of strings which are
+                     substrings of the set {'R', 'CR', 'O'}
+    :type required: str
 
     :param nonnull: Whether the column(s) are non-null (must not contain null
-                    values) in the relevant file(s)
+                    values) in the respective OED file(s)
     :type nonull: bool
 
     :param defaults: List or tuple of default values
@@ -103,7 +105,7 @@ def get_columns(
     if required is not None:
         results = [
             v for v in results
-            if v['required'] in (['R'] if required is True else ['CR', 'O'])
+            if v['required'] in required
         ]
 
     if nonnull is not None:

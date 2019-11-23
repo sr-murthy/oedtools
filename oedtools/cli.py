@@ -59,8 +59,8 @@ class QueryCmd(BaseCommand):
             help='List of column descriptions or description substrings - a comma-separated string enclosed in quotation marks'
         )
         parser.add_argument(
-            '-r', '--required', default=None, required=False, action='store_true',
-            help='Is the column a required column in the file?'
+            '-r', '--required', default=None, required=False,
+            help='Is the column required (R), conditionally required (CR) or optional (O)?'
         )
         parser.add_argument(
             '-n', '--nonnull', default=None, required=False, action='store_true',
@@ -109,6 +109,8 @@ class QueryCmd(BaseCommand):
             descriptions = [v.strip() for v in literal_eval(double_quote(descriptions)).split(',')]
 
         required = theargs['required']
+        if required:
+            required = [v.strip() for v in literal_eval(double_quote(required)).split(',')]
 
         nonnull = theargs['nonnull']
 

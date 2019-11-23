@@ -11,8 +11,8 @@
 The main user-level features currently include
 
 * **file validation** - command-line validation (headers + data) of OED account (`acc`), location (`loc`), reinsurance info. (`reinsinfo`) and reinsurance scope (`reinsscope`) input CSV files
-* **column queries** - command-line querying of columns based on properties such as headers (column names) or header substrings, column descriptions containing keywords, Python, SQL or Numpy data types, default values, and required and/or nonnull properties
-* **sampling column data** - command-line sampling of column data, consistent with the column range or data type range or a specific column validation function
+* **schema queries** - command-line querying of columns in the various schemas based on properties such as headers (column names) or header substrings, column descriptions containing keywords, Python, SQL or Numpy data types, default values, and required and/or nonnull properties
+* **sampling columns** - command-line sampling of column data, consistent with the column range or data type range or a specific column validation function
 
 (The query toolkit will be augmented in future releases with the ability to make command line queries of the values profile, which currently can only be examined directly as a dict.)
 
@@ -34,18 +34,19 @@ The package requires a Python >=3.6 interpreter. It is best to install and use t
 
 ## Features
 
-The command line interface is invoked via `oed` and provides two main command groups.
+The command line interface is invoked via `oed` and provides three main command groups.
 
 * `validate` (`oed validate`) - for validating files (column headers + data), or only the headers in files
-* `columns` (`oed columns`) - for searching for columns with required properties, and for sampling column data
+* `query` (`oed query`) - for querying schema columns based on various schema properties
+* `sample` (`oed sample`) - for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.2.1`). Usage is
+There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.3.0`). Usage is
 
     $ oed version
     1.0.4
 
     $ oed version --package
-    0.2.1
+    0.3.0
 
 ### Validation
 
@@ -132,16 +133,13 @@ This works in a very similar way to file validation, except that it is only for 
 
     /path/to/location.csv:1:-1: "LocCurrency" is a required column in an OED "loc" file but is missing: OED error: E331 Missing required column in file
 
-### Searching for Columns and Sampling Column Data
+### Querying Schema Columns
 
-#### Searching for Columns
+Columns can be queried using `oed query` - results are always printed to console as JSON, in ascending alphabetic order by (case insensitive) header.
 
-Columns can be queried using `oed columns info` - results are always printed to console as JSON, in ascending alphabetic order by (case insensitive) header.
-
-    usage: oed columns info [-h] [-t SCHEMA_TYPES] [-m COLUMN_HEADERS]
-                            [-d DESCRIPTIONS] [-r] [-n] [-e DEFAULTS]
-                            [-p PYTHON_DTYPES] [-s SQL_DTYPES] [-y NUMPY_DTYPES]
-                            [-a]
+    usage: oed query [-h] [-t SCHEMA_TYPES] [-m COLUMN_HEADERS] [-d DESCRIPTIONS]
+                     [-r REQUIRED] [-n] [-e DEFAULTS] [-p PYTHON_DTYPES]
+                     [-s SQL_DTYPES] [-y NUMPY_DTYPES] [-a]
 
     optional arguments:
       -h, --help            show this help message and exit
@@ -155,7 +153,9 @@ Columns can be queried using `oed columns info` - results are always printed to 
       -d DESCRIPTIONS, --descriptions DESCRIPTIONS
                             List of column descriptions or description substrings
                             - a comma-separated string enclosed in quotation marks
-      -r, --required        Is the column a required column in the file?
+      -r REQUIRED, --required REQUIRED
+                            Is the column required (R), conditionally required
+                            (CR) or optional (O)?
       -n, --nonnull         Is the column required not to have any null values?
       -e DEFAULTS, --defaults DEFAULTS
                             List of default values - a comma-separated string
@@ -172,11 +172,11 @@ Columns can be queried using `oed columns info` - results are always printed to 
                             enclosed in quotation marks
       -a, --headers-only    Only return the column headers
 
-Here are four queries that illustrate the possibilities of `oed columns info`.
+Here are five queries that illustrate the possibilities of `oed query`.
 
 1. Display full column information for the `BuildingTIV` and `BITIV` columns only (header names are case insensitive in the query).
 
-        (myvenv) $ oed columns info -m 'buildingtiv, bitiv'
+        (myvenv) $ oed query -m 'buildingtiv, bitiv'
         [
             {
                 "blank": false,
@@ -232,7 +232,7 @@ Here are four queries that illustrate the possibilities of `oed columns info`.
 
 2. Display the headers only of all columns in the `loc` file schema with the header substring `6all` and with the `int` or `float` (Python) data type.
 
-        (myvenv) $ oed columns info -t 'loc' -m '6all' -p 'int, float' --headers-only
+        (myvenv) $ oed query -t 'loc' -m '6all' -p 'int, float' --headers-only
         [
             "LocDed6All (Loc)",
             "LocDedCode6All (Loc)",
@@ -250,7 +250,7 @@ Here are four queries that illustrate the possibilities of `oed columns info`.
 
 3. Display the headers only of all required and non-null columns in the `acc` file schema.
 
-        (myvenv) $ oed columns info -t 'acc' --required --nonnull --headers-only
+        (myvenv) $ oed query -t 'acc' -r 'R' --nonnull --headers-only
         [
             "AccCurrency (Acc)",
             "AccNumber (Acc)",
@@ -259,9 +259,21 @@ Here are four queries that illustrate the possibilities of `oed columns info`.
             "PortNumber (Acc)"
         ]
 
-4. Display the headers only of all columns in all the schemas whose descriptions contain the keyword "percent", i.e. we're looking here for all percentage-valued columns.
+4. Display the headers only of all required or conditionally required columns in the `reinsinfo` file schema.
 
-        (myvenv) $ oed columns info -d 'percent' --headers-only
+    (myvenv) $ oed query -t 'reinsinfo' -r 'R,CR' --headers-only
+    [
+        "InuringPriority (ReinsInfo)",
+        "PlacedPercent (ReinsInfo)",
+        "ReinsCurrency (ReinsInfo)",
+        "ReinsNumber (ReinsInfo)",
+        "ReinsPeril (ReinsInfo)",
+        "ReinsType (ReinsInfo)"
+    ]
+
+5. Display the headers only of all columns in all the schemas whose descriptions contain the keyword "percent", i.e. we're looking here for all percentage-valued columns.
+
+        (myvenv) $ oed query -d 'percent' --headers-only
         [
             "BrickVeneer (Loc)",
             "BuildingExteriorOpening (Loc)",
@@ -276,12 +288,12 @@ Here are four queries that illustrate the possibilities of `oed columns info`.
             "TreatyShare (ReinsInfo)"
         ]
 
-#### Sampling Column Data
+### Sampling Columns
 
-Column data can be sampled using `oed columns sample`.
+Columns can be sampled using `oed sample`.
 
-    (myvenv) $ oed columns sample --help
-    usage: oed columns sample [-h] -t SCHEMA_TYPE -m COLUMN_HEADER
+    (myvenv) $ oed sample --help
+    usage: oed sample [-h] -t SCHEMA_TYPE -m COLUMN_HEADER
                               [-n SAMPLE_SIZE]
 
     optional arguments:
@@ -299,7 +311,7 @@ Here are three examples.
 
 1. Sampling reins. peril code sequences 
 
-        (myvenv) $ oed columns sample -t 'loc' -m 'locperil'
+        (myvenv) $ oed sample -t 'loc' -m 'locperil'
         [
             "BBF;QEQ;WSS;ZIC",
             "ORF;QEQ;QLS;QQ1",
@@ -319,7 +331,7 @@ Here are three examples.
 
 2. Sampling reins. info. currency codes.
 
-        (myvenv) $ oed columns sample -t 'reinsinfo' -m 'reinscurrency'
+        (myvenv) $ oed sample -t 'reinsinfo' -m 'reinscurrency'
         [
             "MOP",
             "SUR",
@@ -335,7 +347,7 @@ Here are three examples.
 
 3. Sampling loc. occupancy codes.
 
-        (myvenv) $ oed columns sample -t 'loc' -m 'occupancycode'
+        (myvenv) $ oed sample -t 'loc' -m 'occupancycode'
         [
             3643,
             2696,
