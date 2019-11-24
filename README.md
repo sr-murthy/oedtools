@@ -40,13 +40,13 @@ The command line interface is invoked via `oed` and provides three main command 
 * `query` (`oed query`) - for querying schema columns based on various schema properties
 * `sample` (`oed sample`) - for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.3.2`). Usage is
+There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.4.0`). Usage is
 
     $ oed version
     1.0.4
 
     $ oed version --package
-    0.3.2
+    0.4.0
 
 ### Validation
 
@@ -98,6 +98,7 @@ Data-related errors currently include
 
 **Note**: data validation (and sampling) is facilitated via the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">values profile</a>, which defines the categories and subcategories of data values that can occur in the various columns, independently of the schemas. The values profile defines, where applicable, the ranges of values associated with each subcategory and links these ranges to columns in the relevant schemas. It also defines, where applicable, methods for validation and sampling. Currently, the categories of data covered by the values profile include
 
+* **area codes**
 * **attachments**
 * **construction codes**
 * **country codes**
