@@ -1145,7 +1145,7 @@ class TestValidate(TestCase):
         self, schema_key, num_values, flt, intg, st
     ):
         schema_type, header = schema_key
-        data = sample_column(schema_type, header, size=num_values)
+        data = [get_value(v) for v in sample_column(schema_type, header, size=num_values)]
         col_schema = GROUPED_SCHEMA[schema_type][header]
         exp_py_dtype = getattr(builtins, col_schema['py_dtype'])
         use_range = col_schema['column_range']
