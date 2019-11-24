@@ -51,7 +51,9 @@ from .data import (
     ACC_REQUIRED,
     ACC_OPTIONAL,
     get_method,
+    get_value,
     GROUPED_SCHEMA,
+    is_real_number,
     LOC,
     LOC_NONNULL,
     LOC_OPTIONAL,
@@ -1110,7 +1112,7 @@ class TestValidate(TestCase):
         self, schema_key, num_values
     ):
         schema_type, header = schema_key
-        data = sample_column(schema_type, header, size=num_values)
+        data = [get_value(v) for v in sample_column(schema_type, header, size=num_values)]
         col_schema = MASTER_SCHEMA[(schema_type, header)]
         is_nonnull_col = not col_schema['blank']
 
@@ -1216,7 +1218,7 @@ class TestValidate(TestCase):
         self, schema_key, num_values
     ):
         schema_type, header = schema_key
-        data = sample_column(schema_type, header, size=num_values)
+        data = [get_value(v) for v in sample_column(schema_type, header, size=num_values)]
         col_schema = GROUPED_SCHEMA[schema_type][header]
         use_range = col_schema['column_range']
         validation_src = col_schema['column_validation']
@@ -1254,7 +1256,7 @@ class TestValidate(TestCase):
         self, schema_key, num_values, flt, intg, st
     ):
         schema_type, header = schema_key
-        data = sample_column(schema_type, header, size=num_values)
+        data = [get_value(v) for v in sample_column(schema_type, header, size=num_values)]
         col_schema = MASTER_SCHEMA[(schema_type, header)]
         exp_py_dtype = getattr(builtins, col_schema['py_dtype'])
         is_nonnull_col = not col_schema['blank']
@@ -1335,8 +1337,9 @@ class TestValidate(TestCase):
         self, schema_key, num_values
     ):
         schema_type, header = schema_key
-        data = sample_column(schema_type, header, size=num_values)
+        data = [get_value(v) for v in sample_column(schema_type, header, size=num_values)]
         col_schema = MASTER_SCHEMA[(schema_type, header)]
+        py_dtype = col_schema['py_dtype']
         use_range = col_schema['column_range']
         validation_src = col_schema['column_validation']
         validation_func = (
@@ -1355,9 +1358,9 @@ class TestValidate(TestCase):
             if value is None:
                 self.assertFalse(value_res['pass']) if is_nonnull_col else self.assertTrue(value_res['pass'])
             elif validation_func is not None:
-                self.assertTrue(value_res['pass']) if validation_func(use_range, value) else self.assertFalse(value_res['pass'])
+                self.assertFalse(value_res['pass']) if not validation_func(use_range, value) or py_dtype == 'str' and isinstance(value, float) else self.assertTrue(value_res['pass'])
             elif validation_func is None:
-                self.assertFalse(value_res['pass']) if value not in use_range else self.assertTrue(value_res['pass'])
+                self.assertFalse(value_res['pass']) if value not in use_range or py_dtype == 'str' and isinstance(value, float) else self.assertTrue(value_res['pass'])
 
             exceptions = [t[1] for t in value_res['exceptions']]
             self.assertIsInstance(exceptions, list)
@@ -1416,8 +1419,9 @@ class TestValidate(TestCase):
         self, schema_key, num_values
     ):
         schema_type, header = schema_key
-        data = sample_column(schema_type, header, size=num_values)
+        data = [get_value(v) for v in sample_column(schema_type, header, size=num_values)]
         col_schema = MASTER_SCHEMA[(schema_type, header)]
+        py_dtype = col_schema['py_dtype']
         use_range = col_schema['column_range']
         validation_src = col_schema['column_validation']
         validation_func = (
@@ -1432,12 +1436,10 @@ class TestValidate(TestCase):
             self.assertIsInstance(value_res, dict)
             self.assertEqual(value_res['header'], header)
             self.assertEqual(value_res['value'], value)
-            if not isinstance(value, str):
-                self.assertFalse(value_res['pass'])
-            elif validation_func is not None:
-                self.assertFalse(value_res['pass']) if not validation_func(use_range, value) else self.assertTrue(value_res['pass'])
+            if validation_func is not None:
+                self.assertFalse(value_res['pass']) if not validation_func(use_range, value) or py_dtype == 'str' and isinstance(value, float) else self.assertTrue(value_res['pass'])
             elif validation_func is None:
-                self.assertFalse(value_res['pass']) if value not in use_range else self.assertTrue(value_res['pass'])
+                self.assertFalse(value_res['pass']) if value not in use_range or py_dtype == 'str' and isinstance(value, float) else self.assertTrue(value_res['pass'])
 
             exceptions = [t[1] for t in value_res['exceptions']]
             self.assertIsInstance(exceptions, list)
@@ -1506,8 +1508,9 @@ class TestValidate(TestCase):
         self, schema_key, num_values
     ):
         schema_type, header = schema_key
-        data = sample_column(schema_type, header, size=num_values)
+        data = [get_value(v) for v in sample_column(schema_type, header, size=num_values)]
         col_schema = MASTER_SCHEMA[(schema_type, header)]
+        py_dtype = col_schema['py_dtype']
         use_range = col_schema['column_range']
         validation_src = col_schema['column_validation']
         validation_func = (
@@ -1525,12 +1528,10 @@ class TestValidate(TestCase):
             self.assertEqual(value_res['value'], value)
             if value is None:
                 self.assertFalse(value_res['pass']) if is_nonnull_col else self.assertTrue(value_res['pass'])
-            elif not isinstance(value, str):
-                self.assertFalse(value_res['pass'])
             elif validation_func is not None:
-                self.assertFalse(value_res['pass']) if not validation_func(use_range, value) else self.assertTrue(value_res['pass'])
+                self.assertFalse(value_res['pass']) if not validation_func(use_range, value) or py_dtype == 'str' and isinstance(value, float) else self.assertTrue(value_res['pass'])
             elif validation_func is None:
-                self.assertFalse(value_res['pass']) if value not in use_range else self.assertTrue(value_res['pass'])
+                self.assertFalse(value_res['pass']) if value not in use_range  or py_dtype == 'str' and isinstance(value, float) else self.assertTrue(value_res['pass'])
 
             exceptions = [t[1] for t in value_res['exceptions']]
             self.assertIsInstance(exceptions, list)
@@ -1634,6 +1635,8 @@ class TestValidate(TestCase):
     def test_validate__loc__as_file__no_bad_data_in_oed_columns__some_non_oed_columns_present__missing_required_column_and_non_oed_column_errors_generated(
         self, required, optional, non_oed, num_rows
     ):
+        if 'areacode' not in optional:
+            optional += ['areacode']
         missing = sorted(set(LOC_REQUIRED).difference(required))
         non_oed = sorted(set(['non oed ' + col.lower() for col in non_oed]))
         headers = sorted(required + optional + non_oed)

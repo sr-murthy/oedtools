@@ -274,14 +274,14 @@ class OedValidator(object):
                         'Invalid data type for value "{}" in "{}" - expected type "{}", found type "{}"'.format(_value, header, _exp_dtype, type(_value))
                     )
                 ]
-            elif _value not in [None, ''] and validation_func is None and use_range is not None and not within_range(use_range, _exp_dtype(_value)):
+            elif _value not in [None, ''] and validation_func is None and use_range is not None and not within_range(use_range, _value):
                 exceptions += [
                     get_file_error(
                         'data out of range',
                         'Invalid value "{}" in "{}" - check the column or data type range'.format(_value, header)
                     )
                 ]
-            elif _value not in [None, ''] and validation_func is not None and not validation_func(use_range, _exp_dtype(_value)):
+            elif _value not in [None, ''] and validation_func is not None and not validation_func(use_range, _value):
                 exceptions += [
                     get_file_error(
                         'data out of range',
