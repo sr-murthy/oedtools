@@ -52,6 +52,7 @@ from .data import (
     ACC,
     ALL,
     get_method,
+    get_value,
     LOC,
     REINSINFO,
     REINSSCOPE,
@@ -625,8 +626,8 @@ class TestSchema(TestCase):
         elif exp_py_dtype is float:
             self.assertTrue(all(value >= min(use_range) and value <= max(use_range) for value in sample))
         if exp_py_dtype is str and use_range is not None and validation_func is not None:
-            self.assertTrue(all(validation_func(use_range, value) for value in sample))
+            self.assertTrue(all(validation_func(use_range, get_value(value)) for value in sample))
         elif exp_py_dtype is str and use_range is not None:
-            self.assertTrue(all(value in use_range for value in sample))
+            self.assertTrue(all(get_value(value) in use_range for value in sample))
         elif exp_py_dtype is str:
             self.assertTrue(all(isinstance(value, str) for value in sample))
