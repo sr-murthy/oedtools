@@ -128,7 +128,11 @@ def get_column_range_by_value_group(header, values_profile=get_values_profile())
         except (TypeError, ValueError):
             return [subval_str]
 
-    val_range = sorted(set([v for s in subval_strs for v in subval_str_to_list(s) if v not in [None, '']]))
+    val_range = set([v for s in subval_strs for v in subval_str_to_list(s) if v not in [None, '']])
+    try:
+        val_range = sorted(val_range)
+    except TypeError:
+        val_range = list(val_range)
 
     return val_range or None
 

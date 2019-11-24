@@ -137,6 +137,18 @@ class TestValues(TestCase):
         master_df = pd.read_csv(self.master_csv_schema_fp)
         master_df.columns = master_df.columns.str.lower()
 
+        values_profile_cols = []
+
+        area_codes = sorted(set(values_df[values_df['group'] == 'area codes']['id'].sort_values().tolist()))
+        def to_int(s):
+            try:
+                return int(s)
+            except ValueError:
+                return s
+        area_codes = [to_int(c) for c in area_codes]
+        self.assertEqual(set(area_codes), set(get_column_range_by_value_group('AreaCode')))
+        values_profile_cols += ['AreaCode']
+
         construction_codes = sorted(set([
             _v for v in [
                 range(int(s.split(':')[0]), int(s.split(':')[1]) + 1) if re.match(r'(\d+):(\d+)$', s)
