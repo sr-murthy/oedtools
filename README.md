@@ -1,4 +1,5 @@
 [![LGTM Code Quality Grade: Python](https://img.shields.io/lgtm/grade/python/g/sr-murthy/oedtools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sr-murthy/oedtools/context:python)
+[![codecov](https://codecov.io/gh/sr-murthy/oedtools/branch/master/graph/badge.svg)](https://codecov.io/gh/sr-murthy/oedtools)
 [![PyPI version](https://badge.fury.io/py/oedtools.svg)](https://badge.fury.io/py/oedtools)
 [![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?branch=master)](https://travis-ci.com/sr-murthy/oedtools)
 
@@ -400,8 +401,8 @@ To run a specific test module use
 
 To run a run specific test class in a test module use
 
-    $ pytest -v tests/<test module name>.py::<test class name>>
+    $ pytest -v tests/<test module name>.py::<test class name>
 
 To run a run specific test case in a test class in a test module use
 
-    $ pytest -v tests/<test module name>.py::<test class name>>::<test case name>>
+    $ pytest -v tests/<test module name>.py::<test class name>::<test case name>
