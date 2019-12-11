@@ -7,6 +7,7 @@ install:
 # command to run tests
 script:
   - tox
+  - codecov
 git:
   depth: false
   quiet: true
