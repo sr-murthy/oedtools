@@ -238,6 +238,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "alaska offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Alaska Offshore",
+            "id": "A1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "albania": {
             "columns": [
                 "CountryCode"
@@ -283,6 +292,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "angola offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Angola Offshore",
+            "id": "A2",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "anguilla": {
             "columns": [
                 "CountryCode"
@@ -310,6 +328,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "arctic offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Arctic Offshore",
+            "id": "A3",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "argentina": {
             "columns": [
                 "CountryCode"
@@ -334,6 +361,15 @@
             ],
             "desc": "Aruba",
             "id": "AW",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "australasia offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Australasia Offshore",
+            "id": "A4",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -382,6 +418,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "baltic sea offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Baltic Sea Offshore",
+            "id": "B3",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "bangladesh": {
             "columns": [
                 "CountryCode"
@@ -397,6 +442,15 @@
             ],
             "desc": "Barbados",
             "id": "BB",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "bay of campeche offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Bay of Campeche Offshore",
+            "id": "B1",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -508,6 +562,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "brazil offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Brazil Offshore",
+            "id": "B2",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "british indian ocean territory": {
             "columns": [
                 "CountryCode"
@@ -598,6 +661,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "canada offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Canada Offshore",
+            "id": "C1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "cape verde": {
             "columns": [
                 "CountryCode"
@@ -649,6 +721,15 @@
             ],
             "desc": "China",
             "id": "CN",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "china offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "China Offshore",
+            "id": "C3",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -796,6 +877,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "east africa offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "East Africa Offshore",
+            "id": "E1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "ecuador": {
             "columns": [
                 "CountryCode"
@@ -811,6 +901,15 @@
             ],
             "desc": "Egypt",
             "id": "EG",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "egypt offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Egypt Offshore",
+            "id": "E2",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -865,6 +964,15 @@
             ],
             "desc": "Falkland Islands (Malvinas)",
             "id": "FK",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "far east offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Far East Offshore",
+            "id": "F1",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -937,6 +1045,15 @@
             ],
             "desc": "Gabon",
             "id": "GA",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "gabon offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Gabon Offshore",
+            "id": "G1",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -1138,6 +1255,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "indian subcontinent offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Indian Subcontinent Offshore",
+            "id": "I1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "indonesia": {
             "columns": [
                 "CountryCode"
@@ -1216,6 +1342,15 @@
             ],
             "desc": "Japan",
             "id": "JP",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "japan/korea offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Japan/Korea Offshore",
+            "id": "J1",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -1480,6 +1615,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "mediterranean offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Mediterranean Offshore",
+            "id": "M1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "mexico": {
             "columns": [
                 "CountryCode"
@@ -1489,12 +1633,30 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "mexico offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Mexico Offshore",
+            "id": "M3",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "micronesia": {
             "columns": [
                 "CountryCode"
             ],
             "desc": "Micronesia, Federated States of",
             "id": "FM",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "middle east offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Middle East Offshore",
+            "id": "M2",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -1642,6 +1804,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "nigeria offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Nigeria Offshore",
+            "id": "N1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "niue": {
             "columns": [
                 "CountryCode"
@@ -1669,6 +1840,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "north sea offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "North Sea Offshore",
+            "id": "N3",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "northern mariana islands": {
             "columns": [
                 "CountryCode"
@@ -1684,6 +1864,15 @@
             ],
             "desc": "Norway",
             "id": "NO",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "norway offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Norway Offshore",
+            "id": "N2",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -1828,6 +2017,15 @@
             ],
             "desc": "Russia",
             "id": "RU",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "russia offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Russia Offshore",
+            "id": "R1",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -2029,6 +2227,24 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "south america offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "South America Offshore",
+            "id": "S1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "south asia offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "South Asia Offshore",
+            "id": "S3",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "south georgia & the south s&wich islands": {
             "columns": [
                 "CountryCode"
@@ -2116,6 +2332,15 @@
             ],
             "desc": "Sweden",
             "id": "SE",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "sweden offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Sweden Offshore",
+            "id": "S2",
             "sampling": "column range",
             "validation": "column range"
         },
@@ -2218,6 +2443,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "trinidad and tobago offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Trinidad and Tobago Offshore",
+            "id": "T1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "tunisia": {
             "columns": [
                 "CountryCode"
@@ -2299,6 +2533,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "united kingdom offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "United Kingdom Offshore",
+            "id": "U1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "united states": {
             "columns": [
                 "CountryCode"
@@ -2371,6 +2614,15 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "venezuela offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Venezuela Offshore",
+            "id": "V1",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "viet nam": {
             "columns": [
                 "CountryCode"
@@ -2380,12 +2632,39 @@
             "sampling": "column range",
             "validation": "column range"
         },
+        "vietnam offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Vietnam Offshore",
+            "id": "V2",
+            "sampling": "column range",
+            "validation": "column range"
+        },
         "wallis & futuna": {
             "columns": [
                 "CountryCode"
             ],
             "desc": "Wallis and Futuna",
             "id": "WF",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "west africa offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "West Africa Offshore",
+            "id": "W4",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "west us/california offshore": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "West US/California Offshore",
+            "id": "W5",
             "sampling": "column range",
             "validation": "column range"
         },
