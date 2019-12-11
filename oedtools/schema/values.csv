@@ -1,1453 +1,4 @@
 group,key,id,desc,column_name_regex,validation,sampling
-area codes,AT-101,101,"Eisenstadt (Stadt), AT, District, 101",^areacode$,column range,column range
-area codes,AT-102,102,"Rust, AT, District, 102",^areacode$,column range,column range
-area codes,AT-103,103,"Eisenstadt (Land), AT, District, 103",^areacode$,column range,column range
-area codes,AT-104,104,"Güssing, AT, District, 104",^areacode$,column range,column range
-area codes,AT-105,105,"Jennersdorf, AT, District, 105",^areacode$,column range,column range
-area codes,AT-106,106,"Mattersburg, AT, District, 106",^areacode$,column range,column range
-area codes,AT-107,107,"Neusiedl am See, AT, District, 107",^areacode$,column range,column range
-area codes,AT-108,108,"Oberpullendorf, AT, District, 108",^areacode$,column range,column range
-area codes,AT-109,109,"Oberwart, AT, District, 109",^areacode$,column range,column range
-area codes,AT-201,201,"Klagenfurt (Stadt), AT, District, 201",^areacode$,column range,column range
-area codes,AT-202,202,"Villach (Stadt), AT, District, 202",^areacode$,column range,column range
-area codes,AT-203,203,"Hermagor, AT, District, 203",^areacode$,column range,column range
-area codes,AT-204,204,"Klagenfurt Land, AT, District, 204",^areacode$,column range,column range
-area codes,AT-205,205,"Sankt Veit an der Glan, AT, District, 205",^areacode$,column range,column range
-area codes,AT-206,206,"Spittal an der Drau, AT, District, 206",^areacode$,column range,column range
-area codes,AT-207,207,"Villach Land, AT, District, 207",^areacode$,column range,column range
-area codes,AT-208,208,"Völkermarkt, AT, District, 208",^areacode$,column range,column range
-area codes,AT-209,209,"Wolfsberg, AT, District, 209",^areacode$,column range,column range
-area codes,AT-210,210,"Feldkirchen, AT, District, 210",^areacode$,column range,column range
-area codes,AT-301,301,"Krems an der Donau (Stadt), AT, District, 301",^areacode$,column range,column range
-area codes,AT-302,302,"St. Pölten (Stadt), AT, District, 302",^areacode$,column range,column range
-area codes,AT-303,303,"Waidhofen an der Ybbs, AT, District, 303",^areacode$,column range,column range
-area codes,AT-304,304,"Wiener Neustadt (Stadt), AT, District, 304",^areacode$,column range,column range
-area codes,AT-305,305,"Amstetten, AT, District, 305",^areacode$,column range,column range
-area codes,AT-306,306,"Baden, AT, District, 306",^areacode$,column range,column range
-area codes,AT-307,307,"Bruck an der Leitha, AT, District, 307",^areacode$,column range,column range
-area codes,AT-308,308,"Gänserndorf, AT, District, 308",^areacode$,column range,column range
-area codes,AT-309,309,"Gmünd, AT, District, 309",^areacode$,column range,column range
-area codes,AT-310,310,"Hollabrunn, AT, District, 310",^areacode$,column range,column range
-area codes,AT-311,311,"Horn, AT, District, 311",^areacode$,column range,column range
-area codes,AT-312,312,"Korneuburg, AT, District, 312",^areacode$,column range,column range
-area codes,AT-313,313,"Krems an der Donau (Land), AT, District, 313",^areacode$,column range,column range
-area codes,AT-314,314,"Lilienfeld, AT, District, 314",^areacode$,column range,column range
-area codes,AT-315,315,"Melk, AT, District, 315",^areacode$,column range,column range
-area codes,AT-316,316,"Mistelbach, AT, District, 316",^areacode$,column range,column range
-area codes,AT-317,317,"Mödling, AT, District, 317",^areacode$,column range,column range
-area codes,AT-318,318,"Neunkirchen, AT, District, 318",^areacode$,column range,column range
-area codes,AT-319,319,"St. Pölten (Land), AT, District, 319",^areacode$,column range,column range
-area codes,AT-320,320,"Scheibbs, AT, District, 320",^areacode$,column range,column range
-area codes,AT-321,321,"Tulln, AT, District, 321",^areacode$,column range,column range
-area codes,AT-322,322,"Waidhofen an der Thaya, AT, District, 322",^areacode$,column range,column range
-area codes,AT-323,323,"Wiener Neustadt (Land), AT, District, 323",^areacode$,column range,column range
-area codes,AT-324,324,"Wien-Umgebung, AT, District, 324",^areacode$,column range,column range
-area codes,AT-325,325,"Zwettl, AT, District, 325",^areacode$,column range,column range
-area codes,AT-401,401,"Linz, AT, District, 401",^areacode$,column range,column range
-area codes,AT-402,402,"Steyr, AT, District, 402",^areacode$,column range,column range
-area codes,AT-403,403,"Wels, AT, District, 403",^areacode$,column range,column range
-area codes,AT-404,404,"Braunau am Inn, AT, District, 404",^areacode$,column range,column range
-area codes,AT-405,405,"Eferding, AT, District, 405",^areacode$,column range,column range
-area codes,AT-406,406,"Freistadt, AT, District, 406",^areacode$,column range,column range
-area codes,AT-407,407,"Gmunden, AT, District, 407",^areacode$,column range,column range
-area codes,AT-408,408,"Grieskirchen, AT, District, 408",^areacode$,column range,column range
-area codes,AT-409,409,"Kirchdorf an der Krems, AT, District, 409",^areacode$,column range,column range
-area codes,AT-410,410,"Linz-Land, AT, District, 410",^areacode$,column range,column range
-area codes,AT-411,411,"Perg, AT, District, 411",^areacode$,column range,column range
-area codes,AT-412,412,"Ried im Innkreis, AT, District, 412",^areacode$,column range,column range
-area codes,AT-413,413,"Rohrbach, AT, District, 413",^areacode$,column range,column range
-area codes,AT-414,414,"Schärding, AT, District, 414",^areacode$,column range,column range
-area codes,AT-415,415,"Steyr-Land, AT, District, 415",^areacode$,column range,column range
-area codes,AT-416,416,"Urfahr-Umgebung, AT, District, 416",^areacode$,column range,column range
-area codes,AT-417,417,"Vöcklabruck, AT, District, 417",^areacode$,column range,column range
-area codes,AT-418,418,"Wels-Land, AT, District, 418",^areacode$,column range,column range
-area codes,AT-501,501,"Salzburg, AT, District, 501",^areacode$,column range,column range
-area codes,AT-502,502,"Hallein, AT, District, 502",^areacode$,column range,column range
-area codes,AT-503,503,"Salzburg-Umgebung, AT, District, 503",^areacode$,column range,column range
-area codes,AT-504,504,"Sankt Johann im Pongau, AT, District, 504",^areacode$,column range,column range
-area codes,AT-505,505,"Tamsweg, AT, District, 505",^areacode$,column range,column range
-area codes,AT-506,506,"Zell am See, AT, District, 506",^areacode$,column range,column range
-area codes,AT-601,601,"Graz, AT, District, 601",^areacode$,column range,column range
-area codes,AT-602,602,"Bruck an der Mur, AT, District, 602",^areacode$,column range,column range
-area codes,AT-603,603,"Deutschlandsberg, AT, District, 603",^areacode$,column range,column range
-area codes,AT-604,604,"Feldbach, AT, District, 604",^areacode$,column range,column range
-area codes,AT-605,605,"Fürstenfeld, AT, District, 605",^areacode$,column range,column range
-area codes,AT-606,606,"Graz-Umgebung, AT, District, 606",^areacode$,column range,column range
-area codes,AT-607,607,"Hartberg, AT, District, 607",^areacode$,column range,column range
-area codes,AT-608,608,"Judenburg, AT, District, 608",^areacode$,column range,column range
-area codes,AT-609,609,"Knittelfeld, AT, District, 609",^areacode$,column range,column range
-area codes,AT-610,610,"Leibnitz, AT, District, 610",^areacode$,column range,column range
-area codes,AT-611,611,"Leoben, AT, District, 611",^areacode$,column range,column range
-area codes,AT-612,612,"Liezen, AT, District, 612",^areacode$,column range,column range
-area codes,AT-613,613,"Mürzzuschlag, AT, District, 613",^areacode$,column range,column range
-area codes,AT-614,614,"Murau, AT, District, 614",^areacode$,column range,column range
-area codes,AT-615,615,"Bad Radkersburg, AT, District, 615",^areacode$,column range,column range
-area codes,AT-616,616,"Voitsberg, AT, District, 616",^areacode$,column range,column range
-area codes,AT-617,617,"Weiz, AT, District, 617",^areacode$,column range,column range
-area codes,AT-701,701,"Innsbruck-Stadt, AT, District, 701",^areacode$,column range,column range
-area codes,AT-702,702,"Imst, AT, District, 702",^areacode$,column range,column range
-area codes,AT-703,703,"Innsbruck-Land, AT, District, 703",^areacode$,column range,column range
-area codes,AT-704,704,"Kitzbühel, AT, District, 704",^areacode$,column range,column range
-area codes,AT-705,705,"Kufstein, AT, District, 705",^areacode$,column range,column range
-area codes,AT-706,706,"Landeck, AT, District, 706",^areacode$,column range,column range
-area codes,AT-707,707,"Lienz, AT, District, 707",^areacode$,column range,column range
-area codes,AT-708,708,"Reutte, AT, District, 708",^areacode$,column range,column range
-area codes,AT-709,709,"Schwaz, AT, District, 709",^areacode$,column range,column range
-area codes,AT-801,801,"Bludenz, AT, District, 801",^areacode$,column range,column range
-area codes,AT-802,802,"Bregenz, AT, District, 802",^areacode$,column range,column range
-area codes,AT-803,803,"Dornbirn, AT, District, 803",^areacode$,column range,column range
-area codes,AT-804,804,"Feldkirch, AT, District, 804",^areacode$,column range,column range
-area codes,AT-901,901,"Wien I Innere Stadt, AT, District, 901",^areacode$,column range,column range
-area codes,AT-902,902,"Wien II Leopoldstadt, AT, District, 902",^areacode$,column range,column range
-area codes,AT-903,903,"Wien III Landstraße, AT, District, 903",^areacode$,column range,column range
-area codes,AT-904,904,"Wien IV Wieden, AT, District, 904",^areacode$,column range,column range
-area codes,AT-905,905,"Wien V Margareten, AT, District, 905",^areacode$,column range,column range
-area codes,AT-906,906,"Wien VI Mariahilf, AT, District, 906",^areacode$,column range,column range
-area codes,AT-907,907,"Wien VII Neubau, AT, District, 907",^areacode$,column range,column range
-area codes,AT-908,908,"Wien VIII Josefstadt, AT, District, 908",^areacode$,column range,column range
-area codes,AT-909,909,"Wien IX Alsergrund, AT, District, 909",^areacode$,column range,column range
-area codes,AT-910,910,"Wien X Favoriten, AT, District, 910",^areacode$,column range,column range
-area codes,AT-911,911,"Wien XI Simmering, AT, District, 911",^areacode$,column range,column range
-area codes,AT-912,912,"Wien XII Meidling, AT, District, 912",^areacode$,column range,column range
-area codes,AT-913,913,"Wien XIII Hietzing, AT, District, 913",^areacode$,column range,column range
-area codes,AT-914,914,"Wien XIV Penzing, AT, District, 914",^areacode$,column range,column range
-area codes,AT-915,915,"Wien XV Rudolfsheim-Fünfhaus, AT, District, 915",^areacode$,column range,column range
-area codes,AT-916,916,"Wien XVI Ottakring, AT, District, 916",^areacode$,column range,column range
-area codes,AT-917,917,"Wien XVII Hernals, AT, District, 917",^areacode$,column range,column range
-area codes,AT-918,918,"Wien XVIII Währing, AT, District, 918",^areacode$,column range,column range
-area codes,AT-919,919,"Wien XIX Döbling, AT, District, 919",^areacode$,column range,column range
-area codes,AT-920,920,"Wien XX Brigittenau, AT, District, 920",^areacode$,column range,column range
-area codes,AT-921,921,"Wien XXI Floridsdorf, AT, District, 921",^areacode$,column range,column range
-area codes,AT-922,922,"Wien XXII Dounaustadt, AT, District, 922",^areacode$,column range,column range
-area codes,AT-923,923,"Wien XXIII Liesing, AT, District, 923",^areacode$,column range,column range
-area codes,AU-ACT,ACT,"Australian Capital Territory, AU, State, ACT",^areacode$,column range,column range
-area codes,AU-NSW,NSW,"New South Wales, AU, State, NSW",^areacode$,column range,column range
-area codes,AU-NT,NT,"Northern Territory, AU, State, NT",^areacode$,column range,column range
-area codes,AU-QDL,QDL,"Queensland, AU, State, QDL",^areacode$,column range,column range
-area codes,AU-SA,SA,"South Australia, AU, State, SA",^areacode$,column range,column range
-area codes,AU-TAS,TAS,"Tasmania, AU, State, TAS",^areacode$,column range,column range
-area codes,AU-VIC,VIC,"Victoria, AU, State, VIC",^areacode$,column range,column range
-area codes,AU-WA,WA,"Western Australia, AU, State, WA",^areacode$,column range,column range
-area codes,BB-1,1,"Christ Church, BB, Parish, 1",^areacode$,column range,column range
-area codes,BB-10,10,"St. Philip, BB, Parish, 10",^areacode$,column range,column range
-area codes,BB-11,11,"St. Thomas, BB, Parish, 11",^areacode$,column range,column range
-area codes,BB-2,2,"St. Andrew, BB, Parish, 2",^areacode$,column range,column range
-area codes,BB-3,3,"St. George, BB, Parish, 3",^areacode$,column range,column range
-area codes,BB-4,4,"St. James, BB, Parish, 4",^areacode$,column range,column range
-area codes,BB-5,5,"St. John, BB, Parish, 5",^areacode$,column range,column range
-area codes,BB-6,6,"St. Joseph, BB, Parish, 6",^areacode$,column range,column range
-area codes,BB-7,7,"St. Lucy, BB, Parish, 7",^areacode$,column range,column range
-area codes,BB-8,8,"St. Michael, BB, Parish, 8",^areacode$,column range,column range
-area codes,BB-9,9,"St. Peter, BB, Parish, 9",^areacode$,column range,column range
-area codes,BE-11,11,"Antwerpen, BE, District, 11",^areacode$,column range,column range
-area codes,BE-12,12,"Mechelen, BE, District, 12",^areacode$,column range,column range
-area codes,BE-13,13,"Turnhout, BE, District, 13",^areacode$,column range,column range
-area codes,BE-21,21,"Brussel-Hoofdstad, BE, District, 21",^areacode$,column range,column range
-area codes,BE-23,23,"Halle-Vilvoorde, BE, District, 23",^areacode$,column range,column range
-area codes,BE-24,24,"Leuven, BE, District, 24",^areacode$,column range,column range
-area codes,BE-25,25,"Nijvel, BE, District, 25",^areacode$,column range,column range
-area codes,BE-31,31,"Brugge, BE, District, 31",^areacode$,column range,column range
-area codes,BE-32,32,"Diksmuide, BE, District, 32",^areacode$,column range,column range
-area codes,BE-33,33,"Ieper, BE, District, 33",^areacode$,column range,column range
-area codes,BE-34,34,"Kortrijk, BE, District, 34",^areacode$,column range,column range
-area codes,BE-35,35,"Oostende, BE, District, 35",^areacode$,column range,column range
-area codes,BE-36,36,"Roeselare, BE, District, 36",^areacode$,column range,column range
-area codes,BE-37,37,"Tielt, BE, District, 37",^areacode$,column range,column range
-area codes,BE-38,38,"Veurne, BE, District, 38",^areacode$,column range,column range
-area codes,BE-41,41,"Aalst, BE, District, 41",^areacode$,column range,column range
-area codes,BE-42,42,"Dendermonde, BE, District, 42",^areacode$,column range,column range
-area codes,BE-43,43,"Eeklo, BE, District, 43",^areacode$,column range,column range
-area codes,BE-44,44,"Gent, BE, District, 44",^areacode$,column range,column range
-area codes,BE-45,45,"Oudenaarde, BE, District, 45",^areacode$,column range,column range
-area codes,BE-46,46,"Sint-Niklaas, BE, District, 46",^areacode$,column range,column range
-area codes,BE-51,51,"Aat, BE, District, 51",^areacode$,column range,column range
-area codes,BE-52,52,"Charleroi, BE, District, 52",^areacode$,column range,column range
-area codes,BE-53,53,"Bergen, BE, District, 53",^areacode$,column range,column range
-area codes,BE-54,54,"Moeskroen, BE, District, 54",^areacode$,column range,column range
-area codes,BE-55,55,"Zinnik, BE, District, 55",^areacode$,column range,column range
-area codes,BE-56,56,"Thuin, BE, District, 56",^areacode$,column range,column range
-area codes,BE-57,57,"Doornik, BE, District, 57",^areacode$,column range,column range
-area codes,BE-61,61,"Hoei, BE, District, 61",^areacode$,column range,column range
-area codes,BE-62,62,"Luik, BE, District, 62",^areacode$,column range,column range
-area codes,BE-63,63,"Verviers, BE, District, 63",^areacode$,column range,column range
-area codes,BE-64,64,"Borgworm, BE, District, 64",^areacode$,column range,column range
-area codes,BE-71,71,"Hasselt, BE, District, 71",^areacode$,column range,column range
-area codes,BE-72,72,"Maaseik, BE, District, 72",^areacode$,column range,column range
-area codes,BE-73,73,"Tongeren, BE, District, 73",^areacode$,column range,column range
-area codes,BE-81,81,"Aarlen, BE, District, 81",^areacode$,column range,column range
-area codes,BE-82,82,"Bastenaken, BE, District, 82",^areacode$,column range,column range
-area codes,BE-83,83,"Marche-en-Famenne, BE, District, 83",^areacode$,column range,column range
-area codes,BE-84,84,"Neufchâteau, BE, District, 84",^areacode$,column range,column range
-area codes,BE-85,85,"Virton, BE, District, 85",^areacode$,column range,column range
-area codes,BE-91,91,"Dinant, BE, District, 91",^areacode$,column range,column range
-area codes,BE-92,92,"Namen, BE, District, 92",^areacode$,column range,column range
-area codes,BE-93,93,"Philippeville, BE, District, 93",^areacode$,column range,column range
-area codes,BH-1,1,"New Providence, BH, District, 1",^areacode$,column range,column range
-area codes,BH-10,10,"Eleuthra, BH, District, 10",^areacode$,column range,column range
-area codes,BH-11,11,"Exuma and Cays, BH, District, 11",^areacode$,column range,column range
-area codes,BH-12,12,"Long Island, BH, District, 12",^areacode$,column range,column range
-area codes,BH-13,13,"Harbour Island, BH, District, 13",^areacode$,column range,column range
-area codes,BH-14,14,"Inagua, BH, District, 14",^areacode$,column range,column range
-area codes,BH-15,15,"Mayaguana, BH, District, 15",^areacode$,column range,column range
-area codes,BH-16,16,"Ragged Island, BH, District, 16",^areacode$,column range,column range
-area codes,BH-17,17,"Rum Cay, BH, District, 17",^areacode$,column range,column range
-area codes,BH-18,18,"San Salvador, BH, District, 18",^areacode$,column range,column range
-area codes,BH-19,19,"Spanish Wells, BH, District, 19",^areacode$,column range,column range
-area codes,BH-2,2,"Grand Bahama, BH, District, 2",^areacode$,column range,column range
-area codes,BH-3,3,"Abaco, BH, District, 3",^areacode$,column range,column range
-area codes,BH-4,4,"Acklins, BH, District, 4",^areacode$,column range,column range
-area codes,BH-5,5,"Andros, BH, District, 5",^areacode$,column range,column range
-area codes,BH-6,6,"Berry Islands, BH, District, 6",^areacode$,column range,column range
-area codes,BH-7,7,"Biminis, BH, District, 7",^areacode$,column range,column range
-area codes,BH-8,8,"Cat Island, BH, District, 8",^areacode$,column range,column range
-area codes,BH-9,9,"Crooked Island, BH, District, 9",^areacode$,column range,column range
-area codes,BM-1,1,"Sandys, BM, Parish, 1",^areacode$,column range,column range
-area codes,BM-2,2,"Southampton, BM, Parish, 2",^areacode$,column range,column range
-area codes,BM-3,3,"Warwick, BM, Parish, 3",^areacode$,column range,column range
-area codes,BM-4,4,"Paget, BM, Parish, 4",^areacode$,column range,column range
-area codes,BM-5,5,"Pembroke, BM, Parish, 5",^areacode$,column range,column range
-area codes,BM-6,6,"Devonshire, BM, Parish, 6",^areacode$,column range,column range
-area codes,BM-7,7,"Smith's, BM, Parish, 7",^areacode$,column range,column range
-area codes,BM-8,8,"Hamilton, BM, Parish, 8",^areacode$,column range,column range
-area codes,BM-9,9,"St.George's, BM, Parish, 9",^areacode$,column range,column range
-area codes,CA-10,10,"Newfoundland, CA, Province, 10",^areacode$,column range,column range
-area codes,CA-11,11,"Prince Edward Island, CA, Province, 11",^areacode$,column range,column range
-area codes,CA-12,12,"Nova Scotia, CA, Province, 12",^areacode$,column range,column range
-area codes,CA-13,13,"New Brunswick, CA, Province, 13",^areacode$,column range,column range
-area codes,CA-24,24,"Quebec, CA, Province, 24",^areacode$,column range,column range
-area codes,CA-35,35,"Ontario, CA, Province, 35",^areacode$,column range,column range
-area codes,CA-46,46,"Manitoba, CA, Province, 46",^areacode$,column range,column range
-area codes,CA-47,47,"Saskatchewan, CA, Province, 47",^areacode$,column range,column range
-area codes,CA-48,48,"Alberta, CA, Province, 48",^areacode$,column range,column range
-area codes,CA-59,59,"British Columbia, CA, Province, 59",^areacode$,column range,column range
-area codes,CA-60,60,"Yukon, CA, Province, 60",^areacode$,column range,column range
-area codes,CA-61,61,"North West Territories, CA, Province, 61",^areacode$,column range,column range
-area codes,CA-62,62,"Nunavut, CA, Province, 62",^areacode$,column range,column range
-area codes,CH-01,01,"Zürich, CH, Region, 01",^areacode$,column range,column range
-area codes,CH-02,02,"Bern, CH, Region, 02",^areacode$,column range,column range
-area codes,CH-03,03,"Luzern, CH, Region, 03",^areacode$,column range,column range
-area codes,CH-04,04,"Uri, CH, Region, 04",^areacode$,column range,column range
-area codes,CH-05,05,"Schwyz, CH, Region, 05",^areacode$,column range,column range
-area codes,CH-06,06,"Obwalden, CH, Region, 06",^areacode$,column range,column range
-area codes,CH-07,07,"Nidwalden, CH, Region, 07",^areacode$,column range,column range
-area codes,CH-08,08,"Glarus, CH, Region, 08",^areacode$,column range,column range
-area codes,CH-09,09,"Zug, CH, Region, 09",^areacode$,column range,column range
-area codes,CH-10,10,"Fribourg, CH, Region, 10",^areacode$,column range,column range
-area codes,CH-11,11,"Solothurn, CH, Region, 11",^areacode$,column range,column range
-area codes,CH-12,12,"Basel-Stadt, CH, Region, 12",^areacode$,column range,column range
-area codes,CH-13,13,"Basel-Land, CH, Region, 13",^areacode$,column range,column range
-area codes,CH-14,14,"Schaffhausen, CH, Region, 14",^areacode$,column range,column range
-area codes,CH-15,15,"Appenzell A.Rh., CH, Region, 15",^areacode$,column range,column range
-area codes,CH-16,16,"Appenzell I.Rh., CH, Region, 16",^areacode$,column range,column range
-area codes,CH-17,17,"St. Gallen, CH, Region, 17",^areacode$,column range,column range
-area codes,CH-18,18,"Graubünden, CH, Region, 18",^areacode$,column range,column range
-area codes,CH-19,19,"Aargau, CH, Region, 19",^areacode$,column range,column range
-area codes,CH-20,20,"Thurgau, CH, Region, 20",^areacode$,column range,column range
-area codes,CH-21,21,"Ticino, CH, Region, 21",^areacode$,column range,column range
-area codes,CH-22,22,"Vaud, CH, Region, 22",^areacode$,column range,column range
-area codes,CH-23,23,"Valais, CH, Region, 23",^areacode$,column range,column range
-area codes,CH-24,24,"Neuchâtel, CH, Region, 24",^areacode$,column range,column range
-area codes,CH-25,25,"Genève, CH, Region, 25",^areacode$,column range,column range
-area codes,CH-26,26,"Jura, CH, Region, 26",^areacode$,column range,column range
-area codes,CL-01,01,"Tarapacá, CL, State, 01",^areacode$,column range,column range
-area codes,CL-02,02,"Antofagasta, CL, State, 02",^areacode$,column range,column range
-area codes,CL-03,03,"Atacama, CL, State, 03",^areacode$,column range,column range
-area codes,CL-04,04,"Coquimbo, CL, State, 04",^areacode$,column range,column range
-area codes,CL-05,05,"Valparaíso, CL, State, 05",^areacode$,column range,column range
-area codes,CL-06,06,"O'Higgins, CL, State, 06",^areacode$,column range,column range
-area codes,CL-07,07,"Maule, CL, State, 07",^areacode$,column range,column range
-area codes,CL-08,08,"Biobío, CL, State, 08",^areacode$,column range,column range
-area codes,CL-09,09,"Araucanía, CL, State, 09",^areacode$,column range,column range
-area codes,CL-10,10,"Los Lagos, CL, State, 10",^areacode$,column range,column range
-area codes,CL-11,11,"Aisén, CL, State, 11",^areacode$,column range,column range
-area codes,CL-12,12,"Magallanes y la Antártica, CL, State, 12",^areacode$,column range,column range
-area codes,CL-13,13,"Metropolitana, CL, State, 13",^areacode$,column range,column range
-area codes,CN-11,11,"Beijing, CN, Province, 11",^areacode$,column range,column range
-area codes,CN-12,12,"Tianjin, CN, Province, 12",^areacode$,column range,column range
-area codes,CN-13,13,"Hebei, CN, Province, 13",^areacode$,column range,column range
-area codes,CN-14,14,"Shanxi, CN, Province, 14",^areacode$,column range,column range
-area codes,CN-15,15,"Inner Mongolia, CN, Province, 15",^areacode$,column range,column range
-area codes,CN-21,21,"Liaoning, CN, Province, 21",^areacode$,column range,column range
-area codes,CN-22,22,"Jilin, CN, Province, 22",^areacode$,column range,column range
-area codes,CN-23,23,"Heilongjiang, CN, Province, 23",^areacode$,column range,column range
-area codes,CN-31,31,"Shanghai, CN, Province, 31",^areacode$,column range,column range
-area codes,CN-32,32,"Jiangsu, CN, Province, 32",^areacode$,column range,column range
-area codes,CN-33,33,"Zhejiang, CN, Province, 33",^areacode$,column range,column range
-area codes,CN-34,34,"Anhui, CN, Province, 34",^areacode$,column range,column range
-area codes,CN-35,35,"Fujian, CN, Province, 35",^areacode$,column range,column range
-area codes,CN-36,36,"Jiangxi, CN, Province, 36",^areacode$,column range,column range
-area codes,CN-37,37,"Shandong, CN, Province, 37",^areacode$,column range,column range
-area codes,CN-41,41,"Henan, CN, Province, 41",^areacode$,column range,column range
-area codes,CN-42,42,"Hubei, CN, Province, 42",^areacode$,column range,column range
-area codes,CN-43,43,"Hunan, CN, Province, 43",^areacode$,column range,column range
-area codes,CN-44,44,"Guangdong, CN, Province, 44",^areacode$,column range,column range
-area codes,CN-45,45,"Guangxi, CN, Province, 45",^areacode$,column range,column range
-area codes,CN-46,46,"Hainan, CN, Province, 46",^areacode$,column range,column range
-area codes,CN-50,50,"Chongqing, CN, Province, 50",^areacode$,column range,column range
-area codes,CN-51,51,"Sichuan, CN, Province, 51",^areacode$,column range,column range
-area codes,CN-52,52,"Guizhou, CN, Province, 52",^areacode$,column range,column range
-area codes,CN-53,53,"Yunnan, CN, Province, 53",^areacode$,column range,column range
-area codes,CN-54,54,"Xizang, CN, Province, 54",^areacode$,column range,column range
-area codes,CN-61,61,"Shaanxi, CN, Province, 61",^areacode$,column range,column range
-area codes,CN-62,62,"Gansu, CN, Province, 62",^areacode$,column range,column range
-area codes,CN-63,63,"Qinghai, CN, Province, 63",^areacode$,column range,column range
-area codes,CN-64,64,"Ningxia, CN, Province, 64",^areacode$,column range,column range
-area codes,CN-65,65,"Xinjiang, CN, Province, 65",^areacode$,column range,column range
-area codes,CO-05,05,"Antioquia, CO, Region, 05",^areacode$,column range,column range
-area codes,CO-08,08,"Atlántico, CO, Region, 08",^areacode$,column range,column range
-area codes,CO-11,11,"Bogotá, CO, Region, 11",^areacode$,column range,column range
-area codes,CO-13,13,"Bolívar, CO, Region, 13",^areacode$,column range,column range
-area codes,CO-15,15,"Boyacá, CO, Region, 15",^areacode$,column range,column range
-area codes,CO-17,17,"Caldas, CO, Region, 17",^areacode$,column range,column range
-area codes,CO-18,18,"Caquetá, CO, Region, 18",^areacode$,column range,column range
-area codes,CO-19,19,"Cauca, CO, Region, 19",^areacode$,column range,column range
-area codes,CO-20,20,"Cesar, CO, Region, 20",^areacode$,column range,column range
-area codes,CO-23,23,"Córdoba, CO, Region, 23",^areacode$,column range,column range
-area codes,CO-25,25,"Cundinamarca, CO, Region, 25",^areacode$,column range,column range
-area codes,CO-27,27,"Chocó, CO, Region, 27",^areacode$,column range,column range
-area codes,CO-41,41,"Huila, CO, Region, 41",^areacode$,column range,column range
-area codes,CO-44,44,"Guajira, CO, Region, 44",^areacode$,column range,column range
-area codes,CO-47,47,"Magdalena, CO, Region, 47",^areacode$,column range,column range
-area codes,CO-50,50,"Meta, CO, Region, 50",^areacode$,column range,column range
-area codes,CO-52,52,"Nariño, CO, Region, 52",^areacode$,column range,column range
-area codes,CO-54,54,"Norte de Santander, CO, Region, 54",^areacode$,column range,column range
-area codes,CO-63,63,"Quindío, CO, Region, 63",^areacode$,column range,column range
-area codes,CO-66,66,"Risaralda, CO, Region, 66",^areacode$,column range,column range
-area codes,CO-68,68,"Santander, CO, Region, 68",^areacode$,column range,column range
-area codes,CO-70,70,"Sucre, CO, Region, 70",^areacode$,column range,column range
-area codes,CO-73,73,"Tolima, CO, Region, 73",^areacode$,column range,column range
-area codes,CO-76,76,"Valle del Cauca, CO, Region, 76",^areacode$,column range,column range
-area codes,CO-81,81,"Arauca, CO, Region, 81",^areacode$,column range,column range
-area codes,CO-85,85,"Casanare, CO, Region, 85",^areacode$,column range,column range
-area codes,CO-86,86,"Putumayo, CO, Region, 86",^areacode$,column range,column range
-area codes,CO-88,88,"San Andrés and Providenci, CO, Region, 88",^areacode$,column range,column range
-area codes,CO-91,91,"Amazonas, CO, Region, 91",^areacode$,column range,column range
-area codes,CO-94,94,"Guainía, CO, Region, 94",^areacode$,column range,column range
-area codes,CO-95,95,"Guaviare, CO, Region, 95",^areacode$,column range,column range
-area codes,CO-97,97,"Vaupés, CO, Region, 97",^areacode$,column range,column range
-area codes,CO-99,99,"Vichada, CO, Region, 99",^areacode$,column range,column range
-area codes,CU-1,1,"Camagüey, CU, Province, 1",^areacode$,column range,column range
-area codes,CU-10,10,"Matanzas, CU, Province, 10",^areacode$,column range,column range
-area codes,CU-11,11,"Pinar del Rio, CU, Province, 11",^areacode$,column range,column range
-area codes,CU-12,12,"Sancti Spíritus, CU, Province, 12",^areacode$,column range,column range
-area codes,CU-13,13,"Santiago de Cuba, CU, Province, 13",^areacode$,column range,column range
-area codes,CU-14,14,"Villa Clara, CU, Province, 14",^areacode$,column range,column range
-area codes,CU-2,2,"Ciego de Avila, CU, Province, 2",^areacode$,column range,column range
-area codes,CU-3,3,"Cienfuegos, CU, Province, 3",^areacode$,column range,column range
-area codes,CU-4,4,"Granma, CU, Province, 4",^areacode$,column range,column range
-area codes,CU-5,5,"Guantánamo, CU, Province, 5",^areacode$,column range,column range
-area codes,CU-6,6,"Holguin, CU, Province, 6",^areacode$,column range,column range
-area codes,CU-7,7,"Isla de la Juventud, CU, Province, 7",^areacode$,column range,column range
-area codes,CU-8,8,"La Habana, CU, Province, 8",^areacode$,column range,column range
-area codes,CU-9,9,"Las Tunas, CU, Province, 9",^areacode$,column range,column range
-area codes,DE-01,01,"Schleswig-Holstein, DE, Region, 01",^areacode$,column range,column range
-area codes,DE-02,02,"Hamburg, DE, Region, 02",^areacode$,column range,column range
-area codes,DE-03,03,"Niedersachsen, DE, Region, 03",^areacode$,column range,column range
-area codes,DE-04,04,"Bremen, DE, Region, 04",^areacode$,column range,column range
-area codes,DE-05,05,"Nordrhein-Westfalen, DE, Region, 05",^areacode$,column range,column range
-area codes,DE-06,06,"Hessen, DE, Region, 06",^areacode$,column range,column range
-area codes,DE-07,07,"Rheinland-Pfalz, DE, Region, 07",^areacode$,column range,column range
-area codes,DE-08,08,"Baden-Württemberg, DE, Region, 08",^areacode$,column range,column range
-area codes,DE-09,09,"Bayern, DE, Region, 09",^areacode$,column range,column range
-area codes,DE-10,10,"Saarland, DE, Region, 10",^areacode$,column range,column range
-area codes,DE-11,11,"Berlin, DE, Region, 11",^areacode$,column range,column range
-area codes,DE-12,12,"Brandenburg, DE, Region, 12",^areacode$,column range,column range
-area codes,DE-13,13,"Mecklenburg-Vorpommern, DE, Region, 13",^areacode$,column range,column range
-area codes,DE-14,14,"Sachsen, DE, Region, 14",^areacode$,column range,column range
-area codes,DE-15,15,"Sachsen-Anhalt, DE, Region, 15",^areacode$,column range,column range
-area codes,DE-16,16,"Thueringen, DE, Region, 16",^areacode$,column range,column range
-area codes,DK-101,101,"København, DK, District, 101",^areacode$,column range,column range
-area codes,DK-102,102,"Frederiksberg, DK, District, 102",^areacode$,column range,column range
-area codes,DK-150,150,"Københavns Amt, DK, District, 150",^areacode$,column range,column range
-area codes,DK-200,200,"Frederiksborg Amt, DK, District, 200",^areacode$,column range,column range
-area codes,DK-250,250,"Roskilde Amt, DK, District, 250",^areacode$,column range,column range
-area codes,DK-300,300,"Vestsjællands Amt, DK, District, 300",^areacode$,column range,column range
-area codes,DK-350,350,"Storstrøms Amt, DK, District, 350",^areacode$,column range,column range
-area codes,DK-400,400,"Bornholms Amt, DK, District, 400",^areacode$,column range,column range
-area codes,DK-420,420,"Fyns Amt, DK, District, 420",^areacode$,column range,column range
-area codes,DK-500,500,"Sønderjyllands Amt, DK, District, 500",^areacode$,column range,column range
-area codes,DK-550,550,"Ribe Amt, DK, District, 550",^areacode$,column range,column range
-area codes,DK-600,600,"Vejle Amt, DK, District, 600",^areacode$,column range,column range
-area codes,DK-650,650,"Ringkøbing Amt, DK, District, 650",^areacode$,column range,column range
-area codes,DK-700,700,"Århus Amt, DK, District, 700",^areacode$,column range,column range
-area codes,DK-760,760,"Viborg Amt, DK, District, 760",^areacode$,column range,column range
-area codes,DK-800,800,"Nordjyllands Amt, DK, District, 800",^areacode$,column range,column range
-area codes,DO-1,1,"Azua, DO, Province, 1",^areacode$,column range,column range
-area codes,DO-10,10,"Hato Mayor, DO, Province, 10",^areacode$,column range,column range
-area codes,DO-11,11,"Independencia, DO, Province, 11",^areacode$,column range,column range
-area codes,DO-12,12,"La Altagracia, DO, Province, 12",^areacode$,column range,column range
-area codes,DO-13,13,"La Romana, DO, Province, 13",^areacode$,column range,column range
-area codes,DO-14,14,"La Vega, DO, Province, 14",^areacode$,column range,column range
-area codes,DO-15,15,"Maria Trinidad Sánchez, DO, Province, 15",^areacode$,column range,column range
-area codes,DO-16,16,"Monsenor Nouel, DO, Province, 16",^areacode$,column range,column range
-area codes,DO-17,17,"Monte Cristi, DO, Province, 17",^areacode$,column range,column range
-area codes,DO-18,18,"Monte Plata, DO, Province, 18",^areacode$,column range,column range
-area codes,DO-19,19,"Pedernales, DO, Province, 19",^areacode$,column range,column range
-area codes,DO-2,2,"Bahoruco, DO, Province, 2",^areacode$,column range,column range
-area codes,DO-20,20,"Peravia, DO, Province, 20",^areacode$,column range,column range
-area codes,DO-21,21,"Puerto Plata, DO, Province, 21",^areacode$,column range,column range
-area codes,DO-22,22,"Salcedo, DO, Province, 22",^areacode$,column range,column range
-area codes,DO-23,23,"Samana, DO, Province, 23",^areacode$,column range,column range
-area codes,DO-24,24,"Sánchez Ramirez, DO, Province, 24",^areacode$,column range,column range
-area codes,DO-25,25,"San Cristobal, DO, Province, 25",^areacode$,column range,column range
-area codes,DO-26,26,"San Juan, DO, Province, 26",^areacode$,column range,column range
-area codes,DO-27,27,"San Pedro de Macoris, DO, Province, 27",^areacode$,column range,column range
-area codes,DO-28,28,"Santiago, DO, Province, 28",^areacode$,column range,column range
-area codes,DO-29,29,"Santiago Rodriguez, DO, Province, 29",^areacode$,column range,column range
-area codes,DO-3,3,"Barahona, DO, Province, 3",^areacode$,column range,column range
-area codes,DO-30,30,"Valverde, DO, Province, 30",^areacode$,column range,column range
-area codes,DO-4,4,"Dajabon, DO, Province, 4",^areacode$,column range,column range
-area codes,DO-5,5,"Distrito National, DO, Province, 5",^areacode$,column range,column range
-area codes,DO-6,6,"Duarte, DO, Province, 6",^areacode$,column range,column range
-area codes,DO-7,7,"Elias Pina, DO, Province, 7",^areacode$,column range,column range
-area codes,DO-8,8,"El Seibo, DO, Province, 8",^areacode$,column range,column range
-area codes,DO-9,9,"Espaillat, DO, Province, 9",^areacode$,column range,column range
-area codes,EC-01,01,"Azuay, EC, Province, 01",^areacode$,column range,column range
-area codes,EC-02,02,"Bolivar, EC, Province, 02",^areacode$,column range,column range
-area codes,EC-03,03,"Canar, EC, Province, 03",^areacode$,column range,column range
-area codes,EC-04,04,"Carchi, EC, Province, 04",^areacode$,column range,column range
-area codes,EC-05,05,"Cotopaxi, EC, Province, 05",^areacode$,column range,column range
-area codes,EC-06,06,"Chimborazo, EC, Province, 06",^areacode$,column range,column range
-area codes,EC-07,07,"El Oro, EC, Province, 07",^areacode$,column range,column range
-area codes,EC-08,08,"Esmeraldas, EC, Province, 08",^areacode$,column range,column range
-area codes,EC-09,09,"Guayas, EC, Province, 09",^areacode$,column range,column range
-area codes,EC-10,10,"Imbabura, EC, Province, 10",^areacode$,column range,column range
-area codes,EC-11,11,"Loja, EC, Province, 11",^areacode$,column range,column range
-area codes,EC-12,12,"Los Rios, EC, Province, 12",^areacode$,column range,column range
-area codes,EC-13,13,"Manabi, EC, Province, 13",^areacode$,column range,column range
-area codes,EC-14,14,"Morona Santiago, EC, Province, 14",^areacode$,column range,column range
-area codes,EC-15,15,"Napo, EC, Province, 15",^areacode$,column range,column range
-area codes,EC-16,16,"Pastaza, EC, Province, 16",^areacode$,column range,column range
-area codes,EC-17,17,"Pichincha, EC, Province, 17",^areacode$,column range,column range
-area codes,EC-18,18,"Tungurahua, EC, Province, 18",^areacode$,column range,column range
-area codes,EC-19,19,"Zamora Chinchipe, EC, Province, 19",^areacode$,column range,column range
-area codes,EC-20,20,"Galapagos, EC, Province, 20",^areacode$,column range,column range
-area codes,EC-21,21,"Sucumbios, EC, Province, 21",^areacode$,column range,column range
-area codes,EC-22,22,"Orellana, EC, Province, 22",^areacode$,column range,column range
-area codes,EC-23,23,"Santo Domingo de los Tsachilas, EC, Province, 23",^areacode$,column range,column range
-area codes,EC-24,24,"Santa Elena, EC, Province, 24",^areacode$,column range,column range
-area codes,EC-90,90,"Zonas No Delimitadas, EC, Province, 90",^areacode$,column range,column range
-area codes,FR-01,01,"Ain, FR, County, 01",^areacode$,column range,column range
-area codes,FR-02,02,"Aisne, FR, County, 02",^areacode$,column range,column range
-area codes,FR-03,03,"Allier, FR, County, 03",^areacode$,column range,column range
-area codes,FR-04,04,"Alpes-de-Haute-Provence, FR, County, 04",^areacode$,column range,column range
-area codes,FR-05,05,"Hautes-Alpes, FR, County, 05",^areacode$,column range,column range
-area codes,FR-06,06,"Alpes-Maritimes, FR, County, 06",^areacode$,column range,column range
-area codes,FR-07,07,"Ardèche, FR, County, 07",^areacode$,column range,column range
-area codes,FR-08,08,"Ardennes, FR, County, 08",^areacode$,column range,column range
-area codes,FR-09,09,"Ariège, FR, County, 09",^areacode$,column range,column range
-area codes,FR-10,10,"Aube, FR, County, 10",^areacode$,column range,column range
-area codes,FR-11,11,"Aude, FR, County, 11",^areacode$,column range,column range
-area codes,FR-12,12,"Aveyron, FR, County, 12",^areacode$,column range,column range
-area codes,FR-13,13,"Bouches-du-Rhône, FR, County, 13",^areacode$,column range,column range
-area codes,FR-14,14,"Calvados, FR, County, 14",^areacode$,column range,column range
-area codes,FR-15,15,"Cantal, FR, County, 15",^areacode$,column range,column range
-area codes,FR-16,16,"Charente, FR, County, 16",^areacode$,column range,column range
-area codes,FR-17,17,"Charente-Maritime, FR, County, 17",^areacode$,column range,column range
-area codes,FR-18,18,"Cher, FR, County, 18",^areacode$,column range,column range
-area codes,FR-19,19,"Corrèze, FR, County, 19",^areacode$,column range,column range
-area codes,FR-21,21,"Côte-d'Or, FR, County, 21",^areacode$,column range,column range
-area codes,FR-22,22,"Côtes-du-Nord, FR, County, 22",^areacode$,column range,column range
-area codes,FR-23,23,"Creuse, FR, County, 23",^areacode$,column range,column range
-area codes,FR-24,24,"Dordogne, FR, County, 24",^areacode$,column range,column range
-area codes,FR-25,25,"Doubs, FR, County, 25",^areacode$,column range,column range
-area codes,FR-26,26,"Drôme, FR, County, 26",^areacode$,column range,column range
-area codes,FR-27,27,"Eure, FR, County, 27",^areacode$,column range,column range
-area codes,FR-28,28,"Eure-et-Loir, FR, County, 28",^areacode$,column range,column range
-area codes,FR-29,29,"Finistère, FR, County, 29",^areacode$,column range,column range
-area codes,FR-2A,2A,"Corse-du-Sud, FR, County, 2A",^areacode$,column range,column range
-area codes,FR-2B,2B,"Haute-Corse, FR, County, 2B",^areacode$,column range,column range
-area codes,FR-30,30,"Gard, FR, County, 30",^areacode$,column range,column range
-area codes,FR-31,31,"Haute-Garonne, FR, County, 31",^areacode$,column range,column range
-area codes,FR-32,32,"Gers, FR, County, 32",^areacode$,column range,column range
-area codes,FR-33,33,"Gironde, FR, County, 33",^areacode$,column range,column range
-area codes,FR-34,34,"Hérault, FR, County, 34",^areacode$,column range,column range
-area codes,FR-35,35,"Ille-et-Vilaine, FR, County, 35",^areacode$,column range,column range
-area codes,FR-36,36,"Indre, FR, County, 36",^areacode$,column range,column range
-area codes,FR-37,37,"Indre-et-Loire, FR, County, 37",^areacode$,column range,column range
-area codes,FR-38,38,"Isère, FR, County, 38",^areacode$,column range,column range
-area codes,FR-39,39,"Jura, FR, County, 39",^areacode$,column range,column range
-area codes,FR-40,40,"Landes, FR, County, 40",^areacode$,column range,column range
-area codes,FR-41,41,"Loir-et-Cher, FR, County, 41",^areacode$,column range,column range
-area codes,FR-42,42,"Loire, FR, County, 42",^areacode$,column range,column range
-area codes,FR-43,43,"Haute-Loire, FR, County, 43",^areacode$,column range,column range
-area codes,FR-44,44,"Loire-Atlantique, FR, County, 44",^areacode$,column range,column range
-area codes,FR-45,45,"Loiret, FR, County, 45",^areacode$,column range,column range
-area codes,FR-46,46,"Lot, FR, County, 46",^areacode$,column range,column range
-area codes,FR-47,47,"Lot-et-Garonne, FR, County, 47",^areacode$,column range,column range
-area codes,FR-48,48,"Lozère, FR, County, 48",^areacode$,column range,column range
-area codes,FR-49,49,"Maine-et-Loire, FR, County, 49",^areacode$,column range,column range
-area codes,FR-50,50,"Manche, FR, County, 50",^areacode$,column range,column range
-area codes,FR-51,51,"Marne, FR, County, 51",^areacode$,column range,column range
-area codes,FR-52,52,"Haute-Marne, FR, County, 52",^areacode$,column range,column range
-area codes,FR-53,53,"Mayenne, FR, County, 53",^areacode$,column range,column range
-area codes,FR-54,54,"Meurthe-et-Moselle, FR, County, 54",^areacode$,column range,column range
-area codes,FR-55,55,"Meuse, FR, County, 55",^areacode$,column range,column range
-area codes,FR-56,56,"Morbihan, FR, County, 56",^areacode$,column range,column range
-area codes,FR-57,57,"Moselle, FR, County, 57",^areacode$,column range,column range
-area codes,FR-58,58,"Nièvre, FR, County, 58",^areacode$,column range,column range
-area codes,FR-59,59,"Nord, FR, County, 59",^areacode$,column range,column range
-area codes,FR-60,60,"Oise, FR, County, 60",^areacode$,column range,column range
-area codes,FR-61,61,"Orne, FR, County, 61",^areacode$,column range,column range
-area codes,FR-62,62,"Pas-de-Calais, FR, County, 62",^areacode$,column range,column range
-area codes,FR-63,63,"Puy-de-Dôme, FR, County, 63",^areacode$,column range,column range
-area codes,FR-64,64,"Pyrénées-Atlantiques, FR, County, 64",^areacode$,column range,column range
-area codes,FR-65,65,"Hautes-Pyrénées, FR, County, 65",^areacode$,column range,column range
-area codes,FR-66,66,"Pyrénées-Orientales, FR, County, 66",^areacode$,column range,column range
-area codes,FR-67,67,"Bas-Rhin, FR, County, 67",^areacode$,column range,column range
-area codes,FR-68,68,"Haut-Rhin, FR, County, 68",^areacode$,column range,column range
-area codes,FR-69,69,"Rhône, FR, County, 69",^areacode$,column range,column range
-area codes,FR-70,70,"Haute-Saône, FR, County, 70",^areacode$,column range,column range
-area codes,FR-71,71,"Saône-et-Loire, FR, County, 71",^areacode$,column range,column range
-area codes,FR-72,72,"Sarthe, FR, County, 72",^areacode$,column range,column range
-area codes,FR-73,73,"Savoie, FR, County, 73",^areacode$,column range,column range
-area codes,FR-74,74,"Haute-Savoie, FR, County, 74",^areacode$,column range,column range
-area codes,FR-75,75,"Ville-de-Paris, FR, County, 75",^areacode$,column range,column range
-area codes,FR-76,76,"Seine-Maritime, FR, County, 76",^areacode$,column range,column range
-area codes,FR-77,77,"Seine-et-Marne, FR, County, 77",^areacode$,column range,column range
-area codes,FR-78,78,"Yvelines, FR, County, 78",^areacode$,column range,column range
-area codes,FR-79,79,"Deux-Sèvres, FR, County, 79",^areacode$,column range,column range
-area codes,FR-80,80,"Somme, FR, County, 80",^areacode$,column range,column range
-area codes,FR-81,81,"Tarn, FR, County, 81",^areacode$,column range,column range
-area codes,FR-82,82,"Tarn-et-Garonne, FR, County, 82",^areacode$,column range,column range
-area codes,FR-83,83,"Var, FR, County, 83",^areacode$,column range,column range
-area codes,FR-84,84,"Vaucluse, FR, County, 84",^areacode$,column range,column range
-area codes,FR-85,85,"Vendée, FR, County, 85",^areacode$,column range,column range
-area codes,FR-86,86,"Vienne, FR, County, 86",^areacode$,column range,column range
-area codes,FR-87,87,"Haute-Vienne, FR, County, 87",^areacode$,column range,column range
-area codes,FR-88,88,"Vosges, FR, County, 88",^areacode$,column range,column range
-area codes,FR-89,89,"Yonne, FR, County, 89",^areacode$,column range,column range
-area codes,FR-90,90,"Territoire-de-Belfort, FR, County, 90",^areacode$,column range,column range
-area codes,FR-91,91,"Essonne, FR, County, 91",^areacode$,column range,column range
-area codes,FR-92,92,"Hauts-de-Seine, FR, County, 92",^areacode$,column range,column range
-area codes,FR-93,93,"Seine-Saint-Denis, FR, County, 93",^areacode$,column range,column range
-area codes,FR-94,94,"Val-de-Marne, FR, County, 94",^areacode$,column range,column range
-area codes,FR-95,95,"Val-d'Oise, FR, County, 95",^areacode$,column range,column range
-area codes,FR-99,99,"Monaco, FR, County, 99",^areacode$,column range,column range
-area codes,G2-01,01,"Alabama, G2, Administrative Region, 01",^areacode$,column range,column range
-area codes,G2-12,12,"Florida, G2, Administrative Region, 12",^areacode$,column range,column range
-area codes,G2-22,22,"Louisiana, G2, Administrative Region, 22",^areacode$,column range,column range
-area codes,G2-28,28,"Mississippi, G2, Administrative Region, 28",^areacode$,column range,column range
-area codes,G2-48,48,"Texas, G2, Administrative Region, 48",^areacode$,column range,column range
-area codes,G2-OCS,OCS,"Outer Continental Shelf, G2, Administrative Region, OCS",^areacode$,column range,column range
-area codes,GB-AB,AB,"Aberdeen, GB, Postcode Area, AB",^areacode$,column range,column range
-area codes,GB-AL,AL,"St Albans, GB, Postcode Area, AL",^areacode$,column range,column range
-area codes,GB-B,B,"Birmingham, GB, Postcode Area, B",^areacode$,column range,column range
-area codes,GB-BA,BA,"Bath, GB, Postcode Area, BA",^areacode$,column range,column range
-area codes,GB-BB,BB,"Blackburn, GB, Postcode Area, BB",^areacode$,column range,column range
-area codes,GB-BD,BD,"Bradford, GB, Postcode Area, BD",^areacode$,column range,column range
-area codes,GB-BH,BH,"Bournemouth, GB, Postcode Area, BH",^areacode$,column range,column range
-area codes,GB-BL,BL,"Bolton, GB, Postcode Area, BL",^areacode$,column range,column range
-area codes,GB-BN,BN,"Brighton, GB, Postcode Area, BN",^areacode$,column range,column range
-area codes,GB-BR,BR,"Bromley, GB, Postcode Area, BR",^areacode$,column range,column range
-area codes,GB-BS,BS,"Bristol, GB, Postcode Area, BS",^areacode$,column range,column range
-area codes,GB-BT,BT,"Northern Ireland, GB, Postcode Area, BT",^areacode$,column range,column range
-area codes,GB-CA,CA,"Carlisle, GB, Postcode Area, CA",^areacode$,column range,column range
-area codes,GB-CB,CB,"Cambridge, GB, Postcode Area, CB",^areacode$,column range,column range
-area codes,GB-CF,CF,"Cardiff, GB, Postcode Area, CF",^areacode$,column range,column range
-area codes,GB-CH,CH,"Chester, GB, Postcode Area, CH",^areacode$,column range,column range
-area codes,GB-CM,CM,"Chelmsford, GB, Postcode Area, CM",^areacode$,column range,column range
-area codes,GB-CO,CO,"Colchester, GB, Postcode Area, CO",^areacode$,column range,column range
-area codes,GB-CR,CR,"Croydon, GB, Postcode Area, CR",^areacode$,column range,column range
-area codes,GB-CT,CT,"Canterbury, GB, Postcode Area, CT",^areacode$,column range,column range
-area codes,GB-CV,CV,"Coventry, GB, Postcode Area, CV",^areacode$,column range,column range
-area codes,GB-CW,CW,"Crewe, GB, Postcode Area, CW",^areacode$,column range,column range
-area codes,GB-DA,DA,"Dartford, GB, Postcode Area, DA",^areacode$,column range,column range
-area codes,GB-DD,DD,"Dundee, GB, Postcode Area, DD",^areacode$,column range,column range
-area codes,GB-DE,DE,"Derby, GB, Postcode Area, DE",^areacode$,column range,column range
-area codes,GB-DG,DG,"Dumfries, GB, Postcode Area, DG",^areacode$,column range,column range
-area codes,GB-DH,DH,"Durham, GB, Postcode Area, DH",^areacode$,column range,column range
-area codes,GB-DL,DL,"Darlington, GB, Postcode Area, DL",^areacode$,column range,column range
-area codes,GB-DN,DN,"Doncaster, GB, Postcode Area, DN",^areacode$,column range,column range
-area codes,GB-DT,DT,"Dorchester, GB, Postcode Area, DT",^areacode$,column range,column range
-area codes,GB-DY,DY,"Dudley, GB, Postcode Area, DY",^areacode$,column range,column range
-area codes,GB-E,E,"London E, GB, Postcode Area, E",^areacode$,column range,column range
-area codes,GB-EC,EC,"London EC, GB, Postcode Area, EC",^areacode$,column range,column range
-area codes,GB-EH,EH,"Edinburgh, GB, Postcode Area, EH",^areacode$,column range,column range
-area codes,GB-EN,EN,"Enfield, GB, Postcode Area, EN",^areacode$,column range,column range
-area codes,GB-EX,EX,"Exeter, GB, Postcode Area, EX",^areacode$,column range,column range
-area codes,GB-FK,FK,"Falkirk, GB, Postcode Area, FK",^areacode$,column range,column range
-area codes,GB-FY,FY,"Blackpool, GB, Postcode Area, FY",^areacode$,column range,column range
-area codes,GB-G,G,"Glasgow, GB, Postcode Area, G",^areacode$,column range,column range
-area codes,GB-GL,GL,"Gloucester, GB, Postcode Area, GL",^areacode$,column range,column range
-area codes,GB-GU,GU,"Guildford, GB, Postcode Area, GU",^areacode$,column range,column range
-area codes,GB-GY,GY,"Guernsey, GB, Postcode Area, GY",^areacode$,column range,column range
-area codes,GB-HA,HA,"Harrow, GB, Postcode Area, HA",^areacode$,column range,column range
-area codes,GB-HD,HD,"Huddersfield, GB, Postcode Area, HD",^areacode$,column range,column range
-area codes,GB-HG,HG,"Harrogate, GB, Postcode Area, HG",^areacode$,column range,column range
-area codes,GB-HP,HP,"Hemel Hempstead, GB, Postcode Area, HP",^areacode$,column range,column range
-area codes,GB-HR,HR,"Hereford, GB, Postcode Area, HR",^areacode$,column range,column range
-area codes,GB-HS,HS,"Outer Hebrides, GB, Postcode Area, HS",^areacode$,column range,column range
-area codes,GB-HU,HU,"Hull, GB, Postcode Area, HU",^areacode$,column range,column range
-area codes,GB-HX,HX,"Halifax, GB, Postcode Area, HX",^areacode$,column range,column range
-area codes,GB-IC,IC,"Channel Islands, GB, Postcode Area, IC",^areacode$,column range,column range
-area codes,GB-IG,IG,"Ilford, GB, Postcode Area, IG",^areacode$,column range,column range
-area codes,GB-IM,IM,"Isle of Man, GB, Postcode Area, IM",^areacode$,column range,column range
-area codes,GB-IP,IP,"Ipswich, GB, Postcode Area, IP",^areacode$,column range,column range
-area codes,GB-IV,IV,"Inverness, GB, Postcode Area, IV",^areacode$,column range,column range
-area codes,GB-JE,JE,"Jersey, GB, Postcode Area, JE",^areacode$,column range,column range
-area codes,GB-KA,KA,"Kilmarnock, GB, Postcode Area, KA",^areacode$,column range,column range
-area codes,GB-KT,KT,"Kingston upon Thames, GB, Postcode Area, KT",^areacode$,column range,column range
-area codes,GB-KW,KW,"Kirkwall, GB, Postcode Area, KW",^areacode$,column range,column range
-area codes,GB-KY,KY,"Kirkcaldy, GB, Postcode Area, KY",^areacode$,column range,column range
-area codes,GB-L,L,"Liverpool, GB, Postcode Area, L",^areacode$,column range,column range
-area codes,GB-LA,LA,"Lancaster, GB, Postcode Area, LA",^areacode$,column range,column range
-area codes,GB-LD,LD,"Llandrindod Wells, GB, Postcode Area, LD",^areacode$,column range,column range
-area codes,GB-LE,LE,"Leicester, GB, Postcode Area, LE",^areacode$,column range,column range
-area codes,GB-LL,LL,"Llandudno, GB, Postcode Area, LL",^areacode$,column range,column range
-area codes,GB-LN,LN,"Lincoln, GB, Postcode Area, LN",^areacode$,column range,column range
-area codes,GB-LS,LS,"Leeds, GB, Postcode Area, LS",^areacode$,column range,column range
-area codes,GB-LU,LU,"Luton, GB, Postcode Area, LU",^areacode$,column range,column range
-area codes,GB-M,M,"Manchester, GB, Postcode Area, M",^areacode$,column range,column range
-area codes,GB-ME,ME,"Medway, GB, Postcode Area, ME",^areacode$,column range,column range
-area codes,GB-MK,MK,"Milton Keynes, GB, Postcode Area, MK",^areacode$,column range,column range
-area codes,GB-ML,ML,"Motherwell, GB, Postcode Area, ML",^areacode$,column range,column range
-area codes,GB-N,N,"London N, GB, Postcode Area, N",^areacode$,column range,column range
-area codes,GB-NE,NE,"Newcastle upon Tyne, GB, Postcode Area, NE",^areacode$,column range,column range
-area codes,GB-NG,NG,"Nottingham, GB, Postcode Area, NG",^areacode$,column range,column range
-area codes,GB-NN,NN,"Northampton, GB, Postcode Area, NN",^areacode$,column range,column range
-area codes,GB-NP,NP,"Newport, GB, Postcode Area, NP",^areacode$,column range,column range
-area codes,GB-NR,NR,"Norwich, GB, Postcode Area, NR",^areacode$,column range,column range
-area codes,GB-NW,NW,"London NW, GB, Postcode Area, NW",^areacode$,column range,column range
-area codes,GB-OL,OL,"Oldham, GB, Postcode Area, OL",^areacode$,column range,column range
-area codes,GB-OX,OX,"Oxford, GB, Postcode Area, OX",^areacode$,column range,column range
-area codes,GB-PA,PA,"Paisley, GB, Postcode Area, PA",^areacode$,column range,column range
-area codes,GB-PE,PE,"Peterborough, GB, Postcode Area, PE",^areacode$,column range,column range
-area codes,GB-PH,PH,"Perth, GB, Postcode Area, PH",^areacode$,column range,column range
-area codes,GB-PL,PL,"Plymouth, GB, Postcode Area, PL",^areacode$,column range,column range
-area codes,GB-PO,PO,"Portsmouth, GB, Postcode Area, PO",^areacode$,column range,column range
-area codes,GB-PR,PR,"Preston, GB, Postcode Area, PR",^areacode$,column range,column range
-area codes,GB-RG,RG,"Reading, GB, Postcode Area, RG",^areacode$,column range,column range
-area codes,GB-RH,RH,"Redhill, GB, Postcode Area, RH",^areacode$,column range,column range
-area codes,GB-RM,RM,"Romford, GB, Postcode Area, RM",^areacode$,column range,column range
-area codes,GB-S,S,"Sheffield, GB, Postcode Area, S",^areacode$,column range,column range
-area codes,GB-SA,SA,"Swansea, GB, Postcode Area, SA",^areacode$,column range,column range
-area codes,GB-SE,SE,"London SE, GB, Postcode Area, SE",^areacode$,column range,column range
-area codes,GB-SG,SG,"Stevenage, GB, Postcode Area, SG",^areacode$,column range,column range
-area codes,GB-SK,SK,"Stockport, GB, Postcode Area, SK",^areacode$,column range,column range
-area codes,GB-SL,SL,"Slough, GB, Postcode Area, SL",^areacode$,column range,column range
-area codes,GB-SM,SM,"Sutton, GB, Postcode Area, SM",^areacode$,column range,column range
-area codes,GB-SN,SN,"Swindon, GB, Postcode Area, SN",^areacode$,column range,column range
-area codes,GB-SO,SO,"Southampton, GB, Postcode Area, SO",^areacode$,column range,column range
-area codes,GB-SP,SP,"Salisbury, GB, Postcode Area, SP",^areacode$,column range,column range
-area codes,GB-SR,SR,"Sunderland, GB, Postcode Area, SR",^areacode$,column range,column range
-area codes,GB-SS,SS,"Southend-on-Sea, GB, Postcode Area, SS",^areacode$,column range,column range
-area codes,GB-ST,ST,"Stoke-on-Trent, GB, Postcode Area, ST",^areacode$,column range,column range
-area codes,GB-SW,SW,"London SW, GB, Postcode Area, SW",^areacode$,column range,column range
-area codes,GB-SY,SY,"Shrewsbury, GB, Postcode Area, SY",^areacode$,column range,column range
-area codes,GB-TA,TA,"Taunton, GB, Postcode Area, TA",^areacode$,column range,column range
-area codes,GB-TD,TD,"Galashiels, GB, Postcode Area, TD",^areacode$,column range,column range
-area codes,GB-TF,TF,"Telford, GB, Postcode Area, TF",^areacode$,column range,column range
-area codes,GB-TN,TN,"Tonbridge, GB, Postcode Area, TN",^areacode$,column range,column range
-area codes,GB-TQ,TQ,"Torquay, GB, Postcode Area, TQ",^areacode$,column range,column range
-area codes,GB-TR,TR,"Truro, GB, Postcode Area, TR",^areacode$,column range,column range
-area codes,GB-TS,TS,"Cleveland, GB, Postcode Area, TS",^areacode$,column range,column range
-area codes,GB-TW,TW,"Twickenham, GB, Postcode Area, TW",^areacode$,column range,column range
-area codes,GB-UB,UB,"Southall, GB, Postcode Area, UB",^areacode$,column range,column range
-area codes,GB-W,W,"London W, GB, Postcode Area, W",^areacode$,column range,column range
-area codes,GB-WA,WA,"Warrington, GB, Postcode Area, WA",^areacode$,column range,column range
-area codes,GB-WC,WC,"London WC, GB, Postcode Area, WC",^areacode$,column range,column range
-area codes,GB-WD,WD,"Watford, GB, Postcode Area, WD",^areacode$,column range,column range
-area codes,GB-WF,WF,"Wakefield, GB, Postcode Area, WF",^areacode$,column range,column range
-area codes,GB-WN,WN,"Wigan, GB, Postcode Area, WN",^areacode$,column range,column range
-area codes,GB-WR,WR,"Worcester, GB, Postcode Area, WR",^areacode$,column range,column range
-area codes,GB-WS,WS,"Walsall, GB, Postcode Area, WS",^areacode$,column range,column range
-area codes,GB-WV,WV,"Wolverhampton, GB, Postcode Area, WV",^areacode$,column range,column range
-area codes,GB-YO,YO,"York, GB, Postcode Area, YO",^areacode$,column range,column range
-area codes,GB-ZE,ZE,"Lerwick, GB, Postcode Area, ZE",^areacode$,column range,column range
-area codes,GR-01,01,"Aitolias Kai Akarnanias, GR, Province, 01",^areacode$,column range,column range
-area codes,GR-03,03,"Voiotia, GR, Province, 03",^areacode$,column range,column range
-area codes,GR-04,04,"Eivoias, GR, Province, 04",^areacode$,column range,column range
-area codes,GR-05,05,"Evritania, GR, Province, 05",^areacode$,column range,column range
-area codes,GR-06,06,"Fthiotida, GR, Province, 06",^areacode$,column range,column range
-area codes,GR-07,07,"Fokida, GR, Province, 07",^areacode$,column range,column range
-area codes,GR-11,11,"Argolidos, GR, Province, 11",^areacode$,column range,column range
-area codes,GR-12,12,"Arkadias, GR, Province, 12",^areacode$,column range,column range
-area codes,GR-13,13,"Ahaia, GR, Province, 13",^areacode$,column range,column range
-area codes,GR-14,14,"Ilia, GR, Province, 14",^areacode$,column range,column range
-area codes,GR-15,15,"Korinthos, GR, Province, 15",^areacode$,column range,column range
-area codes,GR-16,16,"Lakonia, GR, Province, 16",^areacode$,column range,column range
-area codes,GR-17,17,"Messinia, GR, Province, 17",^areacode$,column range,column range
-area codes,GR-21,21,"Zakinthos, GR, Province, 21",^areacode$,column range,column range
-area codes,GR-22,22,"Kerkira (Corfu), GR, Province, 22",^areacode$,column range,column range
-area codes,GR-23,23,"Kefallonia, GR, Province, 23",^areacode$,column range,column range
-area codes,GR-24,24,"Lefkada, GR, Province, 24",^areacode$,column range,column range
-area codes,GR-31,31,"Arta, GR, Province, 31",^areacode$,column range,column range
-area codes,GR-32,32,"Thesprotia, GR, Province, 32",^areacode$,column range,column range
-area codes,GR-33,33,"Ioannina, GR, Province, 33",^areacode$,column range,column range
-area codes,GR-34,34,"Preveza, GR, Province, 34",^areacode$,column range,column range
-area codes,GR-41,41,"Karditsa, GR, Province, 41",^areacode$,column range,column range
-area codes,GR-42,42,"Larissa, GR, Province, 42",^areacode$,column range,column range
-area codes,GR-43,43,"Magnisias, GR, Province, 43",^areacode$,column range,column range
-area codes,GR-44,44,"Trikala, GR, Province, 44",^areacode$,column range,column range
-area codes,GR-51,51,"Grevena, GR, Province, 51",^areacode$,column range,column range
-area codes,GR-52,52,"Drama, GR, Province, 52",^areacode$,column range,column range
-area codes,GR-53,53,"Imathia, GR, Province, 53",^areacode$,column range,column range
-area codes,GR-54,54,"Thessaloniki, GR, Province, 54",^areacode$,column range,column range
-area codes,GR-55,55,"Kavala, GR, Province, 55",^areacode$,column range,column range
-area codes,GR-56,56,"Kastoria, GR, Province, 56",^areacode$,column range,column range
-area codes,GR-57,57,"Kilkis, GR, Province, 57",^areacode$,column range,column range
-area codes,GR-58,58,"Kozani, GR, Province, 58",^areacode$,column range,column range
-area codes,GR-59,59,"Pela, GR, Province, 59",^areacode$,column range,column range
-area codes,GR-61,61,"Pieria, GR, Province, 61",^areacode$,column range,column range
-area codes,GR-62,62,"Seres, GR, Province, 62",^areacode$,column range,column range
-area codes,GR-63,63,"Florina, GR, Province, 63",^areacode$,column range,column range
-area codes,GR-64,64,"Halkida, GR, Province, 64",^areacode$,column range,column range
-area codes,GR-65,65,"Agion Opos, GR, Province, 65",^areacode$,column range,column range
-area codes,GR-71,71,"Evros, GR, Province, 71",^areacode$,column range,column range
-area codes,GR-72,72,"Xanthi, GR, Province, 72",^areacode$,column range,column range
-area codes,GR-73,73,"Rodopi, GR, Province, 73",^areacode$,column range,column range
-area codes,GR-81,81,"Dodekanissa (Dodecanese), GR, Province, 81",^areacode$,column range,column range
-area codes,GR-82,82,"Kiklades (Cyclades), GR, Province, 82",^areacode$,column range,column range
-area codes,GR-83,83,"Lesvos, GR, Province, 83",^areacode$,column range,column range
-area codes,GR-84,84,"Samos, GR, Province, 84",^areacode$,column range,column range
-area codes,GR-85,85,"Hios, GR, Province, 85",^areacode$,column range,column range
-area codes,GR-91,91,"Iraklio, GR, Province, 91",^areacode$,column range,column range
-area codes,GR-92,92,"Lasithioi, GR, Province, 92",^areacode$,column range,column range
-area codes,GR-93,93,"Rethimno, GR, Province, 93",^areacode$,column range,column range
-area codes,GR-94,94,"Hania, GR, Province, 94",^areacode$,column range,column range
-area codes,GR-A1,A1,"Athina (Athens), GR, Province, A1",^areacode$,column range,column range
-area codes,GR-A2,A2,"Anatoliki Attiki, GR, Province, A2",^areacode$,column range,column range
-area codes,GR-A3,A3,"Ditiki Attiki, GR, Province, A3",^areacode$,column range,column range
-area codes,GR-A4,A4,"Peiria, GR, Province, A4",^areacode$,column range,column range
-area codes,HT-1,1,"Artibonite, HT, Province, 1",^areacode$,column range,column range
-area codes,HT-2,2,"Centre, HT, Province, 2",^areacode$,column range,column range
-area codes,HT-3,3,"Grand' Anse, HT, Province, 3",^areacode$,column range,column range
-area codes,HT-4,4,"Nord, HT, Province, 4",^areacode$,column range,column range
-area codes,HT-5,5,"Nord-Est, HT, Province, 5",^areacode$,column range,column range
-area codes,HT-6,6,"Nord-Ouest, HT, Province, 6",^areacode$,column range,column range
-area codes,HT-7,7,"Ouest, HT, Province, 7",^areacode$,column range,column range
-area codes,HT-8,8,"Sud, HT, Province, 8",^areacode$,column range,column range
-area codes,HT-9,9,"Sud-Est, HT, Province, 9",^areacode$,column range,column range
-area codes,ID-11,11,"Nanggroe Aceh Darussalam, ID, Province, 11",^areacode$,column range,column range
-area codes,ID-12,12,"Sumatera Utara, ID, Province, 12",^areacode$,column range,column range
-area codes,ID-13,13,"Sumatera Barat, ID, Province, 13",^areacode$,column range,column range
-area codes,ID-14,14,"Riau, ID, Province, 14",^areacode$,column range,column range
-area codes,ID-15,15,"Jambi, ID, Province, 15",^areacode$,column range,column range
-area codes,ID-16,16,"Sumatera Selatan, ID, Province, 16",^areacode$,column range,column range
-area codes,ID-17,17,"Bengkulu, ID, Province, 17",^areacode$,column range,column range
-area codes,ID-18,18,"Lampung, ID, Province, 18",^areacode$,column range,column range
-area codes,ID-19,19,"Kepulauan Bangka Belitung, ID, Province, 19",^areacode$,column range,column range
-area codes,ID-21,21,"Kepulauan Riau, ID, Province, 21",^areacode$,column range,column range
-area codes,ID-31,31,"DKI Jakarta, ID, Province, 31",^areacode$,column range,column range
-area codes,ID-32,32,"Jawa Barat, ID, Province, 32",^areacode$,column range,column range
-area codes,ID-33,33,"Jawa Tengah, ID, Province, 33",^areacode$,column range,column range
-area codes,ID-34,34,"DI Yogyakarta, ID, Province, 34",^areacode$,column range,column range
-area codes,ID-35,35,"Jawa Timur, ID, Province, 35",^areacode$,column range,column range
-area codes,ID-36,36,"Banten, ID, Province, 36",^areacode$,column range,column range
-area codes,ID-51,51,"Bali, ID, Province, 51",^areacode$,column range,column range
-area codes,ID-52,52,"Nusa Tenggara Barat, ID, Province, 52",^areacode$,column range,column range
-area codes,ID-53,53,"Nusa Tenggara Timur, ID, Province, 53",^areacode$,column range,column range
-area codes,ID-61,61,"Kalimantan Barat, ID, Province, 61",^areacode$,column range,column range
-area codes,ID-62,62,"Kalimantan Tengah, ID, Province, 62",^areacode$,column range,column range
-area codes,ID-63,63,"Kalimantan Selatan, ID, Province, 63",^areacode$,column range,column range
-area codes,ID-64,64,"Kalimantan Timur, ID, Province, 64",^areacode$,column range,column range
-area codes,ID-71,71,"Sulawesi Utara, ID, Province, 71",^areacode$,column range,column range
-area codes,ID-72,72,"Sulawesi Tengah, ID, Province, 72",^areacode$,column range,column range
-area codes,ID-73,73,"Sulawesi Selatan, ID, Province, 73",^areacode$,column range,column range
-area codes,ID-74,74,"Sulawesi Tenggara, ID, Province, 74",^areacode$,column range,column range
-area codes,ID-75,75,"Gorontalo, ID, Province, 75",^areacode$,column range,column range
-area codes,ID-76,76,"Sulawesi Barat, ID, Province, 76",^areacode$,column range,column range
-area codes,ID-81,81,"Maluku, ID, Province, 81",^areacode$,column range,column range
-area codes,ID-82,82,"Maluku Utara, ID, Province, 82",^areacode$,column range,column range
-area codes,ID-91,91,"Papua Barat, ID, Province, 91",^areacode$,column range,column range
-area codes,ID-94,94,"Papua, ID, Province, 94",^areacode$,column range,column range
-area codes,IE-01,01,"Carlow, IE, County/Sector, 01",^areacode$,column range,column range
-area codes,IE-02,02,"Dublin County Borough, IE, County/Sector, 02",^areacode$,column range,column range
-area codes,IE-03,03,"South Dublin, IE, County/Sector, 03",^areacode$,column range,column range
-area codes,IE-04,04,"Fingal, IE, County/Sector, 04",^areacode$,column range,column range
-area codes,IE-05,05,"Dun Laoghaire-Rathdown, IE, County/Sector, 05",^areacode$,column range,column range
-area codes,IE-06,06,"Kildare, IE, County/Sector, 06",^areacode$,column range,column range
-area codes,IE-07,07,"Kilkenny, IE, County/Sector, 07",^areacode$,column range,column range
-area codes,IE-08,08,"Laoighis, IE, County/Sector, 08",^areacode$,column range,column range
-area codes,IE-09,09,"Longford, IE, County/Sector, 09",^areacode$,column range,column range
-area codes,IE-10,10,"Louth, IE, County/Sector, 10",^areacode$,column range,column range
-area codes,IE-11,11,"Meath, IE, County/Sector, 11",^areacode$,column range,column range
-area codes,IE-12,12,"Offaly, IE, County/Sector, 12",^areacode$,column range,column range
-area codes,IE-13,13,"Westmeath, IE, County/Sector, 13",^areacode$,column range,column range
-area codes,IE-14,14,"Wexford, IE, County/Sector, 14",^areacode$,column range,column range
-area codes,IE-15,15,"Wicklow, IE, County/Sector, 15",^areacode$,column range,column range
-area codes,IE-16,16,"Clare, IE, County/Sector, 16",^areacode$,column range,column range
-area codes,IE-18,18,"Cork County Borough, IE, County/Sector, 18",^areacode$,column range,column range
-area codes,IE-19,19,"Cork, IE, County/Sector, 19",^areacode$,column range,column range
-area codes,IE-20,20,"Kerry, IE, County/Sector, 20",^areacode$,column range,column range
-area codes,IE-22,22,"Limerick County Borough, IE, County/Sector, 22",^areacode$,column range,column range
-area codes,IE-23,23,"Limerick, IE, County/Sector, 23",^areacode$,column range,column range
-area codes,IE-24,24,"Tipperary North Riding, IE, County/Sector, 24",^areacode$,column range,column range
-area codes,IE-25,25,"Tipperay South Riding, IE, County/Sector, 25",^areacode$,column range,column range
-area codes,IE-27,27,"Waterford County Borough, IE, County/Sector, 27",^areacode$,column range,column range
-area codes,IE-28,28,"Waterford, IE, County/Sector, 28",^areacode$,column range,column range
-area codes,IE-29,29,"Galway, IE, County/Sector, 29",^areacode$,column range,column range
-area codes,IE-30,30,"Leitrim, IE, County/Sector, 30",^areacode$,column range,column range
-area codes,IE-31,31,"Mayo, IE, County/Sector, 31",^areacode$,column range,column range
-area codes,IE-32,32,"Roscommon, IE, County/Sector, 32",^areacode$,column range,column range
-area codes,IE-33,33,"Sligo, IE, County/Sector, 33",^areacode$,column range,column range
-area codes,IE-34,34,"Cavan, IE, County/Sector, 34",^areacode$,column range,column range
-area codes,IE-35,35,"Donegal, IE, County/Sector, 35",^areacode$,column range,column range
-area codes,IE-36,36,"Monaghan, IE, County/Sector, 36",^areacode$,column range,column range
-area codes,IE-37,37,"Galway County Borough, IE, County/Sector, 37",^areacode$,column range,column range
-area codes,IL-01,01,"Akko, IL, District, 01",^areacode$,column range,column range
-area codes,IL-02,02,"Ashqelon, IL, District, 02",^areacode$,column range,column range
-area codes,IL-03,03,"Beer Sheva, IL, District, 03",^areacode$,column range,column range
-area codes,IL-04,04,"Gaza Area, IL, District, 04",^areacode$,column range,column range
-area codes,IL-05,05,"Golan, IL, District, 05",^areacode$,column range,column range
-area codes,IL-06,06,"Hadera, IL, District, 06",^areacode$,column range,column range
-area codes,IL-07,07,"Haifa, IL, District, 07",^areacode$,column range,column range
-area codes,IL-08,08,"Jericho, IL, District, 08",^areacode$,column range,column range
-area codes,IL-09,09,"Jerusalem, IL, District, 09",^areacode$,column range,column range
-area codes,IL-10,10,"Kinneret, IL, District, 10",^areacode$,column range,column range
-area codes,IL-11,11,"Petah Tiqwa, IL, District, 11",^areacode$,column range,column range
-area codes,IL-12,12,"Ramla, IL, District, 12",^areacode$,column range,column range
-area codes,IL-13,13,"Rehovot, IL, District, 13",^areacode$,column range,column range
-area codes,IL-14,14,"Sharon, IL, District, 14",^areacode$,column range,column range
-area codes,IL-15,15,"Tel Aviv, IL, District, 15",^areacode$,column range,column range
-area codes,IL-16,16,"Yizreel, IL, District, 16",^areacode$,column range,column range
-area codes,IL-17,17,"Zefat, IL, District, 17",^areacode$,column range,column range
-area codes,IT-001,001,"Torino, IT, Province, 001",^areacode$,column range,column range
-area codes,IT-002,002,"Vercelli, IT, Province, 002",^areacode$,column range,column range
-area codes,IT-003,003,"Novara, IT, Province, 003",^areacode$,column range,column range
-area codes,IT-004,004,"Cuneo, IT, Province, 004",^areacode$,column range,column range
-area codes,IT-005,005,"Asti, IT, Province, 005",^areacode$,column range,column range
-area codes,IT-006,006,"Alessandria, IT, Province, 006",^areacode$,column range,column range
-area codes,IT-007,007,"Valle dAosta, IT, Province, 007",^areacode$,column range,column range
-area codes,IT-008,008,"Imperia, IT, Province, 008",^areacode$,column range,column range
-area codes,IT-009,009,"Savona, IT, Province, 009",^areacode$,column range,column range
-area codes,IT-010,010,"Genova, IT, Province, 010",^areacode$,column range,column range
-area codes,IT-011,011,"La Spezia, IT, Province, 011",^areacode$,column range,column range
-area codes,IT-012,012,"Varese, IT, Province, 012",^areacode$,column range,column range
-area codes,IT-013,013,"Como, IT, Province, 013",^areacode$,column range,column range
-area codes,IT-014,014,"Sondrio, IT, Province, 014",^areacode$,column range,column range
-area codes,IT-015,015,"Milano, IT, Province, 015",^areacode$,column range,column range
-area codes,IT-016,016,"Bergamo, IT, Province, 016",^areacode$,column range,column range
-area codes,IT-017,017,"Brescia, IT, Province, 017",^areacode$,column range,column range
-area codes,IT-018,018,"Pavia, IT, Province, 018",^areacode$,column range,column range
-area codes,IT-019,019,"Cremona, IT, Province, 019",^areacode$,column range,column range
-area codes,IT-020,020,"Mantova, IT, Province, 020",^areacode$,column range,column range
-area codes,IT-021,021,"Bolzano, IT, Province, 021",^areacode$,column range,column range
-area codes,IT-022,022,"Trento, IT, Province, 022",^areacode$,column range,column range
-area codes,IT-023,023,"Verona, IT, Province, 023",^areacode$,column range,column range
-area codes,IT-024,024,"Vicenza, IT, Province, 024",^areacode$,column range,column range
-area codes,IT-025,025,"Belluno, IT, Province, 025",^areacode$,column range,column range
-area codes,IT-026,026,"Treviso, IT, Province, 026",^areacode$,column range,column range
-area codes,IT-027,027,"Venezia, IT, Province, 027",^areacode$,column range,column range
-area codes,IT-028,028,"Padova, IT, Province, 028",^areacode$,column range,column range
-area codes,IT-029,029,"Rovigo, IT, Province, 029",^areacode$,column range,column range
-area codes,IT-030,030,"Udine, IT, Province, 030",^areacode$,column range,column range
-area codes,IT-031,031,"Gorizia, IT, Province, 031",^areacode$,column range,column range
-area codes,IT-032,032,"Trieste, IT, Province, 032",^areacode$,column range,column range
-area codes,IT-033,033,"Piacenza, IT, Province, 033",^areacode$,column range,column range
-area codes,IT-034,034,"Parma, IT, Province, 034",^areacode$,column range,column range
-area codes,IT-035,035,"Reggio Emilia, IT, Province, 035",^areacode$,column range,column range
-area codes,IT-036,036,"Modena, IT, Province, 036",^areacode$,column range,column range
-area codes,IT-037,037,"Bologna, IT, Province, 037",^areacode$,column range,column range
-area codes,IT-038,038,"Ferrara, IT, Province, 038",^areacode$,column range,column range
-area codes,IT-039,039,"Ravenna, IT, Province, 039",^areacode$,column range,column range
-area codes,IT-040,040,"Forli-Cesena, IT, Province, 040",^areacode$,column range,column range
-area codes,IT-041,041,"Pesaro E Urbino, IT, Province, 041",^areacode$,column range,column range
-area codes,IT-042,042,"Ancona, IT, Province, 042",^areacode$,column range,column range
-area codes,IT-043,043,"Macerata, IT, Province, 043",^areacode$,column range,column range
-area codes,IT-044,044,"Ascoli Piceno, IT, Province, 044",^areacode$,column range,column range
-area codes,IT-045,045,"Massa Carrara, IT, Province, 045",^areacode$,column range,column range
-area codes,IT-046,046,"Lucca, IT, Province, 046",^areacode$,column range,column range
-area codes,IT-047,047,"Pistoia, IT, Province, 047",^areacode$,column range,column range
-area codes,IT-048,048,"Firenze, IT, Province, 048",^areacode$,column range,column range
-area codes,IT-049,049,"Livorno, IT, Province, 049",^areacode$,column range,column range
-area codes,IT-050,050,"Pisa, IT, Province, 050",^areacode$,column range,column range
-area codes,IT-051,051,"Arezzo, IT, Province, 051",^areacode$,column range,column range
-area codes,IT-052,052,"Siena, IT, Province, 052",^areacode$,column range,column range
-area codes,IT-053,053,"Grosseto, IT, Province, 053",^areacode$,column range,column range
-area codes,IT-054,054,"Perugia, IT, Province, 054",^areacode$,column range,column range
-area codes,IT-055,055,"Terni, IT, Province, 055",^areacode$,column range,column range
-area codes,IT-056,056,"Viterbo, IT, Province, 056",^areacode$,column range,column range
-area codes,IT-057,057,"Rieti, IT, Province, 057",^areacode$,column range,column range
-area codes,IT-058,058,"Roma, IT, Province, 058",^areacode$,column range,column range
-area codes,IT-059,059,"Latina, IT, Province, 059",^areacode$,column range,column range
-area codes,IT-060,060,"Frosinone, IT, Province, 060",^areacode$,column range,column range
-area codes,IT-061,061,"Caserta, IT, Province, 061",^areacode$,column range,column range
-area codes,IT-062,062,"Benevento, IT, Province, 062",^areacode$,column range,column range
-area codes,IT-063,063,"Napoli, IT, Province, 063",^areacode$,column range,column range
-area codes,IT-064,064,"Avellino, IT, Province, 064",^areacode$,column range,column range
-area codes,IT-065,065,"Salerno, IT, Province, 065",^areacode$,column range,column range
-area codes,IT-066,066,"L'Aquila, IT, Province, 066",^areacode$,column range,column range
-area codes,IT-067,067,"Teramo, IT, Province, 067",^areacode$,column range,column range
-area codes,IT-068,068,"Pescara, IT, Province, 068",^areacode$,column range,column range
-area codes,IT-069,069,"Chieti, IT, Province, 069",^areacode$,column range,column range
-area codes,IT-070,070,"Campobasso, IT, Province, 070",^areacode$,column range,column range
-area codes,IT-071,071,"Foggia, IT, Province, 071",^areacode$,column range,column range
-area codes,IT-072,072,"Bari, IT, Province, 072",^areacode$,column range,column range
-area codes,IT-073,073,"Taranto, IT, Province, 073",^areacode$,column range,column range
-area codes,IT-074,074,"Brindisi, IT, Province, 074",^areacode$,column range,column range
-area codes,IT-075,075,"Lecce, IT, Province, 075",^areacode$,column range,column range
-area codes,IT-076,076,"Potenza, IT, Province, 076",^areacode$,column range,column range
-area codes,IT-077,077,"Matera, IT, Province, 077",^areacode$,column range,column range
-area codes,IT-078,078,"Cosenza, IT, Province, 078",^areacode$,column range,column range
-area codes,IT-079,079,"Catanzaro, IT, Province, 079",^areacode$,column range,column range
-area codes,IT-080,080,"Reggio Calabria, IT, Province, 080",^areacode$,column range,column range
-area codes,IT-081,081,"Trapani, IT, Province, 081",^areacode$,column range,column range
-area codes,IT-082,082,"Palermo, IT, Province, 082",^areacode$,column range,column range
-area codes,IT-083,083,"Messina, IT, Province, 083",^areacode$,column range,column range
-area codes,IT-084,084,"Agrigento, IT, Province, 084",^areacode$,column range,column range
-area codes,IT-085,085,"Caltanissetta, IT, Province, 085",^areacode$,column range,column range
-area codes,IT-086,086,"Enna, IT, Province, 086",^areacode$,column range,column range
-area codes,IT-087,087,"Catania, IT, Province, 087",^areacode$,column range,column range
-area codes,IT-088,088,"Ragusa, IT, Province, 088",^areacode$,column range,column range
-area codes,IT-089,089,"Siracusa, IT, Province, 089",^areacode$,column range,column range
-area codes,IT-090,090,"Sassari, IT, Province, 090",^areacode$,column range,column range
-area codes,IT-091,091,"Nuoro, IT, Province, 091",^areacode$,column range,column range
-area codes,IT-092,092,"Cagliari, IT, Province, 092",^areacode$,column range,column range
-area codes,IT-093,093,"Pordenone, IT, Province, 093",^areacode$,column range,column range
-area codes,IT-094,094,"Isernia, IT, Province, 094",^areacode$,column range,column range
-area codes,IT-095,095,"Oristano, IT, Province, 095",^areacode$,column range,column range
-area codes,IT-096,096,"Biella, IT, Province, 096",^areacode$,column range,column range
-area codes,IT-097,097,"Lecco, IT, Province, 097",^areacode$,column range,column range
-area codes,IT-098,098,"Lodi, IT, Province, 098",^areacode$,column range,column range
-area codes,IT-099,099,"Rimini, IT, Province, 099",^areacode$,column range,column range
-area codes,IT-100,100,"Prato, IT, Province, 100",^areacode$,column range,column range
-area codes,IT-101,101,"Crotone, IT, Province, 101",^areacode$,column range,column range
-area codes,IT-102,102,"Vibo Valentia, IT, Province, 102",^areacode$,column range,column range
-area codes,IT-103,103,"Verbano-Cusio-Ossola, IT, Province, 103",^areacode$,column range,column range
-area codes,IT-104,104,"Olbia-Tempio, IT, Province, 104",^areacode$,column range,column range
-area codes,IT-105,105,"Ogliastra, IT, Province, 105",^areacode$,column range,column range
-area codes,IT-106,106,"Medio Campidano, IT, Province, 106",^areacode$,column range,column range
-area codes,IT-107,107,"Carbonia-Iglesias, IT, Province, 107",^areacode$,column range,column range
-area codes,IT-888,888,"Citta del Vaticano, IT, Province, 888",^areacode$,column range,column range
-area codes,IT-999,999,"San Marino, IT, Province, 999",^areacode$,column range,column range
-area codes,JM-1,1,"Clarendon, JM, Parish, 1",^areacode$,column range,column range
-area codes,JM-10,10,"St. James, JM, Parish, 10",^areacode$,column range,column range
-area codes,JM-11,11,"St. Mary, JM, Parish, 11",^areacode$,column range,column range
-area codes,JM-12,12,"St. Thomas, JM, Parish, 12",^areacode$,column range,column range
-area codes,JM-13,13,"Trelawny, JM, Parish, 13",^areacode$,column range,column range
-area codes,JM-14,14,"Westmoreland, JM, Parish, 14",^areacode$,column range,column range
-area codes,JM-2,2,"Hanover, JM, Parish, 2",^areacode$,column range,column range
-area codes,JM-3,3,"Kingston, JM, Parish, 3",^areacode$,column range,column range
-area codes,JM-4,4,"Manchester, JM, Parish, 4",^areacode$,column range,column range
-area codes,JM-5,5,"Portland, JM, Parish, 5",^areacode$,column range,column range
-area codes,JM-6,6,"St. Andrew, JM, Parish, 6",^areacode$,column range,column range
-area codes,JM-7,7,"St. Ann, JM, Parish, 7",^areacode$,column range,column range
-area codes,JM-8,8,"St. Catherine, JM, Parish, 8",^areacode$,column range,column range
-area codes,JM-9,9,"St. Elizabeth, JM, Parish, 9",^areacode$,column range,column range
-area codes,JP-100,100,"Hokkaido, JP, Prefecture, 100",^areacode$,column range,column range
-area codes,JP-1010,1010,"Kagawa, JP, Prefecture, 1010",^areacode$,column range,column range
-area codes,JP-1020,1020,"Tokushima, JP, Prefecture, 1020",^areacode$,column range,column range
-area codes,JP-1030,1030,"Ehime, JP, Prefecture, 1030",^areacode$,column range,column range
-area codes,JP-1040,1040,"Kochi, JP, Prefecture, 1040",^areacode$,column range,column range
-area codes,JP-1110,1110,"Fukuoka, JP, Prefecture, 1110",^areacode$,column range,column range
-area codes,JP-1120,1120,"Saga, JP, Prefecture, 1120",^areacode$,column range,column range
-area codes,JP-1130,1130,"Nagasaki, JP, Prefecture, 1130",^areacode$,column range,column range
-area codes,JP-1140,1140,"Kumamoto, JP, Prefecture, 1140",^areacode$,column range,column range
-area codes,JP-1150,1150,"Oita, JP, Prefecture, 1150",^areacode$,column range,column range
-area codes,JP-1160,1160,"Miyazaki, JP, Prefecture, 1160",^areacode$,column range,column range
-area codes,JP-1170,1170,"Kagoshima, JP, Prefecture, 1170",^areacode$,column range,column range
-area codes,JP-1200,1200,"Okinawa, JP, Prefecture, 1200",^areacode$,column range,column range
-area codes,JP-210,210,"Aomori, JP, Prefecture, 210",^areacode$,column range,column range
-area codes,JP-220,220,"Akita, JP, Prefecture, 220",^areacode$,column range,column range
-area codes,JP-230,230,"Yamagata, JP, Prefecture, 230",^areacode$,column range,column range
-area codes,JP-240,240,"Niigata, JP, Prefecture, 240",^areacode$,column range,column range
-area codes,JP-310,310,"Iwate, JP, Prefecture, 310",^areacode$,column range,column range
-area codes,JP-320,320,"Miyagi, JP, Prefecture, 320",^areacode$,column range,column range
-area codes,JP-330,330,"Fukushima, JP, Prefecture, 330",^areacode$,column range,column range
-area codes,JP-410,410,"Gumma, JP, Prefecture, 410",^areacode$,column range,column range
-area codes,JP-420,420,"Tochigi, JP, Prefecture, 420",^areacode$,column range,column range
-area codes,JP-430,430,"Saitama, JP, Prefecture, 430",^areacode$,column range,column range
-area codes,JP-440,440,"Ibaraki, JP, Prefecture, 440",^areacode$,column range,column range
-area codes,JP-510,510,"Chiba, JP, Prefecture, 510",^areacode$,column range,column range
-area codes,JP-520,520,"Tokyo, JP, Prefecture, 520",^areacode$,column range,column range
-area codes,JP-530,530,"Kanagawa, JP, Prefecture, 530",^areacode$,column range,column range
-area codes,JP-610,610,"Gifu, JP, Prefecture, 610",^areacode$,column range,column range
-area codes,JP-620,620,"Nagano, JP, Prefecture, 620",^areacode$,column range,column range
-area codes,JP-630,630,"Yamanashi, JP, Prefecture, 630",^areacode$,column range,column range
-area codes,JP-640,640,"Shizuoka, JP, Prefecture, 640",^areacode$,column range,column range
-area codes,JP-650,650,"Aichi, JP, Prefecture, 650",^areacode$,column range,column range
-area codes,JP-660,660,"Mie, JP, Prefecture, 660",^areacode$,column range,column range
-area codes,JP-710,710,"Toyama, JP, Prefecture, 710",^areacode$,column range,column range
-area codes,JP-720,720,"Ishikawa, JP, Prefecture, 720",^areacode$,column range,column range
-area codes,JP-730,730,"Fukui, JP, Prefecture, 730",^areacode$,column range,column range
-area codes,JP-810,810,"Hyogo, JP, Prefecture, 810",^areacode$,column range,column range
-area codes,JP-820,820,"Kyoto, JP, Prefecture, 820",^areacode$,column range,column range
-area codes,JP-830,830,"Shiga, JP, Prefecture, 830",^areacode$,column range,column range
-area codes,JP-840,840,"Osaka, JP, Prefecture, 840",^areacode$,column range,column range
-area codes,JP-850,850,"Nara, JP, Prefecture, 850",^areacode$,column range,column range
-area codes,JP-860,860,"Wakayama, JP, Prefecture, 860",^areacode$,column range,column range
-area codes,JP-910,910,"Tottori, JP, Prefecture, 910",^areacode$,column range,column range
-area codes,JP-920,920,"Okayama, JP, Prefecture, 920",^areacode$,column range,column range
-area codes,JP-930,930,"Hiroshima, JP, Prefecture, 930",^areacode$,column range,column range
-area codes,JP-940,940,"Shimane, JP, Prefecture, 940",^areacode$,column range,column range
-area codes,JP-950,950,"Yamaguchi, JP, Prefecture, 950",^areacode$,column range,column range
-area codes,KR-11,11,"Seoul, KR, Province, 11",^areacode$,column range,column range
-area codes,KR-21,21,"Busan, KR, Province, 21",^areacode$,column range,column range
-area codes,KR-22,22,"Daegu, KR, Province, 22",^areacode$,column range,column range
-area codes,KR-23,23,"Incheon, KR, Province, 23",^areacode$,column range,column range
-area codes,KR-24,24,"Gwangju, KR, Province, 24",^areacode$,column range,column range
-area codes,KR-25,25,"Daejeon, KR, Province, 25",^areacode$,column range,column range
-area codes,KR-26,26,"Ulsan, KR, Province, 26",^areacode$,column range,column range
-area codes,KR-31,31,"Gyeonggi-do, KR, Province, 31",^areacode$,column range,column range
-area codes,KR-32,32,"Gangwon-do, KR, Province, 32",^areacode$,column range,column range
-area codes,KR-33,33,"Chungcheongbuk-do, KR, Province, 33",^areacode$,column range,column range
-area codes,KR-34,34,"Chungcheongnam-do, KR, Province, 34",^areacode$,column range,column range
-area codes,KR-35,35,"Jeollabuk-do, KR, Province, 35",^areacode$,column range,column range
-area codes,KR-36,36,"Jeollanam-do, KR, Province, 36",^areacode$,column range,column range
-area codes,KR-37,37,"Gyeongsangbuk-do, KR, Province, 37",^areacode$,column range,column range
-area codes,KR-38,38,"Gyeongsangnam-do, KR, Province, 38",^areacode$,column range,column range
-area codes,KR-39,39,"Jeju-do, KR, Province, 39",^areacode$,column range,column range
-area codes,KY-1,1,"Bodden Town, KY, District, 1",^areacode$,column range,column range
-area codes,KY-2,2,"East End, KY, District, 2",^areacode$,column range,column range
-area codes,KY-3,3,"George Town, KY, District, 3",^areacode$,column range,column range
-area codes,KY-4,4,"North Side, KY, District, 4",^areacode$,column range,column range
-area codes,KY-5,5,"West Bay, KY, District, 5",^areacode$,column range,column range
-area codes,KY-6,6,"Little Cayman, KY, District, 6",^areacode$,column range,column range
-area codes,KY-7,7,"Cayman Brac, KY, District, 7",^areacode$,column range,column range
-area codes,LU-01,01,"Luxembourg-ville, LU, District, 01",^areacode$,column range,column range
-area codes,LU-02,02,"Capellen, LU, District, 02",^areacode$,column range,column range
-area codes,LU-03,03,"Esch-Alzette, LU, District, 03",^areacode$,column range,column range
-area codes,LU-05,05,"Mersch, LU, District, 05",^areacode$,column range,column range
-area codes,LU-06,06,"Clervaux, LU, District, 06",^areacode$,column range,column range
-area codes,LU-07,07,"Diekirch, LU, District, 07",^areacode$,column range,column range
-area codes,LU-08,08,"Redange, LU, District, 08",^areacode$,column range,column range
-area codes,LU-09,09,"Wiltz, LU, District, 09",^areacode$,column range,column range
-area codes,LU-10,10,"Vianden, LU, District, 10",^areacode$,column range,column range
-area codes,LU-11,11,"Echternach, LU, District, 11",^areacode$,column range,column range
-area codes,LU-12,12,"Grevenmacher, LU, District, 12",^areacode$,column range,column range
-area codes,LU-13,13,"Remich, LU, District, 13",^areacode$,column range,column range
-area codes,LU-40,40,"Luxembourg-Campagne, LU, District, 40",^areacode$,column range,column range
-area codes,MX-01,01,"Aguascalientes, MX, State, 01",^areacode$,column range,column range
-area codes,MX-02,02,"Baja California, MX, State, 02",^areacode$,column range,column range
-area codes,MX-03,03,"Baja California Sur, MX, State, 03",^areacode$,column range,column range
-area codes,MX-04,04,"Campeche, MX, State, 04",^areacode$,column range,column range
-area codes,MX-05,05,"Coahuila, MX, State, 05",^areacode$,column range,column range
-area codes,MX-06,06,"Colima, MX, State, 06",^areacode$,column range,column range
-area codes,MX-07,07,"Chiapas, MX, State, 07",^areacode$,column range,column range
-area codes,MX-08,08,"Chihuahua, MX, State, 08",^areacode$,column range,column range
-area codes,MX-09,09,"Mexico City / Distrito Federal, MX, State, 09",^areacode$,column range,column range
-area codes,MX-10,10,"Durango, MX, State, 10",^areacode$,column range,column range
-area codes,MX-11,11,"Guanajuato, MX, State, 11",^areacode$,column range,column range
-area codes,MX-12,12,"Guerrero, MX, State, 12",^areacode$,column range,column range
-area codes,MX-13,13,"Hidalgo, MX, State, 13",^areacode$,column range,column range
-area codes,MX-14,14,"Jalisco, MX, State, 14",^areacode$,column range,column range
-area codes,MX-15,15,"Mexico, MX, State, 15",^areacode$,column range,column range
-area codes,MX-16,16,"Michoacan, MX, State, 16",^areacode$,column range,column range
-area codes,MX-17,17,"Morelos, MX, State, 17",^areacode$,column range,column range
-area codes,MX-18,18,"Nayarit, MX, State, 18",^areacode$,column range,column range
-area codes,MX-19,19,"Nuevo Leon, MX, State, 19",^areacode$,column range,column range
-area codes,MX-20,20,"Oaxaca, MX, State, 20",^areacode$,column range,column range
-area codes,MX-21,21,"Puebla, MX, State, 21",^areacode$,column range,column range
-area codes,MX-22,22,"Queretaro, MX, State, 22",^areacode$,column range,column range
-area codes,MX-23,23,"Quintana Roo, MX, State, 23",^areacode$,column range,column range
-area codes,MX-24,24,"San Luis Potosi, MX, State, 24",^areacode$,column range,column range
-area codes,MX-25,25,"Sinaloa, MX, State, 25",^areacode$,column range,column range
-area codes,MX-26,26,"Sonora, MX, State, 26",^areacode$,column range,column range
-area codes,MX-27,27,"Tabasco, MX, State, 27",^areacode$,column range,column range
-area codes,MX-28,28,"Tamaulipas, MX, State, 28",^areacode$,column range,column range
-area codes,MX-29,29,"Tlaxcala, MX, State, 29",^areacode$,column range,column range
-area codes,MX-30,30,"Veracruz, MX, State, 30",^areacode$,column range,column range
-area codes,MX-31,31,"Yucatan, MX, State, 31",^areacode$,column range,column range
-area codes,MX-32,32,"Zacatecas, MX, State, 32",^areacode$,column range,column range
-area codes,NL-20,20,"Groningen, NL, Province, 20",^areacode$,column range,column range
-area codes,NL-21,21,"Friesland, NL, Province, 21",^areacode$,column range,column range
-area codes,NL-22,22,"Drenthe, NL, Province, 22",^areacode$,column range,column range
-area codes,NL-23,23,"Overijssel, NL, Province, 23",^areacode$,column range,column range
-area codes,NL-24,24,"Flevoland, NL, Province, 24",^areacode$,column range,column range
-area codes,NL-25,25,"Gelderland, NL, Province, 25",^areacode$,column range,column range
-area codes,NL-26,26,"Utrecht, NL, Province, 26",^areacode$,column range,column range
-area codes,NL-27,27,"Noord-Holland, NL, Province, 27",^areacode$,column range,column range
-area codes,NL-28,28,"Zuid-Holland, NL, Province, 28",^areacode$,column range,column range
-area codes,NL-29,29,"Zeeland, NL, Province, 29",^areacode$,column range,column range
-area codes,NL-30,30,"Noord-Brabant, NL, Province, 30",^areacode$,column range,column range
-area codes,NL-31,31,"Limburg, NL, Province, 31",^areacode$,column range,column range
-area codes,NO-01,01,"Østfold, NO, District, 01",^areacode$,column range,column range
-area codes,NO-02,02,"Akershus, NO, District, 02",^areacode$,column range,column range
-area codes,NO-03,03,"Oslo, NO, District, 03",^areacode$,column range,column range
-area codes,NO-04,04,"Hedmark, NO, District, 04",^areacode$,column range,column range
-area codes,NO-05,05,"Oppland, NO, District, 05",^areacode$,column range,column range
-area codes,NO-06,06,"Buskerud, NO, District, 06",^areacode$,column range,column range
-area codes,NO-07,07,"Vestfold, NO, District, 07",^areacode$,column range,column range
-area codes,NO-08,08,"Telemark, NO, District, 08",^areacode$,column range,column range
-area codes,NO-09,09,"Aust-Agder, NO, District, 09",^areacode$,column range,column range
-area codes,NO-10,10,"Vest-Agder, NO, District, 10",^areacode$,column range,column range
-area codes,NO-11,11,"Rogaland, NO, District, 11",^areacode$,column range,column range
-area codes,NO-12,12,"Hordaland, NO, District, 12",^areacode$,column range,column range
-area codes,NO-14,14,"Sogn og Fjordane, NO, District, 14",^areacode$,column range,column range
-area codes,NO-15,15,"Møre og Romsdal, NO, District, 15",^areacode$,column range,column range
-area codes,NO-16,16,"Sør-Trøndelag, NO, District, 16",^areacode$,column range,column range
-area codes,NO-17,17,"Nord-Trøndelag, NO, District, 17",^areacode$,column range,column range
-area codes,NO-18,18,"Nordland, NO, District, 18",^areacode$,column range,column range
-area codes,NO-19,19,"Troms, NO, District, 19",^areacode$,column range,column range
-area codes,NO-20,20,"Finnmark, NO, District, 20",^areacode$,column range,column range
-area codes,NO-SJ,SJ,"Svalbard and Jan Mayen Islands, NO, District, SJ",^areacode$,column range,column range
-area codes,PE-01,01,"Amazonas, PE, State, 01",^areacode$,column range,column range
-area codes,PE-02,02,"Ancash, PE, State, 02",^areacode$,column range,column range
-area codes,PE-03,03,"Apurímac, PE, State, 03",^areacode$,column range,column range
-area codes,PE-04,04,"Arequipa, PE, State, 04",^areacode$,column range,column range
-area codes,PE-05,05,"Ayacucho, PE, State, 05",^areacode$,column range,column range
-area codes,PE-06,06,"Cajamarca, PE, State, 06",^areacode$,column range,column range
-area codes,PE-07,07,"Callao, PE, State, 07",^areacode$,column range,column range
-area codes,PE-08,08,"Cusco, PE, State, 08",^areacode$,column range,column range
-area codes,PE-09,09,"Huancavelica, PE, State, 09",^areacode$,column range,column range
-area codes,PE-10,10,"Huánuco, PE, State, 10",^areacode$,column range,column range
-area codes,PE-11,11,"Ica, PE, State, 11",^areacode$,column range,column range
-area codes,PE-12,12,"Junín, PE, State, 12",^areacode$,column range,column range
-area codes,PE-13,13,"La Libertad, PE, State, 13",^areacode$,column range,column range
-area codes,PE-14,14,"Lambayeque, PE, State, 14",^areacode$,column range,column range
-area codes,PE-15,15,"Lima, PE, State, 15",^areacode$,column range,column range
-area codes,PE-16,16,"Loreto, PE, State, 16",^areacode$,column range,column range
-area codes,PE-17,17,"Madre de Dios, PE, State, 17",^areacode$,column range,column range
-area codes,PE-18,18,"Moquegua, PE, State, 18",^areacode$,column range,column range
-area codes,PE-19,19,"Pasco, PE, State, 19",^areacode$,column range,column range
-area codes,PE-20,20,"Piura, PE, State, 20",^areacode$,column range,column range
-area codes,PE-21,21,"Puno, PE, State, 21",^areacode$,column range,column range
-area codes,PE-22,22,"San Martín, PE, State, 22",^areacode$,column range,column range
-area codes,PE-23,23,"Tacna, PE, State, 23",^areacode$,column range,column range
-area codes,PE-24,24,"Tumbes, PE, State, 24",^areacode$,column range,column range
-area codes,PE-25,25,"Ucayali, PE, State, 25",^areacode$,column range,column range
-area codes,PH-01,01,"Ilocos Region, PH, Region/State, 01",^areacode$,column range,column range
-area codes,PH-02,02,"Cagayan Valley, PH, Region/State, 02",^areacode$,column range,column range
-area codes,PH-03,03,"Central Luzon, PH, Region/State, 03",^areacode$,column range,column range
-area codes,PH-04,04,"Calabarzon, PH, Region/State, 04",^areacode$,column range,column range
-area codes,PH-05,05,"Bicol Region, PH, Region/State, 05",^areacode$,column range,column range
-area codes,PH-06,06,"Western Visayas, PH, Region/State, 06",^areacode$,column range,column range
-area codes,PH-07,07,"Central Visayas, PH, Region/State, 07",^areacode$,column range,column range
-area codes,PH-08,08,"Eastern Visayas, PH, Region/State, 08",^areacode$,column range,column range
-area codes,PH-09,09,"Zamboanga Peninsula, PH, Region/State, 09",^areacode$,column range,column range
-area codes,PH-10,10,"Northern Mindanao, PH, Region/State, 10",^areacode$,column range,column range
-area codes,PH-11,11,"Davao Region, PH, Region/State, 11",^areacode$,column range,column range
-area codes,PH-12,12,"Soccsksargen, PH, Region/State, 12",^areacode$,column range,column range
-area codes,PH-13,13,"National Capital Region (NCR), PH, Region/State, 13",^areacode$,column range,column range
-area codes,PH-14,14,"Cordillera Administrative Region (CAR), PH, Region/State, 14",^areacode$,column range,column range
-area codes,PH-15,15,"Autonomous Region In Muslim Mindanao (ARMM), PH, Region/State, 15",^areacode$,column range,column range
-area codes,PH-16,16,"Caraga, PH, Region/State, 16",^areacode$,column range,column range
-area codes,PH-17,17,"Mimaropa, PH, Region/State, 17",^areacode$,column range,column range
-area codes,PR-1,1,"Adjuntas, PR, Municipality, 1",^areacode$,column range,column range
-area codes,PR-101,101,"Morovis, PR, Municipality, 101",^areacode$,column range,column range
-area codes,PR-103,103,"Naguabo, PR, Municipality, 103",^areacode$,column range,column range
-area codes,PR-105,105,"Naranjito, PR, Municipality, 105",^areacode$,column range,column range
-area codes,PR-107,107,"Orocovis, PR, Municipality, 107",^areacode$,column range,column range
-area codes,PR-109,109,"Patillas, PR, Municipality, 109",^areacode$,column range,column range
-area codes,PR-11,11,"Anasco, PR, Municipality, 11",^areacode$,column range,column range
-area codes,PR-111,111,"Penuelas, PR, Municipality, 111",^areacode$,column range,column range
-area codes,PR-113,113,"Ponce, PR, Municipality, 113",^areacode$,column range,column range
-area codes,PR-115,115,"Quebradillas, PR, Municipality, 115",^areacode$,column range,column range
-area codes,PR-117,117,"Rincon, PR, Municipality, 117",^areacode$,column range,column range
-area codes,PR-119,119,"Rio Grande, PR, Municipality, 119",^areacode$,column range,column range
-area codes,PR-121,121,"Sabana Grande, PR, Municipality, 121",^areacode$,column range,column range
-area codes,PR-123,123,"Salinas, PR, Municipality, 123",^areacode$,column range,column range
-area codes,PR-125,125,"San German, PR, Municipality, 125",^areacode$,column range,column range
-area codes,PR-127,127,"San Juan, PR, Municipality, 127",^areacode$,column range,column range
-area codes,PR-129,129,"San Lorenzo, PR, Municipality, 129",^areacode$,column range,column range
-area codes,PR-13,13,"Arecibo, PR, Municipality, 13",^areacode$,column range,column range
-area codes,PR-131,131,"San Sebastian, PR, Municipality, 131",^areacode$,column range,column range
-area codes,PR-133,133,"Santa Isabel, PR, Municipality, 133",^areacode$,column range,column range
-area codes,PR-135,135,"Toa Alta, PR, Municipality, 135",^areacode$,column range,column range
-area codes,PR-137,137,"Toa Baja, PR, Municipality, 137",^areacode$,column range,column range
-area codes,PR-139,139,"Trujillo Alto, PR, Municipality, 139",^areacode$,column range,column range
-area codes,PR-141,141,"Utuado, PR, Municipality, 141",^areacode$,column range,column range
-area codes,PR-143,143,"Vega Alta, PR, Municipality, 143",^areacode$,column range,column range
-area codes,PR-145,145,"Vega Baja, PR, Municipality, 145",^areacode$,column range,column range
-area codes,PR-147,147,"Vieques, PR, Municipality, 147",^areacode$,column range,column range
-area codes,PR-149,149,"Villalba, PR, Municipality, 149",^areacode$,column range,column range
-area codes,PR-15,15,"Arroyo, PR, Municipality, 15",^areacode$,column range,column range
-area codes,PR-151,151,"Yabucoa, PR, Municipality, 151",^areacode$,column range,column range
-area codes,PR-153,153,"Yauco, PR, Municipality, 153",^areacode$,column range,column range
-area codes,PR-17,17,"Barceloneta, PR, Municipality, 17",^areacode$,column range,column range
-area codes,PR-19,19,"Barranquitas, PR, Municipality, 19",^areacode$,column range,column range
-area codes,PR-21,21,"Bayamon, PR, Municipality, 21",^areacode$,column range,column range
-area codes,PR-23,23,"Cabo Rojo, PR, Municipality, 23",^areacode$,column range,column range
-area codes,PR-25,25,"Caguas, PR, Municipality, 25",^areacode$,column range,column range
-area codes,PR-27,27,"Camuy, PR, Municipality, 27",^areacode$,column range,column range
-area codes,PR-29,29,"Canovanas, PR, Municipality, 29",^areacode$,column range,column range
-area codes,PR-3,3,"Aguada, PR, Municipality, 3",^areacode$,column range,column range
-area codes,PR-31,31,"Carolina, PR, Municipality, 31",^areacode$,column range,column range
-area codes,PR-33,33,"Catano, PR, Municipality, 33",^areacode$,column range,column range
-area codes,PR-35,35,"Cayey, PR, Municipality, 35",^areacode$,column range,column range
-area codes,PR-37,37,"Ceiba, PR, Municipality, 37",^areacode$,column range,column range
-area codes,PR-39,39,"Ciales, PR, Municipality, 39",^areacode$,column range,column range
-area codes,PR-41,41,"Cidra, PR, Municipality, 41",^areacode$,column range,column range
-area codes,PR-43,43,"Coamo, PR, Municipality, 43",^areacode$,column range,column range
-area codes,PR-45,45,"Comerio, PR, Municipality, 45",^areacode$,column range,column range
-area codes,PR-47,47,"Corozal, PR, Municipality, 47",^areacode$,column range,column range
-area codes,PR-49,49,"Culebra, PR, Municipality, 49",^areacode$,column range,column range
-area codes,PR-5,5,"Aguadilla, PR, Municipality, 5",^areacode$,column range,column range
-area codes,PR-51,51,"Dorado, PR, Municipality, 51",^areacode$,column range,column range
-area codes,PR-53,53,"Fajardo, PR, Municipality, 53",^areacode$,column range,column range
-area codes,PR-54,54,"Florida, PR, Municipality, 54",^areacode$,column range,column range
-area codes,PR-55,55,"Guanica, PR, Municipality, 55",^areacode$,column range,column range
-area codes,PR-57,57,"Guayama, PR, Municipality, 57",^areacode$,column range,column range
-area codes,PR-59,59,"Guayanilla, PR, Municipality, 59",^areacode$,column range,column range
-area codes,PR-61,61,"Guaynabo, PR, Municipality, 61",^areacode$,column range,column range
-area codes,PR-63,63,"Gurabo, PR, Municipality, 63",^areacode$,column range,column range
-area codes,PR-65,65,"Hatillo, PR, Municipality, 65",^areacode$,column range,column range
-area codes,PR-67,67,"Hormigueros, PR, Municipality, 67",^areacode$,column range,column range
-area codes,PR-69,69,"Humacao, PR, Municipality, 69",^areacode$,column range,column range
-area codes,PR-7,7,"Aguas Buenas, PR, Municipality, 7",^areacode$,column range,column range
-area codes,PR-71,71,"Isabela, PR, Municipality, 71",^areacode$,column range,column range
-area codes,PR-73,73,"Jayuya, PR, Municipality, 73",^areacode$,column range,column range
-area codes,PR-75,75,"Juana Diaz, PR, Municipality, 75",^areacode$,column range,column range
-area codes,PR-77,77,"Juncos, PR, Municipality, 77",^areacode$,column range,column range
-area codes,PR-79,79,"Lajas, PR, Municipality, 79",^areacode$,column range,column range
-area codes,PR-81,81,"Lares, PR, Municipality, 81",^areacode$,column range,column range
-area codes,PR-83,83,"Las Marias, PR, Municipality, 83",^areacode$,column range,column range
-area codes,PR-85,85,"Las Piedras, PR, Municipality, 85",^areacode$,column range,column range
-area codes,PR-87,87,"Loiza, PR, Municipality, 87",^areacode$,column range,column range
-area codes,PR-89,89,"Luquillo, PR, Municipality, 89",^areacode$,column range,column range
-area codes,PR-9,9,"Aibonito, PR, Municipality, 9",^areacode$,column range,column range
-area codes,PR-91,91,"Manati, PR, Municipality, 91",^areacode$,column range,column range
-area codes,PR-93,93,"Maricao, PR, Municipality, 93",^areacode$,column range,column range
-area codes,PR-95,95,"Maunabo, PR, Municipality, 95",^areacode$,column range,column range
-area codes,PR-97,97,"Mayaguez, PR, Municipality, 97",^areacode$,column range,column range
-area codes,PR-99,99,"Moca, PR, Municipality, 99",^areacode$,column range,column range
-area codes,PT-01,01,"Aveiro, PT, District, 01",^areacode$,column range,column range
-area codes,PT-02,02,"Beja, PT, District, 02",^areacode$,column range,column range
-area codes,PT-03,03,"Braga, PT, District, 03",^areacode$,column range,column range
-area codes,PT-04,04,"Braganta, PT, District, 04",^areacode$,column range,column range
-area codes,PT-05,05,"Castelo Branco, PT, District, 05",^areacode$,column range,column range
-area codes,PT-06,06,"Coimbra, PT, District, 06",^areacode$,column range,column range
-area codes,PT-07,07,"Évora, PT, District, 07",^areacode$,column range,column range
-area codes,PT-08,08,"Faro, PT, District, 08",^areacode$,column range,column range
-area codes,PT-09,09,"Guarda, PT, District, 09",^areacode$,column range,column range
-area codes,PT-10,10,"Leiria, PT, District, 10",^areacode$,column range,column range
-area codes,PT-11,11,"Lisboa, PT, District, 11",^areacode$,column range,column range
-area codes,PT-12,12,"Portalegre, PT, District, 12",^areacode$,column range,column range
-area codes,PT-13,13,"Porto, PT, District, 13",^areacode$,column range,column range
-area codes,PT-14,14,"SantarTm, PT, District, 14",^areacode$,column range,column range
-area codes,PT-15,15,"Setúbal, PT, District, 15",^areacode$,column range,column range
-area codes,PT-16,16,"Viana do Castelo, PT, District, 16",^areacode$,column range,column range
-area codes,PT-17,17,"Vila Real, PT, District, 17",^areacode$,column range,column range
-area codes,PT-18,18,"Viseu, PT, District, 18",^areacode$,column range,column range
-area codes,PT-31,31,"Ilha da Madeira, PT, District, 31",^areacode$,column range,column range
-area codes,PT-32,32,"Ilha de Porto Santo, PT, District, 32",^areacode$,column range,column range
-area codes,PT-41,41,"Ilha de Santa Maria, PT, District, 41",^areacode$,column range,column range
-area codes,PT-42,42,"Ilha de Spo Miguel, PT, District, 42",^areacode$,column range,column range
-area codes,PT-43,43,"Ilha Terceira, PT, District, 43",^areacode$,column range,column range
-area codes,PT-44,44,"Ilha da Graciosa, PT, District, 44",^areacode$,column range,column range
-area codes,PT-45,45,"Ilha de Spo Jorge, PT, District, 45",^areacode$,column range,column range
-area codes,PT-46,46,"Ilha do Pico, PT, District, 46",^areacode$,column range,column range
-area codes,PT-47,47,"Ilha do Faial, PT, District, 47",^areacode$,column range,column range
-area codes,PT-48,48,"Ilha das Flores, PT, District, 48",^areacode$,column range,column range
-area codes,PT-49,49,"Ilha do Corvo, PT, District, 49",^areacode$,column range,column range
-area codes,SE-01,01,"Stockholms län, SE, Province, 01",^areacode$,column range,column range
-area codes,SE-02,02,"Uppsala län, SE, Province, 02",^areacode$,column range,column range
-area codes,SE-04,04,"Södermanlands län, SE, Province, 04",^areacode$,column range,column range
-area codes,SE-05,05,"Östergötlands län, SE, Province, 05",^areacode$,column range,column range
-area codes,SE-06,06,"Jönköpings län, SE, Province, 06",^areacode$,column range,column range
-area codes,SE-07,07,"Kronobergs län, SE, Province, 07",^areacode$,column range,column range
-area codes,SE-08,08,"Kalmar län, SE, Province, 08",^areacode$,column range,column range
-area codes,SE-09,09,"Gotlands län, SE, Province, 09",^areacode$,column range,column range
-area codes,SE-10,10,"Blekinge län, SE, Province, 10",^areacode$,column range,column range
-area codes,SE-12,12,"Skåne län, SE, Province, 12",^areacode$,column range,column range
-area codes,SE-13,13,"Hallands län, SE, Province, 13",^areacode$,column range,column range
-area codes,SE-14,14,"Västra Götalands län, SE, Province, 14",^areacode$,column range,column range
-area codes,SE-17,17,"Värmlands län, SE, Province, 17",^areacode$,column range,column range
-area codes,SE-18,18,"Örebro län, SE, Province, 18",^areacode$,column range,column range
-area codes,SE-19,19,"Västmanlands län, SE, Province, 19",^areacode$,column range,column range
-area codes,SE-20,20,"Dalarnas län, SE, Province, 20",^areacode$,column range,column range
-area codes,SE-21,21,"Gävleborgs län, SE, Province, 21",^areacode$,column range,column range
-area codes,SE-22,22,"Västernorrlands län, SE, Province, 22",^areacode$,column range,column range
-area codes,SE-23,23,"Jämtlands län, SE, Province, 23",^areacode$,column range,column range
-area codes,SE-24,24,"Västerbottens län, SE, Province, 24",^areacode$,column range,column range
-area codes,SE-25,25,"Norrbottens län, SE, Province, 25",^areacode$,column range,column range
-area codes,TC-1,1,"Caicos, TC, District, 1",^areacode$,column range,column range
-area codes,TC-2,2,"Grand Turk Island, TC, District, 2",^areacode$,column range,column range
-area codes,TC-3,3,"Salt Cay, TC, District, 3",^areacode$,column range,column range
-area codes,TR-01,01,"Adana, TR, Province, 01",^areacode$,column range,column range
-area codes,TR-02,02,"Adýyaman, TR, Province, 02",^areacode$,column range,column range
-area codes,TR-03,03,"Afyonkarahisar, TR, Province, 03",^areacode$,column range,column range
-area codes,TR-04,04,"Aðrý, TR, Province, 04",^areacode$,column range,column range
-area codes,TR-05,05,"Amasya, TR, Province, 05",^areacode$,column range,column range
-area codes,TR-06,06,"Ankara, TR, Province, 06",^areacode$,column range,column range
-area codes,TR-07,07,"Antalya, TR, Province, 07",^areacode$,column range,column range
-area codes,TR-08,08,"Artvin, TR, Province, 08",^areacode$,column range,column range
-area codes,TR-09,09,"Aydýn, TR, Province, 09",^areacode$,column range,column range
-area codes,TR-10,10,"Balýkesir, TR, Province, 10",^areacode$,column range,column range
-area codes,TR-11,11,"Bilecik, TR, Province, 11",^areacode$,column range,column range
-area codes,TR-12,12,"Bingöl, TR, Province, 12",^areacode$,column range,column range
-area codes,TR-13,13,"Bitlis, TR, Province, 13",^areacode$,column range,column range
-area codes,TR-14,14,"Bolu, TR, Province, 14",^areacode$,column range,column range
-area codes,TR-15,15,"Burdur, TR, Province, 15",^areacode$,column range,column range
-area codes,TR-16,16,"Bursa, TR, Province, 16",^areacode$,column range,column range
-area codes,TR-17,17,"Çanakkale, TR, Province, 17",^areacode$,column range,column range
-area codes,TR-18,18,"Çankýrý, TR, Province, 18",^areacode$,column range,column range
-area codes,TR-19,19,"Çorum, TR, Province, 19",^areacode$,column range,column range
-area codes,TR-20,20,"Denizli, TR, Province, 20",^areacode$,column range,column range
-area codes,TR-21,21,"Diyarbakýr, TR, Province, 21",^areacode$,column range,column range
-area codes,TR-22,22,"Edirne, TR, Province, 22",^areacode$,column range,column range
-area codes,TR-23,23,"Elazýð, TR, Province, 23",^areacode$,column range,column range
-area codes,TR-24,24,"Erzincan, TR, Province, 24",^areacode$,column range,column range
-area codes,TR-25,25,"Erzurum, TR, Province, 25",^areacode$,column range,column range
-area codes,TR-26,26,"Eskiþehir, TR, Province, 26",^areacode$,column range,column range
-area codes,TR-27,27,"Gaziantep, TR, Province, 27",^areacode$,column range,column range
-area codes,TR-28,28,"Giresun, TR, Province, 28",^areacode$,column range,column range
-area codes,TR-29,29,"Gümüþhane, TR, Province, 29",^areacode$,column range,column range
-area codes,TR-30,30,"Hakkari, TR, Province, 30",^areacode$,column range,column range
-area codes,TR-31,31,"Hatay, TR, Province, 31",^areacode$,column range,column range
-area codes,TR-32,32,"Isparta, TR, Province, 32",^areacode$,column range,column range
-area codes,TR-33,33,"Mersin, TR, Province, 33",^areacode$,column range,column range
-area codes,TR-34,34,"Ýstanbul, TR, Province, 34",^areacode$,column range,column range
-area codes,TR-35,35,"Ýzmir, TR, Province, 35",^areacode$,column range,column range
-area codes,TR-36,36,"Kars, TR, Province, 36",^areacode$,column range,column range
-area codes,TR-37,37,"Kastamonu, TR, Province, 37",^areacode$,column range,column range
-area codes,TR-38,38,"Kayseri, TR, Province, 38",^areacode$,column range,column range
-area codes,TR-39,39,"Kýrklareli, TR, Province, 39",^areacode$,column range,column range
-area codes,TR-40,40,"Kýrþehir, TR, Province, 40",^areacode$,column range,column range
-area codes,TR-41,41,"Kocaeli, TR, Province, 41",^areacode$,column range,column range
-area codes,TR-42,42,"Konya, TR, Province, 42",^areacode$,column range,column range
-area codes,TR-43,43,"Kütahya, TR, Province, 43",^areacode$,column range,column range
-area codes,TR-44,44,"Malatya, TR, Province, 44",^areacode$,column range,column range
-area codes,TR-45,45,"Manisa, TR, Province, 45",^areacode$,column range,column range
-area codes,TR-46,46,"Kahramanmaraþ, TR, Province, 46",^areacode$,column range,column range
-area codes,TR-47,47,"Mardin, TR, Province, 47",^areacode$,column range,column range
-area codes,TR-48,48,"Muðla, TR, Province, 48",^areacode$,column range,column range
-area codes,TR-49,49,"Muþ, TR, Province, 49",^areacode$,column range,column range
-area codes,TR-50,50,"Nevþehir, TR, Province, 50",^areacode$,column range,column range
-area codes,TR-51,51,"Niðde, TR, Province, 51",^areacode$,column range,column range
-area codes,TR-52,52,"Ordu, TR, Province, 52",^areacode$,column range,column range
-area codes,TR-53,53,"Rize, TR, Province, 53",^areacode$,column range,column range
-area codes,TR-54,54,"Sakarya, TR, Province, 54",^areacode$,column range,column range
-area codes,TR-55,55,"Samsun, TR, Province, 55",^areacode$,column range,column range
-area codes,TR-56,56,"Siirt, TR, Province, 56",^areacode$,column range,column range
-area codes,TR-57,57,"Sinop, TR, Province, 57",^areacode$,column range,column range
-area codes,TR-58,58,"Sivas, TR, Province, 58",^areacode$,column range,column range
-area codes,TR-59,59,"Tekirdað, TR, Province, 59",^areacode$,column range,column range
-area codes,TR-60,60,"Tokat, TR, Province, 60",^areacode$,column range,column range
-area codes,TR-61,61,"Trabzon, TR, Province, 61",^areacode$,column range,column range
-area codes,TR-62,62,"Tunceli, TR, Province, 62",^areacode$,column range,column range
-area codes,TR-63,63,"Þanlýurfa, TR, Province, 63",^areacode$,column range,column range
-area codes,TR-64,64,"Uþak, TR, Province, 64",^areacode$,column range,column range
-area codes,TR-65,65,"Van, TR, Province, 65",^areacode$,column range,column range
-area codes,TR-66,66,"Yozgat, TR, Province, 66",^areacode$,column range,column range
-area codes,TR-67,67,"Zonguldak, TR, Province, 67",^areacode$,column range,column range
-area codes,TR-68,68,"Aksaray, TR, Province, 68",^areacode$,column range,column range
-area codes,TR-69,69,"Bayburt, TR, Province, 69",^areacode$,column range,column range
-area codes,TR-70,70,"Karaman, TR, Province, 70",^areacode$,column range,column range
-area codes,TR-71,71,"Kýrýkkale, TR, Province, 71",^areacode$,column range,column range
-area codes,TR-72,72,"Batman, TR, Province, 72",^areacode$,column range,column range
-area codes,TR-73,73,"Þýrnak, TR, Province, 73",^areacode$,column range,column range
-area codes,TR-74,74,"Bartýn, TR, Province, 74",^areacode$,column range,column range
-area codes,TR-75,75,"Ardahan, TR, Province, 75",^areacode$,column range,column range
-area codes,TR-76,76,"Iðdýr, TR, Province, 76",^areacode$,column range,column range
-area codes,TR-77,77,"Yalova, TR, Province, 77",^areacode$,column range,column range
-area codes,TR-78,78,"Karabük, TR, Province, 78",^areacode$,column range,column range
-area codes,TR-79,79,"Kilis, TR, Province, 79",^areacode$,column range,column range
-area codes,TR-80,80,"Osmaniye, TR, Province, 80",^areacode$,column range,column range
-area codes,TR-81,81,"Düzce, TR, Province, 81",^areacode$,column range,column range
-area codes,TT-1,1,"Caroni, TT, County/Sector, 1",^areacode$,column range,column range
-area codes,TT-2,2,"Mayaro, TT, County/Sector, 2",^areacode$,column range,column range
-area codes,TT-3,3,"Nariva, TT, County/Sector, 3",^areacode$,column range,column range
-area codes,TT-4,4,"St. Andrew, TT, County/Sector, 4",^areacode$,column range,column range
-area codes,TT-5,5,"St. David, TT, County/Sector, 5",^areacode$,column range,column range
-area codes,TT-6,6,"St. George, TT, County/Sector, 6",^areacode$,column range,column range
-area codes,TT-7,7,"St. Patrick, TT, County/Sector, 7",^areacode$,column range,column range
-area codes,TT-8,8,"Victoria, TT, County/Sector, 8",^areacode$,column range,column range
-area codes,TT-9,9,"Tobago, TT, County/Sector, 9",^areacode$,column range,column range
-area codes,TW-01,01,"Taipei County, TW, County/Sector, 01",^areacode$,column range,column range
-area codes,TW-02,02,"Yilan County, TW, County/Sector, 02",^areacode$,column range,column range
-area codes,TW-03,03,"Taoyuan County, TW, County/Sector, 03",^areacode$,column range,column range
-area codes,TW-04,04,"Hsinchu County, TW, County/Sector, 04",^areacode$,column range,column range
-area codes,TW-05,05,"Miaoli County, TW, County/Sector, 05",^areacode$,column range,column range
-area codes,TW-06,06,"Taichung County, TW, County/Sector, 06",^areacode$,column range,column range
-area codes,TW-07,07,"Changhua County, TW, County/Sector, 07",^areacode$,column range,column range
-area codes,TW-08,08,"Nantou County, TW, County/Sector, 08",^areacode$,column range,column range
-area codes,TW-09,09,"Yunlin County, TW, County/Sector, 09",^areacode$,column range,column range
-area codes,TW-10,10,"Chiayi County, TW, County/Sector, 10",^areacode$,column range,column range
-area codes,TW-11,11,"Tainan County, TW, County/Sector, 11",^areacode$,column range,column range
-area codes,TW-12,12,"Kaohsiung County, TW, County/Sector, 12",^areacode$,column range,column range
-area codes,TW-13,13,"Pingtung County, TW, County/Sector, 13",^areacode$,column range,column range
-area codes,TW-14,14,"Taitung County, TW, County/Sector, 14",^areacode$,column range,column range
-area codes,TW-15,15,"Hualien County, TW, County/Sector, 15",^areacode$,column range,column range
-area codes,TW-16,16,"Penghu County, TW, County/Sector, 16",^areacode$,column range,column range
-area codes,TW-17,17,"Keelung City, TW, County/Sector, 17",^areacode$,column range,column range
-area codes,TW-18,18,"Hsinchu City, TW, County/Sector, 18",^areacode$,column range,column range
-area codes,TW-19,19,"Taichung City, TW, County/Sector, 19",^areacode$,column range,column range
-area codes,TW-20,20,"Chiayi City, TW, County/Sector, 20",^areacode$,column range,column range
-area codes,TW-21,21,"Tainan City, TW, County/Sector, 21",^areacode$,column range,column range
-area codes,TW-63,63,"Taipei City, TW, County/Sector, 63",^areacode$,column range,column range
-area codes,TW-64,64,"Kaohsiung City, TW, County/Sector, 64",^areacode$,column range,column range
-area codes,TW-71,71,"Lienchiang County, TW, County/Sector, 71",^areacode$,column range,column range
-area codes,TW-72,72,"Kinmen County, TW, County/Sector, 72",^areacode$,column range,column range
-area codes,US-AK,AK,"Alaska, US, State, AK",^areacode$,column range,column range
-area codes,US-AL,AL,"Alabama, US, State, AL",^areacode$,column range,column range
-area codes,US-AR,AR,"Arkansas, US, State, AR",^areacode$,column range,column range
-area codes,US-AZ,AZ,"Arizona, US, State, AZ",^areacode$,column range,column range
-area codes,US-CA,CA,"California, US, State, CA",^areacode$,column range,column range
-area codes,US-CO,CO,"Colorado, US, State, CO",^areacode$,column range,column range
-area codes,US-CT,CT,"Connecticut, US, State, CT",^areacode$,column range,column range
-area codes,US-DC,DC,"Dist of Columbia, US, State, DC",^areacode$,column range,column range
-area codes,US-DE,DE,"Delaware, US, State, DE",^areacode$,column range,column range
-area codes,US-FL,FL,"Florida, US, State, FL",^areacode$,column range,column range
-area codes,US-GA,GA,"Georgia, US, State, GA",^areacode$,column range,column range
-area codes,US-HI,HI,"Hawaii, US, State, HI",^areacode$,column range,column range
-area codes,US-IA,IA,"Iowa, US, State, IA",^areacode$,column range,column range
-area codes,US-ID,ID,"Idaho, US, State, ID",^areacode$,column range,column range
-area codes,US-IL,IL,"Illinois, US, State, IL",^areacode$,column range,column range
-area codes,US-IN,IN,"Indiana, US, State, IN",^areacode$,column range,column range
-area codes,US-KS,KS,"Kansas, US, State, KS",^areacode$,column range,column range
-area codes,US-KY,KY,"Kentucky, US, State, KY",^areacode$,column range,column range
-area codes,US-LA,LA,"Louisiana, US, State, LA",^areacode$,column range,column range
-area codes,US-MA,MA,"Massachusetts, US, State, MA",^areacode$,column range,column range
-area codes,US-MD,MD,"Maryland, US, State, MD",^areacode$,column range,column range
-area codes,US-ME,ME,"Maine, US, State, ME",^areacode$,column range,column range
-area codes,US-MI,MI,"Michigan, US, State, MI",^areacode$,column range,column range
-area codes,US-MN,MN,"Minnesota, US, State, MN",^areacode$,column range,column range
-area codes,US-MO,MO,"Missouri, US, State, MO",^areacode$,column range,column range
-area codes,US-MS,MS,"Mississippi, US, State, MS",^areacode$,column range,column range
-area codes,US-MT,MT,"Montana, US, State, MT",^areacode$,column range,column range
-area codes,US-NC,NC,"North Carolina, US, State, NC",^areacode$,column range,column range
-area codes,US-ND,ND,"North Dakota, US, State, ND",^areacode$,column range,column range
-area codes,US-NE,NE,"Nebraska, US, State, NE",^areacode$,column range,column range
-area codes,US-NH,NH,"New Hampshire, US, State, NH",^areacode$,column range,column range
-area codes,US-NJ,NJ,"New Jersey, US, State, NJ",^areacode$,column range,column range
-area codes,US-NM,NM,"New Mexico, US, State, NM",^areacode$,column range,column range
-area codes,US-NV,NV,"Nevada, US, State, NV",^areacode$,column range,column range
-area codes,US-NY,NY,"New York, US, State, NY",^areacode$,column range,column range
-area codes,US-OH,OH,"Ohio, US, State, OH",^areacode$,column range,column range
-area codes,US-OK,OK,"Oklahoma, US, State, OK",^areacode$,column range,column range
-area codes,US-OR,OR,"Oregon, US, State, OR",^areacode$,column range,column range
-area codes,US-PA,PA,"Pennsylvania, US, State, PA",^areacode$,column range,column range
-area codes,US-RI,RI,"Rhode Island, US, State, RI",^areacode$,column range,column range
-area codes,US-SC,SC,"South Carolina, US, State, SC",^areacode$,column range,column range
-area codes,US-SD,SD,"South Dakota, US, State, SD",^areacode$,column range,column range
-area codes,US-TN,TN,"Tennessee, US, State, TN",^areacode$,column range,column range
-area codes,US-TX,TX,"Texas, US, State, TX",^areacode$,column range,column range
-area codes,US-UT,UT,"Utah, US, State, UT",^areacode$,column range,column range
-area codes,US-VA,VA,"Virginia, US, State, VA",^areacode$,column range,column range
-area codes,US-VT,VT,"Vermont, US, State, VT",^areacode$,column range,column range
-area codes,US-WA,WA,"Washington, US, State, WA",^areacode$,column range,column range
-area codes,US-WI,WI,"Wisconsin, US, State, WI",^areacode$,column range,column range
-area codes,US-WV,WV,"West Virginia, US, State, WV",^areacode$,column range,column range
-area codes,US-WY,WY,"Wyoming, US, State, WY",^areacode$,column range,column range
-area codes,VC-1,1,"Saint Vincent, VC, District, 1",^areacode$,column range,column range
-area codes,VC-2,2,"The Grenadines, VC, District, 2",^areacode$,column range,column range
-area codes,VE-01,01,"Distrito Capital, VE, State, 01",^areacode$,column range,column range
-area codes,VE-02,02,"Amazonas, VE, State, 02",^areacode$,column range,column range
-area codes,VE-03,03,"Anzoátegui, VE, State, 03",^areacode$,column range,column range
-area codes,VE-04,04,"Apure, VE, State, 04",^areacode$,column range,column range
-area codes,VE-05,05,"Aragua, VE, State, 05",^areacode$,column range,column range
-area codes,VE-06,06,"Barinas, VE, State, 06",^areacode$,column range,column range
-area codes,VE-07,07,"Bolívar, VE, State, 07",^areacode$,column range,column range
-area codes,VE-08,08,"Carabobo, VE, State, 08",^areacode$,column range,column range
-area codes,VE-09,09,"Cojedes, VE, State, 09",^areacode$,column range,column range
-area codes,VE-10,10,"Delta Amacuro, VE, State, 10",^areacode$,column range,column range
-area codes,VE-11,11,"Falcón, VE, State, 11",^areacode$,column range,column range
-area codes,VE-12,12,"Guárico, VE, State, 12",^areacode$,column range,column range
-area codes,VE-13,13,"Lara, VE, State, 13",^areacode$,column range,column range
-area codes,VE-14,14,"Mérida, VE, State, 14",^areacode$,column range,column range
-area codes,VE-15,15,"Miranda, VE, State, 15",^areacode$,column range,column range
-area codes,VE-16,16,"Monagas, VE, State, 16",^areacode$,column range,column range
-area codes,VE-17,17,"Nueva Esparta, VE, State, 17",^areacode$,column range,column range
-area codes,VE-18,18,"Portuguesa, VE, State, 18",^areacode$,column range,column range
-area codes,VE-19,19,"Sucre, VE, State, 19",^areacode$,column range,column range
-area codes,VE-20,20,"Táchira, VE, State, 20",^areacode$,column range,column range
-area codes,VE-21,21,"Trujillo, VE, State, 21",^areacode$,column range,column range
-area codes,VE-22,22,"Yaracuy, VE, State, 22",^areacode$,column range,column range
-area codes,VE-23,23,"Zulia, VE, State, 23",^areacode$,column range,column range
-area codes,VE-24,24,"Vargas, VE, State, 24",^areacode$,column range,column range
-area codes,VG-1,1,"Anegada, VG, District, 1",^areacode$,column range,column range
-area codes,VG-2,2,"Cooper Island, VG, District, 2",^areacode$,column range,column range
-area codes,VG-3,3,"Great Camanoe, VG, District, 3",^areacode$,column range,column range
-area codes,VG-4,4,"Jost van Dyke, VG, District, 4",^areacode$,column range,column range
-area codes,VG-5,5,"Peter Island, VG, District, 5",^areacode$,column range,column range
-area codes,VG-6,6,"Tortola, VG, District, 6",^areacode$,column range,column range
-area codes,VG-7,7,"Virgin Gorda, VG, District, 7",^areacode$,column range,column range
-area codes,VI-10,10,"St. Croix, VI, District, 10",^areacode$,column range,column range
-area codes,VI-20,20,"St. John, VI, District, 20",^areacode$,column range,column range
-area codes,VI-30,30,"St. Thomas, VI, District, 30",^areacode$,column range,column range
 attachments,layer,0e+0:3.40e+38,all attachments,^layerattachment$,column range,column range
 construction codes,automobiles,5850:5899,automobiles,^constructioncode$,column range,column range
 construction codes,bridges,5400:5449,bridges,^constructioncode$,column range,column range
@@ -1474,24 +25,30 @@ construction codes,unknown,5000,unknown,^constructioncode$,column range,column r
 construction codes,wood,5050:5099,wood,^constructioncode$,column range,column range
 construction codes,yachts,5900:5949,yachts,^constructioncode$,column range,column range
 country codes,afghanistan,AF,Afghanistan,^countrycode$,column range,column range
+country codes,alaska offshore,A1,Alaska Offshore,^countrycode$,column range,column range
 country codes,albania,AL,Albania,^countrycode$,column range,column range
 country codes,algeria,DZ,Algeria,^countrycode$,column range,column range
 country codes,american samoa,AS,American Samoa,^countrycode$,column range,column range
 country codes,andorra,AD,Andorra,^countrycode$,column range,column range
 country codes,angola,AO,Angola,^countrycode$,column range,column range
+country codes,angola offshore,A2,Angola Offshore,^countrycode$,column range,column range
 country codes,anguilla,AI,Anguilla,^countrycode$,column range,column range
 country codes,antarctica,AQ,Antarctica,^countrycode$,column range,column range
 country codes,antigua & barbuda,AG,Antigua and Barbuda,^countrycode$,column range,column range
+country codes,arctic offshore,A3,Arctic Offshore,^countrycode$,column range,column range
 country codes,argentina,AR,Argentina,^countrycode$,column range,column range
 country codes,armenia,AM,Armenia,^countrycode$,column range,column range
 country codes,aruba,AW,Aruba,^countrycode$,column range,column range
+country codes,australasia offshore,A4,Australasia Offshore,^countrycode$,column range,column range
 country codes,australia,AU,Australia,^countrycode$,column range,column range
 country codes,austria,AT,Austria,^countrycode$,column range,column range
 country codes,azerbaijan,AZ,Azerbaijan,^countrycode$,column range,column range
 country codes,bahamas,BS,Bahamas,^countrycode$,column range,column range
 country codes,bahrain,BH,Bahrain,^countrycode$,column range,column range
+country codes,baltic sea offshore,B3,Baltic Sea Offshore,^countrycode$,column range,column range
 country codes,bangladesh,BD,Bangladesh,^countrycode$,column range,column range
 country codes,barbados,BB,Barbados,^countrycode$,column range,column range
+country codes,bay of campeche offshore,B1,Bay of Campeche Offshore,^countrycode$,column range,column range
 country codes,belarus,BY,Belarus,^countrycode$,column range,column range
 country codes,belgium,BE,Belgium,^countrycode$,column range,column range
 country codes,belize,BZ,Belize,^countrycode$,column range,column range
@@ -1504,6 +61,7 @@ country codes,bosnia & herzegovina,BA,Bosnia and Herzegovina,^countrycode$,colum
 country codes,botswana,BW,Botswana,^countrycode$,column range,column range
 country codes,bouvet island,BV,Bouvet Island,^countrycode$,column range,column range
 country codes,brazil,BR,Brazil,^countrycode$,column range,column range
+country codes,brazil offshore,B2,Brazil Offshore,^countrycode$,column range,column range
 country codes,british indian ocean territory,IO,British Indian Ocean Territory,^countrycode$,column range,column range
 country codes,british virgin islands,VG,"Virgin Islands, British",^countrycode$,column range,column range
 country codes,brunei,BN,Brunei,^countrycode$,column range,column range
@@ -1514,12 +72,14 @@ country codes,burundi,BI,Burundi,^countrycode$,column range,column range
 country codes,cambodia,KH,Cambodia,^countrycode$,column range,column range
 country codes,cameroon,CM,Cameroon,^countrycode$,column range,column range
 country codes,canada,CA,Canada,^countrycode$,column range,column range
+country codes,canada offshore,C1,Canada Offshore,^countrycode$,column range,column range
 country codes,cape verde,CV,Cape Verde,^countrycode$,column range,column range
 country codes,cayman islands,KY,Cayman Islands,^countrycode$,column range,column range
 country codes,central african republic,CF,Central African Republic,^countrycode$,column range,column range
 country codes,chad,TD,Chad,^countrycode$,column range,column range
 country codes,chile,CL,Chile,^countrycode$,column range,column range
 country codes,china,CN,China,^countrycode$,column range,column range
+country codes,china offshore,C3,China Offshore,^countrycode$,column range,column range
 country codes,christmas island,CX,Christmas Island,^countrycode$,column range,column range
 country codes,cocos (keeling) islands,CC,Cocos (Keeling) Islands,^countrycode$,column range,column range
 country codes,colombia,CO,Colombia,^countrycode$,column range,column range
@@ -1536,14 +96,17 @@ country codes,denmark,DK,Denmark,^countrycode$,column range,column range
 country codes,djibouti,DJ,Djibouti,^countrycode$,column range,column range
 country codes,dominica,DM,Dominica,^countrycode$,column range,column range
 country codes,dominican republic,DO,Dominican Republic,^countrycode$,column range,column range
+country codes,east africa offshore,E1,East Africa Offshore,^countrycode$,column range,column range
 country codes,ecuador,EC,Ecuador,^countrycode$,column range,column range
 country codes,egypt,EG,Egypt,^countrycode$,column range,column range
+country codes,egypt offshore,E2,Egypt Offshore,^countrycode$,column range,column range
 country codes,el salvador,SV,El Salvador,^countrycode$,column range,column range
 country codes,equatorial guinea,GQ,Equatorial Guinea,^countrycode$,column range,column range
 country codes,eritrea,ER,Eritrea,^countrycode$,column range,column range
 country codes,estonia,EE,Estonia,^countrycode$,column range,column range
 country codes,ethiopia,ET,Ethiopia,^countrycode$,column range,column range
 country codes,falklands,FK,Falkland Islands (Malvinas),^countrycode$,column range,column range
+country codes,far east offshore,F1,Far East Offshore,^countrycode$,column range,column range
 country codes,faroe islands,FO,Faroe Islands,^countrycode$,column range,column range
 country codes,fiji,FJ,Fiji,^countrycode$,column range,column range
 country codes,finland,FI,Finland,^countrycode$,column range,column range
@@ -1552,6 +115,7 @@ country codes,french guiana,GF,French Guiana,^countrycode$,column range,column r
 country codes,french polynesia,PF,French Polynesia,^countrycode$,column range,column range
 country codes,french southern territories,TF,French Southern Territories,^countrycode$,column range,column range
 country codes,gabon,GA,Gabon,^countrycode$,column range,column range
+country codes,gabon offshore,G1,Gabon Offshore,^countrycode$,column range,column range
 country codes,gambia,GM,Gambia,^countrycode$,column range,column range
 country codes,georgia,GE,Georgia,^countrycode$,column range,column range
 country codes,germany,DE,Germany,^countrycode$,column range,column range
@@ -1574,6 +138,7 @@ country codes,hong kong,HK,Hong Kong,^countrycode$,column range,column range
 country codes,hungary,HU,Hungary,^countrycode$,column range,column range
 country codes,iceland,IS,Iceland,^countrycode$,column range,column range
 country codes,india,IN,India,^countrycode$,column range,column range
+country codes,indian subcontinent offshore,I1,Indian Subcontinent Offshore,^countrycode$,column range,column range
 country codes,indonesia,ID,Indonesia,^countrycode$,column range,column range
 country codes,iran,IR,"Iran, Islamic Republic of",^countrycode$,column range,column range
 country codes,iraq,IQ,Iraq,^countrycode$,column range,column range
@@ -1583,6 +148,7 @@ country codes,israel,IL,Israel,^countrycode$,column range,column range
 country codes,italy,IT,Italy,^countrycode$,column range,column range
 country codes,jamaica,JM,Jamaica,^countrycode$,column range,column range
 country codes,japan,JP,Japan,^countrycode$,column range,column range
+country codes,japan/korea offshore,J1,Japan/Korea Offshore,^countrycode$,column range,column range
 country codes,jersey,JE,Jersey,^countrycode$,column range,column range
 country codes,jordan,JO,Jordan,^countrycode$,column range,column range
 country codes,kazakhstan,KZ,Kazakhstan,^countrycode$,column range,column range
@@ -1612,8 +178,11 @@ country codes,martinique,MQ,Martinique,^countrycode$,column range,column range
 country codes,mauritania,MR,Mauritania,^countrycode$,column range,column range
 country codes,mauritius,MU,Mauritius,^countrycode$,column range,column range
 country codes,mayotte,YT,Mayotte,^countrycode$,column range,column range
+country codes,mediterranean offshore,M1,Mediterranean Offshore,^countrycode$,column range,column range
 country codes,mexico,MX,Mexico,^countrycode$,column range,column range
+country codes,mexico offshore,M3,Mexico Offshore,^countrycode$,column range,column range
 country codes,micronesia,FM,"Micronesia, Federated States of",^countrycode$,column range,column range
+country codes,middle east offshore,M2,Middle East Offshore,^countrycode$,column range,column range
 country codes,moldova,MD,"Moldova, Republic of",^countrycode$,column range,column range
 country codes,monaco,MC,Monaco,^countrycode$,column range,column range
 country codes,mongolia,MN,Mongolia,^countrycode$,column range,column range
@@ -1630,11 +199,14 @@ country codes,new zealand,NZ,New Zealand,^countrycode$,column range,column range
 country codes,nicaragua,NI,Nicaragua,^countrycode$,column range,column range
 country codes,niger,NE,Niger,^countrycode$,column range,column range
 country codes,nigeria,NG,Nigeria,^countrycode$,column range,column range
+country codes,nigeria offshore,N1,Nigeria Offshore,^countrycode$,column range,column range
 country codes,niue,NU,Niue,^countrycode$,column range,column range
 country codes,norfolk island,NF,Norfolk Island,^countrycode$,column range,column range
 country codes,north korea,KP,"Korea, Democratic People's Republic of",^countrycode$,column range,column range
+country codes,north sea offshore,N3,North Sea Offshore,^countrycode$,column range,column range
 country codes,northern mariana islands,MP,Northern Mariana Islands,^countrycode$,column range,column range
 country codes,norway,NO,Norway,^countrycode$,column range,column range
+country codes,norway offshore,N2,Norway Offshore,^countrycode$,column range,column range
 country codes,oman,OM,Oman,^countrycode$,column range,column range
 country codes,pakistan,PK,Pakistan,^countrycode$,column range,column range
 country codes,palau,PW,Palau,^countrycode$,column range,column range
@@ -1651,6 +223,7 @@ country codes,puerto rico,PR,Puerto Rico,^countrycode$,column range,column range
 country codes,qatar,QA,Qatar,^countrycode$,column range,column range
 country codes,romania,RO,Romania,^countrycode$,column range,column range
 country codes,russia,RU,Russia,^countrycode$,column range,column range
+country codes,russia offshore,R1,Russia Offshore,^countrycode$,column range,column range
 country codes,rwanda,RW,Rwanda,^countrycode$,column range,column range
 country codes,réunion,RE,Réunion,^countrycode$,column range,column range
 country codes,saba,XS,Saba,^countrycode$,column range,column range
@@ -1673,6 +246,8 @@ country codes,slovenia,SI,Slovenia,^countrycode$,column range,column range
 country codes,solomon islands,SB,Solomon Islands,^countrycode$,column range,column range
 country codes,somalia,SO,Somalia,^countrycode$,column range,column range
 country codes,south africa,ZA,South Africa,^countrycode$,column range,column range
+country codes,south america offshore,S1,South America Offshore,^countrycode$,column range,column range
+country codes,south asia offshore,S3,South Asia Offshore,^countrycode$,column range,column range
 country codes,south georgia & the south s&wich islands,GS,South Georgia and the South Sandwich Islands,^countrycode$,column range,column range
 country codes,south korea,KR,South Korea,^countrycode$,column range,column range
 country codes,spain,ES,Spain,^countrycode$,column range,column range
@@ -1683,6 +258,7 @@ country codes,suriname,SR,Suriname,^countrycode$,column range,column range
 country codes,svalbard & jan mayen,SJ,Svalbard and Jan Mayen,^countrycode$,column range,column range
 country codes,swaziland,SZ,Swaziland,^countrycode$,column range,column range
 country codes,sweden,SE,Sweden,^countrycode$,column range,column range
+country codes,sweden offshore,S2,Sweden Offshore,^countrycode$,column range,column range
 country codes,switzerland,CH,Switzerland,^countrycode$,column range,column range
 country codes,syrian arab republic,SY,Syrian Arab Republic,^countrycode$,column range,column range
 country codes,taiwan,TW,Taiwan,^countrycode$,column range,column range
@@ -1694,6 +270,7 @@ country codes,togo,TG,Togo,^countrycode$,column range,column range
 country codes,tokelau,TK,Tokelau,^countrycode$,column range,column range
 country codes,tonga,TO,Tonga,^countrycode$,column range,column range
 country codes,trinidad & tobago,TT,Trinidad and Tobago,^countrycode$,column range,column range
+country codes,trinidad and tobago offshore,T1,Trinidad and Tobago Offshore,^countrycode$,column range,column range
 country codes,tunisia,TN,Tunisia,^countrycode$,column range,column range
 country codes,turkey,TR,Turkey,^countrycode$,column range,column range
 country codes,turkmenistan,TM,Turkmenistan,^countrycode$,column range,column range
@@ -1703,6 +280,7 @@ country codes,uganda,UG,Uganda,^countrycode$,column range,column range
 country codes,ukraine,UA,Ukraine,^countrycode$,column range,column range
 country codes,united arab emirates,AE,United Arab Emirates,^countrycode$,column range,column range
 country codes,united kingdom,GB,United Kingdom,^countrycode$,column range,column range
+country codes,united kingdom offshore,U1,United Kingdom Offshore,^countrycode$,column range,column range
 country codes,united states,US,United States,^countrycode$,column range,column range
 country codes,united states minor outlying islands,UM,United States Minor Outlying Islands,^countrycode$,column range,column range
 country codes,uruguay,UY,Uruguay,^countrycode$,column range,column range
@@ -1711,8 +289,12 @@ country codes,uzbekistan,UZ,Uzbekistan,^countrycode$,column range,column range
 country codes,vanuatu,VU,Vanuatu,^countrycode$,column range,column range
 country codes,vatican city,VA,Holy See (Vatican City State),^countrycode$,column range,column range
 country codes,venezuela,VE,Venezuela,^countrycode$,column range,column range
+country codes,venezuela offshore,V1,Venezuela Offshore,^countrycode$,column range,column range
 country codes,viet nam,VN,Viet Nam,^countrycode$,column range,column range
+country codes,vietnam offshore,V2,Vietnam Offshore,^countrycode$,column range,column range
 country codes,wallis & futuna,WF,Wallis and Futuna,^countrycode$,column range,column range
+country codes,west africa offshore,W4,West Africa Offshore,^countrycode$,column range,column range
+country codes,west us/california offshore,W5,West US/California Offshore,^countrycode$,column range,column range
 country codes,western sahara,EH,Western Sahara,^countrycode$,column range,column range
 country codes,worldwide,XW,Worldwide,^countrycode$,column range,column range
 country codes,yemen,YE,Yemen,^countrycode$,column range,column range

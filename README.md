@@ -1,4 +1,5 @@
 [![LGTM Code Quality Grade: Python](https://img.shields.io/lgtm/grade/python/g/sr-murthy/oedtools.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/sr-murthy/oedtools/context:python)
+[![codecov](https://codecov.io/gh/sr-murthy/oedtools/branch/master/graph/badge.svg)](https://codecov.io/gh/sr-murthy/oedtools)
 [![PyPI version](https://badge.fury.io/py/oedtools.svg)](https://badge.fury.io/py/oedtools)
 [![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?branch=master)](https://travis-ci.com/sr-murthy/oedtools)
 
@@ -40,13 +41,13 @@ The command line interface is invoked via `oed` and provides three main command 
 * `query` (`oed query`) - for querying schema columns based on various schema properties
 * `sample` (`oed sample`) - for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.4.0`). Usage is
+There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.0.4`) the package uses, or the package version (currently `0.4.2`). Usage is
 
     $ oed version
     1.0.4
 
     $ oed version --package
-    0.4.0
+    0.4.2
 
 ### Validation
 
@@ -401,8 +402,8 @@ To run a specific test module use
 
 To run a run specific test class in a test module use
 
-    $ pytest -v tests/<test module name>.py::<test class name>>
+    $ pytest -v tests/<test module name>.py::<test class name>
 
 To run a run specific test case in a test class in a test module use
 
-    $ pytest -v tests/<test module name>.py::<test class name>>::<test case name>>
+    $ pytest -v tests/<test module name>.py::<test class name>::<test case name>
