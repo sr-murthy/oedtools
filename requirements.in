@@ -2,6 +2,7 @@
 
 backports.tempfile
 backports.weakref
+codecov
 coverage
 discover
 flake8

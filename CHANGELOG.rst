@@ -1,6 +1,10 @@
 Changelog
 =========
 
+`0.4.0`_
+-------
+* Add code coverage badge to README
+
 `0.3.2`_
 -------
 * (Includes changes from `0.3.0` and `0.3.1` for simplifying CLI)
@@ -42,6 +46,7 @@ Changelog
 * First release - features supported include file validation (headers + data) for acc., loc., reins. info. and reins. scope files, column search and sampling in any file schema.
 
 
+.. _`0.4.0`:  https://github.com/sr-murthy/oedtools/compare/v0.3.2...v0.4.0
 .. _`0.3.2`:  https://github.com/sr-murthy/oedtools/compare/v0.2.0...v0.3.2
 .. _`0.2.0`:  https://github.com/sr-murthy/oedtools/compare/v0.1.9...v0.2.0
 .. _`0.1.9`:  https://github.com/sr-murthy/oedtools/compare/v0.1.8...v0.1.9
