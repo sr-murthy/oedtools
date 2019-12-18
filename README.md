@@ -99,6 +99,7 @@ Data-related errors currently include
 
 **Note**: data validation (and sampling) is facilitated via the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">values profile</a>, which defines the categories and subcategories of data values that can occur in the various columns, independently of the schemas. The values profile defines, where applicable, the ranges of values associated with each subcategory and links these ranges to columns in the relevant schemas. It also defines, where applicable, methods for validation and sampling. Currently, the categories of data covered by the values profile include
 
+* **area codes**
 * **attachments**
 * **construction codes**
 * **country codes**

@@ -7,8 +7,10 @@ __all__ = [
     'DEFAULTS',
     'FLOAT',
     'get_method',
+    'get_value',
     'GROUPED_SCHEMA',
     'INT',
+    'is_real_number',
     'LOC',
     'LOC_NONNULL',
     'LOC_OPTIONAL',
@@ -270,6 +272,54 @@ def get_method(pkg_path):
     """
     path_tokens = pkg_path.split('.')
     return getattr(importlib.import_module('.'.join(path_tokens[:-1])), path_tokens[-1])
+
+
+def is_real_number(val):
+    """
+    Simple method to check whether a literal value is a real number - returns
+    ``True`` for integers as well.
+
+    :param num: The literal value, which can be any literal value
+    :type num: None, bool, int, float, complex, str, bytes, tuple, list, dict, set
+
+    :return: Whether the value is a real number
+    :rtype: bool
+    """
+    if isinstance(val, bool) or not (isinstance(val, int) or isinstance(val, float)):
+        return False
+
+    return True
+
+
+def get_value(val):
+    """
+    Returns the number from a literal value if the value represents either an
+    integer, real number or complex number. The use case is to extract numbers
+    from string literals, if those literals are instances of one of three
+    proper numeric types (``int``, ``float``, ``complex``). All other types
+    of string are returned unchanged.
+
+    :param val: The literal value, which can be any literal value
+    :type val: None, bool, int, float, compex, str, bytes, tuple, list, dict, set
+
+    :return: The number represented by the literal, if it represents a number,
+             or the literal
+    :rtype: None, bool, int, float, compex, str, bytes, tuple, list, dict, set
+    """
+    if val is None or isinstance(val, bool) or isinstance(val, bytes):
+        return val
+    if is_real_number(val) or isinstance(val, complex):
+        return val
+    try:
+        return int(val)
+    except (TypeError, ValueError):
+        try:
+            return float(val)
+        except (TypeError, ValueError):
+            try:
+                return complex(val)
+            except (TypeError, ValueError):
+                return val
 
 
 def sample_column(schema_type, header, str_width=None, size=10):

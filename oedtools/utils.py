@@ -205,7 +205,7 @@ def within_range(bounds_or_iter, val):
     """
     Checks whether a given simple literal value (integer, float, string, bytes)
     lies within a given finite set of values or a bounded numeric range
-    (or interval). If ``bounds_or_iter`` is not a ``range`` and 
+    (or interval).
 
     :param bounds: A finite set of values or bounded numeric range
                    (or interval)
