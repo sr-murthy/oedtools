@@ -254,6 +254,9 @@ class OedValidator(object):
 
         def _validate_value(row_idx, value):
             _value = get_value(value)
+            if _exp_dtype == float and isinstance(_value, int):
+                _value = float(_value)
+
             exceptions = []
 
             if is_nonnull_col and _value in [None, '']:
