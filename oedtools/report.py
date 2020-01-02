@@ -50,11 +50,7 @@ def report_headers(schema_type, file_or_headers):
             )
             yield line
         if not errors:
-            line = (
-                '{}header validation complete: no exceptions or errors'
-                .format('"{}" '.format(file_or_headers if isinstance(file_or_headers, str) else ''))
-            )
-            yield line
+            return
     except ProcessError as e:
         raise_with_traceback(ReportingError('Error while generating header validation report: {}'.format(e)))
 
@@ -91,10 +87,6 @@ def report_file(schema_type, file_or_data):
             )
             yield line
         if not errors:
-            line = (
-                '{}file validation complete: no exceptions or errors'
-                .format('"{}" '.format(file_or_data if isinstance(file_or_data, str) else ''))
-            )
-            yield line
+            return
     except ProcessError as e:
         raise_with_traceback(ReportingError('Error while generating validation report: {}'.format(e)))
