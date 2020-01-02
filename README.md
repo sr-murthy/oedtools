@@ -80,10 +80,10 @@ Headers and data are validated separately, and a combined status report is print
 
     /path/to/location.csv:1:-1: "LocCurrency" is a required column in an OED "loc" file but is missing: OED error: E331 Missing required column in file
 
-If there are no errors in the file this is indicated with a short message, e.g.
+If there are no errors in the file no output will be produced.
 
     (myvenv) $ oed validate file -t 'acc' -f /path/to/account.csv
-    "/path/to/account.csv" file validation complete: no exceptions or errors
+    (myvenv) $
 
 Header-related errors currently include
 
