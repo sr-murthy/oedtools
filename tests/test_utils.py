@@ -114,9 +114,21 @@ class TestUtils(TestCase):
         self.assertEqual(intg, get_value(str(intg)))
         self.assertEqual(flt, get_value(str(flt)))
         self.assertEqual(comp, get_value(str(comp)))
-        qy = re.match(r'(-|\+){0,1}?(\d+)?(\.)?(\d+)?(e\+\d+|e-\d+)?(-|\+){0,1}?(\d+)?(\.)?(\d+)?(e\+\d+|e-\d+)?(j|J){0,1}?$', st)
+
+        num_st = None
+
+        try:
+            num_st = int(st)
+        except (TypeError, ValueError):
+            try:
+                num_st = float(st)
+            except (TypeError, ValueError):
+                try:
+                    num_st = complex(st)
+                except (TypeError, ValueError):
+                    pass
         st_res = get_value(st)
-        self.assertEqual(st, st_res) if not qy or isinstance(st_res, str) else self.assertNotEqual(st, st_res)
+        self.assertEqual(st, st_res) if num_st is None or isinstance(st_res, str) else self.assertNotEqual(st, st_res)
         x = np.random.choice([None, boo, intg, flt, comp, st])
         self.assertEqual((x,), get_value((x,)))
         self.assertEqual([x], get_value([x]))
