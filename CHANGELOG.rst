@@ -1,6 +1,10 @@
 Changelog
 =========
 
+`0.6.0`_
+-------
+* Adjust validation verbosity
+
 `0.5.0`_
 -------
 * Add area codes to values profile
@@ -58,6 +62,7 @@ Changelog
 * First release - features supported include file validation (headers + data) for acc., loc., reins. info. and reins. scope files, column search and sampling in any file schema.
 
 
+.. _`0.6.0`:  https://github.com/sr-murthy/oedtools/compare/v0.5.0...v0.6.0
 .. _`0.5.0`:  https://github.com/sr-murthy/oedtools/compare/v0.4.2...v0.5.0
 .. _`0.4.2`:  https://github.com/sr-murthy/oedtools/compare/v0.4.1...v0.4.2
 .. _`0.4.1`:  https://github.com/sr-murthy/oedtools/compare/v0.4.0...v0.4.1
