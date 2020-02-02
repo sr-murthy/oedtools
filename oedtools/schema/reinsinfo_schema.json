@@ -4,72 +4,72 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "The aggregate monetary amount during a given AggPeriod that the resinured retains under this treaty",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "AggAttachment",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'agglimit')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Maximum amount payable under this treaty during the AggPeriod",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "AggLimit",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'aggperiod')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 365.0,
         "desc": "Aggregate period associated with the aggregate limits and attachments (in days). Default value = 365 (1 year)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "AggPeriod",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'attachmentbasis')": {
         "blank": true,
@@ -100,42 +100,42 @@
         "default": 1.0,
         "desc": "Reinsurance ceded percentage. Used mainly in surplus treaties. Applies before other reinsurance terms. Values between 0 to 1 (e.g. 12% entered as 0.12)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "CededPercent",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'deemedpercentplaced')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Deemed percent placed, used to represent notional contracts or any part of the contract being notional. For fully notional contracts, enter 1 (i.e. 100%). For partially placed contracts, enter any value between 0 and 1. For real contracts, enter 0.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "DeemedPercentPlaced",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'inuringpriority')": {
         "blank": false,
@@ -166,96 +166,96 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Reinsurance per occurrence attachment",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "OccAttachment",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'occfranchiseded')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Reinsurance franchise deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "OccFranchiseDed",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'occlimit')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Reinsurance occurrence limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "OccLimit",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'occreversefranchise')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Reinsurance reverse franchise - a value of loss that, if exceeded, results in no payment being made for this event from the reinsurer to insurer.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "OccReverseFranchise",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'placedpercent')": {
         "blank": false,
@@ -268,18 +268,18 @@
         "default": null,
         "desc": "Percentage of the limit that has been placed in the reinsurance market. The main percentage used for reinsurance treaties other than surplus. Applies after other reinsurance terms. Values between 0 to 1 (e.g. 12% entered as 0.12)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "PlacedPercent",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "R",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'reinscurrency')": {
         "blank": false,
@@ -621,24 +621,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 1.0,
         "desc": "Reinsurance exchange rate (as the contractual reinsurance rate can be different from the actual exchange rates used for policies and locations)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "ReinsFXrate",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'reinsinceptiondate')": {
         "blank": true,
@@ -782,24 +782,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Reinsurance premium",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "ReinsPremium",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'reinstatement')": {
         "blank": true,
@@ -830,24 +830,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": null,
         "desc": "Reinstatement charge as %; semi-colon separated if different for each reinstatement (e.g. 1-free, 2-50%, 3-100% should be entered as: 0;0.5;1). If all reinstatements are the same, then just one number is sufficient (e.g. 3 reinstatements at 100% should be entered as 1)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "ReinstatementCharge",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'reinstype')": {
         "blank": false,
@@ -879,48 +879,48 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Reinsurance per-risk attachment point",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "RiskAttachment",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'risklimit')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Reinsurance per-risk limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "RiskLimit",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'treatyshare')": {
         "blank": true,
@@ -933,18 +933,18 @@
         "default": 1.0,
         "desc": "The percentage of a treaty that a given reinsurer may write. Values between 0 to 1 (e.g. 12% entered as 0.12).",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsInfo",
         "field_name": "TreatyShare",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsinfo', 'usereinsdates')": {
         "blank": true,

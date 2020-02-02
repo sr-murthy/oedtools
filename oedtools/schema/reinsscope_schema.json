@@ -46,18 +46,18 @@
         "default": 1.0,
         "desc": "Ceded percentage (for 12%, enter 0.12). Within the reinsurance scope file, CededPercent should only be entered for surplus share treaties.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "ReinsScope",
         "field_name": "CededPercent",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsAcc; ReinsPol; ReinsLoc; ReinsuranceScope",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('reinsscope', 'countrycode')": {
         "blank": true,
