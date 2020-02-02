@@ -1,11 +1,11 @@
 entity,field_name,desc,required,type,blank,default,secmod,backend_table,backend_db_field_name
 Acc,AccCurrency,Account currency,R,char(3),NO,,,Accounts; Policies; Conditions,Accounts.Currency; Policies.Currency; Conditions.Currency
-Acc,AccDed1Building,Account building deductible,CR,real,YES,0,,AccountFinancials,Ded
-Acc,AccDed2Other,Account other building deductible,CR,real,YES,0,,AccountFinancials,Ded
-Acc,AccDed3Contents,Account contents deductible,CR,real,YES,0,,AccountFinancials,Ded
-Acc,AccDed4BI,Account BI deductible,CR,real,YES,0,,AccountFinancials,Ded
-Acc,AccDed5PD,Account PD deductible,CR,real,YES,0,,AccountFinancials,Ded
-Acc,AccDed6All,Account blanket deductible,CR,real,YES,0,,AccountFinancials,Ded
+Acc,AccDed1Building,Account building deductible,CR,float,YES,0,,AccountFinancials,Ded
+Acc,AccDed2Other,Account other building deductible,CR,float,YES,0,,AccountFinancials,Ded
+Acc,AccDed3Contents,Account contents deductible,CR,float,YES,0,,AccountFinancials,Ded
+Acc,AccDed4BI,Account BI deductible,CR,float,YES,0,,AccountFinancials,Ded
+Acc,AccDed5PD,Account PD deductible,CR,float,YES,0,,AccountFinancials,Ded
+Acc,AccDed6All,Account blanket deductible,CR,float,YES,0,,AccountFinancials,Ded
 Acc,AccDedCode1Building,Account building deductible code,CR,tinyint,YES,0,,AccountFinancials,DedCode
 Acc,AccDedCode2Other,Account other building deductible code,CR,tinyint,YES,0,,AccountFinancials,DedCode
 Acc,AccDedCode3Contents,Account contents deductible code,CR,tinyint,YES,0,,AccountFinancials,DedCode
@@ -19,12 +19,12 @@ Acc,AccDedType4BI,Account BI deductible type,CR,tinyint,YES,0,,AccountFinancials
 Acc,AccDedType5PD,Account PD deductible type,CR,tinyint,YES,0,,AccountFinancials,DedType
 Acc,AccDedType6All,Account blanket deductible type,CR,tinyint,YES,0,,AccountFinancials,DedType
 Acc,AccGroup,"Account group, could use to group multiple accounts (e.g. for binders)",O,varchar(40),YES,,,Accounts,
-Acc,AccLimit1Building,Account building limit,CR,real,YES,0,,AccountFinancials,Limit
-Acc,AccLimit2Other,Account other building limit,CR,real,YES,0,,AccountFinancials,Limit
-Acc,AccLimit3Contents,Account contents limit,CR,real,YES,0,,AccountFinancials,Limit
-Acc,AccLimit4BI,Account BI limit,CR,real,YES,0,,AccountFinancials,Limit
-Acc,AccLimit5PD,Account PD limit,CR,real,YES,0,,AccountFinancials,Limit
-Acc,AccLimit6All,Account blanket limit,CR,real,YES,0,,AccountFinancials,Limit
+Acc,AccLimit1Building,Account building limit,CR,float,YES,0,,AccountFinancials,Limit
+Acc,AccLimit2Other,Account other building limit,CR,float,YES,0,,AccountFinancials,Limit
+Acc,AccLimit3Contents,Account contents limit,CR,float,YES,0,,AccountFinancials,Limit
+Acc,AccLimit4BI,Account BI limit,CR,float,YES,0,,AccountFinancials,Limit
+Acc,AccLimit5PD,Account PD limit,CR,float,YES,0,,AccountFinancials,Limit
+Acc,AccLimit6All,Account blanket limit,CR,float,YES,0,,AccountFinancials,Limit
 Acc,AccLimitCode1Building,Account building limit code,CR,tinyint,YES,0,,AccountFinancials,LimitCode
 Acc,AccLimitCode2Other,Account other building limit code,CR,tinyint,YES,0,,AccountFinancials,LimitCode
 Acc,AccLimitCode3Contents,Account contents limit code,CR,tinyint,YES,0,,AccountFinancials,LimitCode
@@ -37,18 +37,18 @@ Acc,AccLimitType3Contents,Account contents limit type,CR,tinyint,YES,0,,AccountF
 Acc,AccLimitType4BI,Account BI limit type,CR,tinyint,YES,0,,AccountFinancials,LimitType
 Acc,AccLimitType5PD,Account PD limit type,CR,tinyint,YES,0,,AccountFinancials,LimitType
 Acc,AccLimitType6All,Account blanket limit type,CR,tinyint,YES,0,,AccountFinancials,LimitType
-Acc,AccMaxDed1Building,Account maximum building deductible,CR,real,YES,0,,AccountFinancials,MaxDed
-Acc,AccMaxDed2Other,Account maximum other building deductible,CR,real,YES,0,,AccountFinancials,MaxDed
-Acc,AccMaxDed3Contents,Account maximum contents deductible,CR,real,YES,0,,AccountFinancials,MaxDed
-Acc,AccMaxDed4BI,Account maximum BI deductible,CR,real,YES,0,,AccountFinancials,MaxDed
-Acc,AccMaxDed5PD,Account maximum PD deductible,CR,real,YES,0,,AccountFinancials,MaxDed
-Acc,AccMaxDed6All,Account maximum blanket deductible,CR,real,YES,0,,AccountFinancials,MaxDed
-Acc,AccMinDed1Building,Account minimum building deductible,CR,real,YES,0,,AccountFinancials,MinDed
-Acc,AccMinDed2Other,Account minimum other building deductible,CR,real,YES,0,,AccountFinancials,MinDed
-Acc,AccMinDed3Contents,Account minimum contents deductible,CR,real,YES,0,,AccountFinancials,MinDed
-Acc,AccMinDed4BI,Account minimum BI deductible,CR,real,YES,0,,AccountFinancials,MinDed
-Acc,AccMinDed5PD,Account minimum PD deductible,CR,real,YES,0,,AccountFinancials,MinDed
-Acc,AccMinDed6All,Account minimum blanket deductible,CR,real,YES,0,,AccountFinancials,MinDed
+Acc,AccMaxDed1Building,Account maximum building deductible,CR,float,YES,0,,AccountFinancials,MaxDed
+Acc,AccMaxDed2Other,Account maximum other building deductible,CR,float,YES,0,,AccountFinancials,MaxDed
+Acc,AccMaxDed3Contents,Account maximum contents deductible,CR,float,YES,0,,AccountFinancials,MaxDed
+Acc,AccMaxDed4BI,Account maximum BI deductible,CR,float,YES,0,,AccountFinancials,MaxDed
+Acc,AccMaxDed5PD,Account maximum PD deductible,CR,float,YES,0,,AccountFinancials,MaxDed
+Acc,AccMaxDed6All,Account maximum blanket deductible,CR,float,YES,0,,AccountFinancials,MaxDed
+Acc,AccMinDed1Building,Account minimum building deductible,CR,float,YES,0,,AccountFinancials,MinDed
+Acc,AccMinDed2Other,Account minimum other building deductible,CR,float,YES,0,,AccountFinancials,MinDed
+Acc,AccMinDed3Contents,Account minimum contents deductible,CR,float,YES,0,,AccountFinancials,MinDed
+Acc,AccMinDed4BI,Account minimum BI deductible,CR,float,YES,0,,AccountFinancials,MinDed
+Acc,AccMinDed5PD,Account minimum PD deductible,CR,float,YES,0,,AccountFinancials,MinDed
+Acc,AccMinDed6All,Account minimum blanket deductible,CR,float,YES,0,,AccountFinancials,MinDed
 Acc,AccName,Account name,O,nvarchar(100),YES,,,Accounts,
 Acc,AccNumber,Account number,R,nvarchar(40),NO,,,Accounts,
 Acc,AccPeril,Perils for account financial terms,CR,varchar(250),YES,,,AccountFinancials,PerilCode
@@ -60,12 +60,12 @@ Acc,AccUserDef4,Account user defined field 4,O,varchar(20),YES,,,Accounts,
 Acc,AccUserDef5,Account user defined field 5,O,varchar(20),YES,,,Accounts,
 Acc,BranchName,Branch name,O,varchar(20),YES,,,Policies,
 Acc,CedantName,Cedant name (defined at account level),O,varchar(40),YES,,,Cedants,
-Acc,CondDed1Building,Special condition building deductible,CR,real,YES,0,,ConditionFinancials,Ded
-Acc,CondDed2Other,Special condition other building deductible,CR,real,YES,0,,ConditionFinancials,Ded
-Acc,CondDed3Contents,Special condition contents deductible,CR,real,YES,0,,ConditionFinancials,Ded
-Acc,CondDed4BI,Special condition BI deductible,CR,real,YES,0,,ConditionFinancials,Ded
-Acc,CondDed5PD,Special condition PD deductible,CR,real,YES,0,,ConditionFinancials,Ded
-Acc,CondDed6All,Special condition blanket deductible,CR,real,YES,0,,ConditionFinancials,Ded
+Acc,CondDed1Building,Special condition building deductible,CR,float,YES,0,,ConditionFinancials,Ded
+Acc,CondDed2Other,Special condition other building deductible,CR,float,YES,0,,ConditionFinancials,Ded
+Acc,CondDed3Contents,Special condition contents deductible,CR,float,YES,0,,ConditionFinancials,Ded
+Acc,CondDed4BI,Special condition BI deductible,CR,float,YES,0,,ConditionFinancials,Ded
+Acc,CondDed5PD,Special condition PD deductible,CR,float,YES,0,,ConditionFinancials,Ded
+Acc,CondDed6All,Special condition blanket deductible,CR,float,YES,0,,ConditionFinancials,Ded
 Acc,CondDedCode1Building,Special condition building deductible code,CR,tinyint,YES,0,,ConditionFinancials,DedCode
 Acc,CondDedCode2Other,Special condition other building deductible code,CR,tinyint,YES,0,,ConditionFinancials,DedCode
 Acc,CondDedCode3Contents,Special condition contents deductible code,CR,tinyint,YES,0,,ConditionFinancials,DedCode
@@ -78,12 +78,12 @@ Acc,CondDedType3Contents,Special condition contents deductible type,CR,tinyint,Y
 Acc,CondDedType4BI,Special condition BI deductible type,CR,tinyint,YES,0,,ConditionFinancials,DedType
 Acc,CondDedType5PD,Special condition PD deductible type,CR,tinyint,YES,0,,ConditionFinancials,DedType
 Acc,CondDedType6All,Special condition blanket deductible type,CR,tinyint,YES,0,,ConditionFinancials,DedType
-Acc,CondLimit1Building,Special condition building limit,CR,real,YES,0,,ConditionFinancials,Limit
-Acc,CondLimit2Other,Special condition other building limit,CR,real,YES,0,,ConditionFinancials,Limit
-Acc,CondLimit3Contents,Special condition contents limit,CR,real,YES,0,,ConditionFinancials,Limit
-Acc,CondLimit4BI,Special condition BI limit,CR,real,YES,0,,ConditionFinancials,Limit
-Acc,CondLimit5PD,Special condition PD limit,CR,real,YES,0,,ConditionFinancials,Limit
-Acc,CondLimit6All,Special condition blanket limit,CR,real,YES,0,,ConditionFinancials,Limit
+Acc,CondLimit1Building,Special condition building limit,CR,float,YES,0,,ConditionFinancials,Limit
+Acc,CondLimit2Other,Special condition other building limit,CR,float,YES,0,,ConditionFinancials,Limit
+Acc,CondLimit3Contents,Special condition contents limit,CR,float,YES,0,,ConditionFinancials,Limit
+Acc,CondLimit4BI,Special condition BI limit,CR,float,YES,0,,ConditionFinancials,Limit
+Acc,CondLimit5PD,Special condition PD limit,CR,float,YES,0,,ConditionFinancials,Limit
+Acc,CondLimit6All,Special condition blanket limit,CR,float,YES,0,,ConditionFinancials,Limit
 Acc,CondLimitCode1Building,Special condition building limit code,CR,tinyint,YES,0,,ConditionFinancials,LimitCode
 Acc,CondLimitCode2Other,Special condition other building limit code,CR,tinyint,YES,0,,ConditionFinancials,LimitCode
 Acc,CondLimitCode3Contents,Special condition contents limit code,CR,tinyint,YES,0,,ConditionFinancials,LimitCode
@@ -96,50 +96,57 @@ Acc,CondLimitType3Contents,Special condition contents limit type,CR,tinyint,YES,
 Acc,CondLimitType4BI,Special condition BI limit type,CR,tinyint,YES,0,,ConditionFinancials,LimitType
 Acc,CondLimitType5PD,Special condition PD limit type,CR,tinyint,YES,0,,ConditionFinancials,LimitType
 Acc,CondLimitType6All,Special condition blanket limit type,CR,tinyint,YES,0,,ConditionFinancials,LimitType
-Acc,CondMaxDed1Building,Special condition maximum building deductible,CR,real,YES,0,,ConditionFinancials,MaxDed
-Acc,CondMaxDed2Other,Special condition maximum other building deductible,CR,real,YES,0,,ConditionFinancials,MaxDed
-Acc,CondMaxDed3Contents,Special condition maximum contents deductible,CR,real,YES,0,,ConditionFinancials,MaxDed
-Acc,CondMaxDed4BI,Special condition maximum BI deductible,CR,real,YES,0,,ConditionFinancials,MaxDed
-Acc,CondMaxDed5PD,Special condition maximum PD deductible,CR,real,YES,0,,ConditionFinancials,MaxDed
-Acc,CondMaxDed6All,Special condition maximum blanket deductible,CR,real,YES,0,,ConditionFinancials,MaxDed
-Acc,CondMinDed1Building,Special condition minimum building deductible,CR,real,YES,0,,ConditionFinancials,MinDed
-Acc,CondMinDed2Other,Special condition minimum other building deductible,CR,real,YES,0,,ConditionFinancials,MinDed
-Acc,CondMinDed3Contents,Special condition minimum contents deductible,CR,real,YES,0,,ConditionFinancials,MinDed
-Acc,CondMinDed4BI,Special condition minimum BI deductible,CR,real,YES,0,,ConditionFinancials,MinDed
-Acc,CondMinDed5PD,Special condition minimum PD deductible,CR,real,YES,0,,ConditionFinancials,MinDed
-Acc,CondMinDed6All,Special condition minimum blanket deductible,CR,real,YES,0,,ConditionFinancials,MinDed
+Acc,CondMaxDed1Building,Special condition maximum building deductible,CR,float,YES,0,,ConditionFinancials,MaxDed
+Acc,CondMaxDed2Other,Special condition maximum other building deductible,CR,float,YES,0,,ConditionFinancials,MaxDed
+Acc,CondMaxDed3Contents,Special condition maximum contents deductible,CR,float,YES,0,,ConditionFinancials,MaxDed
+Acc,CondMaxDed4BI,Special condition maximum BI deductible,CR,float,YES,0,,ConditionFinancials,MaxDed
+Acc,CondMaxDed5PD,Special condition maximum PD deductible,CR,float,YES,0,,ConditionFinancials,MaxDed
+Acc,CondMaxDed6All,Special condition maximum blanket deductible,CR,float,YES,0,,ConditionFinancials,MaxDed
+Acc,CondMinDed1Building,Special condition minimum building deductible,CR,float,YES,0,,ConditionFinancials,MinDed
+Acc,CondMinDed2Other,Special condition minimum other building deductible,CR,float,YES,0,,ConditionFinancials,MinDed
+Acc,CondMinDed3Contents,Special condition minimum contents deductible,CR,float,YES,0,,ConditionFinancials,MinDed
+Acc,CondMinDed4BI,Special condition minimum BI deductible,CR,float,YES,0,,ConditionFinancials,MinDed
+Acc,CondMinDed5PD,Special condition minimum PD deductible,CR,float,YES,0,,ConditionFinancials,MinDed
+Acc,CondMinDed6All,Special condition minimum blanket deductible,CR,float,YES,0,,ConditionFinancials,MinDed
 Acc,CondName,Condition name (must be the same if condition repeats on several policy layers). Description that relates to CondNumber.,CR,varchar(40),YES,,,Conditions,
 Acc,CondNumber,Condition number (must be the same if condition repeats on several policy layers),CR,int,YES,,,Conditions,
 Acc,CondPeril,Perils for condition financial terms,CR,varchar(250),YES,,,ConditionFinancials,PerilCode
 Acc,CondPriority,Condition priority: specifies the order in which special conditions apply if multiple conditions apply to one location.,CR,int,YES,,,LocCond,Priority
-Acc,DeductibleBuilding,"Building deductible that can be used, for example, to account for fire policies before applying step functions.",CR,real,YES,0,,StepFunctions,Deductible
-Acc,DeductibleBuildingContent,"Building and content deductible that can be used, for example, to account for fire policies before applying step functions.",CR,real,YES,0,,StepFunctions,Deductible
-Acc,DeductibleContent,"Content deductible that can be used, for example, to account for fire policies before applying step functions.",CR,real,YES,0,,StepFunctions,Deductible
-Acc,EndTriggerBuilding,Ending value of the building damage range over which the corresponding pay-out(s) should be made.,CR,real,YES,0,,StepFunctions,EndTrigger
-Acc,EndTriggerBuildingContent,Ending value of the building and content damage range over which the corresponding pay-out(s) should be made.,CR,real,YES,0,,StepFunctions,EndTrigger
-Acc,EndTriggerContent,Ending value of the content damage range over which the corresponding pay-out(s) should be made.,CR,real,YES,0,,StepFunctions,EndTrigger
+Acc,DebrisRemovalFactor,"A factor for a conditional coverage which tends to apply to all steps and is to cover Debris Removal. This value, entered as a decimal, should be the same for all steps for a policy contract and must be a value >0 and ≤1. For example, 0.12 for 12%.",CR,float,YES,1,,Steps,DebrisRemovalFactor
+Acc,DeductibleBuilding,"Building deductible that can be used, for example, to account for fire policies before applying step functions.",CR,float,YES,0,,Steps,Deductible
+Acc,DeductibleBuildingContents,"Building and contents deductible that can be used, for example, to account for fire policies before applying step functions.",CR,float,YES,0,,Steps,Deductible
+Acc,DeductibleContents,"Content deductible that can be used, for example, to account for fire policies before applying step functions.",CR,float,YES,0,,Steps,Deductible
 Acc,ExpiringAccNumber,Expiring account number,O,nvarchar(40),YES,,,Accounts,
 Acc,ExpiringPolNumber,Expiring policy number,O,varchar(20),YES,,,Policies,
+Acc,ExtraExpenseFactor,"A factor that is applied to main coverage loss for extra expenses. This value, entered as a decimal, should be the same for all steps for a policy contract and must be a value >0 and ≤1. For example, 0.12 for 12%.",CR,float,YES,1,,Steps,ExtraExpenseFactor
+Acc,ExtraExpenseLimit,A limit that applies to the total extra expense loss,CR,float,YES,0,,Steps,ExtraExpenseLimit
 Acc,FlexiAccZZZ,Flexible field that is stored in FlexiAcc table in ModifierName = ZZZ,O,varchar(40),YES,,,FlexiAcc,ModifierName = ZZZ
 Acc,FlexiPolZZZ,Flexible field that is stored in FlexiPol table in ModifierName = ZZZ,O,varchar(40),YES,,,FlexiPol,ModifierName = ZZZ
 Acc,HoursClause,"For perils with an inherent event duration, the insurance contract may contain an hours clause that limits the time in which claims can be added up and assigned to one event",O,int,YES,,,Policies,
-Acc,IsLimitAtDamage,Indicates whether the pay-out is limited by the actual ground-up loss.,O,real,YES,0,,StepFunctions,
+Acc,IsLimitAtDamage,Indicates whether the pay-out is limited by the actual ground-up loss.,CR,float,YES,0,,Steps,
 Acc,LOB,Line of business (defined at policy level),O,varchar(20),YES,,,LOB,
-Acc,LayerAttachment,Policy layer attachment point (always treated as amount),O,real,YES,0,,Policies,
-Acc,LayerLimit,Policy layer limit (always treated as amount),O,real,YES,0,,Policies,
+Acc,LayerAttachment,Policy layer attachment point (always treated as amount),O,float,YES,0,,Policies,
+Acc,LayerLimit,Policy layer limit (always treated as amount),O,float,YES,0,,Policies,
 Acc,LayerNumber,Layer number,O,int,YES,1,,Policies,
-Acc,LayerParticipation,Insurance company share of the policy layer. Values between 0 to 1 (e.g. 12% entered as 0.12),O,real,YES,1,,Policies,
-Acc,MinimumTIV,Minimum replacement value for which pay-outs to the corresponding damage range will be allowed.,O,real,YES,0,,StepFunctions,
-Acc,PayOutBuilding,Pay-out that covers building gross losses for this step.,CR,real,YES,0,,StepFunctions,Payout
-Acc,PayOutBuildingContent,Pay-out that covers building and content gross losses for this step.,CR,real,YES,0,,StepFunctions,Payout
-Acc,PayOutContent,Pay-out that covers content gross losses for this step.,CR,real,YES,0,,StepFunctions,Payout
-Acc,PolBrokerage,Policy brokerage amount,O,real,YES,0,,Policies,Brokerage
-Acc,PolDed1Building,Policy building deductible,CR,real,YES,0,,PolicyFinancials,Ded
-Acc,PolDed2Other,Policy other building deductible,CR,real,YES,0,,PolicyFinancials,Ded
-Acc,PolDed3Contents,Policy contents deductible,CR,real,YES,0,,PolicyFinancials,Ded
-Acc,PolDed4BI,Policy BI deductible,CR,real,YES,0,,PolicyFinancials,Ded
-Acc,PolDed5PD,Policy PD deductible,CR,real,YES,0,,PolicyFinancials,Ded
-Acc,PolDed6All,Policy blanket deductible,CR,real,YES,0,,PolicyFinancials,Ded
+Acc,LayerParticipation,Insurance company share of the policy layer. Values between 0 to 1 (e.g. 12% entered as 0.12),O,float,YES,1,,Policies,
+Acc,MinimumTIV,Minimum replacement value for which pay-outs to the corresponding damage range will be allowed.,CR,float,YES,0,,Steps,
+Acc,PayOutBuildingContentsEnd,"Pay-out amount for the end-point building and contents losses for this ramp. This field should only be used if you have a ramp policy to indicate the end of the building and contents payout. Otherwise, it should be left blank.",CR,float,YES,0,,Steps,PayoutEnd
+Acc,PayOutBuildingContentsStart,Pay-out amount for the building and contents losses for this step. If a ramp policy then it represents the start payout value.,CR,float,YES,0,,Steps,PayoutStart
+Acc,PayOutBuildingEnd,"Pay-out amount for the end-point building losses for this ramp. This field should only be used if you have a ramp policy to indicate the end of the building payout. Otherwise, it should be left blank.",CR,float,YES,0,,Steps,PayoutEnd
+Acc,PayOutBuildingStart,Pay-out amount for the building losses for this step. If a ramp policy then it represents the start payout value.,CR,float,YES,0,,Steps,PayoutStart
+Acc,PayOutContentsEnd,"Pay-out amount for the end-point contents losses for this ramp. This field should only be used if you have a ramp policy to indicate the end of the contents payout. Otherwise, it should be left blank.",CR,float,YES,0,,Steps,PayoutEnd
+Acc,PayOutContentsStart,Pay-out amount for the contents losses for this step. If a ramp policy then it represents the start payout value.,CR,float,YES,0,,Steps,PayoutStart
+Acc,PayOutLimitBuilding,Pay-out limit for building,CR,float,YES,0,,Steps,PayoutLimit
+Acc,PayOutLimitBuildingContents,Pay-out limit for building and contents,CR,float,YES,0,,Steps,PayoutLimit
+Acc,PayOutLimitContents,Pay-out limit for contents,CR,float,YES,0,,Steps,PayoutLimit
+Acc,PayOutType,"Refers to PayoutBuilding, PayoutContents, PayoutBuildingContents. Payout can be % TIV, % Loss, a monetary amount, or % Limit.",CR,tinyint,YES,,,Steps,PayoutType
+Acc,PolBrokerage,Policy brokerage amount,O,float,YES,0,,Policies,Brokerage
+Acc,PolDed1Building,Policy building deductible,CR,float,YES,0,,PolicyFinancials,Ded
+Acc,PolDed2Other,Policy other building deductible,CR,float,YES,0,,PolicyFinancials,Ded
+Acc,PolDed3Contents,Policy contents deductible,CR,float,YES,0,,PolicyFinancials,Ded
+Acc,PolDed4BI,Policy BI deductible,CR,float,YES,0,,PolicyFinancials,Ded
+Acc,PolDed5PD,Policy PD deductible,CR,float,YES,0,,PolicyFinancials,Ded
+Acc,PolDed6All,Policy blanket deductible,CR,float,YES,0,,PolicyFinancials,Ded
 Acc,PolDedCode1Building,Policy building deductible code,CR,tinyint,YES,0,,PolicyFinancials,DedCode
 Acc,PolDedCode2Other,Policy other building deductible code,CR,tinyint,YES,0,,PolicyFinancials,DedCode
 Acc,PolDedCode3Contents,Policy contents deductible code,CR,tinyint,YES,0,,PolicyFinancials,DedCode
@@ -153,14 +160,14 @@ Acc,PolDedType4BI,Policy BI deductible type,CR,tinyint,YES,0,,PolicyFinancials,D
 Acc,PolDedType5PD,Policy PD deductible type,CR,tinyint,YES,0,,PolicyFinancials,DedType
 Acc,PolDedType6All,Policy blanket deductible type,CR,tinyint,YES,0,,PolicyFinancials,DedType
 Acc,PolExpiryDate,Policy expiry date - in ISO 8601 format: YYYY-MM-DD,O,smalldatetime,YES,,,Policies,ExpiryDate
-Acc,PolGrossPremium,Policy gross premium,O,real,YES,0,,Policies,GrossPremium
+Acc,PolGrossPremium,Policy gross premium,O,float,YES,0,,Policies,GrossPremium
 Acc,PolInceptionDate,Policy inception date - in ISO 8601 format: YYYY-MM-DD,O,smalldatetime,YES,,,Policies,InceptionDate
-Acc,PolLimit1Building,Policy building limit,CR,real,YES,0,,PolicyFinancials,Limit
-Acc,PolLimit2Other,Policy other building limit,CR,real,YES,0,,PolicyFinancials,Limit
-Acc,PolLimit3Contents,Policy contents limit,CR,real,YES,0,,PolicyFinancials,Limit
-Acc,PolLimit4BI,Policy BI limit,CR,real,YES,0,,PolicyFinancials,Limit
-Acc,PolLimit5PD,Policy PD limit,CR,real,YES,0,,PolicyFinancials,Limit
-Acc,PolLimit6All,Policy blanket limit,CR,real,YES,0,,PolicyFinancials,Limit
+Acc,PolLimit1Building,Policy building limit,CR,float,YES,0,,PolicyFinancials,Limit
+Acc,PolLimit2Other,Policy other building limit,CR,float,YES,0,,PolicyFinancials,Limit
+Acc,PolLimit3Contents,Policy contents limit,CR,float,YES,0,,PolicyFinancials,Limit
+Acc,PolLimit4BI,Policy BI limit,CR,float,YES,0,,PolicyFinancials,Limit
+Acc,PolLimit5PD,Policy PD limit,CR,float,YES,0,,PolicyFinancials,Limit
+Acc,PolLimit6All,Policy blanket limit,CR,float,YES,0,,PolicyFinancials,Limit
 Acc,PolLimitCode1Building,Policy building limit code,CR,tinyint,YES,0,,PolicyFinancials,LimitCode
 Acc,PolLimitCode2Other,Policy other building limit code,CR,tinyint,YES,0,,PolicyFinancials,LimitCode
 Acc,PolLimitCode3Contents,Policy contents limit code,CR,tinyint,YES,0,,PolicyFinancials,LimitCode
@@ -173,24 +180,24 @@ Acc,PolLimitType3Contents,Policy contents limit type,CR,tinyint,YES,0,,PolicyFin
 Acc,PolLimitType4BI,Policy BI limit type,CR,tinyint,YES,0,,PolicyFinancials,LimitType
 Acc,PolLimitType5PD,Policy PD limit type,CR,tinyint,YES,0,,PolicyFinancials,LimitType
 Acc,PolLimitType6All,Policy blanket limit type,CR,tinyint,YES,0,,PolicyFinancials,LimitType
-Acc,PolMaxDed1Building,Policy maximum building deductible,CR,real,YES,0,,PolicyFinancials,MaxDed
-Acc,PolMaxDed2Other,Policy maximum other building deductible,CR,real,YES,0,,PolicyFinancials,MaxDed
-Acc,PolMaxDed3Contents,Policy maximum contents deductible,CR,real,YES,0,,PolicyFinancials,MaxDed
-Acc,PolMaxDed4BI,Policy maximum BI deductible,CR,real,YES,0,,PolicyFinancials,MaxDed
-Acc,PolMaxDed5PD,Policy maximum PD deductible,CR,real,YES,0,,PolicyFinancials,MaxDed
-Acc,PolMaxDed6All,Policy maximum blanket deductible,CR,real,YES,0,,PolicyFinancials,MaxDed
-Acc,PolMinDed1Building,Policy minimum building deductible,CR,real,YES,0,,PolicyFinancials,MinDed
-Acc,PolMinDed2Other,Policy minimum other building deductible,CR,real,YES,0,,PolicyFinancials,MinDed
-Acc,PolMinDed3Contents,Policy minimum contents deductible,CR,real,YES,0,,PolicyFinancials,MinDed
-Acc,PolMinDed4BI,Policy minimum BI deductible,CR,real,YES,0,,PolicyFinancials,MinDed
-Acc,PolMinDed5PD,Policy minimum PD deductible,CR,real,YES,0,,PolicyFinancials,MinDed
-Acc,PolMinDed6All,Policy minimum blanket deductible,CR,real,YES,0,,PolicyFinancials,MinDed
-Acc,PolNetPremium,Policy net premium,O,real,YES,0,,Policies,NetPremium
+Acc,PolMaxDed1Building,Policy maximum building deductible,CR,float,YES,0,,PolicyFinancials,MaxDed
+Acc,PolMaxDed2Other,Policy maximum other building deductible,CR,float,YES,0,,PolicyFinancials,MaxDed
+Acc,PolMaxDed3Contents,Policy maximum contents deductible,CR,float,YES,0,,PolicyFinancials,MaxDed
+Acc,PolMaxDed4BI,Policy maximum BI deductible,CR,float,YES,0,,PolicyFinancials,MaxDed
+Acc,PolMaxDed5PD,Policy maximum PD deductible,CR,float,YES,0,,PolicyFinancials,MaxDed
+Acc,PolMaxDed6All,Policy maximum blanket deductible,CR,float,YES,0,,PolicyFinancials,MaxDed
+Acc,PolMinDed1Building,Policy minimum building deductible,CR,float,YES,0,,PolicyFinancials,MinDed
+Acc,PolMinDed2Other,Policy minimum other building deductible,CR,float,YES,0,,PolicyFinancials,MinDed
+Acc,PolMinDed3Contents,Policy minimum contents deductible,CR,float,YES,0,,PolicyFinancials,MinDed
+Acc,PolMinDed4BI,Policy minimum BI deductible,CR,float,YES,0,,PolicyFinancials,MinDed
+Acc,PolMinDed5PD,Policy minimum PD deductible,CR,float,YES,0,,PolicyFinancials,MinDed
+Acc,PolMinDed6All,Policy minimum blanket deductible,CR,float,YES,0,,PolicyFinancials,MinDed
+Acc,PolNetPremium,Policy net premium,O,float,YES,0,,Policies,NetPremium
 Acc,PolNumber,Policy layer number,R,varchar(20),NO,,,Policies,
 Acc,PolPeril,Perils for policy financial terms,CR,varchar(250),YES,,,PolicyFinancials; StepFunctions,PolicyFinancials = PerilCode; StepFunctions = PerilCode
 Acc,PolPerilsCovered,Policy perils covered,R,varchar(250),NO,,,Policies,PerilsCovered
 Acc,PolStatus,"Policy layer status. Aside from predefined values, other single character values for user specific purposes can be used.",O,char(1),YES,,,Policies,
-Acc,PolTax,Policy insurance tax amount,O,real,YES,0,,Policies,Tax
+Acc,PolTax,Policy insurance tax amount,O,float,YES,0,,Policies,Tax
 Acc,PolUserDef1,Policy user defined field,O,varchar(20),YES,,,Policies,
 Acc,PolUserDef2,Policy user defined field,O,varchar(20),YES,,,Policies,
 Acc,PolUserDef3,Policy user defined field,O,varchar(20),YES,,,Policies,
@@ -200,11 +207,15 @@ Acc,PortName,Portfolio name,O,varchar(40),YES,,,Portfolios,
 Acc,PortNotes,"Portfolio notes, longer description than allowed in portfolio name",O,varchar(200),YES,,,Portfolios,
 Acc,PortNumber,Portfolio number,R,varchar(20),NO,,,Portfolios,
 Acc,ProducerName,Producer name (defined at policy level),O,varchar(40),YES,,,Producers,
-Acc,ScaleFactor,"Percentage factor used to scale calculated losses. This value, entered as a decimal, should be the same for all steps for a policy contract and must be a value >0 and ≤1. For example, 0.12 for 12%.",O,real,YES,1,,StepFunctions,
-Acc,StartTriggerBuilding,Starting value of the building damage range over which the corresponding pay-out(s) should be made.,CR,real,YES,0,,StepFunctions,StartTrigger
-Acc,StartTriggerBuildingContent,Starting value of the building and content damage range over which the corresponding pay-out(s) should be made.,CR,real,YES,0,,StepFunctions,StartTrigger
-Acc,StartTriggerContent,Starting value of the content damage range over which the corresponding pay-out(s) should be made.,CR,real,YES,0,,StepFunctions,StartTrigger
+Acc,ScaleFactor,"Percentage factor used to scale calculated losses. This value, entered as a decimal, should be the same for all steps for a policy contract and must be a value >0 and ≤1. For example, 0.12 for 12%.",CR,float,YES,1,,Steps,
 Acc,StepFunctionName,Step function name,CR,varchar(30),YES,,,StepFunctions,
-Acc,StepNumber,Number between 1 and 10 that is used to sort the step function in the correct order.,CR,tinyint,YES,,,StepFunctions,
+Acc,StepNumber,Number between 1 and 10 that is used to sort the step function in the correct order.,CR,tinyint,YES,,,Steps,
 Acc,StepTriggerType,"Code that represents how, and for which coverages, pay-outs are triggered.",CR,tinyint,YES,,,StepFunctions,
+Acc,TriggerBuildingContentsEnd,Ending value of the building and content damage range over which the corresponding pay-out(s) should be made.,CR,float,YES,0,,Steps,TriggerEnd
+Acc,TriggerBuildingContentsStart,Starting value of the building and content damage range over which the corresponding pay-out(s) should be made.,CR,float,YES,0,,Steps,TriggerStart
+Acc,TriggerBuildingEnd,Ending value of the building damage range over which the corresponding pay-out(s) should be made.,CR,float,YES,0,,Steps,TriggerEnd
+Acc,TriggerBuildingStart,Starting value of the building damage range over which the corresponding pay-out(s) should be made.,CR,float,YES,0,,Steps,TriggerStart
+Acc,TriggerContentsEnd,Ending value of the content damage range over which the corresponding pay-out(s) should be made.,CR,float,YES,0,,Steps,TriggerEnd
+Acc,TriggerContentsStart,Starting value of the content damage range over which the corresponding pay-out(s) should be made.,CR,float,YES,0,,Steps,TriggerStart
+Acc,TriggerType,"Refers to TriggerStart and TriggerEnd fields which could be specified as a % TIV, % Loss or a monetary amount.",CR,tinyint,YES,,,Steps,TriggerType
 Acc,Underwriter,Underwriter name,O,varchar(40),YES,,,Policies,

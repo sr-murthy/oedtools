@@ -327,18 +327,18 @@
         "default": 0.0,
         "desc": "Account building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accded2other')": {
         "blank": true,
@@ -351,18 +351,18 @@
         "default": 0.0,
         "desc": "Account other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accded3contents')": {
         "blank": true,
@@ -375,18 +375,18 @@
         "default": 0.0,
         "desc": "Account contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accded4bi')": {
         "blank": true,
@@ -399,18 +399,18 @@
         "default": 0.0,
         "desc": "Account BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accded5pd')": {
         "blank": true,
@@ -423,18 +423,18 @@
         "default": 0.0,
         "desc": "Account PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accded6all')": {
         "blank": true,
@@ -447,18 +447,18 @@
         "default": 0.0,
         "desc": "Account blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accdedcode1building')": {
         "blank": true,
@@ -813,18 +813,18 @@
         "default": 0.0,
         "desc": "Account building limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccLimit1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'acclimit2other')": {
         "blank": true,
@@ -837,18 +837,18 @@
         "default": 0.0,
         "desc": "Account other building limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccLimit2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'acclimit3contents')": {
         "blank": true,
@@ -861,18 +861,18 @@
         "default": 0.0,
         "desc": "Account contents limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccLimit3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'acclimit4bi')": {
         "blank": true,
@@ -885,18 +885,18 @@
         "default": 0.0,
         "desc": "Account BI limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccLimit4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'acclimit5pd')": {
         "blank": true,
@@ -909,18 +909,18 @@
         "default": 0.0,
         "desc": "Account PD limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccLimit5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'acclimit6all')": {
         "blank": true,
@@ -933,18 +933,18 @@
         "default": 0.0,
         "desc": "Account blanket limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccLimit6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'acclimitcode1building')": {
         "blank": true,
@@ -1251,18 +1251,18 @@
         "default": 0.0,
         "desc": "Account maximum building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMaxDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accmaxded2other')": {
         "blank": true,
@@ -1275,18 +1275,18 @@
         "default": 0.0,
         "desc": "Account maximum other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMaxDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accmaxded3contents')": {
         "blank": true,
@@ -1299,18 +1299,18 @@
         "default": 0.0,
         "desc": "Account maximum contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMaxDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accmaxded4bi')": {
         "blank": true,
@@ -1323,18 +1323,18 @@
         "default": 0.0,
         "desc": "Account maximum BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMaxDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accmaxded5pd')": {
         "blank": true,
@@ -1347,18 +1347,18 @@
         "default": 0.0,
         "desc": "Account maximum PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMaxDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accmaxded6all')": {
         "blank": true,
@@ -1371,18 +1371,18 @@
         "default": 0.0,
         "desc": "Account maximum blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMaxDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accminded1building')": {
         "blank": true,
@@ -1395,18 +1395,18 @@
         "default": 0.0,
         "desc": "Account minimum building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMinDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accminded2other')": {
         "blank": true,
@@ -1419,18 +1419,18 @@
         "default": 0.0,
         "desc": "Account minimum other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMinDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accminded3contents')": {
         "blank": true,
@@ -1443,18 +1443,18 @@
         "default": 0.0,
         "desc": "Account minimum contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMinDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accminded4bi')": {
         "blank": true,
@@ -1467,18 +1467,18 @@
         "default": 0.0,
         "desc": "Account minimum BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMinDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accminded5pd')": {
         "blank": true,
@@ -1491,18 +1491,18 @@
         "default": 0.0,
         "desc": "Account minimum PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMinDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accminded6all')": {
         "blank": true,
@@ -1515,18 +1515,18 @@
         "default": 0.0,
         "desc": "Account minimum blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "AccMinDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'accname')": {
         "blank": true,
@@ -1772,18 +1772,18 @@
         "default": 0.0,
         "desc": "Special condition building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condded2other')": {
         "blank": true,
@@ -1796,18 +1796,18 @@
         "default": 0.0,
         "desc": "Special condition other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condded3contents')": {
         "blank": true,
@@ -1820,18 +1820,18 @@
         "default": 0.0,
         "desc": "Special condition contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condded4bi')": {
         "blank": true,
@@ -1844,18 +1844,18 @@
         "default": 0.0,
         "desc": "Special condition BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condded5pd')": {
         "blank": true,
@@ -1868,18 +1868,18 @@
         "default": 0.0,
         "desc": "Special condition PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condded6all')": {
         "blank": true,
@@ -1892,18 +1892,18 @@
         "default": 0.0,
         "desc": "Special condition blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'conddedcode1building')": {
         "blank": true,
@@ -2240,18 +2240,18 @@
         "default": 0.0,
         "desc": "Special condition building limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondLimit1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condlimit2other')": {
         "blank": true,
@@ -2264,18 +2264,18 @@
         "default": 0.0,
         "desc": "Special condition other building limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondLimit2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condlimit3contents')": {
         "blank": true,
@@ -2288,18 +2288,18 @@
         "default": 0.0,
         "desc": "Special condition contents limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondLimit3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condlimit4bi')": {
         "blank": true,
@@ -2312,18 +2312,18 @@
         "default": 0.0,
         "desc": "Special condition BI limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondLimit4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condlimit5pd')": {
         "blank": true,
@@ -2336,18 +2336,18 @@
         "default": 0.0,
         "desc": "Special condition PD limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondLimit5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condlimit6all')": {
         "blank": true,
@@ -2360,18 +2360,18 @@
         "default": 0.0,
         "desc": "Special condition blanket limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondLimit6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condlimitcode1building')": {
         "blank": true,
@@ -2678,18 +2678,18 @@
         "default": 0.0,
         "desc": "Special condition maximum building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMaxDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condmaxded2other')": {
         "blank": true,
@@ -2702,18 +2702,18 @@
         "default": 0.0,
         "desc": "Special condition maximum other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMaxDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condmaxded3contents')": {
         "blank": true,
@@ -2726,18 +2726,18 @@
         "default": 0.0,
         "desc": "Special condition maximum contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMaxDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condmaxded4bi')": {
         "blank": true,
@@ -2750,18 +2750,18 @@
         "default": 0.0,
         "desc": "Special condition maximum BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMaxDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condmaxded5pd')": {
         "blank": true,
@@ -2774,18 +2774,18 @@
         "default": 0.0,
         "desc": "Special condition maximum PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMaxDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condmaxded6all')": {
         "blank": true,
@@ -2798,18 +2798,18 @@
         "default": 0.0,
         "desc": "Special condition maximum blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMaxDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condminded1building')": {
         "blank": true,
@@ -2822,18 +2822,18 @@
         "default": 0.0,
         "desc": "Special condition minimum building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMinDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condminded2other')": {
         "blank": true,
@@ -2846,18 +2846,18 @@
         "default": 0.0,
         "desc": "Special condition minimum other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMinDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condminded3contents')": {
         "blank": true,
@@ -2870,18 +2870,18 @@
         "default": 0.0,
         "desc": "Special condition minimum contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMinDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condminded4bi')": {
         "blank": true,
@@ -2894,18 +2894,18 @@
         "default": 0.0,
         "desc": "Special condition minimum BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMinDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condminded5pd')": {
         "blank": true,
@@ -2918,18 +2918,18 @@
         "default": 0.0,
         "desc": "Special condition minimum PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMinDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condminded6all')": {
         "blank": true,
@@ -2942,18 +2942,18 @@
         "default": 0.0,
         "desc": "Special condition minimum blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "CondMinDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'condname')": {
         "blank": true,
@@ -3039,149 +3039,101 @@
         "secmod": null,
         "sql_dtype": "unsigned int"
     },
+    "('acc', 'debrisremovalfactor')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 1.0,
+        "desc": "A factor for a conditional coverage which tends to apply to all steps and is to cover Debris Removal. This value, entered as a decimal, should be the same for all steps for a policy contract and must be a value >0 and \u22641. For example, 0.12 for 12%.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "DebrisRemovalFactor",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "DebrisRemovalFactor",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
     "('acc', 'deductiblebuilding')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Building deductible that can be used, for example, to account for fire policies before applying step functions.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "DeductibleBuilding",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Deductible",
-        "oed_db_table": "StepFunctions",
+        "oed_db_table": "Steps",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
-    "('acc', 'deductiblebuildingcontent')": {
+    "('acc', 'deductiblebuildingcontents')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
-        "desc": "Building and content deductible that can be used, for example, to account for fire policies before applying step functions.",
+        "desc": "Building and contents deductible that can be used, for example, to account for fire policies before applying step functions.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
-        "field_name": "DeductibleBuildingContent",
-        "numpy_dtype": "float32",
+        "field_name": "DeductibleBuildingContents",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Deductible",
-        "oed_db_table": "StepFunctions",
+        "oed_db_table": "Steps",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
-    "('acc', 'deductiblecontent')": {
+    "('acc', 'deductiblecontents')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Content deductible that can be used, for example, to account for fire policies before applying step functions.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
-        "field_name": "DeductibleContent",
-        "numpy_dtype": "float32",
+        "field_name": "DeductibleContents",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Deductible",
-        "oed_db_table": "StepFunctions",
+        "oed_db_table": "Steps",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
-    },
-    "('acc', 'endtriggerbuilding')": {
-        "blank": true,
-        "column_range": null,
-        "column_sampling": null,
-        "column_validation": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "default": 0.0,
-        "desc": "Ending value of the building damage range over which the corresponding pay-out(s) should be made.",
-        "dtype_range": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "entity": "Acc",
-        "field_name": "EndTriggerBuilding",
-        "numpy_dtype": "float32",
-        "oed_db_field_name": "EndTrigger",
-        "oed_db_table": "StepFunctions",
-        "py_dtype": "float",
-        "required": "CR",
-        "secmod": null,
-        "sql_dtype": "real"
-    },
-    "('acc', 'endtriggerbuildingcontent')": {
-        "blank": true,
-        "column_range": null,
-        "column_sampling": null,
-        "column_validation": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "default": 0.0,
-        "desc": "Ending value of the building and content damage range over which the corresponding pay-out(s) should be made.",
-        "dtype_range": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "entity": "Acc",
-        "field_name": "EndTriggerBuildingContent",
-        "numpy_dtype": "float32",
-        "oed_db_field_name": "EndTrigger",
-        "oed_db_table": "StepFunctions",
-        "py_dtype": "float",
-        "required": "CR",
-        "secmod": null,
-        "sql_dtype": "real"
-    },
-    "('acc', 'endtriggercontent')": {
-        "blank": true,
-        "column_range": null,
-        "column_sampling": null,
-        "column_validation": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "default": 0.0,
-        "desc": "Ending value of the content damage range over which the corresponding pay-out(s) should be made.",
-        "dtype_range": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "entity": "Acc",
-        "field_name": "EndTriggerContent",
-        "numpy_dtype": "float32",
-        "oed_db_field_name": "EndTrigger",
-        "oed_db_table": "StepFunctions",
-        "py_dtype": "float",
-        "required": "CR",
-        "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'expiringaccnumber')": {
         "blank": true,
@@ -3218,6 +3170,54 @@
         "required": "O",
         "secmod": null,
         "sql_dtype": "varchar(20)"
+    },
+    "('acc', 'extraexpensefactor')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 1.0,
+        "desc": "A factor that is applied to main coverage loss for extra expenses. This value, entered as a decimal, should be the same for all steps for a policy contract and must be a value >0 and \u22641. For example, 0.12 for 12%.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "ExtraExpenseFactor",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "ExtraExpenseFactor",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'extraexpenselimit')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "A limit that applies to the total extra expense loss",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "ExtraExpenseLimit",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "ExtraExpenseLimit",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
     },
     "('acc', 'flexiacczzz')": {
         "blank": true,
@@ -3284,24 +3284,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Indicates whether the pay-out is limited by the actual ground-up loss.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "IsLimitAtDamage",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
-        "oed_db_table": "StepFunctions",
+        "oed_db_table": "Steps",
         "py_dtype": "float",
-        "required": "O",
+        "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'layerattachment')": {
         "blank": true,
@@ -3314,18 +3314,18 @@
         "default": 0.0,
         "desc": "Policy layer attachment point (always treated as amount)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "LayerAttachment",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Policies",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'layerlimit')": {
         "blank": true,
@@ -3338,18 +3338,18 @@
         "default": 0.0,
         "desc": "Policy layer limit (always treated as amount)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "LayerLimit",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Policies",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'layernumber')": {
         "blank": true,
@@ -3386,18 +3386,18 @@
         "default": 1.0,
         "desc": "Insurance company share of the policy layer. Values between 0 to 1 (e.g. 12% entered as 0.12)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "LayerParticipation",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Policies",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'lob')": {
         "blank": true,
@@ -3422,120 +3422,288 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Minimum replacement value for which pay-outs to the corresponding damage range will be allowed.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "MinimumTIV",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
-        "oed_db_table": "StepFunctions",
+        "oed_db_table": "Steps",
         "py_dtype": "float",
-        "required": "O",
+        "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
-    "('acc', 'payoutbuilding')": {
+    "('acc', 'payoutbuildingcontentsend')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
-        "desc": "Pay-out that covers building gross losses for this step.",
+        "desc": "Pay-out amount for the end-point building and contents losses for this ramp. This field should only be used if you have a ramp policy to indicate the end of the building and contents payout. Otherwise, it should be left blank.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
-        "field_name": "PayOutBuilding",
-        "numpy_dtype": "float32",
-        "oed_db_field_name": "Payout",
-        "oed_db_table": "StepFunctions",
+        "field_name": "PayOutBuildingContentsEnd",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "PayoutEnd",
+        "oed_db_table": "Steps",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
-    "('acc', 'payoutbuildingcontent')": {
+    "('acc', 'payoutbuildingcontentsstart')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
-        "desc": "Pay-out that covers building and content gross losses for this step.",
+        "desc": "Pay-out amount for the building and contents losses for this step. If a ramp policy then it represents the start payout value.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
-        "field_name": "PayOutBuildingContent",
-        "numpy_dtype": "float32",
-        "oed_db_field_name": "Payout",
-        "oed_db_table": "StepFunctions",
+        "field_name": "PayOutBuildingContentsStart",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "PayoutStart",
+        "oed_db_table": "Steps",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
-    "('acc', 'payoutcontent')": {
+    "('acc', 'payoutbuildingend')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
-        "desc": "Pay-out that covers content gross losses for this step.",
+        "desc": "Pay-out amount for the end-point building losses for this ramp. This field should only be used if you have a ramp policy to indicate the end of the building payout. Otherwise, it should be left blank.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
-        "field_name": "PayOutContent",
-        "numpy_dtype": "float32",
-        "oed_db_field_name": "Payout",
-        "oed_db_table": "StepFunctions",
+        "field_name": "PayOutBuildingEnd",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "PayoutEnd",
+        "oed_db_table": "Steps",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
+    },
+    "('acc', 'payoutbuildingstart')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Pay-out amount for the building losses for this step. If a ramp policy then it represents the start payout value.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "PayOutBuildingStart",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "PayoutStart",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'payoutcontentsend')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Pay-out amount for the end-point contents losses for this ramp. This field should only be used if you have a ramp policy to indicate the end of the contents payout. Otherwise, it should be left blank.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "PayOutContentsEnd",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "PayoutEnd",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'payoutcontentsstart')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Pay-out amount for the contents losses for this step. If a ramp policy then it represents the start payout value.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "PayOutContentsStart",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "PayoutStart",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'payoutlimitbuilding')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Pay-out limit for building",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "PayOutLimitBuilding",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "PayoutLimit",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'payoutlimitbuildingcontents')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Pay-out limit for building and contents",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "PayOutLimitBuildingContents",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "PayoutLimit",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'payoutlimitcontents')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Pay-out limit for contents",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "PayOutLimitContents",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "PayoutLimit",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'payouttype')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": {
+            "start": 0,
+            "stop": 256
+        },
+        "default": null,
+        "desc": "Refers to PayoutBuilding, PayoutContents, PayoutBuildingContents. Payout can be % TIV, % Loss, a monetary amount, or % Limit.",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "PayOutType",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "PayoutType",
+        "oed_db_table": "Steps",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
     },
     "('acc', 'polbrokerage')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Policy brokerage amount",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolBrokerage",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Brokerage",
         "oed_db_table": "Policies",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polded1building')": {
         "blank": true,
@@ -3548,18 +3716,18 @@
         "default": 0.0,
         "desc": "Policy building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polded2other')": {
         "blank": true,
@@ -3572,18 +3740,18 @@
         "default": 0.0,
         "desc": "Policy other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polded3contents')": {
         "blank": true,
@@ -3596,18 +3764,18 @@
         "default": 0.0,
         "desc": "Policy contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polded4bi')": {
         "blank": true,
@@ -3620,18 +3788,18 @@
         "default": 0.0,
         "desc": "Policy BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polded5pd')": {
         "blank": true,
@@ -3644,18 +3812,18 @@
         "default": 0.0,
         "desc": "Policy PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polded6all')": {
         "blank": true,
@@ -3668,18 +3836,18 @@
         "default": 0.0,
         "desc": "Policy blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'poldedcode1building')": {
         "blank": true,
@@ -4028,24 +4196,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Policy gross premium",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolGrossPremium",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "GrossPremium",
         "oed_db_table": "Policies",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polinceptiondate')": {
         "blank": true,
@@ -4076,18 +4244,18 @@
         "default": 0.0,
         "desc": "Policy building limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolLimit1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'pollimit2other')": {
         "blank": true,
@@ -4100,18 +4268,18 @@
         "default": 0.0,
         "desc": "Policy other building limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolLimit2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'pollimit3contents')": {
         "blank": true,
@@ -4124,18 +4292,18 @@
         "default": 0.0,
         "desc": "Policy contents limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolLimit3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'pollimit4bi')": {
         "blank": true,
@@ -4148,18 +4316,18 @@
         "default": 0.0,
         "desc": "Policy BI limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolLimit4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'pollimit5pd')": {
         "blank": true,
@@ -4172,18 +4340,18 @@
         "default": 0.0,
         "desc": "Policy PD limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolLimit5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'pollimit6all')": {
         "blank": true,
@@ -4196,18 +4364,18 @@
         "default": 0.0,
         "desc": "Policy blanket limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolLimit6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'pollimitcode1building')": {
         "blank": true,
@@ -4514,18 +4682,18 @@
         "default": 0.0,
         "desc": "Policy maximum building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMaxDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polmaxded2other')": {
         "blank": true,
@@ -4538,18 +4706,18 @@
         "default": 0.0,
         "desc": "Policy maximum other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMaxDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polmaxded3contents')": {
         "blank": true,
@@ -4562,18 +4730,18 @@
         "default": 0.0,
         "desc": "Policy maximum contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMaxDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polmaxded4bi')": {
         "blank": true,
@@ -4586,18 +4754,18 @@
         "default": 0.0,
         "desc": "Policy maximum BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMaxDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polmaxded5pd')": {
         "blank": true,
@@ -4610,18 +4778,18 @@
         "default": 0.0,
         "desc": "Policy maximum PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMaxDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polmaxded6all')": {
         "blank": true,
@@ -4634,18 +4802,18 @@
         "default": 0.0,
         "desc": "Policy maximum blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMaxDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polminded1building')": {
         "blank": true,
@@ -4658,18 +4826,18 @@
         "default": 0.0,
         "desc": "Policy minimum building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMinDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polminded2other')": {
         "blank": true,
@@ -4682,18 +4850,18 @@
         "default": 0.0,
         "desc": "Policy minimum other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMinDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polminded3contents')": {
         "blank": true,
@@ -4706,18 +4874,18 @@
         "default": 0.0,
         "desc": "Policy minimum contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMinDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polminded4bi')": {
         "blank": true,
@@ -4730,18 +4898,18 @@
         "default": 0.0,
         "desc": "Policy minimum BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMinDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polminded5pd')": {
         "blank": true,
@@ -4754,18 +4922,18 @@
         "default": 0.0,
         "desc": "Policy minimum PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMinDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polminded6all')": {
         "blank": true,
@@ -4778,42 +4946,42 @@
         "default": 0.0,
         "desc": "Policy minimum blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolMinDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polnetpremium')": {
         "blank": true,
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Policy net premium",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolNetPremium",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "NetPremium",
         "oed_db_table": "Policies",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'polnumber')": {
         "blank": false,
@@ -4962,24 +5130,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Policy insurance tax amount",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "PolTax",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Tax",
         "oed_db_table": "Policies",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'poluserdef1')": {
         "blank": true,
@@ -5148,96 +5316,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 1.0,
         "desc": "Percentage factor used to scale calculated losses. This value, entered as a decimal, should be the same for all steps for a policy contract and must be a value >0 and \u22641. For example, 0.12 for 12%.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Acc",
         "field_name": "ScaleFactor",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
-        "oed_db_table": "StepFunctions",
-        "py_dtype": "float",
-        "required": "O",
-        "secmod": null,
-        "sql_dtype": "real"
-    },
-    "('acc', 'starttriggerbuilding')": {
-        "blank": true,
-        "column_range": null,
-        "column_sampling": null,
-        "column_validation": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "default": 0.0,
-        "desc": "Starting value of the building damage range over which the corresponding pay-out(s) should be made.",
-        "dtype_range": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "entity": "Acc",
-        "field_name": "StartTriggerBuilding",
-        "numpy_dtype": "float32",
-        "oed_db_field_name": "StartTrigger",
-        "oed_db_table": "StepFunctions",
+        "oed_db_table": "Steps",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
-    },
-    "('acc', 'starttriggerbuildingcontent')": {
-        "blank": true,
-        "column_range": null,
-        "column_sampling": null,
-        "column_validation": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "default": 0.0,
-        "desc": "Starting value of the building and content damage range over which the corresponding pay-out(s) should be made.",
-        "dtype_range": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "entity": "Acc",
-        "field_name": "StartTriggerBuildingContent",
-        "numpy_dtype": "float32",
-        "oed_db_field_name": "StartTrigger",
-        "oed_db_table": "StepFunctions",
-        "py_dtype": "float",
-        "required": "CR",
-        "secmod": null,
-        "sql_dtype": "real"
-    },
-    "('acc', 'starttriggercontent')": {
-        "blank": true,
-        "column_range": null,
-        "column_sampling": null,
-        "column_validation": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "default": 0.0,
-        "desc": "Starting value of the content damage range over which the corresponding pay-out(s) should be made.",
-        "dtype_range": [
-            -3.4e+38,
-            3.4e+38
-        ],
-        "entity": "Acc",
-        "field_name": "StartTriggerContent",
-        "numpy_dtype": "float32",
-        "oed_db_field_name": "StartTrigger",
-        "oed_db_table": "StepFunctions",
-        "py_dtype": "float",
-        "required": "CR",
-        "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('acc', 'stepfunctionname')": {
         "blank": true,
@@ -5275,7 +5371,7 @@
         "field_name": "StepNumber",
         "numpy_dtype": "uint8",
         "oed_db_field_name": null,
-        "oed_db_table": "StepFunctions",
+        "oed_db_table": "Steps",
         "py_dtype": "int",
         "required": "CR",
         "secmod": null,
@@ -5300,6 +5396,174 @@
         "numpy_dtype": "uint8",
         "oed_db_field_name": null,
         "oed_db_table": "StepFunctions",
+        "py_dtype": "int",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "unsigned tinyint"
+    },
+    "('acc', 'triggerbuildingcontentsend')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Ending value of the building and content damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "TriggerBuildingContentsEnd",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "TriggerEnd",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'triggerbuildingcontentsstart')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Starting value of the building and content damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "TriggerBuildingContentsStart",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "TriggerStart",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'triggerbuildingend')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Ending value of the building damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "TriggerBuildingEnd",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "TriggerEnd",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'triggerbuildingstart')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Starting value of the building damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "TriggerBuildingStart",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "TriggerStart",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'triggercontentsend')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Ending value of the content damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "TriggerContentsEnd",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "TriggerEnd",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'triggercontentsstart')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "default": 0.0,
+        "desc": "Starting value of the content damage range over which the corresponding pay-out(s) should be made.",
+        "dtype_range": [
+            -1.79e+308,
+            1.79e+308
+        ],
+        "entity": "Acc",
+        "field_name": "TriggerContentsStart",
+        "numpy_dtype": "float64",
+        "oed_db_field_name": "TriggerStart",
+        "oed_db_table": "Steps",
+        "py_dtype": "float",
+        "required": "CR",
+        "secmod": null,
+        "sql_dtype": "float"
+    },
+    "('acc', 'triggertype')": {
+        "blank": true,
+        "column_range": null,
+        "column_sampling": null,
+        "column_validation": {
+            "start": 0,
+            "stop": 256
+        },
+        "default": null,
+        "desc": "Refers to TriggerStart and TriggerEnd fields which could be specified as a % TIV, % Loss or a monetary amount.",
+        "dtype_range": {
+            "start": 0,
+            "stop": 256
+        },
+        "entity": "Acc",
+        "field_name": "TriggerType",
+        "numpy_dtype": "uint8",
+        "oed_db_field_name": "TriggerType",
+        "oed_db_table": "Steps",
         "py_dtype": "int",
         "required": "CR",
         "secmod": null,

@@ -330,7 +330,7 @@ def sample_column(schema_type, header, str_width=None, size=10):
         )
     elif py_dtype is float:
         return (
-            np.random.uniform(min(use_range), max(use_range), size=size).tolist()
+            np.random.uniform(max(min(use_range), -1.79e+307), min(max(use_range), +1.79e+307), size=size).tolist()
         )
     elif py_dtype is str and column_range is not None and sampling_func is None:
         return [

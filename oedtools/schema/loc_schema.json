@@ -50,7 +50,7 @@
             "stop": 256
         },
         "default": 0,
-        "desc": " \nCode for the appurtenant building, such as shed or detached garage",
+        "desc": " \r\nCode for the appurtenant building, such as shed or detached garage",
         "dtype_range": {
             "start": 0,
             "stop": 256
@@ -80,12 +80,12 @@
             10,
             11,
             12,
-            "2B",
             13,
+            14,
             15,
             16,
             17,
-            14,
+            18,
             19,
             20,
             21,
@@ -100,44 +100,44 @@
             30,
             31,
             32,
+            "NR",
             33,
-            34,
             35,
-            36,
+            "GA",
             37,
+            36,
             38,
-            "HX",
-            40,
+            "RG",
             41,
-            42,
-            39,
-            "EX",
+            40,
+            43,
             44,
+            42,
             46,
             47,
             48,
-            "SD",
+            45,
             50,
             51,
             52,
-            45,
-            "HI",
+            53,
+            54,
             55,
             56,
             57,
             58,
             59,
             60,
-            53,
+            61,
             62,
-            "BT",
             63,
             64,
+            "TF",
             65,
             67,
-            68,
             66,
-            70,
+            68,
+            69,
             71,
             72,
             73,
@@ -146,43 +146,43 @@
             76,
             77,
             78,
+            "BS",
+            "KA",
             79,
-            80,
             81,
-            82,
             83,
-            84,
+            "WY",
+            80,
             85,
             86,
-            87,
             88,
-            89,
-            "BL",
-            91,
-            "DA",
-            93,
+            87,
             90,
+            91,
             92,
+            93,
             94,
-            95,
-            98,
-            99,
+            89,
             96,
             97,
-            102,
+            "MS",
+            99,
+            "2A",
             100,
+            102,
+            101,
             104,
-            105,
+            98,
             106,
-            "TR",
-            108,
-            109,
-            103,
-            111,
             107,
+            105,
+            "JE",
+            "CV",
+            111,
+            109,
             113,
+            108,
             115,
-            "TS",
             117,
             119,
             121,
@@ -190,167 +190,176 @@
             125,
             127,
             129,
+            "HU",
             131,
             408,
             133,
             135,
             137,
+            "QDL",
             139,
             141,
-            "W",
             143,
             145,
+            "IG",
             147,
             149,
             150,
-            "GY",
+            "SA",
             151,
-            "NN",
             153,
-            "NC",
-            "BA",
+            "WN",
+            "LA",
+            34,
+            39,
             200,
             201,
-            "CH",
+            202,
             203,
             204,
             205,
             206,
+            "HS",
             207,
-            208,
             209,
+            208,
             210,
-            202,
-            "DG",
-            43,
+            "MK",
+            "IV",
+            "MI",
             220,
             230,
+            "BN",
             240,
-            "DC",
-            "QDL",
+            "NW",
             49,
+            "SN",
             250,
-            "WR",
-            "WS",
-            54,
-            "TW",
-            "NH",
+            409,
+            "NE",
+            "DA",
+            "VA",
+            "S",
+            "NM",
             300,
             301,
+            "IL",
             302,
-            303,
             304,
             305,
             306,
             307,
+            303,
             308,
-            309,
             310,
-            61,
-            312,
             311,
+            312,
+            309,
             314,
-            315,
+            313,
             316,
-            317,
+            "SM",
             318,
             319,
+            317,
             320,
-            "MO",
             322,
             321,
             324,
-            323,
+            "CH",
+            "ZE",
             325,
+            323,
             330,
-            69,
+            "IC",
             350,
-            "OCS",
-            "A2",
-            "CF",
+            70,
+            "ID",
+            "LN",
+            "SW",
             400,
             401,
+            403,
             402,
-            "KT",
-            "FL",
-            404,
             405,
-            407,
             406,
-            409,
+            407,
+            "DC",
+            404,
             410,
             411,
             412,
             413,
-            414,
+            82,
             415,
             416,
             417,
             418,
+            414,
             420,
-            "SP",
+            84,
             430,
-            "SE",
-            "HS",
+            "ACT",
             440,
-            "TN",
-            "ID",
-            18,
-            "L",
-            "OH",
-            "CT",
-            "YO",
+            "MD",
+            "NH",
+            "SY",
+            95,
+            "WV",
             500,
             501,
             502,
             503,
+            "IM",
             504,
             505,
             506,
-            101,
+            "M",
             510,
+            "BD",
+            "NJ",
+            103,
             520,
-            "NP",
-            "A4",
-            "EH",
+            "RI",
             530,
-            "BR",
             550,
-            "IC",
-            "2A",
-            "GL",
-            "WF",
+            "SG",
+            "EX",
+            "A3",
+            "OR",
+            "NT",
+            "DE",
             600,
-            601,
+            "BB",
             602,
             603,
-            604,
+            "SL",
             605,
             606,
             607,
             608,
-            "GA",
             609,
             610,
-            612,
             611,
+            612,
+            613,
             614,
             615,
             616,
             617,
-            613,
+            "HX",
             620,
-            "LL",
+            "SC",
+            "AB",
+            "CO",
+            "OH",
             630,
-            "WV",
             640,
-            "CV",
             650,
+            "WC",
             660,
-            "OX",
-            "WN",
-            "OL",
-            "PH",
+            "KT",
+            "WR",
             700,
             701,
             702,
@@ -361,37 +370,40 @@
             707,
             708,
             709,
-            "CM",
             710,
+            "WI",
+            "IA",
             720,
-            "LD",
-            "DE",
             730,
-            "WA",
-            "LA",
+            "NY",
+            "LS",
+            "PL",
             760,
-            "CA",
-            "TQ",
-            "HG",
             800,
             801,
             802,
-            803,
+            "LU",
             804,
+            803,
             810,
+            "SE",
             820,
-            "LE",
-            "DN",
             830,
-            "HA",
+            "PA",
             840,
             850,
+            "L",
             860,
-            "UT",
-            "LU",
-            "MS",
+            "MN",
+            "GU",
+            "GY",
+            "HA",
+            "CA",
+            "TN",
+            "SO",
+            "CF",
             888,
-            "KW",
+            "NC",
             901,
             902,
             903,
@@ -406,141 +418,129 @@
             912,
             913,
             914,
-            "S",
+            915,
             916,
             917,
             918,
-            915,
-            920,
             919,
+            920,
             921,
-            "HU",
-            "NW",
-            923,
             922,
+            923,
+            "KW",
             930,
-            "IG",
             940,
-            "DT",
-            "A3",
             950,
-            "E",
-            "ND",
-            "PR",
-            "MK",
-            999,
-            1010,
-            "OK",
-            1020,
-            "DD",
+            "ML",
+            601,
             "AK",
+            604,
+            999,
+            "EH",
+            1010,
+            1020,
             1030,
+            "NP",
             1040,
-            "TA",
-            "LS",
-            "NSW",
-            "PO",
-            "EC",
-            "WD",
-            "NE",
-            "EN",
+            "CW",
+            "VIC",
+            "A4",
+            "B",
+            "KS",
+            "SD",
             1110,
             1120,
-            "CR",
             1130,
-            "TAS",
-            "OR",
+            "HG",
             1140,
-            "FK",
+            "TR",
             1150,
-            "AB",
+            "OL",
             1160,
+            "WD",
             1170,
-            "HD",
-            "BB",
-            1200,
-            "IP",
-            "MN",
-            "NY",
-            "SJ",
-            "SN",
-            "SY",
-            "SS",
-            "DH",
-            "VIC",
-            "NG",
-            "NR",
-            "UB",
-            "MT",
-            "SC",
-            "NV",
-            "PE",
-            "SG",
-            "HP",
-            "G",
-            "RM",
-            "PA",
-            "RI",
-            "RG",
-            "BD",
-            "AZ",
-            "VA",
-            "CB",
-            "TD",
-            "KY",
-            "BH",
-            "HR",
-            "IN",
-            "WC",
-            "MA",
-            "BN",
-            "MI",
-            "WI",
-            "IL",
-            "N",
-            "AR",
-            "NT",
-            "SM",
-            "CW",
-            "IM",
-            313,
-            "M",
-            "JE",
-            "ZE",
-            "ME",
-            "ML",
-            "NM",
-            "SL",
-            "BS",
-            "FY",
-            "IA",
-            "DY",
-            "GU",
-            "WY",
-            "SK",
-            "A1",
-            "PL",
-            "SA",
-            "NJ",
-            "ST",
-            "VT",
-            "TF",
-            "IV",
-            "RH",
-            "KS",
-            "DL",
-            "SR",
-            "B",
-            "SW",
             "TX",
+            1200,
+            "FK",
+            "TA",
+            "UT",
             "AL",
-            "KA",
-            "LN",
-            "MD",
-            "SO",
-            "ACT",
-            403,
-            "CO"
+            "FL",
+            "EN",
+            "E",
+            "PE",
+            "KY",
+            "DD",
+            "CM",
+            "BH",
+            "IP",
+            "BT",
+            "AZ",
+            "WS",
+            "MO",
+            "CB",
+            "VT",
+            "WF",
+            "AR",
+            "BA",
+            "GL",
+            "DY",
+            "DG",
+            "TW",
+            "2B",
+            "WA",
+            "HP",
+            "TD",
+            "DL",
+            "FY",
+            "EC",
+            "LD",
+            "HR",
+            "TQ",
+            "IN",
+            "SS",
+            "ME",
+            "NSW",
+            "NV",
+            "LL",
+            315,
+            "SR",
+            "NN",
+            "OX",
+            "HI",
+            "G",
+            "NG",
+            "TAS",
+            "DN",
+            "W",
+            "MA",
+            "DT",
+            "UB",
+            "PR",
+            "SK",
+            "N",
+            "RM",
+            "A2",
+            "SJ",
+            "CR",
+            "DH",
+            "OCS",
+            "RH",
+            "A1",
+            "HD",
+            "PH",
+            "SP",
+            "MT",
+            "BR",
+            "OK",
+            "ND",
+            "BL",
+            "ST",
+            "YO",
+            "CT",
+            "PO",
+            "TS",
+            "LE"
         ],
         "column_sampling": "column range",
         "column_validation": "column range",
@@ -580,24 +580,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": -999.0,
         "desc": "Water surface elevation (relative to datum - this is NOT a flood depth) corresponding to a flood having a 1% probability of being equaled or exceeded in a given year. A value of -999 for this field represents unknown/default.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "BaseFloodElevation",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "LocationDetails",
         "py_dtype": "float",
         "required": "O",
         "secmod": 1.0,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'basefloodelevationunit')": {
         "blank": true,
@@ -676,24 +676,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 365.0,
         "desc": "BI period of indemnity (in days, in increments of 0.5 days). Default value = 365 (1 year).",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "BIPOI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'bipreparedness')": {
         "blank": true,
@@ -754,18 +754,18 @@
         "default": null,
         "desc": "Business Interruption (BI) Total Insured Value",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "BITIV",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "R",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'biwaitingperiod')": {
         "blank": true,
@@ -868,24 +868,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": -999.0,
         "desc": "Total height of the structure",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "BuildingHeight",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "LocationDetails",
         "py_dtype": "float",
         "required": "O",
         "secmod": 1.0,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'buildingheightunit')": {
         "blank": true,
@@ -964,18 +964,18 @@
         "default": null,
         "desc": "Building Total Insured Value",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "BuildingTIV",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "R",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'buildingtype')": {
         "blank": true,
@@ -3383,18 +3383,18 @@
         "default": null,
         "desc": "Contents Total Insured Value",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "ContentsTIV",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "R",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'contentswindvuln')": {
         "blank": true,
@@ -3948,24 +3948,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": -999.0,
         "desc": "Height of the lowest floor (above ground) of the building with respect to local ground elevation (NOT relative to datum). First floor in the US is identical to ground floor in Europe.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "FirstFloorHeight",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "LocationDetails",
         "py_dtype": "float",
         "required": "O",
         "secmod": 1.0,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'firstfloorheightunit')": {
         "blank": true,
@@ -4062,24 +4062,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": -999.0,
         "desc": "Height of any site specific flood defenses protecting the property with respect to local ground elevation (NOT to datum).",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "FloodDefenseHeight",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "LocationDetails",
         "py_dtype": "float",
         "required": "O",
         "secmod": 1.0,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'flooddefenseheightunit')": {
         "blank": true,
@@ -4128,24 +4128,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Floor area: the total area across all floors",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "FloorArea",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'floorareaunit')": {
         "blank": true,
@@ -4248,18 +4248,18 @@
         "default": null,
         "desc": "Geocode quality (values between 0 and 1 e.g. 80% is entered as 0.8)",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "GeocodeQuality",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'geocoder')": {
         "blank": true,
@@ -4488,24 +4488,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": -999.0,
         "desc": "Flood or Windstorm - Elevation of the local ground surface at the building at this location. This field represents the elevation of the grade (local ground surface) with respect to the datum (e.g. NAVD88).",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "GroundElevation",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "LocationDetails",
         "py_dtype": "float",
         "required": "O",
         "secmod": 1.0,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'groundelevationunit')": {
         "blank": true,
@@ -4680,24 +4680,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Brokerage amount at location level",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocBrokerage",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Brokerage",
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'loccurrency')": {
         "blank": false,
@@ -5027,18 +5027,18 @@
         "default": 0.0,
         "desc": "Location building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locded2other')": {
         "blank": true,
@@ -5051,18 +5051,18 @@
         "default": 0.0,
         "desc": "Location other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locded3contents')": {
         "blank": true,
@@ -5075,18 +5075,18 @@
         "default": 0.0,
         "desc": "Location contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locded4bi')": {
         "blank": true,
@@ -5099,18 +5099,18 @@
         "default": 0.0,
         "desc": "Location BI deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locded5pd')": {
         "blank": true,
@@ -5123,18 +5123,18 @@
         "default": 0.0,
         "desc": "Location PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locded6all')": {
         "blank": true,
@@ -5147,18 +5147,18 @@
         "default": 0.0,
         "desc": "Location site deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Ded",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locdedcode1building')": {
         "blank": true,
@@ -5507,24 +5507,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Gross premium amount at location level",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocGrossPremium",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "GrossPremium",
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locgroup')": {
         "blank": true,
@@ -5573,18 +5573,18 @@
         "default": 0.0,
         "desc": "Location building limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocLimit1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'loclimit2other')": {
         "blank": true,
@@ -5597,18 +5597,18 @@
         "default": 0.0,
         "desc": "Location other building limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocLimit2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'loclimit3contents')": {
         "blank": true,
@@ -5621,18 +5621,18 @@
         "default": 0.0,
         "desc": "Location contents limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocLimit3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'loclimit4bi')": {
         "blank": true,
@@ -5645,18 +5645,18 @@
         "default": 0.0,
         "desc": "Location BI limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocLimit4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'loclimit5pd')": {
         "blank": true,
@@ -5669,18 +5669,18 @@
         "default": 0.0,
         "desc": "Location PD limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocLimit5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'loclimit6all')": {
         "blank": true,
@@ -5693,18 +5693,18 @@
         "default": 0.0,
         "desc": "Location site limit",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocLimit6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Limit",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'loclimitcode1building')": {
         "blank": true,
@@ -6011,18 +6011,18 @@
         "default": 0.0,
         "desc": "Location maximum building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMaxDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locmaxded2other')": {
         "blank": true,
@@ -6035,18 +6035,18 @@
         "default": 0.0,
         "desc": "Location maximum other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMaxDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locmaxded3contents')": {
         "blank": true,
@@ -6059,18 +6059,18 @@
         "default": 0.0,
         "desc": "Location maximum contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMaxDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locmaxded4bi')": {
         "blank": true,
@@ -6083,18 +6083,18 @@
         "default": 0.0,
         "desc": "Location maximum bi deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMaxDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locmaxded5pd')": {
         "blank": true,
@@ -6107,18 +6107,18 @@
         "default": 0.0,
         "desc": "Location maximum PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMaxDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locmaxded6all')": {
         "blank": true,
@@ -6131,18 +6131,18 @@
         "default": 0.0,
         "desc": "Location maximum blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMaxDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MaxDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locminded1building')": {
         "blank": true,
@@ -6155,18 +6155,18 @@
         "default": 0.0,
         "desc": "Location minimum building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMinDed1Building",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locminded2other')": {
         "blank": true,
@@ -6179,18 +6179,18 @@
         "default": 0.0,
         "desc": "Location minimum other building deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMinDed2Other",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locminded3contents')": {
         "blank": true,
@@ -6203,18 +6203,18 @@
         "default": 0.0,
         "desc": "Location minimum contents deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMinDed3Contents",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locminded4bi')": {
         "blank": true,
@@ -6227,18 +6227,18 @@
         "default": 0.0,
         "desc": "Location minimum bi deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMinDed4BI",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locminded5pd')": {
         "blank": true,
@@ -6251,18 +6251,18 @@
         "default": 0.0,
         "desc": "Location minimum PD deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMinDed5PD",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locminded6all')": {
         "blank": true,
@@ -6275,18 +6275,18 @@
         "default": 0.0,
         "desc": "Location minimum blanket deductible",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocMinDed6All",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "MinDed",
         "oed_db_table": "LocationFinancials",
         "py_dtype": "float",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locname')": {
         "blank": true,
@@ -6311,24 +6311,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Net premium at location level",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocNetPremium",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "NetPremium",
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locnumber')": {
         "blank": false,
@@ -6359,18 +6359,18 @@
         "default": 1.0,
         "desc": "Percentage of risk that the insurer covers for this location. Values between 0 to 1 (e.g. 12% enterd as 0.12). Usually used in binders or offshore.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocParticipation",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Participation",
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locperil')": {
         "blank": true,
@@ -6483,24 +6483,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Insurance tax amount at location level",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "LocTax",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": "Tax",
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'locuserdef1')": {
         "blank": true,
@@ -6669,24 +6669,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": 0.0,
         "desc": "Ground-Up non-cat loss value prior to the application of non-cat policy terms",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "NonCatGroundUpLoss",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'numberofbuildings')": {
         "blank": true,
@@ -9040,18 +9040,18 @@
         "default": null,
         "desc": "Other Building Insured Value (primarily aimed at specific US policies). For motor exposures, use this field for TIV along with appropriate motor construction code.",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "OtherTIV",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "Locations",
         "py_dtype": "float",
         "required": "R",
         "secmod": null,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'packaging')": {
         "blank": true,
@@ -9154,24 +9154,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": -999.0,
         "desc": "Percent sprinklered. Values between 0 and 1 inclusive (0.5 = 50%); -999 is unknown",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "PercentSprinklered",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "LocationDetails",
         "py_dtype": "float",
         "required": "O",
         "secmod": 1.0,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'portnumber')": {
         "blank": false,
@@ -18824,24 +18824,24 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "default": -999.0,
         "desc": "Storm leakage percentage (0% to 100%) for Wind only policies",
         "dtype_range": [
-            -3.4e+38,
-            3.4e+38
+            -1.79e+308,
+            1.79e+308
         ],
         "entity": "Loc",
         "field_name": "SurgeLeakage",
-        "numpy_dtype": "float32",
+        "numpy_dtype": "float64",
         "oed_db_field_name": null,
         "oed_db_table": "LocationDetails",
         "py_dtype": "float",
         "required": "O",
         "secmod": 1.0,
-        "sql_dtype": "real"
+        "sql_dtype": "float"
     },
     "('loc', 'tallonestory')": {
         "blank": true,
@@ -18996,7 +18996,7 @@
             "stop": 256
         },
         "default": 0,
-        "desc": " \nCode that represents a structure that is physically attached to the building, such as garage or balcony",
+        "desc": " \r\nCode that represents a structure that is physically attached to the building, such as garage or balcony",
         "dtype_range": {
             "start": 0,
             "stop": 256
