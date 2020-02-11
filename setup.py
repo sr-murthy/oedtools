@@ -9,6 +9,8 @@ from distutils.log import WARN, ERROR
 
 from setuptools import find_packages, setup, Command
 
+import oedtools
+
 
 SETUP_DIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -22,15 +24,7 @@ def get_install_requirements():
     with io.open(os.path.join(SETUP_DIR, 'requirements-package.in'), encoding='utf-8') as requirements:
         return requirements.readlines()
 
-
-def get_version():
-    """
-    Return package version as listed in `__version__` in `init.py`.
-    """
-    with io.open(os.path.join(SETUP_DIR, 'oedtools', '__init__.py'), encoding='utf-8') as f:
-        return re.search('__version__ = [\'"]([^\'"]+)[\'"]', f.read()).group(1)
-
-version = get_version()
+version = oedtools.__version__
 requirements = get_install_requirements()
 readme = get_readme()
 
