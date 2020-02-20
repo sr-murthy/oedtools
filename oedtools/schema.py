@@ -23,7 +23,6 @@ import os
 from ast import literal_eval
 from collections import OrderedDict
 from itertools import groupby
-from json import JSONDecodeError
 
 import pandas as pd
 import numpy as np
@@ -313,7 +312,7 @@ def sample_column(schema_type, header, str_width=None, size=10):
 
     try:
         sampling_info = json.loads(col_schema['column_sampling'])
-    except (JSONDecodeError, TypeError, ValueError):
+    except (json.JSONDecodeError, TypeError, ValueError):
         sampling_info = sampling_func = None
     else:
         sampling_func = get_method(sampling_info['func'])
