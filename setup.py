@@ -1,7 +1,6 @@
 import glob
 import io
 import os
-import re
 import shutil
 import sys
 
