@@ -7,7 +7,7 @@
 
 `oedtools` is a command-line file validation, query and data sampling toolkit for the <a href="https://github.com/Simplitium/OED" target="_blank">Simplitium Open Exposure Data (OED)</a> (re)insurance exposure data format.
 
-**Note**: the repository and package are based on the current OED version 1.1.0 - this is stored in the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt" target="_blank">schema version</a> file.
+**Note**: the repository and package are based on the current OED version 1.1.1 - this is stored in the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/schema_version.txt" target="_blank">schema version</a> file.
 
 The main user-level features currently include
 
@@ -41,13 +41,13 @@ The command line interface is invoked via `oed` and provides three main command 
 * `query` (`oed query`) - for querying schema columns based on various schema properties
 * `sample` (`oed sample`) - for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.1.0`) the package uses, or the package version (currently `0.7.0`). Usage is
+There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.1.1`) the package uses, or the package version (currently `0.8.0`). Usage is
 
     $ oed version
-    1.1.0
+    1.1.1
 
     $ oed version --package
-    0.7.0
+    0.8.0
 
 ### Validation
 
