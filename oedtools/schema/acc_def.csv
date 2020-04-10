@@ -6,12 +6,12 @@ Acc,AccDed3Contents,Account contents deductible,CR,float,YES,0,,AccountFinancial
 Acc,AccDed4BI,Account BI deductible,CR,float,YES,0,,AccountFinancials,Ded
 Acc,AccDed5PD,Account PD deductible,CR,float,YES,0,,AccountFinancials,Ded
 Acc,AccDed6All,Account blanket deductible,CR,float,YES,0,,AccountFinancials,Ded
-Acc,AccDedCode1Building,Account building deductible code,CR,tinyint,YES,0,,AccountFinancials,DedCode
-Acc,AccDedCode2Other,Account other building deductible code,CR,tinyint,YES,0,,AccountFinancials,DedCode
-Acc,AccDedCode3Contents,Account contents deductible code,CR,tinyint,YES,0,,AccountFinancials,DedCode
-Acc,AccDedCode4BI,Account BI deductible code,CR,tinyint,YES,0,,AccountFinancials,DedCode
-Acc,AccDedCode5PD,Account PD deductible code,CR,tinyint,YES,0,,AccountFinancials,DedCode
-Acc,AccDedCode6All,Account blanket deductible code,CR,tinyint,YES,0,,AccountFinancials,DedCode
+Acc,AccDedCode1Building,Account building deductible code,O,tinyint,YES,0,,AccountFinancials,DedCode
+Acc,AccDedCode2Other,Account other building deductible code,O,tinyint,YES,0,,AccountFinancials,DedCode
+Acc,AccDedCode3Contents,Account contents deductible code,O,tinyint,YES,0,,AccountFinancials,DedCode
+Acc,AccDedCode4BI,Account BI deductible code,O,tinyint,YES,0,,AccountFinancials,DedCode
+Acc,AccDedCode5PD,Account PD deductible code,O,tinyint,YES,0,,AccountFinancials,DedCode
+Acc,AccDedCode6All,Account blanket deductible code,O,tinyint,YES,0,,AccountFinancials,DedCode
 Acc,AccDedType1Building,Account building deductible type,CR,tinyint,YES,0,,AccountFinancials,DedType
 Acc,AccDedType2Other,Account other building deductible type,CR,tinyint,YES,0,,AccountFinancials,DedType
 Acc,AccDedType3Contents,Account contents deductible type,CR,tinyint,YES,0,,AccountFinancials,DedType
@@ -25,12 +25,12 @@ Acc,AccLimit3Contents,Account contents limit,CR,float,YES,0,,AccountFinancials,L
 Acc,AccLimit4BI,Account BI limit,CR,float,YES,0,,AccountFinancials,Limit
 Acc,AccLimit5PD,Account PD limit,CR,float,YES,0,,AccountFinancials,Limit
 Acc,AccLimit6All,Account blanket limit,CR,float,YES,0,,AccountFinancials,Limit
-Acc,AccLimitCode1Building,Account building limit code,CR,tinyint,YES,0,,AccountFinancials,LimitCode
-Acc,AccLimitCode2Other,Account other building limit code,CR,tinyint,YES,0,,AccountFinancials,LimitCode
-Acc,AccLimitCode3Contents,Account contents limit code,CR,tinyint,YES,0,,AccountFinancials,LimitCode
-Acc,AccLimitCode4BI,Account BI limit code,CR,tinyint,YES,0,,AccountFinancials,LimitCode
-Acc,AccLimitCode5PD,Account PD limit code,CR,tinyint,YES,0,,AccountFinancials,LimitCode
-Acc,AccLimitCode6All,Account blanket limit code,CR,tinyint,YES,0,,AccountFinancials,LimitCode
+Acc,AccLimitCode1Building,Account building limit code,O,tinyint,YES,0,,AccountFinancials,LimitCode
+Acc,AccLimitCode2Other,Account other building limit code,O,tinyint,YES,0,,AccountFinancials,LimitCode
+Acc,AccLimitCode3Contents,Account contents limit code,O,tinyint,YES,0,,AccountFinancials,LimitCode
+Acc,AccLimitCode4BI,Account BI limit code,O,tinyint,YES,0,,AccountFinancials,LimitCode
+Acc,AccLimitCode5PD,Account PD limit code,O,tinyint,YES,0,,AccountFinancials,LimitCode
+Acc,AccLimitCode6All,Account blanket limit code,O,tinyint,YES,0,,AccountFinancials,LimitCode
 Acc,AccLimitType1Building,Account building limit type,CR,tinyint,YES,0,,AccountFinancials,LimitType
 Acc,AccLimitType2Other,Account other building limit type,CR,tinyint,YES,0,,AccountFinancials,LimitType
 Acc,AccLimitType3Contents,Account contents limit type,CR,tinyint,YES,0,,AccountFinancials,LimitType
@@ -66,12 +66,12 @@ Acc,CondDed3Contents,Special condition contents deductible,CR,float,YES,0,,Condi
 Acc,CondDed4BI,Special condition BI deductible,CR,float,YES,0,,ConditionFinancials,Ded
 Acc,CondDed5PD,Special condition PD deductible,CR,float,YES,0,,ConditionFinancials,Ded
 Acc,CondDed6All,Special condition blanket deductible,CR,float,YES,0,,ConditionFinancials,Ded
-Acc,CondDedCode1Building,Special condition building deductible code,CR,tinyint,YES,0,,ConditionFinancials,DedCode
-Acc,CondDedCode2Other,Special condition other building deductible code,CR,tinyint,YES,0,,ConditionFinancials,DedCode
-Acc,CondDedCode3Contents,Special condition contents deductible code,CR,tinyint,YES,0,,ConditionFinancials,DedCode
-Acc,CondDedCode4BI,Special condition BI deductible code,CR,tinyint,YES,0,,ConditionFinancials,DedCode
-Acc,CondDedCode5PD,Special condition PD deductible code,CR,tinyint,YES,0,,ConditionFinancials,DedCode
-Acc,CondDedCode6All,Special condition blanket deductible code,CR,tinyint,YES,0,,ConditionFinancials,DedCode
+Acc,CondDedCode1Building,Special condition building deductible code,O,tinyint,YES,0,,ConditionFinancials,DedCode
+Acc,CondDedCode2Other,Special condition other building deductible code,O,tinyint,YES,0,,ConditionFinancials,DedCode
+Acc,CondDedCode3Contents,Special condition contents deductible code,O,tinyint,YES,0,,ConditionFinancials,DedCode
+Acc,CondDedCode4BI,Special condition BI deductible code,O,tinyint,YES,0,,ConditionFinancials,DedCode
+Acc,CondDedCode5PD,Special condition PD deductible code,O,tinyint,YES,0,,ConditionFinancials,DedCode
+Acc,CondDedCode6All,Special condition blanket deductible code,O,tinyint,YES,0,,ConditionFinancials,DedCode
 Acc,CondDedType1Building,Special condition building deductible type,CR,tinyint,YES,0,,ConditionFinancials,DedType
 Acc,CondDedType2Other,Special condition other building deductible type,CR,tinyint,YES,0,,ConditionFinancials,DedType
 Acc,CondDedType3Contents,Special condition contents deductible type,CR,tinyint,YES,0,,ConditionFinancials,DedType
@@ -84,12 +84,12 @@ Acc,CondLimit3Contents,Special condition contents limit,CR,float,YES,0,,Conditio
 Acc,CondLimit4BI,Special condition BI limit,CR,float,YES,0,,ConditionFinancials,Limit
 Acc,CondLimit5PD,Special condition PD limit,CR,float,YES,0,,ConditionFinancials,Limit
 Acc,CondLimit6All,Special condition blanket limit,CR,float,YES,0,,ConditionFinancials,Limit
-Acc,CondLimitCode1Building,Special condition building limit code,CR,tinyint,YES,0,,ConditionFinancials,LimitCode
-Acc,CondLimitCode2Other,Special condition other building limit code,CR,tinyint,YES,0,,ConditionFinancials,LimitCode
-Acc,CondLimitCode3Contents,Special condition contents limit code,CR,tinyint,YES,0,,ConditionFinancials,LimitCode
-Acc,CondLimitCode4BI,Special condition BI limit code,CR,tinyint,YES,0,,ConditionFinancials,LimitCode
-Acc,CondLimitCode5PD,Special condition PD limit code,CR,tinyint,YES,0,,ConditionFinancials,LimitCode
-Acc,CondLimitCode6All,Special condition blanket limit code,CR,tinyint,YES,0,,ConditionFinancials,LimitCode
+Acc,CondLimitCode1Building,Special condition building limit code,O,tinyint,YES,0,,ConditionFinancials,LimitCode
+Acc,CondLimitCode2Other,Special condition other building limit code,O,tinyint,YES,0,,ConditionFinancials,LimitCode
+Acc,CondLimitCode3Contents,Special condition contents limit code,O,tinyint,YES,0,,ConditionFinancials,LimitCode
+Acc,CondLimitCode4BI,Special condition BI limit code,O,tinyint,YES,0,,ConditionFinancials,LimitCode
+Acc,CondLimitCode5PD,Special condition PD limit code,O,tinyint,YES,0,,ConditionFinancials,LimitCode
+Acc,CondLimitCode6All,Special condition blanket limit code,O,tinyint,YES,0,,ConditionFinancials,LimitCode
 Acc,CondLimitType1Building,Special condition building limit type,CR,tinyint,YES,0,,ConditionFinancials,LimitType
 Acc,CondLimitType2Other,Special condition other building limit type,CR,tinyint,YES,0,,ConditionFinancials,LimitType
 Acc,CondLimitType3Contents,Special condition contents limit type,CR,tinyint,YES,0,,ConditionFinancials,LimitType
@@ -108,7 +108,7 @@ Acc,CondMinDed3Contents,Special condition minimum contents deductible,CR,float,Y
 Acc,CondMinDed4BI,Special condition minimum BI deductible,CR,float,YES,0,,ConditionFinancials,MinDed
 Acc,CondMinDed5PD,Special condition minimum PD deductible,CR,float,YES,0,,ConditionFinancials,MinDed
 Acc,CondMinDed6All,Special condition minimum blanket deductible,CR,float,YES,0,,ConditionFinancials,MinDed
-Acc,CondName,Condition name (must be the same if condition repeats on several policy layers). Description that relates to CondNumber.,CR,varchar(40),YES,,,Conditions,
+Acc,CondName,Condition name (must be the same if condition repeats on several policy layers). Description that relates to CondNumber.,O,varchar(40),YES,,,Conditions,
 Acc,CondNumber,Condition number (must be the same if condition repeats on several policy layers),CR,int,YES,,,Conditions,
 Acc,CondPeril,Perils for condition financial terms,CR,varchar(250),YES,,,ConditionFinancials,PerilCode
 Acc,CondPriority,Condition priority: specifies the order in which special conditions apply if multiple conditions apply to one location.,CR,int,YES,,,LocCond,Priority
@@ -123,7 +123,7 @@ Acc,ExtraExpenseLimit,A limit that applies to the total extra expense loss,CR,fl
 Acc,FlexiAccZZZ,Flexible field that is stored in FlexiAcc table in ModifierName = ZZZ,O,varchar(40),YES,,,FlexiAcc,ModifierName = ZZZ
 Acc,FlexiPolZZZ,Flexible field that is stored in FlexiPol table in ModifierName = ZZZ,O,varchar(40),YES,,,FlexiPol,ModifierName = ZZZ
 Acc,HoursClause,"For perils with an inherent event duration, the insurance contract may contain an hours clause that limits the time in which claims can be added up and assigned to one event",O,int,YES,,,Policies,
-Acc,IsLimitAtDamage,Indicates whether the pay-out is limited by the actual ground-up loss.,CR,float,YES,0,,Steps,
+Acc,IsLimitAtDamage,Indicates whether the pay-out is limited by the actual ground-up loss.,CR,0 or 1,YES,0,,Steps,
 Acc,LOB,Line of business (defined at policy level),O,varchar(20),YES,,,LOB,
 Acc,LayerAttachment,Policy layer attachment point (always treated as amount),O,float,YES,0,,Policies,
 Acc,LayerLimit,Policy layer limit (always treated as amount),O,float,YES,0,,Policies,
@@ -147,12 +147,12 @@ Acc,PolDed3Contents,Policy contents deductible,CR,float,YES,0,,PolicyFinancials,
 Acc,PolDed4BI,Policy BI deductible,CR,float,YES,0,,PolicyFinancials,Ded
 Acc,PolDed5PD,Policy PD deductible,CR,float,YES,0,,PolicyFinancials,Ded
 Acc,PolDed6All,Policy blanket deductible,CR,float,YES,0,,PolicyFinancials,Ded
-Acc,PolDedCode1Building,Policy building deductible code,CR,tinyint,YES,0,,PolicyFinancials,DedCode
-Acc,PolDedCode2Other,Policy other building deductible code,CR,tinyint,YES,0,,PolicyFinancials,DedCode
-Acc,PolDedCode3Contents,Policy contents deductible code,CR,tinyint,YES,0,,PolicyFinancials,DedCode
-Acc,PolDedCode4BI,Policy BI deductible code,CR,tinyint,YES,0,,PolicyFinancials,DedCode
-Acc,PolDedCode5PD,Policy PD deductible code,CR,tinyint,YES,0,,PolicyFinancials,DedCode
-Acc,PolDedCode6All,Policy blanket deductible code,CR,tinyint,YES,0,,PolicyFinancials,DedCode
+Acc,PolDedCode1Building,Policy building deductible code,O,tinyint,YES,0,,PolicyFinancials,DedCode
+Acc,PolDedCode2Other,Policy other building deductible code,O,tinyint,YES,0,,PolicyFinancials,DedCode
+Acc,PolDedCode3Contents,Policy contents deductible code,O,tinyint,YES,0,,PolicyFinancials,DedCode
+Acc,PolDedCode4BI,Policy BI deductible code,O,tinyint,YES,0,,PolicyFinancials,DedCode
+Acc,PolDedCode5PD,Policy PD deductible code,O,tinyint,YES,0,,PolicyFinancials,DedCode
+Acc,PolDedCode6All,Policy blanket deductible code,O,tinyint,YES,0,,PolicyFinancials,DedCode
 Acc,PolDedType1Building,Policy building deductible type,CR,tinyint,YES,0,,PolicyFinancials,DedType
 Acc,PolDedType2Other,Policy other building deductible type,CR,tinyint,YES,0,,PolicyFinancials,DedType
 Acc,PolDedType3Contents,Policy contents deductible type,CR,tinyint,YES,0,,PolicyFinancials,DedType
@@ -168,12 +168,12 @@ Acc,PolLimit3Contents,Policy contents limit,CR,float,YES,0,,PolicyFinancials,Lim
 Acc,PolLimit4BI,Policy BI limit,CR,float,YES,0,,PolicyFinancials,Limit
 Acc,PolLimit5PD,Policy PD limit,CR,float,YES,0,,PolicyFinancials,Limit
 Acc,PolLimit6All,Policy blanket limit,CR,float,YES,0,,PolicyFinancials,Limit
-Acc,PolLimitCode1Building,Policy building limit code,CR,tinyint,YES,0,,PolicyFinancials,LimitCode
-Acc,PolLimitCode2Other,Policy other building limit code,CR,tinyint,YES,0,,PolicyFinancials,LimitCode
-Acc,PolLimitCode3Contents,Policy contents limit code,CR,tinyint,YES,0,,PolicyFinancials,LimitCode
-Acc,PolLimitCode4BI,Policy BI limit code,CR,tinyint,YES,0,,PolicyFinancials,LimitCode
-Acc,PolLimitCode5PD,Policy PD limit code,CR,tinyint,YES,0,,PolicyFinancials,LimitCode
-Acc,PolLimitCode6All,Policy blanket limit code (annual aggregate only),CR,tinyint,YES,0,,PolicyFinancials,LimitCode
+Acc,PolLimitCode1Building,Policy building limit code,O,tinyint,YES,0,,PolicyFinancials,LimitCode
+Acc,PolLimitCode2Other,Policy other building limit code,O,tinyint,YES,0,,PolicyFinancials,LimitCode
+Acc,PolLimitCode3Contents,Policy contents limit code,O,tinyint,YES,0,,PolicyFinancials,LimitCode
+Acc,PolLimitCode4BI,Policy BI limit code,O,tinyint,YES,0,,PolicyFinancials,LimitCode
+Acc,PolLimitCode5PD,Policy PD limit code,O,tinyint,YES,0,,PolicyFinancials,LimitCode
+Acc,PolLimitCode6All,Policy blanket limit code (annual aggregate only),O,tinyint,YES,0,,PolicyFinancials,LimitCode
 Acc,PolLimitType1Building,Policy building limit type,CR,tinyint,YES,0,,PolicyFinancials,LimitType
 Acc,PolLimitType2Other,Policy other building limit type,CR,tinyint,YES,0,,PolicyFinancials,LimitType
 Acc,PolLimitType3Contents,Policy contents limit type,CR,tinyint,YES,0,,PolicyFinancials,LimitType

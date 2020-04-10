@@ -829,25 +829,19 @@
         "blank": true,
         "column_range": null,
         "column_sampling": null,
-        "column_validation": [
-            -1.79e+308,
-            1.79e+308
-        ],
+        "column_validation": null,
         "default": null,
         "desc": "Reinstatement charge as %; semi-colon separated if different for each reinstatement (e.g. 1-free, 2-50%, 3-100% should be entered as: 0;0.5;1). If all reinstatements are the same, then just one number is sufficient (e.g. 3 reinstatements at 100% should be entered as 1)",
-        "dtype_range": [
-            -1.79e+308,
-            1.79e+308
-        ],
+        "dtype_range": null,
         "entity": "ReinsInfo",
         "field_name": "ReinstatementCharge",
-        "numpy_dtype": "float64",
+        "numpy_dtype": "object",
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceInfo",
-        "py_dtype": "float",
+        "py_dtype": "str",
         "required": "O",
         "secmod": null,
-        "sql_dtype": "float"
+        "sql_dtype": "varchar(50)"
     },
     "('reinsinfo', 'reinstype')": {
         "blank": false,

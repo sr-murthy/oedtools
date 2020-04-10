@@ -2,7 +2,7 @@ entity,field_name,desc,required,type,blank,default,secmod,backend_table,backend_
 ReinsScope,AccNumber,Account number:  used for defining treaty scope in the reinsurance scope file,CR,nvarchar(40),YES,,,ReinsuranceScope,
 ReinsScope,CedantName,Cedant name:  used for defining treaty scope in the reinsurance scope file,CR,varchar(40),YES,,,ReinsuranceScope,
 ReinsScope,CededPercent,"Ceded percentage (for 12%, enter 0.12). Within the reinsurance scope file, CededPercent should only be entered for surplus share treaties.",CR,float,YES,1.0,,ReinsAcc; ReinsPol; ReinsLoc; ReinsuranceScope,
-ReinsScope,CountryCode,Country code: used for defining treaty scope in the reinsurance scope file,CR,char(2),YES,,,ReinsuranceScope,
+ReinsScope,CountryCode,Country code: used for defining treaty scope in the reinsurance scope file,O,char(2),YES,,,ReinsuranceScope,
 ReinsScope,LOB,Line of business:  used for defining treaty scope in the reinsurance scope file,CR,varchar(20),YES,,,ReinsuranceScope,
 ReinsScope,LocGroup,Location group name:  used for defining treaty scope in the reinsurance scope file,CR,nvarchar(20),YES,,,ReinsLoc; ReinsuranceScope,
 ReinsScope,LocNumber,Location number:  used for defining treaty scope in the reinsurance scope file,CR,nvarchar(20),YES,,,ReinsuranceScope,
