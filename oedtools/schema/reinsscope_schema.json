@@ -331,6 +331,7 @@
             "WS",
             "XB",
             "XE",
+            "XK",
             "XS",
             "XW",
             "YE",
@@ -350,7 +351,7 @@
         "oed_db_field_name": null,
         "oed_db_table": "ReinsuranceScope",
         "py_dtype": "str",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "char(2)"
     },

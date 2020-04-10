@@ -10003,7 +10003,7 @@
             "columns": [
                 "AreaCode"
             ],
-            "desc": "National Capital Region (NCR), PH, Region/State, 13",
+            "desc": "National Capital Region\u00a0(NCR), PH, Region/State, 13",
             "id": "13",
             "sampling": "column range",
             "validation": "column range"
@@ -10012,7 +10012,7 @@
             "columns": [
                 "AreaCode"
             ],
-            "desc": "Cordillera Administrative Region (CAR), PH, Region/State, 14",
+            "desc": "Cordillera Administrative Region\u00a0(CAR), PH, Region/State, 14",
             "id": "14",
             "sampling": "column range",
             "validation": "column range"
@@ -10021,7 +10021,7 @@
             "columns": [
                 "AreaCode"
             ],
-            "desc": "Autonomous Region In Muslim Mindanao (ARMM), PH, Region/State, 15",
+            "desc": "Autonomous Region In Muslim Mindanao\u00a0(ARMM), PH, Region/State, 15",
             "id": "15",
             "sampling": "column range",
             "validation": "column range"
@@ -14439,6 +14439,15 @@
             ],
             "desc": "Kiribati",
             "id": "KI",
+            "sampling": "column range",
+            "validation": "column range"
+        },
+        "kosovo": {
+            "columns": [
+                "CountryCode"
+            ],
+            "desc": "Kosovo",
+            "id": "XK",
             "sampling": "column range",
             "validation": "column range"
         },

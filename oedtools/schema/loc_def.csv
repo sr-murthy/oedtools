@@ -88,12 +88,12 @@ Loc,LocDed3Contents,Location contents deductible,CR,float,YES,0,,LocationFinanci
 Loc,LocDed4BI,Location BI deductible,CR,float,YES,0,,LocationFinancials,Ded
 Loc,LocDed5PD,Location PD deductible,CR,float,YES,0,,LocationFinancials,Ded
 Loc,LocDed6All,Location site deductible,CR,float,YES,0,,LocationFinancials,Ded
-Loc,LocDedCode1Building,Location building deductible code,CR,tinyint,YES,0,,LocationFinancials,DedCode
-Loc,LocDedCode2Other,Location other building deductible code,CR,tinyint,YES,0,,LocationFinancials,DedCode
-Loc,LocDedCode3Contents,Location contents deductible code,CR,tinyint,YES,0,,LocationFinancials,DedCode
-Loc,LocDedCode4BI,Location BI Deductible Code,CR,tinyint,YES,0,,LocationFinancials,DedCode
-Loc,LocDedCode5PD,Location PD deductible code,CR,tinyint,YES,0,,LocationFinancials,DedCode
-Loc,LocDedCode6All,Location blanket deductible code,CR,tinyint,YES,0,,LocationFinancials,DedCode
+Loc,LocDedCode1Building,Location building deductible code,O,tinyint,YES,0,,LocationFinancials,DedCode
+Loc,LocDedCode2Other,Location other building deductible code,O,tinyint,YES,0,,LocationFinancials,DedCode
+Loc,LocDedCode3Contents,Location contents deductible code,O,tinyint,YES,0,,LocationFinancials,DedCode
+Loc,LocDedCode4BI,Location BI Deductible Code,O,tinyint,YES,0,,LocationFinancials,DedCode
+Loc,LocDedCode5PD,Location PD deductible code,O,tinyint,YES,0,,LocationFinancials,DedCode
+Loc,LocDedCode6All,Location blanket deductible code,O,tinyint,YES,0,,LocationFinancials,DedCode
 Loc,LocDedType1Building,Location building deductible type,CR,tinyint,YES,0,,LocationFinancials,DedType
 Loc,LocDedType2Other,Location other building deductible type,CR,tinyint,YES,0,,LocationFinancials,DedType
 Loc,LocDedType3Contents,Location contents deductible type,CR,tinyint,YES,0,,LocationFinancials,DedType
@@ -110,12 +110,12 @@ Loc,LocLimit3Contents,Location contents limit,CR,float,YES,0,,LocationFinancials
 Loc,LocLimit4BI,Location BI limit,CR,float,YES,0,,LocationFinancials,Limit
 Loc,LocLimit5PD,Location PD limit,CR,float,YES,0,,LocationFinancials,Limit
 Loc,LocLimit6All,Location site limit,CR,float,YES,0,,LocationFinancials,Limit
-Loc,LocLimitCode1Building,Location building limit code,CR,tinyint,YES,0,,LocationFinancials,LimitCode
-Loc,LocLimitCode2Other,Location other building limit code,CR,tinyint,YES,0,,LocationFinancials,LimitCode
-Loc,LocLimitCode3Contents,Location contents limit code,CR,tinyint,YES,0,,LocationFinancials,LimitCode
-Loc,LocLimitCode4BI,Location BI limit code,CR,tinyint,YES,0,,LocationFinancials,LimitCode
-Loc,LocLimitCode5PD,Location PD limit code,CR,tinyint,YES,0,,LocationFinancials,LimitCode
-Loc,LocLimitCode6All,Location site limit code,CR,tinyint,YES,0,,LocationFinancials,LimitCode
+Loc,LocLimitCode1Building,Location building limit code,O,tinyint,YES,0,,LocationFinancials,LimitCode
+Loc,LocLimitCode2Other,Location other building limit code,O,tinyint,YES,0,,LocationFinancials,LimitCode
+Loc,LocLimitCode3Contents,Location contents limit code,O,tinyint,YES,0,,LocationFinancials,LimitCode
+Loc,LocLimitCode4BI,Location BI limit code,O,tinyint,YES,0,,LocationFinancials,LimitCode
+Loc,LocLimitCode5PD,Location PD limit code,O,tinyint,YES,0,,LocationFinancials,LimitCode
+Loc,LocLimitCode6All,Location site limit code,O,tinyint,YES,0,,LocationFinancials,LimitCode
 Loc,LocLimitType1Building,Location building limit type,CR,tinyint,YES,0,,LocationFinancials,LimitType
 Loc,LocLimitType2Other,Location other building limit type,CR,tinyint,YES,0,,LocationFinancials,LimitType
 Loc,LocLimitType3Contents,Location contents limit type,CR,tinyint,YES,0,,LocationFinancials,LimitType
