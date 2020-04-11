@@ -485,7 +485,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -514,7 +514,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -543,7 +543,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -572,7 +572,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -601,7 +601,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -630,7 +630,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -966,7 +966,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -990,7 +990,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -1014,7 +1014,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -1038,7 +1038,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -1062,7 +1062,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -1086,7 +1086,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "AccountFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -1930,7 +1930,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -1959,7 +1959,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -1988,7 +1988,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2017,7 +2017,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2046,7 +2046,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2075,7 +2075,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2393,7 +2393,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2417,7 +2417,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2441,7 +2441,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2465,7 +2465,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2489,7 +2489,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2513,7 +2513,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "ConditionFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -2969,7 +2969,7 @@
         "oed_db_field_name": null,
         "oed_db_table": "Conditions",
         "py_dtype": "str",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "varchar(40)"
     },
@@ -3283,25 +3283,25 @@
         "blank": true,
         "column_range": null,
         "column_sampling": null,
-        "column_validation": [
-            -1.79e+308,
-            1.79e+308
-        ],
-        "default": 0.0,
+        "column_validation": {
+            "start": 0,
+            "stop": 2
+        },
+        "default": 0,
         "desc": "Indicates whether the pay-out is limited by the actual ground-up loss.",
-        "dtype_range": [
-            -1.79e+308,
-            1.79e+308
-        ],
+        "dtype_range": {
+            "start": 0,
+            "stop": 2
+        },
         "entity": "Acc",
         "field_name": "IsLimitAtDamage",
-        "numpy_dtype": "float64",
+        "numpy_dtype": "uint8",
         "oed_db_field_name": null,
         "oed_db_table": "Steps",
-        "py_dtype": "float",
+        "py_dtype": "int",
         "required": "CR",
         "secmod": null,
-        "sql_dtype": "float"
+        "sql_dtype": "unsigned bit"
     },
     "('acc', 'layerattachment')": {
         "blank": true,
@@ -3874,7 +3874,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -3903,7 +3903,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -3932,7 +3932,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -3961,7 +3961,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -3990,7 +3990,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -4019,7 +4019,7 @@
         "oed_db_field_name": "DedCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -4397,7 +4397,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -4421,7 +4421,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -4445,7 +4445,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -4469,7 +4469,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -4493,7 +4493,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },
@@ -4517,7 +4517,7 @@
         "oed_db_field_name": "LimitCode",
         "oed_db_table": "PolicyFinancials",
         "py_dtype": "int",
-        "required": "CR",
+        "required": "O",
         "secmod": null,
         "sql_dtype": "unsigned tinyint"
     },

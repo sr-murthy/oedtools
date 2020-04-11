@@ -1110,9 +1110,9 @@ area codes,PH-09,09,"Zamboanga Peninsula, PH, Region/State, 09",^areacode$,colum
 area codes,PH-10,10,"Northern Mindanao, PH, Region/State, 10",^areacode$,column range,column range
 area codes,PH-11,11,"Davao Region, PH, Region/State, 11",^areacode$,column range,column range
 area codes,PH-12,12,"Soccsksargen, PH, Region/State, 12",^areacode$,column range,column range
-area codes,PH-13,13,"National Capital Region (NCR), PH, Region/State, 13",^areacode$,column range,column range
-area codes,PH-14,14,"Cordillera Administrative Region (CAR), PH, Region/State, 14",^areacode$,column range,column range
-area codes,PH-15,15,"Autonomous Region In Muslim Mindanao (ARMM), PH, Region/State, 15",^areacode$,column range,column range
+area codes,PH-13,13,"National Capital Region (NCR), PH, Region/State, 13",^areacode$,column range,column range
+area codes,PH-14,14,"Cordillera Administrative Region (CAR), PH, Region/State, 14",^areacode$,column range,column range
+area codes,PH-15,15,"Autonomous Region In Muslim Mindanao (ARMM), PH, Region/State, 15",^areacode$,column range,column range
 area codes,PH-16,16,"Caraga, PH, Region/State, 16",^areacode$,column range,column range
 area codes,PH-17,17,"Mimaropa, PH, Region/State, 17",^areacode$,column range,column range
 area codes,PR-1,1,"Adjuntas, PR, Municipality, 1",^areacode$,column range,column range
@@ -1603,6 +1603,7 @@ country codes,jordan,JO,Jordan,^countrycode$,column range,column range
 country codes,kazakhstan,KZ,Kazakhstan,^countrycode$,column range,column range
 country codes,kenya,KE,Kenya,^countrycode$,column range,column range
 country codes,kiribati,KI,Kiribati,^countrycode$,column range,column range
+country codes,kosovo,XK,Kosovo,^countrycode$,column range,column range
 country codes,kuwait,KW,Kuwait,^countrycode$,column range,column range
 country codes,kyrgyzstan,KG,Kyrgyzstan,^countrycode$,column range,column range
 country codes,laos,LA,Lao People's Democratic Republic,^countrycode$,column range,column range
