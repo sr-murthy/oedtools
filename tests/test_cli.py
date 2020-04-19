@@ -47,19 +47,21 @@ class TestCli(TestCase):
 
         self.assertEqual(expected_pkg_version, cmd_pkg_version)
 
-
     @given(
         schema_type=sampled_from(SCHEMA_TYPES),
         sample_size=integers(min_value=1, max_value=10)
     )
-    def test_sample_cmd__missing_or_invalid_arguments__raises_oed_or_type_error(self, schema_type, sample_size):
+    def test_sample_cmd__invalid_schema_type_or_column_header__raises_oed_error(self, schema_type, sample_size):
         header = np.random.choice(list(GROUPED_SCHEMA[schema_type]))
+        args = {
+            'schema_type': np.random.choice([schema_type, 'INVALID']),
+            'column_header': np.random.choice([header, 'INVALID']),
+            'sample_size': sample_size
+        }
+        if set(args.values()) == {'INVALID'}:
+            args['schema_type'] = 'INVALID'
         with self.assertRaises(OedError):
-            SampleCmd().run(argparse.Namespace(schema_type='INVALID', column_header=header, sample_size=sample_size))
-        with self.assertRaises(OedError):
-            SampleCmd().run(argparse.Namespace(schema_type=schema_type, column_header='INVALID', sample_size=sample_size))
-        with self.assertRaises(TypeError):
-            SampleCmd().run(argparse.Namespace(schema_type=schema_type, column_header=header, sample_size=float(sample_size)))
+            SampleCmd().run(argparse.Namespace(**args))
 
     @given(
         schema_type=sampled_from(SCHEMA_TYPES),
