@@ -25,6 +25,7 @@ from .exceptions import (
     CommandError,
     ReportingError,
 )
+from .__init__ import __version__
 from .query import get_columns
 from .report import (
     report_headers,
@@ -317,9 +318,7 @@ class VersionCmd(BaseCommand):
         pkg_version = theargs.get('package')
 
         if pkg_version:
-            init_fp = os.path.join(os.path.abspath(os.path.dirname(__file__)), '__init__.py')
-            with io.open(init_fp, encoding='utf-8') as f:
-                return re.search('__version__ = [\'"]([^\'"]+)[\'"]', f.read()).group(1)
+            return __version__
 
         schema_ver_fp = os.path.join(SCHEMA_DIR, 'schema_version.txt')
         with io.open(schema_ver_fp, 'r', encoding='utf-8') as f:
