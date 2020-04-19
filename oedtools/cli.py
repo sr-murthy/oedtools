@@ -11,7 +11,6 @@ __all__ = [
 import io
 import json
 import os
-import re
 import sys
 
 from argparse import RawDescriptionHelpFormatter
