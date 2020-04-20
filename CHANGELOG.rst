@@ -1,6 +1,10 @@
 Changelog
 =========
 
+`1.0.2`_
+-------
+* Add test coverage for CLI and report modules + tweaks to schemas and README
+
 `1.0.1`_
 -------
 * Change license to 3-clause BSD (from GNU GPL v3)
@@ -74,6 +78,7 @@ Changelog
 * First release - features supported include file validation (headers + data) for acc., loc., reins. info. and reins. scope files, column search and sampling in any file schema.
 
 
+.. _`1.0.2`:  https://github.com/sr-murthy/oedtools/compare/v1.0.1...v1.0.2
 .. _`1.0.1`:  https://github.com/sr-murthy/oedtools/compare/v0.8.0...v1.0.1
 .. _`0.8.0`:  https://github.com/sr-murthy/oedtools/compare/v0.7.0...v0.8.0
 .. _`0.7.0`:  https://github.com/sr-murthy/oedtools/compare/v0.6.0...v0.7.0
