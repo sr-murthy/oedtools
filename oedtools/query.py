@@ -4,8 +4,9 @@ __all__ = [
 
 
 from typing import (
-    Optional,
     Iterable,
+    Optional,
+    Union,
 )
 
 from .schema import (
