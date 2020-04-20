@@ -3,6 +3,7 @@ import io
 import os
 import string
 
+from random import shuffle
 from tempfile import NamedTemporaryFile
 from unittest import TestCase
 
@@ -20,6 +21,7 @@ from hypothesis.strategies import (
     integers,
     lists,
     sampled_from,
+    text,
 )
 
 from oedtools.__init__ import __version__ as pkg_version
@@ -38,6 +40,7 @@ from .data import (
     NUMPY_DTYPES,
     PYTHON_DTYPES,
     REQUIRED_TYPES,
+    sample_column,
     SCHEMA_TYPES_EX_MASTER,
     SQL_DTYPES,
 )
@@ -133,8 +136,36 @@ class TestCli(TestCase):
             exit_code = ValidateHeadersCmd().run(argparse.Namespace(schema_type=schema_type, column_headers=headers_str))
             self.assertEqual(exit_code, 0)
         else:
-            with NamedTemporaryFile('w') as input_file:
-                input_file.write(headers_str)
-                input_file.flush()
-                exit_code = ValidateHeadersCmd().run(argparse.Namespace(schema_type=schema_type, input_file_path=input_file.name))
+            with NamedTemporaryFile('w') as file:
+                file.write(headers_str)
+                file.flush()
+                exit_code = ValidateHeadersCmd().run(argparse.Namespace(schema_type=schema_type, input_file_path=file.name))
                 self.assertEqual(exit_code, 0)
+
+    @given(
+        schema_type=sampled_from(SCHEMA_TYPES_EX_MASTER),
+        num_headers=integers(min_value=1),
+        non_oed=lists((text(alphabet=string.ascii_letters, min_size=1)), min_size=0, max_size=3, unique=True),
+        num_rows=integers(min_value=1, max_value=10)
+    )
+    @settings(max_examples=10, deadline=None)
+    def test_validate_file_cmd__valid_schema_type_and_file__cmd_completes_successfully(self, schema_type, num_headers, non_oed, num_rows):
+        num_headers = min(num_headers, len(GROUPED_SCHEMA[schema_type]))
+        oed = np.random.choice(list(GROUPED_SCHEMA[schema_type]), size=num_headers, replace=False).tolist()
+        if non_oed:
+            non_oed = ['non oed ' + s for s in non_oed]
+
+        required_but_missing = [h for h, v in GROUPED_SCHEMA[schema_type].items() if v['required'] == 'R' and h not in oed]
+
+        headers = oed + non_oed
+        shuffle(headers)
+
+        with NamedTemporaryFile('w') as file:
+            pd.DataFrame(data={
+                header: sample_column('loc', 'flexiloczzz', str_width=5, size=num_rows)
+                if header in non_oed
+                else sample_column(schema_type, header, size=num_rows)
+                for header in headers
+            }).to_csv(path_or_buf=file.name, index=False, encoding='utf-8')
+            exit_code = ValidateFileCmd().run(argparse.Namespace(schema_type=schema_type, input_file_path=file.name))
+            self.assertEqual(exit_code, 0)
