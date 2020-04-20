@@ -23,6 +23,11 @@ import os
 from ast import literal_eval
 from collections import OrderedDict
 from itertools import groupby
+from typing import (
+    Dict,
+    Optional,
+    Tuple,
+)
 
 import pandas as pd
 import numpy as np
@@ -48,7 +53,7 @@ from .values import (
 SCHEMA_DIR = os.path.join(os.path.dirname(__file__), 'schema')
 
 
-def generate_schema(def_fp, target_fp):
+def generate_schema(def_fp: str, target_fp: str) -> None:
     """
     Generates a JSON schema from a CSV schema for a given OED file type (acc.
     loc., reins. info., or reins. scope), including the master file schema,
@@ -131,7 +136,7 @@ def generate_schema(def_fp, target_fp):
         f.flush()
 
 
-def get_schema(schema_type='master'):
+def get_schema(schema_type: Optional[str] = 'master') -> Dict[Tuple[str, str], Dict]:
     """
     Gets the schema of an OED input file - schema type must be one of
     ``acc``, ``loc``, ``reinsinfo``, ``reinsscope``.
@@ -167,7 +172,7 @@ def get_schema(schema_type='master'):
     })
 
 
-def get_grouped_master_schema():
+def get_grouped_master_schema() -> Dict[str, Dict[str, Dict]]:
     """
     Gets the master schema grouped by schema type.
 
@@ -183,7 +188,7 @@ def get_grouped_master_schema():
     }
 
 
-def get_schema_version():
+def get_schema_version() -> str:
     """
     Gets the OED schema version - the schema version is stored in the
     ``schema_version.txt`` file in the ``schema`` subfolder. The version
@@ -197,7 +202,7 @@ def get_schema_version():
         return f.readlines()[0].strip()
 
 
-def get_column_schema(schema_type, header):
+def get_column_schema(schema_type: str, header: str) -> Dict:
     """
     Gets the column schema (definition) for a given column in an OED acc.,
     loc., reins. info. or reins. scope file, using a grouped version of
@@ -256,7 +261,7 @@ def get_column_schema(schema_type, header):
         return col_schema
 
 
-def update_schemas():
+def update_schemas() -> None:
     """
     A method to automatically re-generate the values profile JSON, and also
     all the file schemas, in ``oedtools/schema/``.
@@ -269,7 +274,7 @@ def update_schemas():
         )
 
 
-def sample_column(schema_type, header, str_width=None, size=10):
+def sample_column(schema_type: str, header: str, str_width: Optional[int] = None, size: Optional[int] = 10) -> list:
     """
     Sampling values in a given column in a given schema (``acc``, ``loc``,
     ``reinsinfo``, ``reinsscope``), consistent with the validation method

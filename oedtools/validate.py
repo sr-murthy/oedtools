@@ -9,6 +9,14 @@ import os
 from itertools import (
     starmap,
 )
+from typing import (
+    Dict,
+    Generator,
+    Iterable,
+    Optional,
+    Tuple,
+    Union,
+)
 
 import numpy as np
 import pandas as pd
@@ -53,7 +61,11 @@ class OedValidator(object):
 
     values_profile = get_values_profile()
 
-    def validate_headers(self, schema_type, file_or_headers):
+    def validate_headers(
+        self,
+        schema_type: str,
+        file_or_headers: Union[str, Iterable[str]]
+    ) -> Generator[Dict, None, None]:
         """
         Validates an iterable of OED input file headers (column headers), where
         the file type is specified using one of the following strings: ``loc``
@@ -185,7 +197,13 @@ class OedValidator(object):
                 }
             yield r
 
-    def validate_column(self, schema_type, header, data, column_pos=None):
+    def validate_column(
+        self,
+        schema_type: str,
+        header: str,
+        data: Union[Iterable[Union[int, float, str]], np.ndarray],
+        column_pos: Optional[int] = None
+    ) -> Union[Dict, Generator[Dict, None, None]]:
         """
         Validates column header and data. Results are yielded as a dict array, one
         per value
@@ -305,7 +323,11 @@ class OedValidator(object):
         for _, r in zip(data, starmap(_validate_value, enumerate(data))):
             yield r
 
-    def validate(self, schema_type, file_or_data):
+    def validate(
+        self,
+        schema_type: str,
+        file_or_data: Union[str, Iterable[Dict]]
+    ) -> Tuple[Iterable[Dict], bool, Iterable[str]]:
         """
         Validates an OED input file, or an iterable of row dicts from an OED
         input file, against the corresponding OED schema for the given file
