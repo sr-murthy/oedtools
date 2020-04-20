@@ -5,6 +5,7 @@ __all__ = [
     'ACC_REQUIRED',
     'ALL',
     'DEFAULTS',
+    'DESCRIPTION_WORDS',
     'FLOAT',
     'get_method',
     'get_value',
@@ -86,6 +87,7 @@ REQUIRED_NONNULL = set(REQUIRED).intersection(NONNULL)
 NUMERIC = sorted(k for k, v in MASTER_SCHEMA.items() if v['py_dtype'] in ['int', 'float'])
 INT = sorted(k for k, v in MASTER_SCHEMA.items() if v['py_dtype'] == 'int')
 FLOAT = sorted(k for k, v in MASTER_SCHEMA.items() if v['py_dtype'] == 'float')
+DESCRIPTION_WORDS = [w for v in MASTER_SCHEMA.values() for w in v['desc'].split()]
 DEFAULTS = list(set([v['default'] for v in MASTER_SCHEMA.values() if v['default'] is not None]))
 PYTHON_DTYPES = list(set([v['py_dtype'] for v in MASTER_SCHEMA.values()]))
 SQL_DTYPES = list(set([v['sql_dtype'] for v in MASTER_SCHEMA.values()]))

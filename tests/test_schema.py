@@ -610,12 +610,6 @@ class TestSchema(TestCase):
             get_method(validation_src.replace('func:', '')) if isinstance(validation_src, str) and validation_src.startswith('func:')
             else None
         )
-        try:
-            sampling_info = json.loads(col_schema['column_sampling'])
-        except (JSONDecodeError, TypeError, ValueError):
-            sampling_info = sampling_func = None
-        else:
-            sampling_func = get_method(sampling_info['func'])
 
         sample = sample_column(schema_type, header)
 
@@ -631,3 +625,4 @@ class TestSchema(TestCase):
             self.assertTrue(all(get_value(value) in use_range for value in sample))
         elif exp_py_dtype is str:
             self.assertTrue(all(isinstance(value, str) for value in sample))
+
