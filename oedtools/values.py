@@ -15,6 +15,11 @@ import re
 from ast import literal_eval
 from collections import OrderedDict
 from itertools import groupby
+from typing import (
+    Dict,
+    Optional,
+    Union,
+)
 
 import pandas as pd
 
@@ -22,7 +27,7 @@ import pandas as pd
 SCHEMA_DIR = os.path.join(os.path.dirname(__file__), 'schema')
 
 
-def generate_values_profile(target_fp=None):
+def generate_values_profile(target_fp: Optional[str] = None) -> Union[str, Dict[str, Dict[str, Dict]]]:
     """
     Generates a JSON profile of values across key value groups described in the
     OED spec. such as construction codes/class, occupancy codes/types, peril
@@ -39,7 +44,7 @@ def generate_values_profile(target_fp=None):
     :type target_fp: str
 
     :return: A values profile dict if no target file path
-    :rtype: dict
+    :rtype: str, dict
     """
     _target_fp = os.path.abspath(target_fp) if target_fp else None
 
@@ -79,7 +84,7 @@ def generate_values_profile(target_fp=None):
     return _target_fp
 
 
-def get_values_profile():
+def get_values_profile() -> Dict[str, Dict[str, Dict]]:
     """
     Gets the values profile JSON (from ``oedtools/schema/``) as a dict.
 
@@ -90,7 +95,10 @@ def get_values_profile():
         return json.load(f)
 
 
-def get_column_range_by_value_group(header, values_profile=get_values_profile()):
+def get_column_range_by_value_group(
+    header: str,
+    values_profile: Optional[Dict[str, Dict[str, Dict]]] = get_values_profile()
+) -> Union[None, tuple, list]:
     """
     Gets the range of values of a given column from an OED input file (if
     present in the current master schema), using the information in the values
@@ -104,7 +112,7 @@ def get_column_range_by_value_group(header, values_profile=get_values_profile())
     :type values_profile: dict
 
     :return: The column values range as a list if not null, or `None`
-    :rtype: list, None
+    :rtype: None, tuple, list
     """
     subval_strs = set([
         v['id']
@@ -137,7 +145,10 @@ def get_column_range_by_value_group(header, values_profile=get_values_profile())
     return val_range or None
 
 
-def get_column_sampling_method(header, values_profile=get_values_profile()):
+def get_column_sampling_method(
+    header: str,
+    values_profile: Optional[Dict[str, Dict[str, Dict]]] = get_values_profile()
+) -> Union[None, str]:
     """
     Indicates how to sample the values in a given column, according to
     the values profile - the standard method is to use the column range as
@@ -152,8 +163,8 @@ def get_column_sampling_method(header, values_profile=get_values_profile()):
     :param values_profile: (Optional) Values profile
     :type values_profile: dict
 
-    :return: The column sampling method
-    :rtype: str
+    :return: The column sampling method if it exists
+    :rtype: None, str
     """
     try:
         return [
@@ -166,7 +177,10 @@ def get_column_sampling_method(header, values_profile=get_values_profile()):
         return
 
 
-def get_column_validation_method(header, values_profile=get_values_profile()):
+def get_column_validation_method(
+    header: str,
+    values_profile: Optional[Dict[str, Dict[str, Dict]]] = get_values_profile()
+) -> Union[None, str]:
     """
     Indicates how  to validate the values in a given column, according to the
     values profile - the standard method is to use the column range as inferred
@@ -180,8 +194,8 @@ def get_column_validation_method(header, values_profile=get_values_profile()):
     :param values_profile: (Optional) Values profile
     :type values_profile: dict
 
-    :return: The column validation method
-    :rtype: str
+    :return: The column validation method if it exists
+    :rtype: None, str
     """
     try:
         return [

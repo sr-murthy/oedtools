@@ -20,6 +20,11 @@ from collections import (
     Counter,
     OrderedDict,
 )
+from typing import (
+    Callable,
+    Optional,
+    Union,
+)
 
 import numpy as np
 
@@ -70,7 +75,7 @@ SQL_NUMERIC_DTYPES = OrderedDict({
 })
 
 
-def sql_to_python_dtype(sql_dtype, as_numpy_dtype=False):
+def sql_to_python_dtype(sql_dtype: str, as_numpy_dtype: Optional[bool] = False) -> str:
     """
     Converts an SQL datatype string to a Python datatype
     string, or optionally a Numpy datatype string.
@@ -114,7 +119,7 @@ def sql_to_python_dtype(sql_dtype, as_numpy_dtype=False):
     return 'str' if not as_numpy_dtype else 'object'
 
 
-def generate_token_sequence(tokens, seq_length=10, sep=';', unique=True):
+def generate_token_sequence(tokens: Iterable[str], seq_length: Optional[int] = 10, sep: Optional[str] = ';', unique: Optional[bool] = True) -> str:
     """
     Generates a string containing a sequence of tokens, randomly sampled from
     a given list or tuple of tokens, of a given length and separated by a given
@@ -152,7 +157,7 @@ def generate_token_sequence(tokens, seq_length=10, sep=';', unique=True):
             )
 
 
-def is_valid_token_sequence(tokens, seq, sep=';'):
+def is_valid_token_sequence(tokens: Iterable[str], seq: str, sep: Optional[str] = ';') -> Union[None, bool]:
     """
     Checks whether a string consists of a sequence of unique tokens from a
     fixed set of tokens, separated by a given separator. It is used to check
@@ -184,7 +189,7 @@ def is_valid_token_sequence(tokens, seq, sep=';'):
     )
 
 
-def is_real_number(val):
+def is_real_number(val: Union[None, bool, int, float, complex, str, bytes, tuple, list, dict, set]) -> bool:
     """
     Simple method to check whether a literal value is a real number - returns
     ``True`` for integers as well.
@@ -201,18 +206,18 @@ def is_real_number(val):
     return True
 
 
-def within_range(bounds_or_iter, val):
+def within_range(bounds_or_iter: Union[tuple, list, set, range], val: Union[int, float, complex, str, bytes]) -> Union[None, bool]:
     """
     Checks whether a given simple literal value (integer, float, string, bytes)
-    lies within a given finite set of values or a bounded numeric range
-    (or interval).
+    lies within a given finite set of values or, in case of a numeric value, within
+    a bounded numeric range (or interval).
 
     :param bounds: A finite set of values or bounded numeric range
                    (or interval)
     :type bounds: tuple, list, set, range
 
-    :param val: The value to be checked
-    :type val: int, float, str, bytes
+    :param val: The value to be checked - numeric, string or bytes
+    :type val: int, float, complex, str, bytes
 
     :return: Status of range check
     :rtype: bool
@@ -231,7 +236,9 @@ def within_range(bounds_or_iter, val):
     return
 
 
-def get_value(val):
+def get_value(
+    val: Union[None, bool, int, float, complex, str, bytes, tuple, list, dict, set]
+) -> Union[None, bool, int, float, complex, str, bytes, tuple, list, dict, set]:
     """
     Returns the number from a literal value if the value represents either an
     integer, real number or complex number. The use case is to extract numbers
@@ -262,7 +269,7 @@ def get_value(val):
                 return val
 
 
-def get_method(pkg_path):
+def get_method(pkg_path: str) -> Callable:
     """
     Returns a method given the full package path of the method, e.g.
     given the string ``oedtools.schema.get_schema`` it will return the

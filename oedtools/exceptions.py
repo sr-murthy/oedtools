@@ -20,13 +20,16 @@ __all__ = [
 
 import sys
 
+from typing import (
+    Optional,
+)
 
 class OedException(Exception):
     etype = 'exception'
     code = 'OED_EXP100'
     code_desc = 'Base OED exception'
 
-    def __init__(self, msg=None):
+    def __init__(self, msg: Optional[str] = None):
         self.msg = msg or '<no msg.>'
 
     def __repr__(self):
@@ -126,7 +129,7 @@ class OedWarning(OedException):
     code_desc = 'Base OED warning'
 
 
-def get_file_error(err_shortdesc, err_msg=None):
+def get_file_error(err_shortdesc: str, err_msg: Optional[str] = None) -> OedError:
     err_classname = '{}Error'.format(
         ''.join([s.capitalize() for s in err_shortdesc.split()])
     )

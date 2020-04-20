@@ -7,8 +7,14 @@ from itertools import (
     chain,
     product,
 )
+from typing import (
+    Generator,
+    Iterable,
+    Union,
+)
 
 from future.utils import raise_with_traceback
+
 
 from .exceptions import (
     ProcessError,
@@ -17,7 +23,7 @@ from .exceptions import (
 from .validate import OedValidator
 
 
-def report_headers(schema_type, file_or_headers):
+def report_headers(schema_type: str, file_or_headers: Union[str, Iterable[str]]) -> Union[Generator[str, None, None], None]:
     """
     Generates a validation report for the column headers in an OED input file
     or list or tuple of column headers.
@@ -55,7 +61,7 @@ def report_headers(schema_type, file_or_headers):
         raise_with_traceback(ReportingError('Error while generating header validation report: {}'.format(e)))
 
 
-def report_file(schema_type, file_or_data):
+def report_file(schema_type: str, file_or_data: Union[str, Iterable[dict]]) -> Union[Generator[str, None, None], None]:
     """
     Generates a validation report for the column headers and data in an OED
     input file or list or tuple of column headers.

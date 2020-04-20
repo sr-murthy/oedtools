@@ -2,22 +2,28 @@ __all__ = [
     'get_columns'
 ]
 
+
+from typing import (
+    Optional,
+    Iterable,
+)
+
 from .schema import (
     get_schema,
 )
 
 
 def get_columns(
-    schema_types=None,
-    headers=None,
-    descriptions=None,
-    required=None,
-    nonnull=None,
-    defaults=None,
-    python_dtypes=None,
-    sql_dtypes=None,
-    numpy_dtypes=None
-):
+    schema_types: Optional[Iterable[str]] = None,
+    headers: Optional[Iterable[str]] = None,
+    descriptions: Optional[Iterable[str]] = None,
+    required: Optional[Iterable[str]] = None,
+    nonnull: Optional[bool] = None,
+    defaults: Optional[Iterable[str, bool, int, float]] = None,
+    python_dtypes: Optional[Iterable[str]] = None,
+    sql_dtypes: Optional[Iterable[str]] = None,
+    numpy_dtypes: Optional[Iterable[str]] = None
+) -> list:
     """
     Queries the master schema for columns by header, and various properties
     including whether the column is required, non-null, and by default values,
@@ -27,7 +33,7 @@ def get_columns(
     column schemas for all columns whose headers contain the given header
     substrings and which are required by their respective file schemas.
 
-    :param schema_types: List or tuple of schema types - chosen from `acc`,
+:param schema_types: List or tuple of schema types - chosen from `acc`,
                          `loc`, `reinsinfo`, `reinsscope`
     :type schema_types: list, tuple
 
