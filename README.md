@@ -11,9 +11,9 @@
 
 The main user-level features currently include
 
-* **validating files** - command-line validation (headers + data) of OED account (`acc`), location (`loc`), reinsurance info. (`reinsinfo`) and reinsurance scope (`reinsscope`) input CSV files
-* **querying schemas** - command-line querying of columns in the various schemas based on properties such as headers (column names) or header substrings, column descriptions containing keywords, Python, SQL or Numpy data types, default values, and required and/or nonnull properties
-* **sampling columns** - command-line sampling of column data, consistent with the column range or data type range or a specific column validation function
+* **validating files** - validation (headers + data) of OED account (`acc`), location (`loc`), reinsurance info. (`reinsinfo`) and reinsurance scope (`reinsscope`) input CSV files
+* **querying schemas** - querying of columns in the various schemas based on properties such as headers (column names) or header substrings, column descriptions containing keywords, Python, SQL or Numpy data types, default values, and required and/or nonnull properties
+* **sampling columns** - sampling of column data, consistent with the column range or data type range or a specific column validation function
 
 (The query toolkit will be augmented in future releases with the ability to query the values profile, which currently can only be examined directly as a dict.)
 
@@ -22,8 +22,8 @@ Validation, querying and sampling are all based on two types of interrelated but
 * **file schemas** - separate JSON files for the <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/acc_schema.json" target="_blank"> acc.</a>, <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/loc_schema.json" target="_blank">loc.</a>, <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsinfo_schema.json" target="_blank">reins. info.</a> and <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/reinsscope_schema.json" target="_blank">reins. scope</a> files defining the properties of each column in each file
 * a **values profile** - a <a href="https://github.com/sr-murthy/oedtools/blob/master/oedtools/schema/values.json" target="_blank">JSON profile</a> of the data that the files can store, but independent of considerations of the column structure, including categories and subcategories of values, column headers and specific column ranges associated with the subcategories (if they exist), and column data validation and sampling methods (where available).
 
-The schemas define the column structure of OED files and provide a "column view" of the files, and the values
-profile defines the properties of the data that occur in the columns and provides a "data view" of the files.
+The file schemas define the column structure of each type of OED file and provide a "file view" of the OED data model, and the values
+profile defines the properties of the data that occur in the columns and provides a "data model view" of the OED files.
 
 ## Installation and Requirements
 
@@ -41,7 +41,7 @@ The command line interface is invoked via `oed` and provides three main command 
 * `query` (`oed query`) - for querying schema columns based on various schema properties
 * `sample` (`oed sample`) - for sampling column data
 
-There is a utility subcommand named `version` which can be used to get the OED schema version (currently `1.1.1`) the package uses, or the package version (currently `1.0.1`). Usage is
+There is a `version` command for getting OED schema version (currently `1.1.1`) the package uses, or the package version (currently `1.0.1`). The usage is
 
     $ oed version
     1.1.1
