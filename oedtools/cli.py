@@ -48,15 +48,15 @@ class QueryCmd(BaseCommand):
 
         parser.add_argument(
             '-t', '--schema-types', required=False,
-            help='List of file schema types; must be one of "acc", "loc", "reinsinfo", "reinsscope" - a comma-separated string enclosed in quotation marks'
+            help='List of file schema types; must be one of "acc", "loc", "reinsinfo", "reinsscope" - a comma-separated string without spaces, quotation marks are optional'
         )
         parser.add_argument(
             '-m', '--column-headers', required=False,
-            help='List of column headers or header substrings - a comma-separated string enclosed in quotation marks'
+            help='List of column headers or header substrings - a comma-separated string without spaces, quotation marks are optional'
         )
         parser.add_argument(
             '-d', '--descriptions', required=False,
-            help='List of column descriptions or description substrings - a comma-separated string enclosed in quotation marks'
+            help='List of column descriptions or description substrings - a comma-separated string without spaces, quotation marks are optional'
         )
         parser.add_argument(
             '-r', '--required', default=None, required=False,
@@ -68,19 +68,19 @@ class QueryCmd(BaseCommand):
         )
         parser.add_argument(
             '-e', '--defaults', required=False,
-            help='List of default values - a comma-separated string enclosed in quotation marks'
+            help='List of default values - a comma-separated string without spaces, quotation marks are optional'
         )
         parser.add_argument(
             '-p', '--python-dtypes', required=False,
-            help='List of Python data types - only "int", "float", "str" are supported; a comma-separated string enclosed in quotation marks'
+            help='List of Python data types - only "int", "float", "str" are supported; a comma-separated string without spaces, quotation marks are optional'
         )
         parser.add_argument(
             '-s', '--sql-dtypes', required=False,
-            help='List of SQL data types - a comma-separated string enclosed in quotation marks'
+            help='List of SQL data types - a comma-separated string without spaces, quotation marks are optional'
         )
         parser.add_argument(
             '-y', '--numpy-dtypes', required=False,
-            help='List of Numpy data types - a comma-separated string enclosed in quotation marks'
+            help='List of Numpy data types - a comma-separated string without spaces, quotation marks are optional'
         )
         parser.add_argument(
             '-a', '--headers-only', required=False, action='store_true',
@@ -177,7 +177,7 @@ class SampleCmd(BaseCommand):
 
         parser.add_argument(
             '-t', '--schema-type', required=True,
-            help='List of file schema types; must be one of "acc", "loc", "reinsinfo", "reinsscope" - a comma-separated string enclosed in quotation marks'
+            help='OED file schema type - must be one of "acc", "loc", "reinsinfo", "reinsscope"'
         )
         parser.add_argument(
             '-m', '--column-header', required=True,
@@ -215,12 +215,12 @@ class ValidateFileCmd(BaseCommand):
         super(self.__class__, self).add_args(parser)
 
         parser.add_argument(
-            '-f', '--input-file-path', required=True,
-            help='OED input file path',
-        )
-        parser.add_argument(
             '-t', '--schema-type', required=True,
             help='File schema type - "loc", "acc", "reinsinfo", or "reinsscope"'
+        )
+        parser.add_argument(
+            '-f', '--input-file-path', required=True,
+            help='OED input file path',
         )
 
     def action(self, args):
@@ -251,16 +251,16 @@ class ValidateHeadersCmd(BaseCommand):
         super(self.__class__, self).add_args(parser)
 
         parser.add_argument(
+            '-t', '--schema-type', required=True,
+            help='File schema type - "loc", "acc", "reinsinfo", or "reinsscope"'
+        )
+        parser.add_argument(
             '-f', '--input-file-path', required=False,
             help='OED input file path',
         )
         parser.add_argument(
             '-e', '--column-headers', required=False,
-            help='A list of column headers (a single string enclosed in double quotes, headers within string separated by commas)'
-        )
-        parser.add_argument(
-            '-t', '--schema-type', required=True,
-            help='File schema type - "loc", "acc", "reinsinfo", or "reinsscope"'
+            help='A single column name, or comma-separated string of multiple column names, without spaces - quotation marks are optional'
         )
 
     def action(self, args):
@@ -274,15 +274,14 @@ class ValidateHeadersCmd(BaseCommand):
             file_or_headers = os.path.abspath(theargs.get('input_file_path'))
         except (TypeError, ValueError):
             try:
-                file_or_headers = literal_eval(theargs.get('column_headers')).strip().split(',')
+                file_or_headers = theargs.get('column_headers').strip().split(',')
             except (TypeError, ValueError):
                 pass
 
         if not file_or_headers:
             raise CommandError(
-                'Invalid arguments - please check that the input file path is '
-                'a valid file path, or the headers list was provided as a '
-                'string enclosed with double quotes'
+                'Invalid arguments - please check that the input file path or '
+                'headers list was passed correctly'
             )
 
         schema_type = theargs['schema_type'].lower()

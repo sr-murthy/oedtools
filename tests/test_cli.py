@@ -3,9 +3,11 @@ import io
 import os
 import string
 
+from tempfile import NamedTemporaryFile
 from unittest import TestCase
 
 import numpy as np
+import pandas as pd
 
 from hypothesis import (
     given,
@@ -22,7 +24,10 @@ from hypothesis.strategies import (
 
 from oedtools.__init__ import __version__ as pkg_version
 from oedtools.cli import *
-from oedtools.exceptions import OedError
+from oedtools.exceptions import (
+    CommandError,
+    OedError,
+)
 from oedtools.schema import SCHEMA_DIR
 
 from .data import (
@@ -58,10 +63,12 @@ class TestCli(TestCase):
 
     @given(
         schema_type=sampled_from(SCHEMA_TYPES_EX_MASTER),
+        header=sampled_from(ALL),
         sample_size=integers(min_value=1, max_value=10)
     )
-    def test_sample_cmd__invalid_schema_type_or_column_header__raises_oed_error(self, schema_type, sample_size):
-        header = np.random.choice(list(GROUPED_SCHEMA[schema_type]))
+    def test_sample_cmd__invalid_schema_type_or_column_header__raises_oed_error(self, schema_type, header, sample_size):
+        if header not in GROUPED_SCHEMA[schema_type]:
+            header = np.random.choice(list(GROUPED_SCHEMA[schema_type]))
         args = {
             'schema_type': np.random.choice([schema_type, 'INVALID']),
             'column_header': np.random.choice([header, 'INVALID']),
@@ -74,10 +81,12 @@ class TestCli(TestCase):
 
     @given(
         schema_type=sampled_from(SCHEMA_TYPES_EX_MASTER),
+        header=sampled_from(ALL),
         sample_size=integers(min_value=1, max_value=10)
     )
-    def test_sample_cmd__valid_arguments__cmd_completes_successfully(self, schema_type, sample_size):
-        header = np.random.choice(list(GROUPED_SCHEMA[schema_type]))
+    def test_sample_cmd__valid_arguments__cmd_completes_successfully(self, schema_type, header, sample_size):
+        if header not in GROUPED_SCHEMA[schema_type]:
+            header = np.random.choice(list(GROUPED_SCHEMA[schema_type]))
         exit_code = SampleCmd().run(argparse.Namespace(schema_type=schema_type, column_header=header, sample_size=sample_size))
         self.assertEqual(exit_code, 0)
 
@@ -110,3 +119,22 @@ class TestCli(TestCase):
             headers_only=headers_only
         ))
         self.assertEqual(exit_code, 0)
+
+    @given(
+        schema_type=sampled_from(SCHEMA_TYPES_EX_MASTER),
+        headers=lists(sampled_from([header for schema_type, header in ALL])),
+        as_file=booleans()
+    )
+    def test_validate_headers_cmd__valid_schema_type_and_column_headers__cmd_completes_successfully(self, schema_type, headers, as_file):
+        if not (headers or (headers and set(headers).issubset(list(GROUPED_SCHEMA[schema_type])))):
+            headers = np.random.choice(list(GROUPED_SCHEMA[schema_type]), 10, replace=False).tolist()
+        headers_str = ','.join(headers)
+        if not as_file:
+            exit_code = ValidateHeadersCmd().run(argparse.Namespace(schema_type=schema_type, column_headers=headers_str))
+            self.assertEqual(exit_code, 0)
+        else:
+            with NamedTemporaryFile('w') as input_file:
+                input_file.write(headers_str)
+                input_file.flush()
+                exit_code = ValidateHeadersCmd().run(argparse.Namespace(schema_type=schema_type, input_file_path=input_file.name))
+                self.assertEqual(exit_code, 0)
