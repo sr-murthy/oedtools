@@ -22,6 +22,7 @@ from collections import (
 )
 from typing import (
     Callable,
+    Iterable,
     Optional,
     Union,
 )
