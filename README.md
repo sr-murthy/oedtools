@@ -41,13 +41,13 @@ The command line interface is invoked via `oed` and provides three main command 
 * `query` (`oed query`) - for querying schema columns based on various schema properties
 * `sample` (`oed sample`) - for sampling column data
 
-There is a `version` command for getting OED schema version (currently `1.1.1`) the package uses, or the package version (currently `1.0.1`). The usage is
+There is a `version` command for getting OED schema version (currently `1.1.1`) the package uses, or the package version (currently `1.0.2`). The usage is
 
     $ oed version
     1.1.1
 
     $ oed version --package
-    1.0.1
+    1.0.2
 
 ### Validation
 
