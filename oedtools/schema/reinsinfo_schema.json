@@ -76,7 +76,7 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": null,
-        "default": "('LO')",
+        "default": "'LO'",
         "desc": "Reinsurance attachment basis",
         "dtype_range": null,
         "entity": "ReinsInfo",

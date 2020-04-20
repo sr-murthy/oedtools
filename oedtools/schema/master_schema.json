@@ -5638,7 +5638,7 @@
             "stop": 256
         },
         "default": 0,
-        "desc": " \r\nCode for the appurtenant building, such as shed or detached garage",
+        "desc": " \nCode for the appurtenant building, such as shed or detached garage",
         "dtype_range": {
             "start": 0,
             "stop": 256
@@ -24585,7 +24585,7 @@
             "stop": 256
         },
         "default": 0,
-        "desc": " \r\nCode that represents a structure that is physically attached to the building, such as garage or balcony",
+        "desc": " \nCode that represents a structure that is physically attached to the building, such as garage or balcony",
         "dtype_range": {
             "start": 0,
             "stop": 256
@@ -42745,7 +42745,7 @@
         "column_range": null,
         "column_sampling": null,
         "column_validation": null,
-        "default": "('LO')",
+        "default": "'LO'",
         "desc": "Reinsurance attachment basis",
         "dtype_range": null,
         "entity": "ReinsInfo",
