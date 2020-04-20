@@ -19,7 +19,7 @@ def get_columns(
     descriptions: Optional[Iterable[str]] = None,
     required: Optional[Iterable[str]] = None,
     nonnull: Optional[bool] = None,
-    defaults: Optional[Iterable[str, bool, int, float]] = None,
+    defaults: Optional[Iterable[Union[str, bool, int, float]]] = None,
     python_dtypes: Optional[Iterable[str]] = None,
     sql_dtypes: Optional[Iterable[str]] = None,
     numpy_dtypes: Optional[Iterable[str]] = None
