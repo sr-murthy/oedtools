@@ -3,6 +3,8 @@
 [![PyPI version](https://badge.fury.io/py/oedtools.svg)](https://badge.fury.io/py/oedtools)
 [![Build Status](https://travis-ci.com/sr-murthy/oedtools.svg?branch=master)](https://travis-ci.com/sr-murthy/oedtools)
 
+**NOTICE: Following changes in the way the OED format is managed, this project will no longer be maintained, as of Tuesday 19 May, 2020, and there will be no further public releases of the `oedtools` PyPI package. All current and earlier releases of `oedtools` will still be valid for OED versions 1.1.1 and earlier.**
+
 # oedtools
 
 `oedtools` is a (command-line) file validation, query and data sampling toolkit for the <a href="https://github.com/Simplitium/OED" target="_blank">Simplitium Open Exposure Data (OED)</a> (re)insurance exposure data format.
